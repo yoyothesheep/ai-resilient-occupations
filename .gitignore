@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Intermediate data
+data/intermediate/
+
+# Test and log output
+data/output/score_log.txt
+data/output/test_scores.csv
+
+# OS files
+.DS_Store
