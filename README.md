@@ -2,6 +2,8 @@
 
 A framework for identifying which jobs are resilient to AI displacement, scored across 10 key attributes that measure both defensive protections (why AI can't take over) and offensive opportunities (how AI can amplify expertise).
 
+Final output is [hosted at this site](https://ai-proof-careers.lovable.app).
+
 ## Project Structure
 
 ```
