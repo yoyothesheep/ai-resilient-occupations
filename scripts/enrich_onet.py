@@ -25,7 +25,7 @@ DELAY = 1.0  # seconds between requests to be polite
 
 
 class OnetPageParser(HTMLParser):
-    """Extract wage, growth, job openings, and education from an O*NET summary page."""
+    """Extract wage, growth, job openings, education, job titles, and description from an O*NET summary page."""
 
     def __init__(self):
         super().__init__()
@@ -37,11 +37,24 @@ class OnetPageParser(HTMLParser):
         self._in_education_list = False
         self._education_items = []
 
+        # "Sample of reported job titles" lives in <p><b>Sample of reported job titles:</b> ...</p>
+        self._in_b = False
+        self._b_text_buf = []
+        self._capturing_job_titles = False
+        self._job_titles_buf = []
+
+        # Job description: first <p> after <!-- begin content -->
+        self._after_begin_content = False
+        self._capturing_description = False
+        self._description_buf = []
+
         self.median_wage = None
         self.projected_growth = None
         self.projected_job_openings = None
         self.education_top_2 = None  # Store top 2 education responses with %
         self.education_description = None  # Store descriptive education text (alternate format)
+        self.sample_job_titles = None
+        self.job_description = None
 
     def handle_starttag(self, tag, attrs):
         if tag == "dt":
@@ -54,6 +67,17 @@ class OnetPageParser(HTMLParser):
         elif tag == "li" and self._in_education_list:
             # Starting a list item in education section
             self._text_buf = []
+        elif tag == "b":
+            self._in_b = True
+            self._b_text_buf = []
+        elif tag == "p":
+            # Capture the first <p> after <!-- begin content --> as the job description
+            if self._after_begin_content and self.job_description is None:
+                self._capturing_description = True
+                self._description_buf = []
+            # Reset job titles capture state at the start of each <p>
+            self._capturing_job_titles = False
+            self._job_titles_buf = []
 
     def handle_endtag(self, tag):
         if tag == "dt":
@@ -69,6 +93,26 @@ class OnetPageParser(HTMLParser):
                 self._current_field = "education"
             else:
                 self._current_field = None
+        elif tag == "b":
+            self._in_b = False
+            b_text = "".join(self._b_text_buf).strip()
+            if "Sample of reported job titles" in b_text:
+                self._capturing_job_titles = True
+        elif tag == "p":
+            if self._capturing_description:
+                desc_text = "".join(self._description_buf).strip()
+                desc_text = re.sub(r"\s+", " ", desc_text).strip()
+                if desc_text:
+                    self.job_description = desc_text
+                self._capturing_description = False
+                self._after_begin_content = False
+            if self._capturing_job_titles:
+                titles_text = "".join(self._job_titles_buf).strip()
+                titles_text = re.sub(r"\s+", " ", titles_text).strip(", ")
+                if titles_text:
+                    self.sample_job_titles = titles_text
+                self._capturing_job_titles = False
+                self._job_titles_buf = []
         elif tag == "dd" and self._capture:
             self._in_dd = False
             self._capture = False
@@ -92,11 +136,23 @@ class OnetPageParser(HTMLParser):
             if li_text and "%" in li_text:
                 self._education_items.append(li_text)
 
+    def handle_comment(self, data):
+        if "begin content" in data:
+            self._after_begin_content = True
+
     def handle_data(self, data):
+        if self._capturing_description:
+            self._description_buf.append(data)
         if self._in_dt or self._capture:
             self._text_buf.append(data)
         elif self._in_education_list:
             self._text_buf.append(data)
+
+        if self._in_b:
+            self._b_text_buf.append(data)
+
+        if self._capturing_job_titles and not self._in_b:
+            self._job_titles_buf.append(data)
 
         # Detect when we're in education section
         if "How much education does a new hire need" in data or "Respondents said" in data:
@@ -197,7 +253,14 @@ def extract_top_education(education_str: str) -> tuple:
        Output: ("High school diploma", "63%")
     2. Alternate format (no percentage): "Bachelor's degree"
        Output: ("Bachelor's degree", "")
+
+    Returns:
+        tuple: (education_level, education_rate)
     """
+    if not education_str:
+        return ("", "")
+
+    education_str = education_str.strip()
     if not education_str:
         return ("", "")
 
@@ -209,15 +272,18 @@ def extract_top_education(education_str: str) -> tuple:
         match = re.match(r"(\d+%)\s+(.*)", first_item)
         if match:
             rate = match.group(1)
-            level = match.group(2)
+            level = match.group(2).strip()
             return (level, rate)
 
-    # Alternate format (no pipe, just education level, no percentage)
-    else:
-        # It's just an education level without percentage
-        return (education_str.strip(), "")
+    # Format with percentage but no pipe
+    match = re.match(r"(\d+%)\s+(.*)", education_str)
+    if match:
+        rate = match.group(1)
+        level = match.group(2).strip()
+        return (level, rate)
 
-    return ("", "")
+    # Alternate format (no pipe, no percentage, just education level)
+    return (education_str, "")
 
 
 def fetch_onet_data(url: str) -> dict:
@@ -240,6 +306,8 @@ def fetch_onet_data(url: str) -> dict:
         "education_top_2": education_top_2,
         "top_education_level": top_level,
         "top_education_rate": top_rate,
+        "sample_job_titles": parser.sample_job_titles or "",
+        "job_description": parser.job_description or "",
     }
 
 
@@ -264,10 +332,20 @@ def main():
     cached_count = sum(1 for r in rows if r["Code"] in enriched_data)
     print(f"Total occupations: {total}, already cached: {cached_count}")
 
-    # Fetch data for occupations not in cache
+    REQUIRED_FIELDS = {"median_wage", "projected_growth", "projected_job_openings",
+                       "education_top_2", "top_education_level", "top_education_rate",
+                       "sample_job_titles", "job_description"}
+    # Fields that must be non-empty (not just present) to consider a cache entry valid
+    NON_EMPTY_FIELDS = {"median_wage", "projected_growth", "education_top_2", "top_education_level"}
+
+    def cache_is_valid(entry):
+        return (REQUIRED_FIELDS.issubset(entry)
+                and all(entry.get(f, "") for f in NON_EMPTY_FIELDS))
+
+    # Fetch data for occupations not in cache (or missing/empty required fields)
     for i, row in enumerate(rows):
         code = row["Code"]
-        if code in enriched_data:
+        if code in enriched_data and cache_is_valid(enriched_data[code]):
             continue
 
         url = row["url"]
@@ -281,6 +359,8 @@ def main():
             print(f"  Education (top 2): {data['education_top_2']}")
             if data['top_education_level']:
                 print(f"  Top Education: {data['top_education_rate']} {data['top_education_level']}")
+            print(f"  Sample Job Titles: {data['sample_job_titles']}")
+            print(f"  Job Description: {data['job_description'][:80]}..." if len(data['job_description']) > 80 else f"  Job Description: {data['job_description']}")
         except Exception as e:
             print(f"  ERROR: {e}")
             enriched_data[code] = {
@@ -290,6 +370,7 @@ def main():
                 "education_top_2": "",
                 "top_education_level": "",
                 "top_education_rate": "",
+                "job_description": "",
             }
 
         # Save cache after each fetch for resumability
@@ -299,12 +380,12 @@ def main():
         time.sleep(DELAY)
 
     # Write enriched CSV (avoid duplicating columns if already enriched)
-    enrichment_cols = ["Median Wage", "Projected Growth", "Projected Job Openings", "Education", "Top Education Level", "Top Education Rate"]
+    enrichment_cols = ["Median Wage", "Projected Growth", "Projected Job Openings", "Education", "Top Education Level", "Top Education Rate", "Sample Job Titles", "Job Description"]
     existing = list(rows[0].keys())
     fieldnames = existing + [c for c in enrichment_cols if c not in existing]
 
     # Write enrichment-only CSV (just the new fields)
-    enrichment_fieldnames = ["Code", "Median Wage", "Projected Growth", "Projected Job Openings", "Education", "Top Education Level", "Top Education Rate"]
+    enrichment_fieldnames = ["Code", "Median Wage", "Projected Growth", "Projected Job Openings", "Education", "Top Education Level", "Top Education Rate", "Sample Job Titles", "Job Description"]
     with open(ENRICHMENT_ONLY_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=enrichment_fieldnames)
         writer.writeheader()
@@ -319,6 +400,8 @@ def main():
                 "Education": enriched.get("education_top_2", ""),
                 "Top Education Level": enriched.get("top_education_level", ""),
                 "Top Education Rate": enriched.get("top_education_rate", ""),
+                "Sample Job Titles": enriched.get("sample_job_titles", ""),
+                "Job Description": enriched.get("job_description", ""),
             })
 
     # Write fully enriched CSV (all original columns + enrichment)
@@ -334,6 +417,8 @@ def main():
             row["Education"] = enriched.get("education_top_2", "")
             row["Top Education Level"] = enriched.get("top_education_level", "")
             row["Top Education Rate"] = enriched.get("top_education_rate", "")
+            row["Sample Job Titles"] = enriched.get("sample_job_titles", "")
+            row["Job Description"] = enriched.get("job_description", "")
             writer.writerow(row)
 
     print(f"\nDone!")

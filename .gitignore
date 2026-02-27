@@ -1,6 +1,7 @@
 # Python
 scripts/__pycache__/
-scripts/correlate_indeed_ai_resilience.py
+scripts/fill_job_descriptions.py
+scripts/fix_missing_education.py
 *.pyc
 *.pyo
 
@@ -13,7 +14,9 @@ data/verify/
 
 # Test and log output
 data/output/score_log.txt
+data/output/enrichment_run.log
 data/output/test_scores.csv
+data/output/test_enrichment.csv
 
 # Analylsis articles
 blog/

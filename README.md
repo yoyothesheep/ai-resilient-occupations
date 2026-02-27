@@ -63,7 +63,7 @@ The initial occupation list CSV is downloaded from [O*NET Online — All Occupat
 
 ### Enrich Input Data
 
-**Required before scoring.** Scrape wage, growth, and job opening data from O*NET Online (run once, ~17 min):
+**Required before scoring.** Scrape wage, growth, job opening, education, job titles, job description data from O*NET Online (run once, ~17 min):
 
 ```bash
 python3 scripts/enrich_onet.py
@@ -74,7 +74,11 @@ python3 scripts/enrich_onet.py
   - `Median Wage` — e.g. "$39.27 hourly, $81,680 annual"
   - `Projected Growth` — e.g. "Faster than average (5% to 6%)"
   - `Projected Job Openings` — e.g. "124,200"
-  - `Education` — top 2 required education levels with percentages
+  - `Education` — top 2 required education levels with percentages reported by users
+  - `Top Education Level` - the level with highest reporting percentage
+  - `Top Education Rate` - the reporting percentage
+  - `Sample Job Titles` - some real job titles for this occupation
+  - `Job Description` - short description of role
 - `onet_enrichment.csv` — enrichment fields only (for reference)
 - `onet_enrichment_cache.json` — scraping cache (allows resuming if interrupted)
 
