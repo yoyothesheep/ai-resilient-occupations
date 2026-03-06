@@ -41,7 +41,7 @@ SCORE_COLUMNS = [
     "Job Zone", "Code", "Occupation", "Data-level", "url",
     "Median Wage", "Projected Growth", "Employment Change, 2024-2034", "Projected Job Openings",
     "Education", "Top Education Level", "Top Education Rate",
-    "Sample Job Titles",
+    "Sample Job Titles", "Job Description",
     "ai_proof_score", "final_ranking", "key_drivers"
 ]
 
@@ -138,6 +138,7 @@ def write_scores_to_csv(results: list[dict], output_path: str, source_lookup: di
                 "Top Education Level": src.get("Top Education Level", ""),
                 "Top Education Rate": src.get("Top Education Rate", ""),
                 "Sample Job Titles": src.get("Sample Job Titles", ""),
+                "Job Description": src.get("Job Description", ""),
                 "ai_proof_score": result.get("ai_proof_score", result.get("final_score", "")),
                 "key_drivers": result.get("key_drivers", ""),
             })

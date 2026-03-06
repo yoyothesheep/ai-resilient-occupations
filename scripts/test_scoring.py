@@ -34,8 +34,7 @@ def verify_csv_columns(csv_path: str) -> bool:
         reader = csv.DictReader(f)
         actual_cols = reader.fieldnames or []
 
-    # Expected columns: SCORE_COLUMNS (minus key_drivers which moves) + final_ranking + key_drivers
-    expected_cols = [c for c in SCORE_COLUMNS if c != "key_drivers"] + ["final_ranking", "key_drivers"]
+    expected_cols = SCORE_COLUMNS
 
     missing = [c for c in expected_cols if c not in actual_cols]
     extra = [c for c in actual_cols if c not in expected_cols]
