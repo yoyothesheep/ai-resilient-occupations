@@ -18,13 +18,13 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 │   ├── input/
 │   │   ├── All_Occupations_ONET.csv       # O*NET occupation data (raw, from external source)
 │   │   └── Employment Projections.csv     # BLS 2024–2034 employment projections (from data.bls.gov)
-│   ├── intermediate/
-│   │   ├── onet_enrichment_cache.json     # Cached scrape results (resumable)
-│   │   ├── onet_enrichment.csv            # Enrichment fields only
-│   │   └── All_Occupations_ONET_enriched.csv # Full dataset with enrichment 
-│   └── output/
-│       ├── ai_resilience_scores.csv  # Scored & ranked occupations
-│       └── score_log.txt             # Progress log for resuming runs
+│   ├── output/
+│   │   └── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,000+ occupations)
+│   └── top_no_degree_careers/             # Curated subset: top AI-resilient careers requiring no bachelor's degree
+│       ├── ENRICHMENT_INSTRUCTIONS.md     # Schema & methodology for enrichment columns
+│       ├── ai_resilience_scores-associates-5.5.csv        # Base subset (≤ associate's, score ≥ 5.5)
+│       ├── ai_resilience_scores-associates-5.5-enriched.csv # Enriched with 10-year earnings, difficulty, pathways
+│       └── calc_e10.py                    # 10-year net earnings calculator
 └── scripts/
     ├── score_occupations.py          # Scores via Claude API + computes final ranking
     ├── test_scoring.py               # Quick test with 3 occupations
