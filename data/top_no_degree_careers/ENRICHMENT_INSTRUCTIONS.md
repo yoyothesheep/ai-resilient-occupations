@@ -37,6 +37,28 @@ Number of full-time, unpaid training/school years before earning begins. Can be 
 - Forensic Science Techs: certificate path (6–12 mo) → 1 unpaid year (not 2yr for the associate)
 - Computer Systems Analysts: start in IT support with certs → 0 unpaid years (not 2yr for the associate)
 
+### Canonical Career Paths
+For occupations that belong to a clear professional hierarchy where the senior role is almost exclusively a promotion from a specific entry-level role, the 10-year calculation must start from the **absolute entry-level** of that career family.
+
+**Strictly Applied To:**
+- **Police Family:** All roles (Patrol, Supervisor, Detective) start at Year 1 patrol officer academy wage (~$60k).
+- **Fire Family:** All roles (Firefighter, Supervisor, Inspector) start at Year 1 firefighter academy wage (~$45k).
+- **Construction Family:** Supervisors must start at the trade-apprentice wage (typically Carpentry at ~$34k).
+- **Wind Energy Family:** Operations Managers must start at the Year 1 Wind Technician wage (~$45k).
+- **Solar Energy Family:** Installation Managers must start at the Year 1 Solar Installer wage (~$38k).
+- **Mechanics Family:** Supervisors start at a **blended Year 1 income** ($38k) reflecting entry roles like Lube Tech, Helper, or Apprentice.
+- **Food Service Family:** Managers start at a **blended Year 1 income** ($32k) reflecting several entry points (Cook, Server, Host, etc.).
+
+**General Rule:**
+All supervisor and manager roles in hierarchical trades or services MUST be modeled with an entry-level training start, even if lateral entry is technically possible. This ensures the 10-year net ROI reflects the reality of the career's full investment.
+
+**Rules for Canonical Paths:**
+- Use the `ladder` calculation model.
+- Years 1–5 reflect the entry-level role's trajectory (e.g., trade apprenticeship or academy probation).
+- Year 6 features a salary "jump" to the promotional role's wage (interpolated back from the BLS median).
+- Ensure the **Training Cost ($)** and **Unpaid Training Years** reflect the entry-level role's requirements (e.g., $1,000 for tools/certs).
+- Note the canonical mapping in the **10-Year Net Earnings Calculation Model** field (e.g., "Mapped from day one of the construction trade career").
+
 ### Training Cost ($)
 Total out-of-pocket cost to enter the career. Use the most common/affordable pathway:
 - Paid apprenticeships/academies: $0
