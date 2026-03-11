@@ -21,16 +21,15 @@ Parsed from the original "Median Wage" string (e.g. `"$49.50 hourly, $102,950 an
 - **ladder** — government salary schedules, union step increases, trade apprenticeships, or careers with distinct promotion milestones (e.g., police patrol → sergeant, apprentice → journeyman)
 - **linear** — careers with gradual, unstructured wage growth over time
 
-### Year 1 Income ($)
-First-year earnings in the career pathway (not the median). For careers with paid training (police, fire, ATC, trades apprenticeships), this is academy/apprentice pay. For careers requiring upfront education (dental hygienist, sonographer), this is first-year salary after completing training.
 
 ### Unpaid Training Years
-Number of full-time, unpaid training/school years before earning begins. Integer (0, 1, or 2).
+Number of full-time, unpaid training/school years before earning begins. Can be `0`, `0.5` (for ~6 month programs), or an integer number of years.
 
 **Rules:**
-- Set Yr1 ($) through Yr(N) ($) = `0` where N = unpaid training years
-- Shift all earning years forward by N (e.g., if 2yr school, Yr3 ($) = first-year salary)
-- All tuition/program costs go into **Training Cost ($)** — do NOT subtract them from Yr columns
+- **Year 1 is always the start of the path to get into the role.** Do not only start counting after graduation. (e.g., if it's a 2-year associate's degree, Yr1 and Yr2 have $0 income).
+- Set whole years of full-time unpaid training to `$0`.
+- If an unpaid training year is fractional (e.g. `0.5`), the first earning year is prorated (e.g. `0.5` of full starting salary).
+- All tuition/program costs go into **Training Cost ($)** — do NOT subtract them from Yr columns.
 - If training is paid (apprenticeships, academies) or done while working (on-the-job, part-time certs), do NOT set any years to $0
 
 **Choosing the shortest path:** When a career has multiple entry paths (e.g., associate degree vs. certificate, formal program vs. OJT), use the **shortest path to earning** for the Yr columns. Note the chosen path in the **10-Year Net Earnings Calculation Model** field. Examples:
@@ -48,13 +47,16 @@ Total out-of-pocket cost to enter the career. Use the most common/affordable pat
 ### Yr1 $ through Yr10 $
 10 individual columns with the salary used for each year of the 10-year calculation.
 
-- **Unpaid training years**: Set to `0` for any years spent in full-time unpaid school/training. Earning years shift forward accordingly. For example, a 2-year associate degree career: Yr1=$0, Yr2=$0, Yr3=first-year salary, Yr4–Yr10=subsequent years.
-- **Ladder careers**: Manually set each earning year based on step/promotion research. When a promotion has a range of expected timing (e.g., "3–10 years to make Sergeant"), use the midpoint (e.g., Year 6.5 → round to Year 7).
-- **Linear careers**: Earning years auto-filled by `calc_e10()` using linear interpolation from Year 1 Income to Median Annual Wage (same progression rate, just starting later).
+- **Unpaid training years**: Yr1 is ALWAYS the start of the path. Set to `0` for full years spent in full-time unpaid school/training. Earning years shift forward accordingly. For example, a 2-year associate degree career: Yr1=$0, Yr2=$0, Yr3=first-year salary, Yr4–Yr10=subsequent years.
+- **Paid training / Academies**: If a career has paid training (0 unpaid years) where the academy/training wage is significantly lower than the entry-level wage, and training lasts a fraction of the year (e.g., 6 months), blend the salaries for Yr1. For example, if academy pays $40k annualized for 6 months and post-graduation pays $60k annualized for 6 months, Yr1 = $50,000.
+- **Ladder careers**: Manually set each earning year based on step/promotion research. When a promotion has a range of expected timing (e.g., "3–10 years to make Sergeant"), use the midpoint (e.g., Year 6.5 → round to Year 7). If unpaid training was fractional (e.g. 0.5), calculate the prorated first-year earning manually for that year (e.g. 50% of starting salary in Yr1).
+- **Linear careers**: Earning years auto-filled by `calc_e10()` using linear interpolation. You must manually input the FULL annualized starting salary in the correct `Yr` column where they begin working (e.g., `Yr1 ($)` if 0 or 0.5 unpaid training, or `Yr3 ($)` if 2 years of unpaid training). `calc_e10()` will interpolate from that full starting salary to the median over the remaining years. If unpaid training is fractional (e.g., 0.5), `calc_e10()` will automatically prorate the first earning year down.
 
-#### Ladder Career Salary Realism Rules
-
-**During training/academy/apprenticeship/developmental phases**, annual increases should be modest (3–8% or $2–5K/year) unless documented step increases are larger. Do NOT assume $10–20K annual jumps during training periods.
+#### General 3% Growth Rule
+**In any year where salary growth is not dictated by a published schedule or specific formula, assume a 3% annual increase to match inflation.** This applies specifically to:
+- Years spent in a specific role on a ladder before jumping to the next step.
+- Years *after* a career has hit the BLS median, up through Year 10.
+- Training/developmental phases where specific step increases aren't documented (do NOT assume $10–20K annual jumps during training).
 
 **Big salary jumps should only occur at documented milestone events:**
 - Apprentice → Journeyman (trades): typically a 25–35% jump after 4–5 year apprenticeship
@@ -64,13 +66,16 @@ Total out-of-pocket cost to enter the career. Use the most common/affordable pat
 - Seniority-based (flight attendants): early years see only 3–6% annual increases; pay curve steepens at year 5+
 
 **Reference pay structures by career type:**
-| Career Type | Annual Increase During Training | Milestone Jump | Time to Median |
+| Career Type | Annual Increase During Training | Milestone Jump | Time to Median (or final jump) |
 |---|---|---|---|
-| Government step (police, fire, CBP) | $2–4K/year (step increases) | $10–15K at promotion | 8–10 years |
-| Federal GS scale (CBP) | $6–8K/year (grade promotions GL-5→GS-12) | N/A (grade-based) | 4–5 years |
+| Government step (police, fire) | $2–4K/year (step increases) | $10–15K at promotion | 8–10 years |
+| Federal GS scale (CBP) | $6–15K/year (grade promotions GL-5→GS-12) | N/A (grade-based) | 4–5 years to GS-12 (Note: GS-12 far exceeds BLS median! Use the real GS-12 salary, don't artificially cap at median) |
 | Trade apprenticeship (electrical, plumbing, HVAC) | 5–10% of journeyman/year | 25–35% at journeyman | 5–7 years |
 | FAA ATC (ATSPP pay bands) | $8–17K/year during developmental | $20K at CPC certification | 7–9 years |
 | Airline seniority (flight attendants) | $1.5–3K/year early; $4–5K/year mid | None (smooth curve) | 10+ years |
+
+**A Note on the BLS Median:**
+If a known pay ladder (like the federal GS scale or an established union apprentice-to-journeyman timeline) dictates that a worker will make *more* than the BLS median before Year 10, **use the actual higher ladder wage**. Do not artificially cap ladder careers at the BLS median if the real-world progression pays more.
 
 ### 10-Year Net Earnings ($)
 `Sum(Yr1..Yr10) - Training Cost` — computed by `calc_e10()`.
@@ -81,23 +86,24 @@ The exact year-by-year salary timeline used to compute the 10-Year Net Earnings 
 - **Salary schedule/ladder careers**: List each year's salary showing the step/promotion that applies. When a promotion has a range of expected timing (e.g., "3–10 years to make Sergeant"), use the midpoint (e.g., Year 6.5 → round to Year 7).
 - **Linear growth careers**: State the formula: `(Year1 + Median) / 2 × 10 - Training Cost = result`.
 
-**Example (ATC, ladder):** "Yr1 $47K (academy + AG) → Yr2 $55K (D1) → Yr3 $65K (D2) → Yr4 $78K (D3) → Yr5 $95K (near CPC) → Yr6 $115K (CPC) → Yr7 $130K → Yr8 $140K → Yr9–10 $144,580 × 2 = $1,014,160 − $0 training = $1,014,160"
 
-**Example (Respiratory Therapist, linear):** "($57,000 + $80,450) / 2 × 10 − $18,000 = $669,250"
-
-### 5. 10-Year Net Earnings Calculation Model
+### 10-Year Net Earnings Calculation Model
 Must include **two things**:
 
-1. **Training description**: What the training/education is, how long it takes, approximate cost, and whether it causes $0 earning years. If the career has multiple entry paths and the shorter path was used for the Yr columns, note which path was chosen.
+1. **Training description**: What the training/education is, how long it takes, and the cost structure. **Explicitly classify the initial training into one of three categories and explain how it maps to the Yr($) fields:**
+   - **Paid Training (Employer pays trainee):** (e.g., apprenticeships, paid academies). The trainee earns a wage from day one. Do not set unpaid years; `Yr1 ($)` reflects this starting training wage. `Training Cost ($)` is typically $0.
+   - **Free Training (No cost, but unpaid):** (e.g., unpaid internships, volunteer requirements). The training is free (`Training Cost ($)` = $0), but the time spent is uncompensated. Set the appropriate `Unpaid Training Years` (e.g., `0.5`, `1`), making the initial Yr($) fields `$0` or prorated.
+   - **Student Pays (Tuition/out-of-pocket):** (e.g., associate degrees, certificates). The student pays for school (`Training Cost ($)` > $0) and does not earn a wage during that time. Set the appropriate `Unpaid Training Years`, making the initial Yr($) fields `$0` or prorated.
+   If the career has multiple entry paths and the shorter path was used for the Yr columns, note which path was chosen.
 2. **Earnings trajectory**: For salary schedule careers, describe the ladder steps and what impacts salary (e.g., facility level for ATC, certifications for police). For linear careers, note factors that can push above/below the estimate (overtime, specialization, setting).
 
-**Example (ATC):** "FAA Academy in Oklahoma City (3–5 months, paid from day one). 2–4 years developmental training (AG→D1→D2→D3) with incremental checkpoint raises. CPC certification ~Year 5–6 brings major pay jump. Reaches BLS median ($144,580) by Year 9. Level 12 facility CPCs regularly exceed $180K. Highest-ROI career on this list."
+**Example (ATC):** "1. Paid Training (Employer pays trainee): FAA Academy in Oklahoma City (3–5 months, paid from day one). 0 unpaid years. 2. 2–3 years of developmental training (AG→D1→D2→D3) with incremental raises. CPC certification ~Year 4 brings a major pay jump to the BLS median ($144,580), and salary continues to grow on the ATSPP pay bands."
 
-**Example (Dental Hygienist, 2yr school):** "2–3 year CODA-accredited dental hygiene associate degree ($15K–$30K) required before earning; 2 years of $0 earnings during school. Linear growth from $65K (entry-level RDH) to BLS median $94,260 over remaining 8 years."
+**Example (Dental Hygienist, 2yr school):** "1. Student Pays (Tuition/out-of-pocket): 2–3 year CODA-accredited dental hygiene associate degree ($15K–$30K) required before earning. 2 years of $0 earnings during school. 2. Linear growth from ~$74K (entry-level) to BLS median $94,260 over the remaining 8 years."
 
-**Example (Dental Assistants, OJT path):** "OJT path: many states allow on-the-job training with no formal program — 0 unpaid years. Salary grows linearly from entry to median over 10 years."
+**Example (Dental Assistants, OJT path):** "1. Paid Training (Employer pays trainee): Many states allow on-the-job training with no formal program. 0 unpaid years. 2. Salary grows linearly from ~$42K entry-level wage to BLS median $47,300 over 10 years."
 
-### 6. Difficulty Score
+### Difficulty Score
 `High`, `Medium`, or `Low`
 
 Factors to consider:
@@ -106,10 +112,10 @@ Factors to consider:
 - Physical demands and danger
 - Lifestyle demands (travel, irregular hours, emotional toll)
 
-### 7. Difficulty Score Explanation
+### Difficulty Score Explanation
 Short explanation of what makes the career easy or hard to enter and stay in. Must address the difficulty of getting accepted into and completing the required training/education. Include specific barriers (program acceptance rates, exam pass rates, age limits, physical requirements, competitive selection processes).
 
-### 8. How to Get There
+### How to Get There
 Step-by-step training pathway with costs at each step. Include:
 - Specific program names/types and duration
 - Exam names and fees
@@ -119,7 +125,7 @@ Step-by-step training pathway with costs at each step. Include:
 
 **Example (ATC):** "FAA Academy in Oklahoma City: 3–5 months, paid federal employment from day one. After graduating, you're placed at a facility for on-the-job certification — typically 2–4 more years at increasing pay. The federal government covers everything."
 
-### 9. Job Market
+### Job Market
 Describe prospects for getting and keeping the job:
 - BLS projected growth rate
 - Number of annual openings (if notable)
@@ -129,7 +135,7 @@ Describe prospects for getting and keeping the job:
 
 **Example (ATC):** "2,200 openings per year. Rigorous FAA selection with historically high training washout rates; extreme mental demands and ongoing recertification; hard age-31 start cutoff."
 
-### 10. Pension
+### Pension
 Describe retirement benefits if the job has a pension. Include:
 - Type (defined-benefit, defined-contribution)
 - Eligibility (years of service, age)
@@ -145,36 +151,43 @@ If no pension is typical, say so and note what retirement options exist (401k, s
 ## calc_e10() Python Function
 
 ```python
-def calc_e10(row):
-    """
-    Calculate 10-Year Net Earnings from CSV row dict.
-
-    Inputs read from row:
-      - 'Calculation Type': 'ladder' or 'linear'
-      - 'Year 1 Income ($)': int
-      - 'Training Cost ($)': int
-      - 'Median Annual Wage ($)': int (parsed from 'Median Wage')
-      - 'Yr1 ($)' .. 'Yr10 ($)': int (ladder: manually set; linear: auto-filled)
-
-    For linear careers, auto-fills Yr1–Yr10 via interpolation before summing.
-    Returns: updated row with Yr1–Yr10, 10-Year Net Earnings, and Calculation string.
-    """
-    yr1 = int(row['Year 1 Income ($)'])
-    median = int(row['Median Annual Wage ($)'])
-    training = int(row['Training Cost ($)'])
-    calc_type = row['Calculation Type']
+def calc_e10(row: dict) -> dict:
+    calc_type = row.get('Calculation Type', 'ladder')
+    median = int(row.get('Median Annual Wage ($)', 0))
+    training = int(row.get('Training Cost ($)', 0))
+    unpaid_str = str(row.get('Unpaid Training Years', '0') or '0')
+    unpaid = float(unpaid_str)
 
     if calc_type == 'linear':
-        for i in range(10):
-            row[f'Yr{i+1} ($)'] = str(round(yr1 + (median - yr1) * i / 9))
+        full_unpaid = int(unpaid)
+        fractional_unpaid = unpaid - full_unpaid
 
-    yr_vals = [int(row[f'Yr{i+1} ($)']) for i in range(10)]
+        start_year = full_unpaid + 1
+        start_salary_str = row.get(f'Yr{start_year} ($)', '0')
+        start_salary = int(float(start_salary_str.replace(',', ''))) if start_salary_str else 0
+
+        for i in range(1, start_year):
+            row[f'Yr{i} ($)'] = '0'
+
+        years_to_grow = 10 - start_year
+        for i in range(start_year, 11):
+            if years_to_grow > 0:
+                val = start_salary + (median - start_salary) * (i - start_year) / years_to_grow
+            else:
+                val = start_salary
+            
+            if i == start_year and fractional_unpaid > 0:
+                val = val * (1 - fractional_unpaid)
+                
+            row[f'Yr{i} ($)'] = str(round(val))
+
+    yr_vals = [int(float(str(row.get(f'Yr{i+1} ($)', 0)).replace(',', ''))) for i in range(10)]
     total = sum(yr_vals) - training
     row['10-Year Net Earnings ($)'] = str(total)
 
     if calc_type == 'linear':
         row['10-Year Net Earnings Calculation'] = (
-            f'Linear: (${yr1:,} + ${median:,}) / 2 × 10 − ${training:,} = ${total:,}'
+            f'Linear: (${start_salary:,} up to ${median:,}) over {10 - unpaid:g} yrs − ${training:,} training = ${total:,}'
         )
     else:
         parts = [f'Yr{i+1} ${v:,}' for i, v in enumerate(yr_vals)]
@@ -186,6 +199,8 @@ def calc_e10(row):
 
 ### Invariant
 `10-Year Net Earnings ($)` must always equal `sum(Yr1..Yr10) - Training Cost`. The function enforces this.
+
+Note: For ladder calculations, if the median is reached before Year 10, manually apply the 3% annual growth rule for the remaining years.
 
 ### When to use each type
 | Type | When | Yr1–Yr10 set by |

@@ -10,11 +10,13 @@ venv/
 data/intermediate/
 data/verify/
 
-# Test and log output
+# Test artifacts, logs
 data/output/score_log.txt
 data/output/enrichment_run.log
 data/output/test_scores.csv
 data/output/test_enrichment.csv
+.agent_prompt.txt
+script_test_gemini.py
 
 # Analylsis articles
 blog/
