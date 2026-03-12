@@ -19,56 +19,54 @@ def calc_e10(row: dict) -> dict:
 
     Inputs read from row:
       - 'Calculation Type': 'ladder' or 'linear'
-      - 'Unpaid Training Years': float (e.g. 0, 0.5, 1, 2)
-      - 'Training Cost ($)': int
+      - 'Training Years': float — duration of training program (0, 0.5, 1, 2…)
+      - 'Training Salary ($)': int — annualized wage paid during training (0 if unpaid/student)
+      - 'Training Cost ($)': int — out-of-pocket cost (tuition, tools, certs)
       - 'Median Annual Wage ($)': int
-      - 'Yr1 ($)' .. 'Yr10 ($)': int (ladder: manually set; linear: auto-filled based on unpaid years)
+      - 'Yr1 ($)' .. 'Yr10 ($)': int (ladder: manually set; linear: auto-filled)
 
     For linear careers, auto-fills Yr1–Yr10 via interpolation before summing.
     Returns: updated row with Yr1–Yr10, 10-Year Net Earnings, and Calculation string.
     """
     calc_type = row.get('Calculation Type', 'ladder')
     median = int(row.get('Median Annual Wage ($)', 0))
-    training = int(row.get('Training Cost ($)', 0))
-    unpaid_str = str(row.get('Unpaid Training Years', '0') or '0')
-    unpaid = float(unpaid_str)
+    training_cost = int(str(row.get('Training Cost ($)', 0) or 0))
+    training_yrs = float(str(row.get('Training Years', '0') or '0'))
+    paid_rate = int(float(str(row.get('Training Salary ($)', '0') or '0')))
 
     if calc_type == 'linear':
-        full_unpaid = int(unpaid)
-        fractional_unpaid = unpaid - full_unpaid
+        full_training = int(training_yrs)
+        frac_training = training_yrs - full_training
+        start_year = full_training + 1  # first full earning year
 
-        start_year = full_unpaid + 1
-        start_salary_str = row.get(f'Yr{start_year} ($)', '0')
-        start_salary_str = str(start_salary_str).replace(',', '').replace('$', '').strip()
+        start_salary_str = str(row.get(f'Yr{start_year} ($)', '0')).replace(',', '').replace('$', '').strip()
         start_salary = int(float(start_salary_str)) if start_salary_str else 0
 
+        # Fill full training years with paid_rate (0 if unpaid/student)
         for i in range(1, start_year):
-            row[f'Yr{i} ($)'] = '0'
+            row[f'Yr{i} ($)'] = str(paid_rate)
 
+        # Linear interpolation from start_year to year 10
         years_to_grow = 10 - start_year
         for i in range(start_year, 11):
-            if years_to_grow > 0:
-                val = start_salary + (median - start_salary) * (i - start_year) / years_to_grow
-            else:
-                val = start_salary
-            
-            if i == start_year and fractional_unpaid > 0:
-                val = val * (1 - fractional_unpaid)
-                
+            val = start_salary + (median - start_salary) * (i - start_year) / years_to_grow if years_to_grow > 0 else start_salary
+            if i == start_year and frac_training > 0:
+                # Blend: frac_training portion at paid_rate, remainder at earning rate
+                val = paid_rate * frac_training + val * (1 - frac_training)
             row[f'Yr{i} ($)'] = str(round(val))
 
     yr_vals = [int(float(str(row.get(f'Yr{i+1} ($)', 0)).replace(',', '').replace('$', ''))) for i in range(10)]
-    total = sum(yr_vals) - training
+    total = sum(yr_vals) - training_cost
     row['10-Year Net Earnings ($)'] = str(total)
 
     if calc_type == 'linear':
         row['10-Year Net Earnings Calculation'] = (
-            f'Linear: (${start_salary:,} up to ${median:,}) over {10 - unpaid:g} yrs − ${training:,} training = ${total:,}'
+            f'Linear: (${start_salary:,} up to ${median:,}) over {10 - training_yrs:g} yrs − ${training_cost:,} training = ${total:,}'
         )
     else:
         parts = [f'Yr{i+1} ${v:,}' for i, v in enumerate(yr_vals)]
         row['10-Year Net Earnings Calculation'] = (
-            ' + '.join(parts) + f' = ${sum(yr_vals):,} − ${training:,} training = ${total:,}'
+            ' + '.join(parts) + f' = ${sum(yr_vals):,} − ${training_cost:,} training = ${total:,}'
         )
 
     return row
