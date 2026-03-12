@@ -1,5 +1,5 @@
 # Python
-scripts/
+scripts/__pycache__
 *.pyc
 *.pyo
 

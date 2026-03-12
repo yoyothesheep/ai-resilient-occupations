@@ -26,6 +26,7 @@ import openpyxl
 DATA_DIR = Path(__file__).parent.parent / "data"
 INPUT_CSV = DATA_DIR / "input" / "All_Occupations_ONET.csv"
 EMPLOYMENT_PROJECTIONS_CSV = DATA_DIR / "input" / "Employment Projections.csv"
+ALTPATH_CSV = DATA_DIR / "input" / "SimpleJobTitles_altPathurl_202602201636.csv"
 ONET_DB_DIR = DATA_DIR / "input" / "onet_db"
 CACHE_FILE = DATA_DIR / "intermediate" / "onet_scrape_cache.json"
 ENRICHMENT_ONLY_CSV = DATA_DIR / "intermediate" / "onet_enrichment.csv"
@@ -138,6 +139,24 @@ def load_education_data() -> dict:
 # ---------------------------------------------------------------------------
 # Employment projections (already downloaded CSV)
 # ---------------------------------------------------------------------------
+
+def load_altpath_data() -> dict:
+    """Load altpath URLs and simple titles from SimpleJobTitles CSV.
+    Returns {code: {"altpath url": "...", "altpath simple title": "..."}}."""
+    lookup = {}
+    if not ALTPATH_CSV.exists():
+        print(f"Warning: {ALTPATH_CSV} not found. Skipping altpath enrichment.")
+        return lookup
+    with open(ALTPATH_CSV, newline="", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            code = row.get("Soc Code", "").strip()
+            url = row.get("URL", "").strip()
+            title = row.get("Simple Title", "").strip()
+            if code:
+                lookup[code] = {"altpath url": url, "altpath simple title": title}
+    return lookup
+
 
 def load_employment_projections() -> dict:
     """Load Employment Projections.csv → {code: percent_change_str}."""
@@ -348,11 +367,15 @@ def main():
     db_education = load_education_data()
     print(f"  Education (DB fallback): {len(db_education)} occupations")
 
-    # 2. Load BLS employment projections
+    # 2. Load altpath data
+    altpath_lookup = load_altpath_data()
+    print(f"  Altpath data: {len(altpath_lookup)} occupations")
+
+    # 3. Load BLS employment projections
     growth_lookup = load_employment_projections()
     print(f"  Employment Projections: {len(growth_lookup)} occupations")
 
-    # 3. Load scrape cache
+    # 4. Load scrape cache
     scrape_cache = {}
     if CACHE_FILE.exists():
         with open(CACHE_FILE) as f:
@@ -376,7 +399,7 @@ def main():
                     }
             print(f"  Migrated {len(scrape_cache)} entries from old cache")
 
-    # 4. Read input CSV
+    # 5. Read input CSV
     with open(INPUT_CSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
 
@@ -385,7 +408,7 @@ def main():
                        and scrape_cache[r["Code"]].get("median_wage"))
     print(f"\nTotal occupations: {total}, cached: {cached_count}")
 
-    # 5. Scrape O*NET pages for occupations not yet cached
+    # 6. Scrape O*NET pages for occupations not yet cached
     to_scrape = [r for r in rows
                  if r["Code"] not in scrape_cache
                  or not scrape_cache[r["Code"]].get("median_wage")]
@@ -415,11 +438,12 @@ def main():
     else:
         print("All pages already cached.")
 
-    # 6. Build enrichment and write CSVs
+    # 7. Build enrichment and write CSVs
     enrichment_fieldnames = ["Code", "Median Wage", "Projected Growth",
                              "Employment Change, 2024-2034", "Projected Job Openings",
                              "Education", "Top Education Level", "Top Education Rate",
-                             "Sample Job Titles", "Job Description"]
+                             "Sample Job Titles", "Job Description",
+                             "altpath url", "altpath simple title"]
 
     # Report codes with gaps in DB files
     all_input_codes = {r["Code"] for r in rows}
@@ -468,6 +492,8 @@ def main():
         percent_change = growth_lookup.get(code, "")
         if not percent_change and code.endswith(".00"):
             percent_change = growth_lookup.get(code[:-3], "")
+
+        altpath = altpath_lookup.get(code, {})
         return {
             "Median Wage": scraped.get("median_wage", ""),
             "Projected Growth": scraped.get("projected_growth", ""),
@@ -478,6 +504,8 @@ def main():
             "Top Education Rate": top_rate,
             "Sample Job Titles": job_titles,
             "Job Description": desc,
+            "altpath url": altpath.get("altpath url", ""),
+            "altpath simple title": altpath.get("altpath simple title", ""),
         }
 
     with open(ENRICHMENT_ONLY_CSV, "w", newline="", encoding="utf-8") as f:
@@ -488,10 +516,11 @@ def main():
             enrichment["Code"] = row["Code"]
             writer.writerow(enrichment)
 
-    # 7. Write fully enriched CSV
+    # 8. Write fully enriched CSV
     enrichment_cols = ["Median Wage", "Projected Growth", "Employment Change, 2024-2034",
                        "Projected Job Openings", "Education", "Top Education Level",
-                       "Top Education Rate", "Sample Job Titles", "Job Description"]
+                       "Top Education Rate", "Sample Job Titles", "Job Description",
+                       "altpath url", "altpath simple title"]
     existing = list(rows[0].keys())
     fieldnames = existing + [c for c in enrichment_cols if c not in existing]
 

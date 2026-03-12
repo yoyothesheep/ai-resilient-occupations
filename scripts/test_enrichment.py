@@ -29,6 +29,7 @@ from enrich_onet import (
     load_occupation_data,
     load_sample_titles,
     load_employment_projections,
+    load_altpath_data,
     extract_top_education,
     _education_from_jobzone,
     INPUT_CSV,
@@ -60,7 +61,7 @@ TEST_CASES = [
 ]
 
 
-def run_case(code, url, label, expected_edu_source, db_education, db_descriptions, db_titles, growth_lookup):
+def run_case(code, url, label, expected_edu_source, db_education, db_descriptions, db_titles, growth_lookup, altpath_lookup):
     """Scrape and enrich a single occupation. Returns (result_dict, passed)."""
     print(f"{'='*80}")
     print(f"{code} — {label}")
@@ -107,9 +108,15 @@ def run_case(code, url, label, expected_edu_source, db_education, db_description
     if not percent_change and code.endswith(".00"):
         percent_change = growth_lookup.get(code[:-3], "")
 
+    altpath = altpath_lookup.get(code, {})
+    altpath_url = altpath.get("altpath url", "")
+    altpath_title = altpath.get("altpath simple title", "")
+
     print(f"  Description: {desc[:80] + '...' if len(desc) > 80 else desc or 'N/A'}")
     print(f"  Titles: {titles[:80] + '...' if len(titles) > 80 else titles or 'N/A'}")
     print(f"  % Change: {percent_change or 'N/A'}")
+    print(f"  Altpath URL: {altpath_url or 'N/A'}")
+    print(f"  Altpath Title: {altpath_title or 'N/A'}")
 
     passed = True
     if expected_edu_source:
@@ -129,6 +136,8 @@ def run_case(code, url, label, expected_edu_source, db_education, db_description
         "desc": desc,
         "titles": titles,
         "percent_change": percent_change,
+        "altpath_url": altpath_url,
+        "altpath_title": altpath_title,
     }, passed
 
 
@@ -144,10 +153,12 @@ def main():
     db_descriptions = load_occupation_data()
     db_titles = load_sample_titles()
     growth_lookup = load_employment_projections()
+    altpath_lookup = load_altpath_data()
     print(f"  Education: {len(db_education)} occupations")
     print(f"  Descriptions: {len(db_descriptions)} occupations")
     print(f"  Titles: {len(db_titles)} occupations")
-    print(f"  Growth projections: {len(growth_lookup)} occupations\n")
+    print(f"  Growth projections: {len(growth_lookup)} occupations")
+    print(f"  Altpath data: {len(altpath_lookup)} occupations\n")
 
     results = []
     all_passed = True
@@ -164,6 +175,7 @@ def main():
             expected_edu_source=None,
             db_education=db_education, db_descriptions=db_descriptions,
             db_titles=db_titles, growth_lookup=growth_lookup,
+            altpath_lookup=altpath_lookup,
         )
         if result:
             results.append(result)
@@ -180,6 +192,7 @@ def main():
             code, url, description, expected_edu_source,
             db_education=db_education, db_descriptions=db_descriptions,
             db_titles=db_titles, growth_lookup=growth_lookup,
+            altpath_lookup=altpath_lookup,
         )
         if result:
             results.append(result)
@@ -192,6 +205,7 @@ def main():
         "Employment Change, 2024-2034", "Projected Job Openings",
         "Education", "Top Education Level", "Top Education Rate",
         "Education Source", "Sample Job Titles", "Job Description",
+        "altpath url", "altpath simple title",
     ]
     with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -210,6 +224,8 @@ def main():
                 "Education Source": r["edu_source"],
                 "Sample Job Titles": r["titles"],
                 "Job Description": r["desc"],
+                "altpath url": r["altpath_url"],
+                "altpath simple title": r["altpath_title"],
             })
 
     print(f"{'='*80}")
