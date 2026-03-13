@@ -42,7 +42,7 @@ SCORE_COLUMNS = [
     "Median Wage", "Projected Growth", "Employment Change, 2024-2034", "Projected Job Openings",
     "Education", "Top Education Level", "Top Education Rate",
     "Sample Job Titles", "Job Description",
-    "ai_proof_score", "final_ranking", "key_drivers"
+    "internal_ai_proof_score", "final_ranking", "key_drivers"
 ]
 
 # ── Ranking configuration ────────────────────────────────────────────────────
@@ -99,7 +99,7 @@ Respond ONLY with a valid JSON array. Each element must include all 10 attribute
   "a8_changed_by_experience": <1-5>,
   "a9_expertise_underutilized": <1-5>,
   "a10_downstream_ai_mgmt": <1-5>,
-  "ai_proof_score": <1.0-5.0>,
+  "internal_ai_proof_score": <1.0-5.0>,
   "key_drivers": "2-3 sentences (reference which attributes drive the score)"
 }}"""
 
@@ -139,7 +139,7 @@ def write_scores_to_csv(results: list[dict], output_path: str, source_lookup: di
                 "Top Education Rate": src.get("Top Education Rate", ""),
                 "Sample Job Titles": src.get("Sample Job Titles", ""),
                 "Job Description": src.get("Job Description", ""),
-                "ai_proof_score": result.get("ai_proof_score", result.get("final_score", "")),
+                "internal_ai_proof_score": result.get("internal_ai_proof_score", result.get("final_score", "")),
                 "key_drivers": result.get("key_drivers", ""),
             })
 
@@ -240,7 +240,7 @@ def compute_rankings(csv_path: str):
         log_range = 1.0
 
     for i, row in enumerate(rows):
-        score_str = row.get("ai_proof_score", "")
+        score_str = row.get("internal_ai_proof_score", "")
         gtype, gval = growth_values[i]
         log_val = log_openings[i]
 
@@ -278,7 +278,7 @@ def compute_rankings(csv_path: str):
     ranked_count = sum(1 for r in rows if r.get("final_ranking", 0) > 0)
     log(f"\n📊 Ranked {ranked_count} occupations. Top 10:")
     for r in rows[:10]:
-        log(f"   {r['final_ranking']}  {r.get('ai_proof_score','?'):>4}  {r['Occupation']}")
+        log(f"   {r['final_ranking']}  {r.get('internal_ai_proof_score','?'):>4}  {r['Occupation']}")
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
@@ -327,7 +327,7 @@ def main():
             for result in results:
                 code = result.get('onet_code')
                 occ_name = source_lookup.get(code, {}).get('Occupation', code)
-                score = result.get('ai_proof_score', '?')
+                score = result.get('internal_ai_proof_score', '?')
                 log(f"\n   {occ_name} ({code})")
                 log(f"     Final Score: {score}")
                 log(f"     A1 Physical Presence: {result.get('a1_physical_presence', '?')}")
@@ -341,7 +341,7 @@ def main():
                 log(f"     A9 Expertise Underutilized: {result.get('a9_expertise_underutilized', '?')}")
                 log(f"     A10 Downstream/AI Mgmt: {result.get('a10_downstream_ai_mgmt', '?')}")
 
-            scores = [r.get('ai_proof_score', r.get('final_score')) for r in results]
+            scores = [r.get('internal_ai_proof_score', r.get('final_score')) for r in results]
             log(f"   ✓ Scored {len(results)}. Range: {min(scores):.1f}–{max(scores):.1f}")
 
         except json.JSONDecodeError as e:
@@ -375,7 +375,7 @@ def rerank():
     """
     Re-generate ai_resilience_scores.csv without calling the LLM.
 
-    Merges existing ai_proof_score + key_drivers from the current output CSV
+    Merges existing internal_ai_proof_score + key_drivers from the current output CSV
     with fresh enrichment data (Projected Growth, Sample Job Titles, etc.)
     from the enriched intermediate CSV, then recomputes final_ranking.
 
@@ -388,7 +388,7 @@ def rerank():
         log(f"✗ No existing scores found at {OUTPUT_CSV}")
         return False
 
-    # Load existing scores (ai_proof_score + key_drivers), keyed by Code
+    # Load existing scores (internal_ai_proof_score + key_drivers), keyed by Code
     with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
         existing = {r["Code"]: r for r in csv.DictReader(f)}
     log(f"  Loaded {len(existing)} existing scores")
@@ -397,18 +397,18 @@ def rerank():
     enrichment = load_occupations(ONET_CSV)
     log(f"  Loaded {len(enrichment)} enriched occupations")
 
-    # Merge: use enrichment for all fields, pull ai_proof_score + key_drivers from existing scores
+    # Merge: use enrichment for all fields, pull internal_ai_proof_score + key_drivers from existing scores
     merged = []
     missing = 0
     for occ in enrichment:
         code = occ["Code"]
         scored = existing.get(code)
-        if not scored or not scored.get("ai_proof_score"):
+        if not scored or not scored.get("internal_ai_proof_score"):
             missing += 1
             continue
         row = {col: "" for col in SCORE_COLUMNS}
         for col in SCORE_COLUMNS:
-            if col in ("ai_proof_score", "key_drivers", "final_ranking"):
+            if col in ("internal_ai_proof_score", "key_drivers", "final_ranking"):
                 row[col] = scored.get(col, "")
             else:
                 row[col] = occ.get(col, "")

@@ -9,6 +9,7 @@ venv/
 # Intermediate and verification data
 data/intermediate/
 data/verify/
+data/docs/
 
 # Test artifacts, logs
 data/output/score_log.txt

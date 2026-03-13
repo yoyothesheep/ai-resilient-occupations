@@ -114,7 +114,7 @@ python3 scripts/score_occupations.py
 This will:
 1. Load all occupations from `data/intermediate/All_Occupations_ONET_enriched.csv` (enriched dataset)
 2. Batch them (10 per batch by default)
-3. Score each batch via Claude API (scores all 10 attributes + calculates `ai_proof_score`)
+3. Score each batch via Claude API (scores all 10 attributes + calculates `internal_ai_proof_score`)
 4. Compute composite `final_ranking` from score + growth + openings
 5. Write results to `data/output/ai_resilience_scores.csv`, sorted by ranking
 
@@ -163,7 +163,7 @@ Use this to validate the pipeline before running the full dataset.
 ```
 Defensive Score = weighted average of A1–A8 (with attribute-specific weights)
 Offensive Score = average of A9–A10
-ai_proof_score  = (Defensive × 0.65) + (Offensive × 0.35)
+internal_ai_proof_score  = (Defensive × 0.65) + (Offensive × 0.35)
 ```
 
 **Special Rules:**
@@ -176,7 +176,7 @@ The `final_ranking` is a weighted composite that combines the AI-proof score wit
 
 | Input | Weight | Normalization |
 |-------|--------|---------------|
-| `ai_proof_score` | 50% | Linear scale: `(score - 1) / 4` |
+| `internal_ai_proof_score` | 50% | Linear scale: `(score - 1) / 4` |
 | Growth | 30% | See below |
 | `Projected Job Openings` | 20% | Log-transform + min-max scale |
 
@@ -194,7 +194,7 @@ The CSV output (`data/output/ai_resilience_scores.csv`) includes:
 - `Employment Change, 2024-2034` — numeric BLS percent change (e.g. `4.6`); empty if not in BLS data
 - `Projected Job Openings` — projected openings 2024–2034, scraped from O*NET
 - `Sample Job Titles` — real-world job titles for this occupation
-- `ai_proof_score` — 1.0–5.0 AI resilience rating
+- `internal_ai_proof_score` — 1.0–5.0 AI resilience rating
 - `final_ranking` — 0.0–1.0 composite ranking (higher = better)
 - `key_drivers` — 2–3 sentence explanation of the score
 
