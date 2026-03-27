@@ -10,31 +10,54 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 ```
 .
 ├── README.md                          # This file
+├── CLAUDE.md                          # Development instructions & pipeline reference
 ├── requirements.txt                   # Python dependencies
 ├── docs/
 │   ├── 10-attributes.md              # The 10 attributes that drive resilience
-│   └── scoring-framework.md          # Complete scoring rubric & calculation logic
+│   ├── scoring-framework.md          # Complete scoring rubric & calculation logic
+│   ├── career_page_spec.md           # Career page component specification
+│   ├── tone_guide_career_pages.md    # Tone guide for career page prose
+│   └── tone_guide_key_drivers.md     # Tone guide for key drivers text
 ├── data/
 │   ├── input/
-│   │   ├── All_Occupations_ONET.csv       # O*NET occupation data (raw, from external source)
-│   │   ├── Employment Projections.csv     # BLS 2024–2034 employment projections (from data.bls.gov)
-│   │   └── onet_db/                       # O*NET 23.1 Database files (Excel, from onetcenter.org)
-│   │       ├── Occupation Data.xlsx       # Job descriptions
-│   │       ├── Sample of Reported Titles.xlsx  # Sample job titles
-│   │       ├── Education Training and Experience.xlsx  # Education levels with %
-│   │       ├── ETE Categories.xlsx        # Category ID → education level name mapping
-│   │       └── Task Statements.xlsx       # 19,636 task statements mapped to occupation codes (used to map AEI tasks)
+│   │   ├── All_Occupations_ONET.csv       # O*NET occupation data (raw)
+│   │   ├── Employment Projections.csv     # BLS 2024-2034 employment projections
+│   │   ├── SimpleJobTitles_altPathurl_*.csv  # SOC → AltPath URL + simplified titles
+│   │   ├── anthropic/                     # Anthropic Economic Index data (not committed)
+│   │   └── onet_db/                       # O*NET 30.2 Database files (Excel)
+│   │       ├── Occupation Data.xlsx
+│   │       ├── Sample of Reported Titles.xlsx
+│   │       ├── Education Training and Experience.xlsx
+│   │       ├── ETE Categories.xlsx
+│   │       ├── Task Statements.xlsx       # 19,636 task statements mapped to occupation codes
+│   │       └── Task Ratings.xlsx          # Task importance/frequency ratings
+│   ├── intermediate/
+│   │   └── All_Occupations_ONET_enriched.csv  # Enriched input for scoring
 │   ├── output/
-│   │   └── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,000+ occupations)
-│   └── top_no_degree_careers/             # Curated subset: top AI-resilient careers requiring no bachelor's degree
-│       ├── ENRICHMENT_INSTRUCTIONS.md     # Schema & methodology for enrichment columns
-│       ├── ai_resilience_scores-associates-5.5.csv        # Base subset (≤ associate's, score ≥ 5.5)
-│       ├── ai_resilience_scores-associates-5.5-enriched.csv # Enriched with 10-year earnings, difficulty, pathways
-│       └── calc_e10.py                    # 10-year net earnings calculator
+│   │   ├── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,016)
+│   │   └── occupation_cards.jsonl         # Per-occupation career page data
+│   ├── career_clusters/                   # Adjacent roles & emerging roles data
+│   │   ├── clusters.csv                   # Career cluster definitions
+│   │   ├── cluster_branches.csv           # Cluster branch groupings
+│   │   ├── cluster_roles.csv              # Individual roles within clusters
+│   │   └── emerging_roles.csv             # AI-adjacent emerging career roles
+│   ├── tiers_and_next_steps/              # Tier assignments & career guidance
+│   └── top_no_degree_careers/             # Curated subset: top careers requiring no bachelor's
+│       ├── ENRICHMENT_INSTRUCTIONS.md
+│       ├── ai_resilience_scores-associates-5.5.csv
+│       └── ai_resilience_scores-associates-5.5-enriched.csv
 └── scripts/
-    ├── score_occupations.py          # Scores via Claude API + computes final ranking
+    ├── enrich_onet.py                # Step 1: Enrich O*NET data with wages, education, projections
+    ├── score_occupations.py          # Step 2: Score all occupations via Claude API
+    ├── build_task_table.py           # Build task-level table with AEI metrics
+    ├── generate_next_steps.py        # Generate tier assignments, next steps, career page data
+    ├── adjacent_roles.py             # Generate adjacent/lateral career moves per occupation
+    ├── generate_emerging_roles.py    # Generate emerging AI-adjacent roles
+    ├── download_onet.py              # Download & manage O*NET database versions
+    ├── download_economic_index.py    # Download Anthropic Economic Index from HuggingFace
+    ├── patch_task_data.py            # Patch task data in career page files
     ├── test_scoring.py               # Quick test with 3 occupations
-    └── enrich_onet.py                # Scrapes wage & projection data from O*NET
+    └── test_enrichment.py            # Test enrichment pipeline
 ```
 
 ## Quick Start
@@ -64,89 +87,67 @@ echo 'export ANTHROPIC_API_KEY="sk-ant-v1-..."' >> ~/.zshrc
 source ~/.zshrc
 ```
 
+### Full Pipeline
+
+```bash
+# Step 1: Enrich O*NET data
+python3 scripts/enrich_onet.py
+
+# Step 2: Score all occupations
+python3 scripts/score_occupations.py
+
+# Step 3: Build task table with AEI metrics
+python3 scripts/build_task_table.py
+
+# Step 4: Generate tiers, next steps, and career page data
+python3 scripts/generate_next_steps.py
+
+# Step 5: Generate adjacent roles & career clusters
+python3 scripts/adjacent_roles.py
+
+# Step 6: Generate emerging roles
+python3 scripts/generate_emerging_roles.py
+```
+
+**Output:** `data/output/occupation_cards.jsonl` is the bridge between this pipeline and the [site repo](https://github.com/your-org/ai-resilient-occupations-site). Each `.tsx` career page embeds data from the corresponding card.
+
 ### Input Data
 
 - **`data/input/All_Occupations_ONET.csv`** — downloaded from [O*NET Online — All Occupations](https://www.onetonline.org/find/all)
-- **`data/input/Employment Projections.csv`** — BLS 2024–2034 employment projections, downloaded from [data.bls.gov/projections/occupationProj](https://data.bls.gov/projections/occupationProj). Provides numeric employment percent change by SOC occupation code.
-- **`data/input/SimpleJobTitles_altPathurl_202602201636.csv`** — maps SOC codes to AltPath URLs and simplified job titles (`Soc Code`, `URL`, `Simple Title`)
-- **`data/input/onet_db/`** — O*NET 23.1 Database files (Excel), downloaded from [onetcenter.org/database.html](https://www.onetcenter.org/database.html). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-  - `Occupation Data.xlsx` — occupation codes, titles, and descriptions (1,110 rows)
-  - `Sample of Reported Titles.xlsx` — real-world job titles mapped to occupations (9,271 rows)
-  - `Education Training and Experience.xlsx` — education level requirements with survey percentages per occupation (39,693 rows)
-  - `ETE Categories.xlsx` — category-to-label mapping for education levels (e.g., Category 6 = "Bachelor's Degree")
-  - `Task Statements.xlsx` — 19,636 task statements with O*NET-SOC codes; used to map Anthropic Economic Index tasks to occupations
-- **`data/input/anthropic/`** — Anthropic Economic Index data (auto-downloaded from [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex), release 2026-01-15). **Not committed to git** (see `.gitignore`). To regenerate:
+- **`data/input/Employment Projections.csv`** — BLS 2024-2034 employment projections from [data.bls.gov](https://data.bls.gov/projections/occupationProj)
+- **`data/input/SimpleJobTitles_altPathurl_*.csv`** — maps SOC codes to AltPath URLs and simplified job titles
+- **`data/input/onet_db/`** — O*NET 30.2 Database files (Excel), from [onetcenter.org](https://www.onetcenter.org/database.html). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  - `Occupation Data.xlsx` — occupation codes, titles, and descriptions
+  - `Sample of Reported Titles.xlsx` — real-world job titles mapped to occupations
+  - `Education Training and Experience.xlsx` — education level requirements with survey percentages
+  - `ETE Categories.xlsx` — category-to-label mapping for education levels
+  - `Task Statements.xlsx` — task statements with O*NET-SOC codes; used to map AEI tasks to occupations
+  - `Task Ratings.xlsx` — task importance and frequency ratings
+- **`data/input/anthropic/`** — Anthropic Economic Index data (auto-downloaded from [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex), release 2026-01-15). **Not committed to git.** To download:
   ```bash
   python3 scripts/download_economic_index.py
   ```
   Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) (data) and [MIT](https://opensource.org/licenses/MIT) (code).
 
-### Enrich Input Data
+### Updating Source Data
 
-**Required before scoring.** Combines O*NET database files + BLS projections + scraped wage/openings data into a single enriched CSV:
-
+**O*NET Database:**
 ```bash
-python3 scripts/enrich_onet.py
+python3 scripts/download_onet.py --check     # Check for newer version
+python3 scripts/download_onet.py --version XX.Y  # Download & back up
+python3 scripts/download_onet.py --sync      # Sync occupation list
 ```
 
-Data sources per field:
-- **Education levels** — 1st priority: scraped from O*NET Online survey section (`#Education`); 2nd: `onet_db/Education Training and Experience.xlsx` + `ETE Categories.xlsx` (structured DB fallback)
-- **Job Description** — parsed from `onet_db/Occupation Data.xlsx` (structured, no scraping)
-- **Sample Job Titles** — parsed from `onet_db/Sample of Reported Titles.xlsx` (structured, no scraping)
-- **Median Wage** — scraped from O*NET Online pages (not in database)
-- **Projected Growth** — categorical label scraped from O*NET Online pages; numeric `Employment Change, 2024-2034` from BLS CSV
-- **Projected Job Openings** — scraped from O*NET Online pages (not in database)
-- **AltPath URL + Simple Title** — joined from `data/input/SimpleJobTitles_altPathurl_202602201636.csv` by SOC code
+**Anthropic Economic Index:** Check [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex) for new releases, download to `data/input/anthropic/`, update `AEI_FILE` in `scripts/build_task_table.py`, and rerun the pipeline.
 
-**Output files created in `data/intermediate/`:**
-- `All_Occupations_ONET_enriched.csv` — full dataset (all original columns + enrichment)
-  - `Median Wage` — e.g. "$39.27 hourly, $81,680 annual" (scraped from O*NET)
-  - `Projected Growth` — e.g. "Faster than average (5% to 6%)" (scraped from O*NET)
-  - `Employment Change, 2024-2034` — numeric percent change, e.g. `4.6` (from BLS Employment Projections CSV). Empty for occupations not listed separately in BLS data (e.g. specialty subcodes like `29-1141.03`).
-  - `Projected Job Openings` — e.g. "124,200" (scraped from O*NET)
-  - `Education` — top 2 required education levels with percentages from O*NET survey data
-  - `Top Education Level` — the level with highest reporting percentage
-  - `Top Education Rate` — the reporting percentage
-  - `Sample Job Titles` — real job titles for this occupation
-  - `Job Description` — short description of role
+**BLS Employment Projections:** Download from [BLS](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm), replace `data/input/Employment Projections.csv` keeping the same column names, and rerun enrichment + scoring.
 
-**Note:** Military occupations (55-xxxx codes) have no wage or projection data on O*NET.
+### Testing
 
-### Score & Rank All Occupations
-
-**Prerequisite:** Run enrichment step first (see above).
-
-```bash
-python3 scripts/score_occupations.py
-```
-
-This will:
-1. Load all occupations from `data/intermediate/All_Occupations_ONET_enriched.csv` (enriched dataset)
-2. Batch them (10 per batch by default)
-3. Score each batch via Claude API (scores all 10 attributes + calculates `role_resilience_score`)
-4. Compute composite `final_ranking` from score + growth + openings
-5. Write results to `data/output/ai_resilience_scores.csv`, sorted by ranking
-
-**If interrupted, just run again** — it resumes from where it left off.
-
-**Implementation Note:** This project uses the [Anthropic Claude API](https://www.anthropic.com/api) to parallelize scoring across occupation batches. Batching 10 occupations per API call reduces latency and improves throughput compared to single-occupation requests. Scoring ~1,000 occupations typically completes in 3–4 hours with built-in rate limiting (2s sleep between batches). The API also enables resumable processing — the script maintains a cache of scored occupations and skips them on subsequent runs.
-
-### Testing (Optional)
-
-**Prerequisite:** Run enrichment step first (see above).
-
-Test the scoring pipeline with 3 sample occupations using real Claude API:
+Test the scoring pipeline with 3 sample occupations:
 ```bash
 python3 scripts/test_scoring.py
 ```
-
-This runs a quick end-to-end test:
-1. Loads the first 3 occupations from the enriched dataset
-2. Scores them via Claude API with full 10-attribute evaluation
-3. Computes final rankings
-4. Outputs results to `data/output/test_scores.csv`
-
-Use this to validate the pipeline before running the full dataset.
 
 
 ## The Scoring Framework
@@ -167,19 +168,19 @@ Use this to validate the pipeline before running the full dataset.
 - **A9** — Expertise Underutilized Due to Administrative/Volume Constraints
 - **A10** — Downstream of Bottlenecks / Manages AI Systems
 
-### AI-Proof Score (1.0–5.0)
+### AI-Proof Score (1.0-5.0)
 
 ```
-Defensive Score = weighted average of A1–A8 (with attribute-specific weights)
-Offensive Score = average of A9–A10
-role_resilience_score  = (Defensive × 0.65) + (Offensive × 0.35)
+Defensive Score = weighted average of A1-A8 (with attribute-specific weights)
+Offensive Score = average of A9-A10
+role_resilience_score  = (Defensive x 0.65) + (Offensive x 0.35)
 ```
 
 **Special Rules:**
-- **Ceiling Rule:** If A1 + A3 + A4 all ≤ 2, cap score at 2.5
+- **Ceiling Rule:** If A1 + A3 + A4 all <= 2, cap score at 2.5
 - **Floor Rule:** If A9 or A10 scores 5, minimum score is 3.0
 
-### Final Ranking (0.0–1.0)
+### Final Ranking (0.0-1.0)
 
 The `final_ranking` is a weighted composite that combines the AI-proof score with labor market signals:
 
@@ -190,8 +191,8 @@ The `final_ranking` is a weighted composite that combines the AI-proof score wit
 | `Projected Job Openings` | 20% | Log-transform + min-max scale |
 
 **Growth normalization** uses the best available data per occupation:
-1. **`Employment Change, 2024-2034`** (preferred) — numeric percent change from BLS. Sign-preserving log transform (`sign(x) × log1p(|x|)`) applied to compress the wide variance (−36% to +50%), then min-max scaled to 0–1.
-2. **`Projected Growth`** (fallback) — scraped category string from O*NET, mapped ordinally: Decline=0, Little/none=0.2, Slower=0.4, Average=0.6, Faster=0.8, Much faster=1.0. Used for specialty occupations (e.g. `29-1141.03` Critical Care Nurses) not listed separately in BLS projections.
+1. **`Employment Change, 2024-2034`** (preferred) — numeric percent change from BLS. Sign-preserving log transform applied, then min-max scaled to 0-1.
+2. **`Projected Growth`** (fallback) — scraped category string from O*NET, mapped ordinally: Decline=0, Little/none=0.2, Slower=0.4, Average=0.6, Faster=0.8, Much faster=1.0.
 
 See `docs/scoring-framework.md` for complete rubrics and calculation details.
 
@@ -201,48 +202,33 @@ See `docs/scoring-framework.md` for complete rubrics and calculation details.
 
 | Column | Description |
 |--------|-------------|
-| `Job Zone` | O*NET Job Zone (1–5, reflects preparation level) |
+| `Job Zone` | O*NET Job Zone (1-5, reflects preparation level) |
 | `Code` | O*NET/SOC occupation code |
 | `Occupation` | Occupation title |
 | `Data-level` | Indicates if row is a broad or detailed O*NET occupation |
 | `url` | O*NET Online URL for the occupation |
 | `Median Wage` | Wage string scraped from O*NET (e.g. "$39.27 hourly, $81,680 annual") |
-| `Projected Growth` | Growth category scraped from O*NET (e.g. "Faster than average (5% to 6%)") |
-| `Employment Change, 2024-2034` | Numeric BLS percent change (e.g. `4.6`); empty for specialty subcodes |
-| `Projected Job Openings` | Projected openings 2024–2034, scraped from O*NET |
+| `Projected Growth` | Growth category scraped from O*NET |
+| `Employment Change, 2024-2034` | Numeric BLS percent change; empty for specialty subcodes |
+| `Projected Job Openings` | Projected openings 2024-2034 |
 | `Education` | Top 2 education levels with survey percentages |
 | `Top Education Level` | Education level with highest reporting percentage |
 | `Top Education Rate` | Reporting percentage for top education level |
 | `Sample Job Titles` | Real-world job titles for this occupation |
 | `Job Description` | Short description of the role |
-| `role_resilience_score` | 1.0–5.0 AI resilience score |
-| `final_ranking` | 0.0–1.0 composite ranking (higher = better) |
-| `key_drivers` | 2–3 sentence explanation of the score |
-| `altpath url` | AltPath.org career page URL for this occupation |
-| `altpath simple title` | Plain-language job title (e.g. "Transit Police" vs O*NET's formal title) |
+| `role_resilience_score` | 1.0-5.0 AI resilience score |
+| `final_ranking` | 0.0-1.0 composite ranking (higher = better) |
+| `key_drivers` | 2-3 sentence explanation of the score |
+| `altpath url` | AltPath.org career page URL |
+| `altpath simple title` | Plain-language job title |
+
+### Occupation Cards (`data/output/occupation_cards.jsonl`)
+
+One JSON object per line, per occupation. Contains all data needed to generate a career page: score, salary, growth, task-level AI data (automation/augmentation rates from Anthropic Economic Index), adjacent roles, emerging roles, how-to-adapt guidance, and sourced quotes.
 
 ### Top No-Degree Careers Subset (`data/top_no_degree_careers/`)
 
-Filtered to `role_resilience_score ≥ 5.5` and `Top Education Level ≤ associate's`. The enriched file adds:
-
-| Column | Description |
-|--------|-------------|
-| `Median Annual Wage ($)` | Parsed integer from `Median Wage` (e.g. `81680`) |
-| `Calculation Type` | `ladder` (step/promotion-based) or `linear` (gradual growth) |
-| `Training Years` | Duration of training before first full earning year |
-| `Training Salary ($)` | Wage paid during training (0 if unpaid) |
-| `Training Cost ($)` | Total out-of-pocket training cost |
-| `Yr1 ($)`–`Yr10 ($)` | Annual salary for each of the 10 modeled years |
-| `10-Year Net Earnings ($)` | `sum(Yr1..Yr10) - Training Cost` |
-| `10-Year Net Earnings Calculation` | Year-by-year formula showing how the total was derived |
-| `10-Year Net Earnings Calculation Model` | Narrative description of training path and earnings trajectory |
-| `Difficulty Score` | `High`, `Medium`, or `Low` entry difficulty |
-| `Difficulty Score Explanation` | What makes the career easy or hard to enter |
-| `How to Get There` | Step-by-step training pathway with costs |
-| `Job Market` | Projected growth, openings, supply/demand dynamics |
-| `Pension` | Retirement benefit details if applicable |
-
-See `data/top_no_degree_careers/ENRICHMENT_INSTRUCTIONS.md` for full schema and `calc_e10()` calculation logic.
+Filtered to `role_resilience_score >= 5.5` and `Top Education Level <= associate's`. The enriched file adds 10-year earnings projections, difficulty scores, training pathways, and job market analysis. See `data/top_no_degree_careers/ENRICHMENT_INSTRUCTIONS.md` for full schema.
 
 ## Configuration
 
@@ -257,7 +243,7 @@ Edit `scripts/score_occupations.py` to adjust:
 Framework synthesized from:
 - Andrew Ng on task automation & institutional knowledge
 - Yann LeCun on trust in human relationships
-- François Chollet on genuine reasoning vs. pattern matching
+- Francois Chollet on genuine reasoning vs. pattern matching
 - Jensen Huang on "HR for AI" roles
 - Satya Nadella on human-AI collaboration
 - Daron Acemoglu on task boundaries & automation risk
