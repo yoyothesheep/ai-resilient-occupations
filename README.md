@@ -22,7 +22,8 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 │   │       ├── Occupation Data.xlsx       # Job descriptions
 │   │       ├── Sample of Reported Titles.xlsx  # Sample job titles
 │   │       ├── Education Training and Experience.xlsx  # Education levels with %
-│   │       └── ETE Categories.xlsx        # Category ID → education level name mapping
+│   │       ├── ETE Categories.xlsx        # Category ID → education level name mapping
+│   │       └── Task Statements.xlsx       # 19,636 task statements mapped to occupation codes (used to map AEI tasks)
 │   ├── output/
 │   │   └── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,000+ occupations)
 │   └── top_no_degree_careers/             # Curated subset: top AI-resilient careers requiring no bachelor's degree
@@ -73,6 +74,12 @@ source ~/.zshrc
   - `Sample of Reported Titles.xlsx` — real-world job titles mapped to occupations (9,271 rows)
   - `Education Training and Experience.xlsx` — education level requirements with survey percentages per occupation (39,693 rows)
   - `ETE Categories.xlsx` — category-to-label mapping for education levels (e.g., Category 6 = "Bachelor's Degree")
+  - `Task Statements.xlsx` — 19,636 task statements with O*NET-SOC codes; used to map Anthropic Economic Index tasks to occupations
+- **`data/input/anthropic/`** — Anthropic Economic Index data (auto-downloaded from [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex), release 2026-01-15). **Not committed to git** (see `.gitignore`). To regenerate:
+  ```bash
+  python3 scripts/download_economic_index.py
+  ```
+  Licensed under [CC BY](https://creativecommons.org/licenses/by/4.0/) (data) and [MIT](https://opensource.org/licenses/MIT) (code).
 
 ### Enrich Input Data
 

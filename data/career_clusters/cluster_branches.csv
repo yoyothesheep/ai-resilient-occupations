@@ -1,0 +1,37 @@
+from_onet_code,to_onet_code,transition_type,is_primary_path,is_cross_family,min_years_experience_before_transition,training_cost_usd,training_duration_years,can_work_during_training,notes
+31-1131.00,29-1141.00,progression,true,false,0,25000,2,true,CNA → RN via ADN. Most common path. Can work as CNA during school.
+31-1131.00,29-2061.00,progression,false,false,0,15000,1,true,CNA → LPN. Optional intermediate. 1-year diploma program.
+29-2061.00,29-1141.00,progression,true,false,1,20000,1.5,true,LPN → RN via bridge program. 1yr experience typical before bridge.
+29-1141.00,29-1141.01,specialization,false,false,0,2000,0.25,true,RN → Acute Care. On-the-job orientation + PCCN cert. Minimal cost.
+29-1141.00,29-1141.03,specialization,false,false,0,2000,0.25,true,RN → Critical Care. On-the-job orientation + CCRN cert. Minimal cost.
+29-1141.00,29-1171.00,progression,true,false,1,45000,2,true,RN → NP. Master's (MSN). Most programs allow part-time while working.
+29-1141.00,29-1161.00,progression,true,false,1,45000,2,true,RN → Nurse Midwife. Master's (MSN). Similar cost and duration to NP.
+29-1141.00,29-1141.04,progression,true,false,1,45000,2,true,RN → CNS. Master's (MSN). Similar cost and duration to NP.
+29-1141.00,29-1141.02,progression,true,false,1,45000,2,true,RN → Psych NP. Master's (MSN). Mental health specialty track.
+29-1141.00,29-1151.00,progression,false,false,2,80000,3,false,RN → CRNA. Doctoral (DNAP). Requires 2yr general RN exp. Full-time program — cannot work clinically.
+29-1141.03,29-1151.00,progression,true,false,1,80000,3,false,Critical Care RN → CRNA. 1yr ICU exp satisfies prereq. Full-time doctoral program.
+29-1171.00,25-1072.00,lateral,true,false,3,20000,2,true,NP → Nursing Instructor. Most common teaching entry. Master's already held; may need education coursework.
+29-1141.04,25-1072.00,lateral,false,false,3,20000,2,true,CNS → Nursing Instructor. Less common but valid. Similar additional education requirements.
+29-1141.00,25-1072.00,lateral,false,false,3,35000,2,true,RN → Nursing Instructor. Needs Master's if not already held. Rare without advanced practice credential.
+33-3051.00,33-3021.02,specialization,false,false,0,500,0.25,true,Patrol → Records/ID Officer. On-the-job training + forensic coursework. Lower pay ceiling.
+33-3051.00,33-3021.00,progression,true,false,3,2000,0.5,true,Patrol → Detective. Internal promotion. Written exam + interview. No degree required typically.
+33-3051.00,33-1012.00,progression,true,false,5,2000,0.5,true,Patrol → Supervisor. Internal promotion via sergeant exam. Parallel track to detective.
+33-3021.00,33-1012.00,progression,false,false,3,2000,0.25,true,Detective → Supervisor. Less common path; most supervisors come from patrol.
+33-3051.00,33-3052.00,lateral,false,true,2,3000,0.5,true,Patrol → Transit Police. Cross-family lateral. Skills transfer but different agency and academy.
+33-3051.00,33-9021.00,lateral,false,false,5,1000,0.25,true,Patrol → Private Investigator. Career exit. PI license required (~40hr course). Low cost but lower pay.
+33-3021.00,33-9021.00,lateral,true,false,5,1000,0.25,true,Detective → Private Investigator. Most common PI entry. Investigation skills transfer directly.
+33-3051.00,21-1092.00,lateral,false,true,0,30000,4,true,Patrol → Probation Officer. Cross-family lateral. Requires bachelor's if not already held. Different agency — courts/corrections system.
+53-2022.00,53-2021.00,progression,true,false,1,15000,2,false,Airfield Ops → ATC. FAA Academy application. Ground ops experience valued. Competitive — max hire age 31.
+53-2022.00,53-6051.01,progression,false,false,2,5000,0.5,true,Airfield Ops → Aviation Inspector. FAA Safety Inspector designation. Inspection/compliance skills carry over directly.
+53-2021.00,53-6051.01,lateral,false,false,5,3000,0.5,true,ATC → Aviation Inspector. Natural post-retirement path — mandatory ATC retirement at 56 has no equivalent in inspection. Operational expertise in ATC procedures is directly applicable to ATC facility inspection. Pay step-down (~$144k → ~$85k).
+53-6032.00,53-2022.00,progression,true,false,1,5000,0.5,true,Ramp Agent → Airfield Ops. On-the-job airfield experience + associate's degree (or FAA coursework). Most Airfield Ops specialists start in ground-side aviation roles.
+15-1251.00,15-1254.00,progression,true,false,0,2000,0.5,true,Computer Programmer → Web Developer. Build a web-focused portfolio and specialize in frontend/backend frameworks. Most devs land here within their first 1-2 years.
+15-1254.00,15-1255.00,specialization,false,false,0,1500,0.25,true,Web Developer → Web/Interface Designer. Learn Figma and UX research methods. Some developers pick this up on the job; others do a short design bootcamp.
+15-1254.00,15-1299.01,specialization,false,false,1,2000,0.5,true,Web Developer → Web Administrator. Deepen server/cloud skills — Linux administration, deployment pipelines, access management. AWS/GCP certificates help.
+15-1254.00,15-1253.00,specialization,false,false,0,1000,0.25,true,Web Developer → SQA Analyst. Learn automated testing frameworks (Playwright, Cypress, Jest) and CI/CD tooling. Often a natural extension of existing dev work.
+15-1254.00,15-1252.00,progression,true,false,1,3000,1,true,Web Developer → Software Developer. Canonical path. Broaden beyond web to backend systems, APIs, and general engineering. Open source contributions and system design practice are the main steps.
+15-1252.00,15-1299.08,progression,true,false,3,5000,1,true,Software Developer → Systems Engineer/Architect. Deep systems design, cloud architecture, distributed systems. AWS Solutions Architect or GCP Professional Cloud Architect certification is standard.
+15-1252.00,15-1299.09,lateral,true,false,3,3000,0.5,true,Software Developer → IT Project Manager. Transition from IC to people management. PMP or PMI-ACP certification common. Many take this path after 5+ years as senior engineers.
+15-1252.00,15-2051.00,lateral,true,false,2,5000,1,true,Software Developer → Data Scientist. Requires learning statistical modeling, machine learning, and data pipeline tooling (Python, pandas, scikit-learn). Many take Coursera ML Specialization or a master's in data science.
+15-1252.00,15-1212.00,lateral,true,false,2,4000,1,true,Software Developer → Information Security Analyst. Requires security-specific retraining. CompTIA Security+ is the entry cert; CEH or OSCP for more offensive work. Developer background is a significant advantage.
+15-2051.00,15-1221.00,progression,false,false,3,60000,5,false,Data Scientist → CS Research Scientist. Doctoral program (PhD in CS, Statistics, or ML). Full-time. Leads to industry research labs (Google, Meta, OpenAI) or academic faculty.

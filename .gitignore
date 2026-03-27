@@ -10,6 +10,10 @@ venv/
 data/intermediate/
 data/verify/
 data/docs/
+data/temp/
+
+# Large input data files (auto-downloaded from source)
+data/input/anthropic/
 
 # Test artifacts, logs
 data/output/score_log.txt

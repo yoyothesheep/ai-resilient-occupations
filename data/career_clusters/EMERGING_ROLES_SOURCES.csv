@@ -1,0 +1,52 @@
+cluster,source_name,source_url,source_type,tier,last_checked,hit_rate_3m,status,notes
+AI Engineering & Alignment,Anthropic careers page,https://careers.anthropic.com,company_careers,primary,,high,active,Direct signal for frontier AI roles
+AI Engineering & Alignment,Declarative AI,https://declarativeai.io,job_board,primary,,high,active,Applied AI focus; emerging role signals
+AI Engineering & Alignment,HuggingFace Jobs,https://huggingface.co/jobs,job_board,primary,,high,active,Open-source AI infra and roles
+AI Engineering & Alignment,Scale AI careers,https://scale.com/careers,company_careers,primary,,high,active,Data and AI training; career signals
+AI Engineering & Alignment,ARC (Alignment Research Center),https://apollo.alignment-research-center.org,job_board,primary,,medium,active,AI safety adjacent
+AI Engineering & Alignment,80000hours Job Board,https://80000hours.org/job-board,job_board,secondary,,medium,active,EA + safety roles
+AI Engineering & Alignment,LinkedIn - AI Safety + Alignment,https://linkedin.com/search/results/jobs/?keywords=AI%20Safety%20OR%20Alignment&datePosted=past30d,search,secondary,,medium,active,Real-time signal; needs regular refresh
+Applied AI / Enterprise AI,Y Combinator Job Board,https://www.ycombinator.com/jobs,job_board,primary,,high,active,Fast-growing startups; rapid role evolution
+Applied AI / Enterprise AI,Sequoia Companies,https://sequoia.com/companies,directory,secondary,,medium,active,Indirect signal; check portfolio career pages
+Applied AI / Enterprise AI,a16z Companies,https://a16z.com/companies,directory,secondary,,medium,active,Indirect signal; check portfolio career pages
+Applied AI / Enterprise AI,AngelList Jobs,https://angel.co/jobs,job_board,primary,,high,active,Early-stage venture roles
+Applied AI / Enterprise AI,PalantirTechnologies careers,https://palantir.com/careers,company_careers,primary,,high,active,Enterprise AI deployment patterns
+Applied AI / Enterprise AI,Databricks careers,https://databricks.com/careers,company_careers,primary,,high,active,Data + AI infra roles
+Applied AI / Enterprise AI,LinkedIn - Prompt Engineer + AI PM,https://linkedin.com/search/results/jobs/?keywords=Prompt%20Engineer%20OR%20AI%20Product%20Manager&datePosted=past60d,search,primary,,high,active,Core emerging roles
+Applied AI / Enterprise AI,GitHub Jobs,https://github.com/jobs,job_board,secondary,,medium,active,Tech-forward companies
+AI Infrastructure & Infra-adjacent,Modal careers,https://modal.com/careers,company_careers,primary,,high,active,Serverless AI infrastructure
+AI Infrastructure & Infra-adjacent,Replicate careers,https://replicate.com/careers,company_careers,primary,,high,active,Model deployment patterns
+AI Infrastructure & Infra-adjacent,Lambda Labs careers,https://lambdalabs.com/careers,company_careers,primary,,medium,active,GPU infra; emerging roles
+AI Infrastructure & Infra-adjacent,Weights & Biases careers,https://wandb.ai/careers,company_careers,primary,,high,active,ML infra and monitoring
+AI Infrastructure & Infra-adjacent,LinkedIn - MLOps + LLM Deployment,https://linkedin.com/search/results/jobs/?keywords=MLOps%20OR%20Model%20Deployment%20OR%20LLM%20Infrastructure&datePosted=past60d,search,primary,,high,active,Infrastructure evolution signal
+AI Infrastructure & Infra-adjacent,Reddit - r/MachineLearning,https://reddit.com/r/MachineLearning/,community,tertiary,,low,active,Job postings and trend discussion
+Design & UX for AI,Figma careers,https://figma.com/careers,company_careers,primary,,high,active,Design infra + AI patterns
+Design & UX for AI,Framer careers,https://framer.com/careers,company_careers,primary,,medium,active,AI design tools and patterns
+Design & UX for AI,Midjourney (careers/community),https://midjourney.com,company_careers,secondary,,medium,active,AI product design signals
+Design & UX for AI,Runway (careers),https://runway.com/careers,company_careers,secondary,,medium,active,Creative AI tools; design roles
+Design & UX for AI,LinkedIn - AI Designer + Interaction,https://linkedin.com/search/results/jobs/?keywords=AI%20Product%20Designer%20OR%20Interaction%20Designer%20AND%20AI&datePosted=past60d,search,primary,,medium,active,Emerging design specialization
+Design & UX for AI,Dive Club,https://www.dive.club/,job_board,primary,,high,active,Specialized design x AI roles board; high-signal emerging roles
+Data Annotation & Labeling,Scale AI Job Board,https://scale.com/careers,company_careers,primary,,high,active,Professionalization of data work
+Data Annotation & Labeling,Outlier AI,https://outlier.ai,job_board,secondary,,medium,active,Training data specialists
+Data Annotation & Labeling,Remotasks,https://remotasks.com,job_board,secondary,,low,active,Freelance to full-time data work
+Data Annotation & Labeling,Figure Eight,https://figure-eight.com,job_board,secondary,,low,active,Legacy annotation platform
+Data Annotation & Labeling,LinkedIn - Training Data + Annotation,https://linkedin.com/search/results/jobs/?keywords=Training%20Data%20OR%20Data%20Annotation%20OR%20Data%20Quality%20AND%20AI&datePosted=past60d,search,primary,,medium,active,Professional tier roles
+Data Annotation & Labeling,Kaggle Discussions,https://kaggle.com/discussions,community,tertiary,,low,active,Emerging data work patterns
+AI Engineering & Alignment,TrueUp,https://trueup.io/,job_board,primary,,high,active,Technical AI roles; growing startup hiring signal
+Applied AI / Enterprise AI,TrueUp,https://trueup.io/,job_board,primary,,high,active,Technical AI roles; growing startup hiring signal
+Product Management & AI,Y Combinator Job Board,https://www.ycombinator.com/jobs,job_board,primary,,high,active,Product-focused AI roles in startups
+Product Management & AI,AngelList Jobs,https://angel.co/jobs,job_board,primary,,high,active,Early-stage product + AI roles
+Product Management & AI,LinkedIn - AI Product Manager + Chief Product,https://linkedin.com/search/results/jobs/?keywords=AI%20Product%20Manager%20OR%20Chief%20Product%20Officer%20AND%20AI&datePosted=past60d,search,primary,,high,active,Product leadership in AI era
+Product Management & AI,Sequoia Companies,https://sequoia.com/companies,directory,secondary,,medium,active,Portfolio product roles
+Design & AI (Expanded),Dive Club,https://www.dive.club/,job_board,primary,,high,active,Specialized design x AI roles; strongest source for design cluster
+Design & AI (Expanded),LinkedIn - Design Engineer + AI,https://linkedin.com/search/results/jobs/?keywords=Design%20Engineer%20OR%20Product%20Designer%20AND%20AI&datePosted=past60d,search,primary,,high,active,Design specialization in AI products
+Design & AI (Expanded),Dribbble Jobs,https://dribbble.com/jobs,job_board,secondary,,medium,active,Design talent community; emerging AI design roles
+Design & AI (Expanded),ADPList (design mentorship),https://adplist.org,community,tertiary,,low,active,Design community discussions on AI tools
+Marketing & AI Growth,Y Combinator Job Board,https://www.ycombinator.com/jobs,job_board,primary,,high,active,Growth and marketing roles in AI startups
+Marketing & AI Growth,LinkedIn - Growth Marketing + AI OR Demand Gen + AI,https://linkedin.com/search/results/jobs/?keywords=Growth%20Marketing%20OR%20Demand%20Generation%20AND%20AI&datePosted=past60d,search,primary,,medium,active,AI-driven marketing roles
+Marketing & AI Growth,Product Hunt,https://producthunt.com,community,secondary,,medium,active,AI product launches; emerging marketing needs
+Marketing & AI Growth,Indie Hackers,https://indiehackers.com,community,tertiary,,low,active,Solo founders and growth discussions
+Law & Compliance / AI,LinkedIn - AI Policy OR AI Compliance OR Regulatory,https://linkedin.com/search/results/jobs/?keywords=AI%20Policy%20OR%20AI%20Compliance%20OR%20Regulatory&datePosted=past60d,search,primary,,medium,active,Emerging legal/compliance roles in AI era
+Law & Compliance / AI,LexisNexis+ careers,https://lexisnexis.com/careers,company_careers,secondary,,low,active,Legal tech adjacent
+Law & Compliance / AI,Palantir careers,https://palantir.com/careers,company_careers,secondary,,medium,active,Enterprise AI + legal/compliance signals
+Law & Compliance / AI,AI Policy Organizations,https://openphilanthropy.org,organization,tertiary,,low,active,Policy-focused AI work; scan job boards

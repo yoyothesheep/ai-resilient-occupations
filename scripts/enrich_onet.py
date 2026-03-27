@@ -198,14 +198,24 @@ class OnetPageParser(HTMLParser):
         self._in_education_list = False
         self._education_items = []
 
+        self.description = None  # first substantial <p> text on the page
+        self._found_description = False
+
         self.median_wage = None
         self.projected_growth = None
         self.projected_job_openings = None
         self.education_top_2 = None
         self.jobzone_education_text = None  # prose fallback from Job Zone table
 
+        # Track <p> tags for description extraction
+        self._in_p = False
+        self._p_buf = []
+
     def handle_starttag(self, tag, attrs):
-        if tag == "dt":
+        if tag == "p" and not self._found_description:
+            self._in_p = True
+            self._p_buf = []
+        elif tag == "dt":
             self._in_dt = True
             self._text_buf = []
         elif tag == "dd" and self._current_field:
@@ -216,7 +226,16 @@ class OnetPageParser(HTMLParser):
             self._text_buf = []
 
     def handle_endtag(self, tag):
-        if tag == "dt":
+        if tag == "p" and self._in_p:
+            self._in_p = False
+            p_text = re.sub(r"\s+", " ", "".join(self._p_buf).strip())
+            # Accept first substantial <p> as the occupation description,
+            # but reject the O*NET placeholder text.
+            if (len(p_text) > 50
+                    and "A subset of this occupation" not in p_text):
+                self.description = p_text
+                self._found_description = True
+        elif tag == "dt":
             self._in_dt = False
             dt_text = "".join(self._text_buf).strip()
             if "Median wages" in dt_text:
@@ -248,6 +267,8 @@ class OnetPageParser(HTMLParser):
                 self._education_items.append(li_text)
 
     def handle_data(self, data):
+        if self._in_p:
+            self._p_buf.append(data)
         if self._in_dt or self._capture:
             self._text_buf.append(data)
         elif self._in_education_list:
@@ -324,6 +345,7 @@ def fetch_onet_page(url: str) -> dict:
         "projected_job_openings": parser.projected_job_openings or "",
         "education_top_2": parser.education_top_2 or "",
         "jobzone_education_text": parser.jobzone_education_text or "",
+        "description": parser.description or "",
     }
 
 
@@ -408,10 +430,17 @@ def main():
                        and scrape_cache[r["Code"]].get("median_wage"))
     print(f"\nTotal occupations: {total}, cached: {cached_count}")
 
-    # 6. Scrape O*NET pages for occupations not yet cached
-    to_scrape = [r for r in rows
-                 if r["Code"] not in scrape_cache
-                 or not scrape_cache[r["Code"]].get("median_wage")]
+    # 6. Scrape O*NET pages for occupations not yet cached,
+    #    or cached but missing description when the DB file also lacks one.
+    def _needs_scrape(code):
+        if code not in scrape_cache or not scrape_cache[code].get("median_wage"):
+            return True
+        # Re-scrape if we have no description from any source
+        if code not in descriptions and not scrape_cache[code].get("description"):
+            return True
+        return False
+
+    to_scrape = [r for r in rows if _needs_scrape(r["Code"])]
     if to_scrape:
         print(f"Scraping {len(to_scrape)} occupations...")
         for i, row in enumerate(to_scrape):
@@ -457,10 +486,21 @@ def main():
             fallback_count = sum(1 for c in any_missing if c in old_cache_data)
             print(f"  Using old scrape cache as fallback for {fallback_count} of them.")
 
+    def _is_placeholder_desc(text: str) -> bool:
+        return "A subset of this occupation" in text
+
     def build_enrichment(code):
         scraped = scrape_cache.get(code, {})
         desc = descriptions.get(code, "")
         job_titles = titles.get(code, "")
+
+        # Description fallback chain:
+        #   1) O*NET DB file (Occupation Data.xlsx)
+        #   2) Scraped from O*NET website (during this run)
+        #   3) Old scrape cache (onet_enrichment_cache.json)
+        # Always reject the O*NET placeholder text at any stage.
+        if not desc or _is_placeholder_desc(desc):
+            desc = scraped.get("description", "")
 
         # Education priority:
         #   1) Scraped survey <li> items (percentages from respondents)
@@ -484,8 +524,10 @@ def main():
         # Fallback per field: if missing from DB, use old scrape cache
         if code in old_cache_data:
             old = old_cache_data[code]
-            if not desc:
-                desc = old.get("job_description", "")
+            if not desc or _is_placeholder_desc(desc):
+                fallback_desc = old.get("job_description", "")
+                if not _is_placeholder_desc(fallback_desc):
+                    desc = fallback_desc
             if not job_titles:
                 job_titles = old.get("sample_job_titles", "")
 
