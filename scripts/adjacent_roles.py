@@ -37,7 +37,6 @@ TASK_TABLE       = "data/intermediate/onet_economic_index_task_table.csv"
 CLUSTER_ROLES    = "data/career_clusters/cluster_roles.csv"
 CLUSTER_BRANCHES = "data/career_clusters/cluster_branches.csv"
 OUTPUT_JSONL     = "data/output/occupation_cards.jsonl"
-EMERGING_ROLES   = "data/career_clusters/emerging_roles.csv"
 
 MAX_RELATED      = 6    # max related careers to show per occupation
 JACCARD_THRESHOLD = 0.15 # minimum Jaccard score to count a task pair as overlapping

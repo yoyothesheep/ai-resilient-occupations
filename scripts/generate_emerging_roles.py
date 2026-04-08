@@ -26,7 +26,7 @@ Claude generates title/description/tools/stat/fit/steps for each role.
 Job search URLs are populated separately (by a human or Claude Code using web search).
 
 Results are written to:
-  data/career_clusters/emerging_roles.csv  — one row per (onet_code, emerging_title)
+  data/emerging_roles/emerging_roles.csv  — one row per (onet_code, emerging_title)
   data/output/occupation_cards.jsonl       — emergingCareers field updated in-place
 
 Usage:
@@ -48,7 +48,7 @@ import urllib.error
 
 # ── Config ────────────────────────────────────────────────────────────────────
 SCORES_CSV        = "data/output/ai_resilience_scores.csv"
-EMERGING_CSV      = "data/career_clusters/emerging_roles.csv"
+EMERGING_CSV      = "data/emerging_roles/emerging_roles.csv"
 CLUSTER_ROLES_CSV = "data/career_clusters/cluster_roles.csv"
 OUTPUT_JSONL      = "data/output/occupation_cards.jsonl"
 

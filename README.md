@@ -10,7 +10,8 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 ```
 .
 ├── README.md                          # This file
-├── CLAUDE.md                          # Development instructions & pipeline reference
+├── CLAUDE.md                          # Development instructions for Claude Code
+├── docs/pipeline.md                   # Full pipeline reference (stages, schemas, AEI detail)
 ├── requirements.txt                   # Python dependencies
 ├── docs/
 │   ├── 10-attributes.md              # The 10 attributes that drive resilience
@@ -32,32 +33,37 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 │   │       ├── Task Statements.xlsx       # 19,636 task statements mapped to occupation codes
 │   │       └── Task Ratings.xlsx          # Task importance/frequency ratings
 │   ├── intermediate/
-│   │   └── All_Occupations_ONET_enriched.csv  # Enriched input for scoring
+│   │   ├── All_Occupations_ONET_enriched.csv        # Enriched input for scoring
+│   │   ├── onet_economic_index_task_table.csv        # 18,796 task rows + AEI metrics
+│   │   └── onet_economic_index_metrics.csv           # 923 occupation-level AEI rollups
 │   ├── output/
 │   │   ├── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,016)
-│   │   └── occupation_cards.jsonl         # Per-occupation career page data
-│   ├── career_clusters/                   # Adjacent roles & emerging roles data
+│   │   └── occupation_cards.jsonl         # Per-occupation career page data (bridge to site)
+│   ├── career_clusters/                   # Career ladder topology
 │   │   ├── clusters.csv                   # Career cluster definitions
-│   │   ├── cluster_branches.csv           # Cluster branch groupings
-│   │   ├── cluster_roles.csv              # Individual roles within clusters
-│   │   └── emerging_roles.csv             # AI-adjacent emerging career roles
-│   ├── tiers_and_next_steps/              # Tier assignments & career guidance
+│   │   ├── cluster_branches.csv           # From→to career transitions
+│   │   └── cluster_roles.csv              # Occupation → cluster membership + level
+│   ├── emerging_roles/                    # Emerging AI-era roles & job title aliases
+│   │   ├── emerging_roles.csv             # AI-adjacent pivot roles per occupation
+│   │   └── emerging_job_titles.csv        # Real-world title aliases for O*NET codes
+│   ├── tiers_and_next_steps/              # Tier system definitions
 │   └── top_no_degree_careers/             # Curated subset: top careers requiring no bachelor's
 │       ├── ENRICHMENT_INSTRUCTIONS.md
 │       ├── ai_resilience_scores-associates-5.5.csv
 │       └── ai_resilience_scores-associates-5.5-enriched.csv
 └── scripts/
-    ├── enrich_onet.py                # Step 1: Enrich O*NET data with wages, education, projections
-    ├── score_occupations.py          # Step 2: Score all occupations via Claude API
-    ├── build_task_table.py           # Build task-level table with AEI metrics
-    ├── generate_next_steps.py        # Generate tier assignments, next steps, career page data
-    ├── adjacent_roles.py             # Generate adjacent/lateral career moves per occupation
-    ├── generate_emerging_roles.py    # Generate emerging AI-adjacent roles
-    ├── download_onet.py              # Download & manage O*NET database versions
-    ├── download_economic_index.py    # Download Anthropic Economic Index from HuggingFace
-    ├── patch_task_data.py            # Patch task data in career page files
-    ├── test_scoring.py               # Quick test with 3 occupations
-    └── test_enrichment.py            # Test enrichment pipeline
+    ├── enrich_onet.py                # Track A Stage 1: Enrich O*NET data
+    ├── score_occupations.py          # Track A Stage 2: Score all occupations via Claude API
+    ├── build_task_table.py           # Track A Stage 3: Task table + AEI metrics
+    ├── generate_emerging_roles.py    # Track B Stage 5: Generate emerging AI-adjacent roles
+    ├── generate_emerging_job_titles.py  # Track B Stage 5: Merge job title aliases into scores CSV
+    ├── generate_next_steps.py        # Track B Stage 6a: Generate occupation cards
+    ├── adjacent_roles.py             # Track B Stage 6b: Add careerCluster to cards
+    ├── download_onet.py              # Utility: Download & manage O*NET database versions
+    ├── download_economic_index.py    # Utility: Download Anthropic Economic Index from HuggingFace
+    ├── patch_task_data.py            # Utility: Patch task data in career page .tsx files
+    ├── test_scoring.py               # Test: Quick test with 3 occupations
+    └── test_enrichment.py            # Test: Enrichment pipeline validation
 ```
 
 ## Quick Start
@@ -89,27 +95,25 @@ source ~/.zshrc
 
 ### Full Pipeline
 
+The pipeline has two tracks. See `docs/pipeline.md` for full detail.
+
+**Track A — Baseline (run on data updates):**
 ```bash
-# Step 1: Enrich O*NET data
-python3 scripts/enrich_onet.py
-
-# Step 2: Score all occupations
-python3 scripts/score_occupations.py
-
-# Step 3: Build task table with AEI metrics
-python3 scripts/build_task_table.py
-
-# Step 4: Generate tiers, next steps, and career page data
-python3 scripts/generate_next_steps.py
-
-# Step 5: Generate adjacent roles & career clusters
-python3 scripts/adjacent_roles.py
-
-# Step 6: Generate emerging roles
-python3 scripts/generate_emerging_roles.py
+python3 scripts/enrich_onet.py        # Stage 1: enrich
+python3 scripts/score_occupations.py  # Stage 2: score
+python3 scripts/build_task_table.py   # Stage 3: AEI task table
 ```
 
-**Output:** `data/output/occupation_cards.jsonl` is the bridge between this pipeline and the [site repo](https://github.com/your-org/ai-resilient-occupations-site). Each `.tsx` career page embeds data from the corresponding card.
+**Track B — Career page enrichment (per-cluster, on demand):**
+```bash
+# Use .claude/skills/career-clusters skill to populate cluster files, then:
+python3 scripts/generate_emerging_roles.py --cluster <id>
+python3 scripts/generate_emerging_job_titles.py
+python3 scripts/generate_next_steps.py --cluster <id>
+python3 scripts/adjacent_roles.py --cluster <id>
+```
+
+**Output:** `data/output/occupation_cards.jsonl` is the bridge to the site repo. Each `.tsx` career page embeds data from the corresponding card.
 
 ### Input Data
 
@@ -221,6 +225,7 @@ See `docs/scoring-framework.md` for complete rubrics and calculation details.
 | `key_drivers` | 2-3 sentence explanation of the score |
 | `altpath url` | AltPath.org career page URL |
 | `altpath simple title` | Plain-language job title |
+| `Emerging Job Titles` | Semicolon-separated real-world title aliases (e.g. "Social Media Manager; Content Strategist") |
 
 ### Occupation Cards (`data/output/occupation_cards.jsonl`)
 

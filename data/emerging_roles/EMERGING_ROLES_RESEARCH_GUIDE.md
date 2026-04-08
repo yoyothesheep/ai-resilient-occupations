@@ -183,6 +183,45 @@ Each cluster has a dedicated set of sources optimized for surfacing new roles. U
 
 ---
 
+---
+
+## Type 2: O*NET Alias Job Titles
+
+These are **real, high-volume job titles that map to existing O*NET codes** but don't appear in O*NET's "Sample Job Titles" list. They're not new roles — they've existed for years — but they're missing from our career pages and score data.
+
+**Why track them:**
+- High search volume (e.g. "Social Media Manager" >> "Marketing Specialists")
+- Career pages should use the real-world title, not the O*NET bureaucratic title
+- Adding them to `ai_resilience_scores.csv` as "Emerging Job Titles" enables the site to surface these pages in relevant searches
+
+**Data file:** `data/emerging_roles/emerging_job_titles.csv`
+
+Schema:
+```
+onet_code,job_title,notes
+```
+
+- `onet_code` — the closest O*NET code (used to inherit score, salary, growth data)
+- `job_title` — the real-world title as it appears in job postings
+- `notes` — why it maps here; what's different from the O*NET title
+
+**How to find Type 2 titles:**
+
+1. **Job board scan:** Search LinkedIn/Indeed for a broad occupation (e.g. "Marketing") filtered to past 30 days. Note titles that appear 50+ times but aren't in O*NET sample titles.
+2. **Google Trends:** Compare O*NET title vs. common variant (e.g. "Marketing Specialist" vs "Content Marketer") — if the variant has higher search volume, it's a candidate.
+3. **"People also search for" on Google Jobs:** Start with an O*NET title, note all the related title suggestions.
+4. **Validation:** Check if the title appears in O*NET's `Sample Job Titles` field for that code. If not, and it has >500 LinkedIn postings in past 3 months, add it.
+
+**Clusters with high alias density (prioritize these):**
+- Marketing & Sales (13-1161.xx) — Social Media Manager, Content Strategist, SEO Specialist, Growth Marketer
+- Design & UX (15-1255.xx, 27-1024.xx) — UX Researcher, Product Designer, Motion Designer
+- Writing & Content (27-3043.xx) — Copywriter, Content Writer, Technical Content Strategist
+- Software (15-1252.xx, 15-1254.xx) — many modern titles not in O*NET
+
+**Integration:** Run `python3 scripts/generate_emerging_job_titles.py` to push titles into the `Emerging Job Titles` column of `data/output/ai_resilience_scores.csv`.
+
+---
+
 ## Research Workflow
 
 ### Weekly Discovery Phase (Rotating Clusters)

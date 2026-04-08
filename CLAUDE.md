@@ -13,57 +13,43 @@ ai-resilient-occupations-site/   ← Next.js site (../ai-resilient-occupations-s
 
 ### Full Pipeline (data → site)
 
-```
-enrich_onet.py
-  → data/intermediate/All_Occupations_ONET_enriched.csv
+**Full reference: `docs/pipeline.md`**
 
-score_occupations.py
-  → data/output/ai_resilience_scores.csv          (all 1,016 occupations scored)
+Two tracks:
 
-generate_next_steps.py
-  → data/tiers_and_next_steps/
-
-adjacent_roles.py
-  → data/career_clusters/
-
-generate_emerging_roles.py
-  → data/career_clusters/emerging_roles.csv
-  → data/output/occupation_cards.jsonl            (per-occupation career page data)
-
-  ↓ manual step: copy/adapt into site
-../ai-resilient-occupations-site/src/data/careers/<slug>.tsx   (one file per career page)
+**Track A — Baseline (run on O*NET/BLS/AEI updates):**
+```bash
+source venv/bin/activate
+python3 scripts/enrich_onet.py        # Stage 1: enrich
+python3 scripts/score_occupations.py  # Stage 2: score
+python3 scripts/build_task_table.py   # Stage 3: AEI task table (can run after Stage 1)
+python3 scripts/test_scoring.py       # Quick test with 3 occupations
 ```
 
-**Occupation cards** (`data/output/occupation_cards.jsonl`) are the bridge between pipeline and site. Each `.tsx` career page in the site embeds data from the corresponding card. When regenerating emerging roles or adjacent roles, update both the JSONL and the corresponding `.tsx` file.
+**Track B — Career page enrichment (per-cluster, on demand):**
+```bash
+# Use .claude/skills/career-clusters skill to populate cluster files first, then:
+python3 scripts/generate_emerging_roles.py --cluster <id>
+python3 scripts/generate_emerging_job_titles.py
+python3 scripts/generate_next_steps.py --cluster <id>
+python3 scripts/adjacent_roles.py --cluster <id>
+```
+
+Requires `ANTHROPIC_API_KEY` env var.
+
+**Occupation cards** (`data/output/occupation_cards.jsonl`) are the bridge between pipeline and site. Each `.tsx` career page in the site embeds data from the corresponding card.
 
 ## Key Files
 
 - `data/input/` — raw O*NET + BLS source files
 - `data/intermediate/All_Occupations_ONET_enriched.csv` — enriched input for scoring
 - `data/output/ai_resilience_scores.csv` — final scored dataset (all occupations)
+- `data/output/occupation_cards.jsonl` — per-occupation career page data
+- `data/emerging_roles/emerging_roles.csv` — AI-era career pivot roles (single source of truth)
+- `data/career_clusters/` — career ladder topology (clusters, roles, branches)
 - `data/top_no_degree_careers/` — curated subset: top careers requiring ≤ associate's degree
-- `scripts/score_occupations.py` — Claude API scoring pipeline
-- `scripts/enrich_onet.py` — enriches O*NET data (currently being refactored)
 - `docs/scoring-framework.md` — full scoring methodology and rubrics
-
-## Pipeline
-
-```
-enrich_onet.py → [data/intermediate/] → score_occupations.py → data/output/ai_resilience_scores.csv
-```
-
-**Note: `enrich_onet.py` is currently under active refactoring — do not assume it's stable.**
-
-### Commands
-
-```bash
-source venv/bin/activate
-python3 scripts/enrich_onet.py        # Step 1: enrich (refactoring in progress)
-python3 scripts/score_occupations.py  # Step 2: score all occupations
-python3 scripts/test_scoring.py       # Quick test with 3 occupations
-```
-
-Requires `ANTHROPIC_API_KEY` env var.
+- `docs/pipeline.md` — full pipeline reference
 
 ## Scoring Summary
 
@@ -76,110 +62,20 @@ See `docs/scoring-framework.md` for full rubric.
 
 ## Updating Source Data
 
-### Anthropic Economic Index
-
-**File:** `data/input/anthropic/aei_raw_claude_ai_*.csv`
-**Source:** [Hugging Face — Anthropic/EconomicIndex](https://huggingface.co/datasets/Anthropic/EconomicIndex)
-
-When a new release is available:
-1. Download the new CSV from Hugging Face and place it in `data/input/anthropic/`
-2. Update the filename reference in `scripts/build_task_table.py` (look for `AEI_FILE`)
-3. Rerun the task table build: `python3 scripts/build_task_table.py`
-4. Rerun enrichment and scoring: `python3 scripts/enrich_onet.py && python3 scripts/score_occupations.py`
-5. Update the date/version note in `data/input/anthropic/README_ECONOMIC_INDEX.md`
-
-The current file covers **2025-11-13 to 2025-11-20** (release 2026-01-15). New releases are periodic — check Hugging Face for updates.
-
-### BLS Employment Projections
-
-**File:** `data/input/Employment Projections.csv`
-**Source:** [BLS Occupational Outlook — Employment Projections](https://www.bls.gov/emp/tables/occupational-projections-and-characteristics.htm)
-
-BLS publishes a new 10-year projection cycle every two years (next: 2025–2035, expected late 2025 or 2026). When updated:
-1. Download the Excel table from BLS and export to CSV
-2. Replace `data/input/Employment Projections.csv` — **keep the same column names** (the pipeline depends on: `Occupation Code`, `Employment Change, 2024-2034`, `Occupational Openings, 2024-2034 Annual Average`, `Median Annual Wage 2024`, `Typical Entry-Level Education`)
-3. Update column name references in `scripts/enrich_onet.py` if BLS renamed any columns (check the header row)
-4. Rerun the full pipeline
-
-### O*NET Database
-
-**Files:** `data/input/onet_db/*.xlsx` (Task Statements, Task Ratings, Occupation Data, Education Training and Experience, Sample of Reported Titles)
-**Current version in use:** O*NET 30.2 (February 2026)
-**Source:** [O*NET Resource Center — Database](https://www.onetcenter.org/database.html) · [Release history](https://www.onetcenter.org/db_releases.html)
-**Download script:** `python3 scripts/download_onet.py --version 30.2` (backs up existing files automatically)
-
-O*NET releases ~4 times a year (Feb, May, Aug, Nov). When updated:
-1. Run `python3 scripts/download_onet.py --check` to see if a newer version is available
-2. Run `python3 scripts/download_onet.py --version XX.Y` to download and back up
-3. Run `python3 scripts/download_onet.py --sync` to update `All_Occupations_ONET.csv` with new/removed codes
-   - New codes are added with their Job Zone; they'll be enriched and scored in subsequent steps
-   - Removed codes are kept so their scores aren't lost; enrichment falls back to the scrape cache
-4. Rerun enrichment (scrapes new codes, updates cache): `python3 scripts/enrich_onet.py`
-5. Score new codes and rerank all: `python3 scripts/score_occupations.py`
-   - Already-scored codes are skipped; only new codes get API calls
-   - `--rerank` flag merges existing scores with fresh enrichment data (no API calls)
-
-## Active Work
-
-See `ECONOMIC_INDEX_INTEGRATION_PLAN.md` for the current multi-phase project integrating Anthropic Economic Index task-level data into scoring and career page generation.
+See `docs/pipeline.md` — "Source Data Updates" section for full instructions on updating O*NET, BLS, and AEI data.
 
 ## Career Page Data Format
 
-A career page requires **two files**:
+Career pages live in `../ai-resilient-occupations-site`. Use the `aeo-content-writer` skill in that repo to generate them.
 
-1. **Data file:** `../ai-resilient-occupations-site/src/data/careers/<slug>.tsx` — exports the `CareerData` object
-2. **Route file:** `../ai-resilient-occupations-site/app/career/<slug>/page.tsx` — registers the Next.js route
+**Full spec** (CareerData fields, source conventions, meta title/description templates, risks/opportunities rules, two-file requirement) is in `../ai-resilient-occupations-site/.claude/skills/aeo-content-writer/SKILL.md`.
 
-Without the route file the page 404s. Template for the route file:
-```tsx
-import CareerDetailPage from "@/components/CareerDetailPage";
-import { myOccupationData } from "@/data/careers/my-occupation";
-
-export default function MyOccupationPage() {
-  return <CareerDetailPage data={myOccupationData} />;
-}
-```
-
-When generating or updating `.tsx` career data files in `../ai-resilient-occupations-site/src/data/careers/`, follow these conventions exactly. The layout component (`CareerDetailPage.tsx`) drives all rendering — the data file only supplies content.
-
-### CareerData fields
-
-- `title`, `score` (0–100), `salary`, `openings`, `growth` — header stats
-- `description` — one concise sentence shown in the page header. Not a paragraph.
-- `jobTitles[]` — 3–6 example titles, shown as rectangular chips
-- `keyDrivers: ReactNode` — 2–4 sentences explaining why the role got this score. No em dashes.
-- `risks: { stat, statLabel, statColor, body: ReactNode }` — `stat` is a short number or %, `statLabel` is a brief phrase (5–8 words max) that sits inline beside the number on one line. Keep it short.
-- `opportunities: { stat, statLabel, statColor, body: ReactNode }` — same structure
-- `howToAdapt: { alreadyIn: ReactNode, thinkingOf: ReactNode }`
-- `taskData: TaskRow[]` — include all tasks; nulls are fine and filtered by the layout
-- `careerCluster?: CareerClusterNode[]` — `score` is 1.0–5.0 scale
-- `sources: Source[]` — see source conventions below
-
-### Source conventions
-
-`Source` fields: `id` (e.g. `"src-1"`), `name` (publisher), `title` (article title), `date` (e.g. `"Dec 2025"`), `url`.
-
-- Use `id` as the anchor target for inline footnotes: `<sup><a href="#src-1">[1]</a></sup>`
-- Career map `CareerClusterNode.stat` also needs `sourceName`, `sourceTitle`, `sourceDate` — the layout merges these into the unified numbered sources list automatically
-- **Verify every URL resolves before generating the file.** Dead links must be replaced, not left in.
-- Never use em dashes (`—`) anywhere — use a hyphen (`-`) or rewrite the sentence
-
-### Page title & meta description
-
-Each career page must have a custom `usePageMeta` title and description.
-
-**Title template:** `[Job Title] Career Guide: AI Risk, Salary & Next Steps`
-
-**Meta description template:** `[Job Title] scores [score]/100 on AI resilience — [tier label] territory. See which tasks AI already automates, how salaries are holding, and which adjacent roles offer better protection.`
-
-Tier labels: Strong (65+), Solid (50–64), Shifting (35–49), Exposed (20–34), Risky (0–19). Use lowercase in the description.
-
-### Style rules
-
-- No em dashes anywhere in data files
-- Prose fields (`body`, `keyDrivers`, `fit`, `steps`) use plain sentences — no marketing language
-- `steps[]` are concrete and actionable (specific course names, tools, certifications — not "learn Python")
-- `stat` + `statLabel` in risks/opportunities must come from a cited source in `sources[]`
+**Before generating a career page**, run Track B pipeline for the occupation first:
+1. Check cluster exists: `grep "<CODE>" data/career_clusters/cluster_roles.csv` — if missing, use `career-clusters` skill
+2. Run `generate_next_steps.py --code <CODE>` to populate `occupation_cards.jsonl`
+3. Run `adjacent_roles.py --code <CODE>` to add `careerCluster`
+4. Run `generate_emerging_roles.py --code <CODE>` to add `emergingCareers`
+5. Switch to site repo → run `aeo-content-writer` skill → run `publish-checklist` skill
 
 ---
 
