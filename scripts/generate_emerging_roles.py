@@ -52,7 +52,7 @@ EMERGING_CSV      = "data/emerging_roles/emerging_roles.csv"
 CLUSTER_ROLES_CSV = "data/career_clusters/cluster_roles.csv"
 OUTPUT_JSONL      = "data/output/occupation_cards.jsonl"
 
-MODEL      = "claude-sonnet-4-6"
+MODEL      = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 2048
 
 EMERGING_CSV_FIELDS = [
@@ -152,7 +152,37 @@ def save_jsonl(cards: dict):
 def parse_json(text: str):
     text = re.sub(r"```json\s*", "", text)
     text = re.sub(r"```\s*", "", text)
-    return json.loads(text.strip())
+    text = text.strip()
+
+    # Extract the first valid JSON object/array (handles extra text after JSON)
+    depth = 0
+    in_string = False
+    escape = False
+    start_idx = -1
+
+    for i, char in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if char == '\\':
+            escape = True
+            continue
+        if char == '"' and not escape:
+            in_string = not in_string
+        if in_string:
+            continue
+
+        if char in '[{':
+            if depth == 0:
+                start_idx = i
+            depth += 1
+        elif char in ']}':
+            depth -= 1
+            if depth == 0 and start_idx != -1:
+                return json.loads(text[start_idx:i+1])
+
+    # Fallback: try parsing the whole string
+    return json.loads(text)
 
 
 _SOFT_404_PHRASES = [

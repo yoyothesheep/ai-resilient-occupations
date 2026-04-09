@@ -1,0 +1,506 @@
+#!/usr/bin/env python3
+"""
+Generate career page TSX files from occupation_cards.jsonl.
+
+For each occupation, writes two files to the site repo:
+  src/data/careers/<slug>.tsx   — CareerData export
+  app/career/<slug>/page.tsx    — Next.js route
+
+Usage:
+    python3 scripts/generate_career_pages.py --code 41-2031.00
+    python3 scripts/generate_career_pages.py --cluster sales
+    python3 scripts/generate_career_pages.py --all
+    python3 scripts/generate_career_pages.py --code 41-2031.00 --force
+"""
+
+import argparse
+import csv
+import json
+import os
+import re
+import sys
+
+# ── Config ────────────────────────────────────────────────────────────────────
+CARDS_JSONL       = "data/output/occupation_cards.jsonl"
+CLUSTER_ROLES_CSV = "data/career_clusters/cluster_roles.csv"
+SCORES_CSV        = "data/output/ai_resilience_scores.csv"
+SITE_DIR          = "../ai-resilient-occupations-site"
+CAREERS_DATA_DIR  = os.path.join(SITE_DIR, "src/data/careers")
+CAREERS_ROUTE_DIR = os.path.join(SITE_DIR, "app/career")
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def load_cards() -> dict:
+    cards = {}
+    with open(CARDS_JSONL, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line:
+                try:
+                    c = json.loads(line)
+                    cards[c["onet_code"]] = c
+                except (json.JSONDecodeError, KeyError):
+                    pass
+    return cards
+
+
+def load_cluster_roles() -> dict:
+    """Returns onet_code → {cluster_id, level, occupation, ...}"""
+    roles = {}
+    if not os.path.exists(CLUSTER_ROLES_CSV):
+        return roles
+    with open(CLUSTER_ROLES_CSV, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            roles[r["onet_code"]] = r
+    return roles
+
+
+def load_scores() -> dict:
+    scores = {}
+    with open(SCORES_CSV, newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            scores[r["Code"]] = r
+    return scores
+
+
+def get_cluster_members(cluster_id: str, cluster_roles: dict) -> list[dict]:
+    """Return all cluster members sorted by level."""
+    members = [r for r in cluster_roles.values() if r["cluster_id"] == cluster_id]
+    members.sort(key=lambda r: int(r.get("level", 99)))
+    return members
+
+
+def title_to_slug(title: str) -> str:
+    slug = title.lower()
+    slug = re.sub(r"[^a-z0-9\s-]", "", slug)
+    slug = re.sub(r"\s+", "-", slug.strip())
+    slug = re.sub(r"-+", "-", slug)
+    return slug
+
+
+def code_to_slug(onet_code: str, title: str, scores: dict) -> str:
+    """Use altpath simple title if available, else fall back to full occupation title."""
+    simple = scores.get(onet_code, {}).get("altpath simple title", "").strip()
+    return title_to_slug(simple if simple else title)
+
+
+def slug_to_var(slug: str) -> str:
+    """Convert slug to camelCase variable name."""
+    parts = slug.split("-")
+    return parts[0] + "".join(p.capitalize() for p in parts[1:]) + "Data"
+
+
+def slug_to_component(slug: str) -> str:
+    """Convert slug to PascalCase component name."""
+    return "".join(p.capitalize() for p in slug.split("-")) + "Page"
+
+
+def citations_to_jsx(text: str) -> str:
+    """Convert [1] inline citations to JSX anchor tags."""
+    def replace(m):
+        n = m.group(1)
+        return (
+            f'<sup><a href="#src-{n}" '
+            f'className="text-primary font-bold hover:underline">[{n}]</a></sup>'
+        )
+    return re.sub(r"\[(\d+)\]", replace, text)
+
+
+def text_to_jsx_fragment(text: str, indent: int = 2) -> str:
+    """Convert plain text (with [n] citations) to a JSX fragment string."""
+    text = text.replace("&", "&amp;").replace('"', "&quot;")
+    text = citations_to_jsx(text)
+    pad = "  " * indent
+    return f"(\n{pad}  <>\n{pad}    {text}\n{pad}  </>\n{pad})"
+
+
+def escape_tsx(s: str) -> str:
+    """Escape a string for use inside TSX JSX."""
+    return s.replace("\\", "\\\\").replace("`", "\\`").replace("${", "\\${")
+
+
+def str_to_tsx_string(s: str) -> str:
+    """Wrap a string in double quotes, escaping as needed."""
+    escaped = s.replace("\\", "\\\\").replace('"', '\\"')
+    return f'"{escaped}"'
+
+
+def nullable_string(s) -> str:
+    if s is None or s == "":
+        return "null"
+    return str_to_tsx_string(str(s))
+
+
+def build_task_row(task: dict) -> str:
+    task_label = escape_tsx(task.get("task", ""))
+    full = escape_tsx(task.get("full", task.get("task", "")))
+    auto = task.get("auto")
+    aug = task.get("aug")
+    success = task.get("success")
+    n = task.get("n")
+
+    auto_s = str(auto) if auto is not None else "null"
+    aug_s = str(aug) if aug is not None else "null"
+    success_s = str(success) if success is not None else "null"
+    n_s = str(int(n)) if n is not None else "null"
+
+    return (
+        f'    {{ task: "{task_label}", full: "{full}", '
+        f'auto: {auto_s}, aug: {aug_s}, success: {success_s}, n: {n_s} }}'
+    )
+
+
+def build_cluster_node(node: dict, is_current: bool = False, is_emerging: bool = False) -> str:
+    """Render a CareerClusterNode as TSX object literal."""
+    lines = []
+
+    level = node.get("level")
+    if level is not None:
+        lines.append(f"      level: {int(level)},")
+
+    code = node.get("code")
+    if code and not is_emerging:
+        lines.append(f"      code: {str_to_tsx_string(code)},")
+
+    lines.append(f"      title: {str_to_tsx_string(node.get('title', ''))},")
+    lines.append(f"      isCurrent: {'true' if is_current else 'false'},")
+
+    if is_emerging:
+        lines.append("      isEmerging: true,")
+
+    score = node.get("score")
+    if score is not None:
+        lines.append(f"      score: {score},")
+
+    relationship = node.get("relationship")
+    if relationship:
+        lines.append(f"      relationship: {str_to_tsx_string(relationship)},")
+
+    openings = node.get("openings")
+    if openings:
+        lines.append(f"      openings: {str_to_tsx_string(str(openings))},")
+
+    growth = node.get("growth")
+    if growth:
+        lines.append(f"      growth: {str_to_tsx_string(str(growth))},")
+
+    fit = node.get("fit")
+    if fit:
+        lines.append(f"      fit: {str_to_tsx_string(fit)},")
+
+    steps = node.get("steps", [])
+    if steps:
+        steps_str = ", ".join(str_to_tsx_string(s) for s in steps)
+        lines.append(f"      steps: [{steps_str}],")
+
+    # Emerging-only fields
+    description = node.get("description")
+    if description:
+        lines.append(f"      description: {str_to_tsx_string(description)},")
+
+    core_tools = node.get("core_tools")
+    if core_tools:
+        lines.append(f"      core_tools: {str_to_tsx_string(str(core_tools))},")
+
+    stat = node.get("stat")
+    if stat and isinstance(stat, dict) and stat.get("text"):
+        lines.append("      stat: {")
+        lines.append(f"        text: {str_to_tsx_string(stat.get('text', ''))},")
+        lines.append(f"        sourceName: {str_to_tsx_string(stat.get('sourceName', ''))},")
+        if stat.get("sourceTitle"):
+            lines.append(f"        sourceTitle: {str_to_tsx_string(stat.get('sourceTitle', ''))},")
+        if stat.get("sourceDate"):
+            lines.append(f"        sourceDate: {str_to_tsx_string(stat.get('sourceDate', ''))},")
+        lines.append(f"        sourceUrl: {str_to_tsx_string(stat.get('sourceUrl', ''))},")
+        lines.append("      },")
+
+    job_search_url = node.get("job_search_url")
+    if job_search_url:
+        lines.append(f"      job_search_url: {str_to_tsx_string(job_search_url)},")
+
+    return "    {\n" + "\n".join(lines) + "\n    }"
+
+
+def build_career_cluster(card: dict, cluster_roles: dict, scores: dict) -> str:
+    """Build the careerCluster array combining ladder + adjacent + emerging nodes."""
+    onet_code = card["onet_code"]
+    cluster_row = cluster_roles.get(onet_code)
+
+    nodes = []
+    seen_codes = set()
+
+    # 1. Cluster ladder nodes (all members, current marked)
+    if cluster_row:
+        cluster_id = cluster_row["cluster_id"]
+        members = get_cluster_members(cluster_id, cluster_roles)
+        for m in members:
+            m_code = m["onet_code"]
+            m_score = scores.get(m_code, {}).get("role_resilience_score")
+            m_simple = scores.get(m_code, {}).get("altpath simple title", "").strip()
+            node = {
+                "level": int(m["level"]),
+                "code": m_code,
+                "title": m_simple if m_simple else m["occupation"],
+                "score": float(m_score) if m_score else None,
+            }
+            nodes.append(build_cluster_node(node, is_current=(m_code == onet_code)))
+            seen_codes.add(m_code)
+
+    # 2. Adjacent roles with fit/steps (skip bare ladder nodes and already-added codes)
+    for adj in card.get("careerCluster", []):
+        if not adj.get("fit"):
+            continue
+        adj_code = adj.get("code", "")
+        if adj_code and adj_code in seen_codes:
+            continue  # already in ladder, skip duplicate
+        # Resolve level from cluster_roles if null
+        adj_level = adj.get("level")
+        if adj_level is None and adj_code in cluster_roles:
+            adj_level = int(cluster_roles[adj_code]["level"])
+        adj_score = scores.get(adj_code, {}).get("role_resilience_score")
+        node = dict(adj)
+        node["level"] = adj_level
+        node["score"] = float(adj_score) if adj_score else None
+        nodes.append(build_cluster_node(node, is_current=False, is_emerging=False))
+
+    # 3. Emerging careers
+    for ec in card.get("emergingCareers", []):
+        exp = ec.get("experience_level", "2")
+        try:
+            level = int(exp)
+        except (ValueError, TypeError):
+            level = 2
+        node = dict(ec)
+        node["level"] = level
+        nodes.append(build_cluster_node(node, is_current=False, is_emerging=True))
+
+    return "[\n" + ",\n".join(nodes) + "\n  ]"
+
+
+def build_quote(q: dict) -> str:
+    persona = q.get("persona", "alreadyIn")
+    quote = q.get("quote", "")
+    attribution = q.get("attribution", "")
+    source_id = q.get("sourceId", "src-1")
+    return (
+        f"      {{\n"
+        f"        persona: {str_to_tsx_string(persona)} as const,\n"
+        f"        quote: {str_to_tsx_string(quote)},\n"
+        f"        attribution: {str_to_tsx_string(attribution)},\n"
+        f"        sourceId: {str_to_tsx_string(source_id)},\n"
+        f"      }}"
+    )
+
+
+def build_source(s: dict) -> str:
+    return (
+        f"    {{\n"
+        f"      id: {str_to_tsx_string(s.get('id', ''))},\n"
+        f"      name: {str_to_tsx_string(s.get('name', ''))},\n"
+        f"      title: {str_to_tsx_string(s.get('title', ''))},\n"
+        f"      date: {str_to_tsx_string(s.get('date', ''))},\n"
+        f"      url: {str_to_tsx_string(s.get('url', ''))},\n"
+        f"    }}"
+    )
+
+
+def generate_data_file(card: dict, cluster_roles: dict, scores: dict, var_name: str, title: str = "") -> str:
+    """Generate the full src/data/careers/<slug>.tsx content."""
+    onet_code = card.get("onet_code", "")
+    if not title:
+        title = card.get("title", "")
+    score = card.get("score", 0)
+    salary = card.get("salary", "")
+    openings = card.get("openings", "")
+    growth = card.get("growth", "")
+    description = card.get("description") or scores.get(onet_code, {}).get("Job Description", "")
+    job_titles = card.get("jobTitles", [])
+    key_drivers = card.get("keyDrivers", "")
+    task_intro = card.get("taskIntro", "")
+
+    risks = card.get("risks", {})
+    risks_body = risks.get("body", "")
+    risks_stat = nullable_string(risks.get("stat"))
+    risks_stat_label = nullable_string(risks.get("statLabel"))
+
+    opps = card.get("opportunities", {})
+    opps_body = opps.get("body", "")
+    opps_stat = nullable_string(opps.get("stat"))
+    opps_stat_label = nullable_string(opps.get("statLabel"))
+
+    how = card.get("howToAdapt", {})
+    already_in = how.get("alreadyIn", "")
+    thinking_of = how.get("thinkingOf", "")
+    quotes = how.get("quotes", [])
+
+    task_rows = card.get("taskData", [])
+    sources = card.get("sources", [])
+
+    # Build job titles list
+    titles_str = "\n".join(f"    {str_to_tsx_string(t)}," for t in job_titles)
+
+    # Build task data
+    tasks_str = ",\n".join(build_task_row(t) for t in task_rows)
+
+    # Build quotes
+    quotes_str = ",\n".join(build_quote(q) for q in quotes)
+
+    # Build sources
+    sources_str = ",\n".join(build_source(s) for s in sources)
+
+    # Build career cluster
+    career_cluster_str = build_career_cluster(card, cluster_roles, scores)
+
+    lines = [
+        'import type { CareerData } from "@/lib/careerUtils";',
+        "",
+        f"export const {var_name}: CareerData = {{",
+        f"  title: {str_to_tsx_string(title)},",
+        f"  score: {score},",
+        f"  salary: {str_to_tsx_string(salary)},",
+        f"  openings: {str_to_tsx_string(openings)},",
+        f"  growth: {str_to_tsx_string(growth)},",
+        f"  description:",
+        f"    {str_to_tsx_string(description)},",
+        f"  jobTitles: [",
+        titles_str,
+        f"  ],",
+        f"  keyDrivers: {text_to_jsx_fragment(key_drivers, indent=1)},",
+    ]
+
+    if task_intro:
+        lines.append(f"  taskIntro: {str_to_tsx_string(task_intro)},")
+
+    lines += [
+        f"  risks: {{",
+        f"    stat: {risks_stat},",
+        f"    statLabel: {risks_stat_label},",
+        f'    statColor: "#ea580c",',
+        f"    body: {text_to_jsx_fragment(risks_body, indent=2)},",
+        f"  }},",
+        f"  opportunities: {{",
+        f"    stat: {opps_stat},",
+        f"    statLabel: {opps_stat_label},",
+        f'    statColor: "#5a9a6e",',
+        f"    body: {text_to_jsx_fragment(opps_body, indent=2)},",
+        f"  }},",
+        f"  howToAdapt: {{",
+        f"    alreadyIn: {text_to_jsx_fragment(already_in, indent=2)},",
+        f"    thinkingOf: {text_to_jsx_fragment(thinking_of, indent=2)},",
+    ]
+
+    if quotes:
+        lines += [
+            f"    quotes: [",
+            quotes_str,
+            f"    ],",
+        ]
+
+    lines += [
+        f"  }},",
+        f"  taskData: [",
+        tasks_str,
+        f"  ],",
+        f"  careerCluster: {career_cluster_str},",
+        f"  sources: [",
+        sources_str,
+        f"  ],",
+        f"}};",
+        "",
+    ]
+
+    return "\n".join(lines)
+
+
+def generate_route_file(slug: str, var_name: str, component_name: str) -> str:
+    return (
+        f'import CareerDetailPage from "@/components/CareerDetailPage";\n'
+        f'import {{ {var_name} }} from "@/data/careers/{slug}";\n'
+        f"\n"
+        f"export default function {component_name}() {{\n"
+        f"  return <CareerDetailPage data={{{var_name}}} />;\n"
+        f"}}\n"
+    )
+
+
+def process_occupation(onet_code: str, cards: dict, cluster_roles: dict,
+                       scores: dict, force: bool = False) -> bool:
+    card = cards.get(onet_code)
+    if not card:
+        print(f"  ✗ {onet_code} not found in occupation_cards.jsonl")
+        return False
+
+    onet_title = card.get("title", onet_code)
+    simple = scores.get(onet_code, {}).get("altpath simple title", "").strip()
+    title = simple if simple else onet_title
+    slug = title_to_slug(title)
+    var_name = slug_to_var(slug)
+    component_name = slug_to_component(slug)
+
+    data_path = os.path.join(CAREERS_DATA_DIR, f"{slug}.tsx")
+    route_dir = os.path.join(CAREERS_ROUTE_DIR, slug)
+    route_path = os.path.join(route_dir, "page.tsx")
+
+    if not force and os.path.exists(data_path):
+        print(f"  ✓ Already exists: {slug} (use --force to overwrite)")
+        return True
+
+    print(f"\n── {title} ({onet_code})")
+    print(f"   slug: {slug}")
+
+    data_content = generate_data_file(card, cluster_roles, scores, var_name, title=title)
+    route_content = generate_route_file(slug, var_name, component_name)
+
+    os.makedirs(CAREERS_DATA_DIR, exist_ok=True)
+    os.makedirs(route_dir, exist_ok=True)
+
+    with open(data_path, "w", encoding="utf-8") as f:
+        f.write(data_content)
+
+    with open(route_path, "w", encoding="utf-8") as f:
+        f.write(route_content)
+
+    print(f"   ✓ {data_path}")
+    print(f"   ✓ {route_path}")
+    return True
+
+
+# ── CLI ───────────────────────────────────────────────────────────────────────
+
+def main():
+    parser = argparse.ArgumentParser(description="Generate career page TSX files from occupation_cards.jsonl")
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--code", help="Single O*NET code")
+    group.add_argument("--cluster", help="All occupations in a cluster")
+    group.add_argument("--all", action="store_true", help="All occupations in cards JSONL")
+    parser.add_argument("--force", action="store_true", help="Overwrite existing files")
+    args = parser.parse_args()
+
+    print("Loading data...")
+    cards = load_cards()
+    cluster_roles = load_cluster_roles()
+    scores = load_scores()
+
+    if args.code:
+        process_occupation(args.code, cards, cluster_roles, scores, force=args.force)
+
+    elif args.cluster:
+        members = [r for r in cluster_roles.values() if r["cluster_id"] == args.cluster]
+        members.sort(key=lambda r: int(r.get("level", 99)))
+        if not members:
+            print(f"✗ No roles found for cluster '{args.cluster}'")
+            sys.exit(1)
+        print(f"\n══ Cluster: {args.cluster} ({len(members)} roles) ══")
+        for m in members:
+            process_occupation(m["onet_code"], cards, cluster_roles, scores, force=args.force)
+
+    elif args.all:
+        for code in cards:
+            process_occupation(code, cards, cluster_roles, scores, force=args.force)
+
+    print("\n✓ Done")
+
+
+if __name__ == "__main__":
+    main()

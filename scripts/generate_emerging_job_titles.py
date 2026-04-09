@@ -36,7 +36,7 @@ SCORES_PATH    = "data/output/ai_resilience_scores.csv"
 TITLES_PATH    = "data/emerging_roles/emerging_job_titles.csv"
 CLUSTER_ROLES  = "data/career_clusters/cluster_roles.csv"
 COLUMN_NAME    = "Emerging Job Titles"
-MODEL          = "claude-sonnet-4-6"
+MODEL          = "claude-haiku-4-5-20251001"
 
 TITLES_FIELDNAMES = ["onet_code", "job_title", "notes"]
 

@@ -189,16 +189,6 @@ Automation vs. augmentation classification:
 
 ---
 
-## Files Flagged for Deletion
-
-Pending confirmation after next full pipeline run:
-
-- `data/intermediate/All_Occupations_ONET_enriched_aei.csv` — Phase 4 output; nothing reads it; AEI metrics live in task table
-- `data/career_clusters/emerging_roles.csv` — duplicate; `data/emerging_roles/emerging_roles.csv` is the source of truth (scripts updated Apr 2026)
-- `scripts/add_altpath_fields.py` — one-time script; logic now in `enrich_onet.py`
-
----
-
 ## Source Data Updates
 
 ### O*NET Database

@@ -33,3 +33,10 @@ onet_code,occupation,cluster_id,level,is_canonical,typical_years_from_entry,note
 15-2051.00,Data Scientists,web-developer,4,true,4,Data and ML track. Lateral move into statistical modeling, ML pipelines, and data analysis. Requires retraining in ML/stats.
 15-1299.09,Information Technology Project Managers,web-developer,4,true,5,Management track. Leads engineering teams and delivery. Common exit from senior individual contributor roles.
 15-1221.00,Computer and Information Research Scientists,web-developer,5,true,7,Research track. Doctoral-level applied research in CS, AI, or systems. Terminal academic or industry research role.
+41-2031.00,Retail Salespersons,sales,1,true,0,Lowest-barrier entry. HS diploma typical. High-volume occupation — direct customer sales experience. Canonical general entry point.
+41-3021.00,Insurance Sales Agents,sales,1,true,0,Specialized entry. State insurance license required (pre-licensing course + exam). Bachelor's common but not required. Higher commission ceiling than retail from day one.
+"41-4012.00","Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",sales,2,true,2,Core B2B mid-level role. Cold/warm outreach, account management, quota-driven. Higher ceiling than retail. Canonical L2 role.
+41-9022.00,Real Estate Sales Agents,sales,2,true,2,Real estate track. State salesperson license required (75–150hr pre-licensing course + exam). Commission-based. Parallel to general B2B track.
+41-9021.00,Real Estate Brokers,sales,3,true,5,Broker license upgrade from agent. Additional state broker exam + ~2yr experience as agent required. Can operate independently or manage other agents.
+41-9031.00,Sales Engineers,sales,3,true,3,Technical sales track. Explains and sells complex technical products. Typically lateral entry from an engineering or technical field rather than internal promotion from sales reps. High resilience due to domain expertise requirement.
+11-2022.00,Sales Managers,sales,4,true,7,Leadership destination. Manages sales team strategy, quotas, hiring, and forecasting. Most commonly promoted from senior B2B sales reps or sales engineers.

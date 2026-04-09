@@ -26,6 +26,9 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+API_MODEL = "claude-opus-4-6"
+
 # ── Config ────────────────────────────────────────────────────────────────────
 SCORES_CSV    = "data/output/ai_resilience_scores.csv"
 TASK_TABLE    = "data/intermediate/onet_economic_index_task_table.csv"
@@ -303,6 +306,69 @@ def generate_career_page_interactive(prompt: str) -> dict:
 
 
 
+# ── API generation ────────────────────────────────────────────────────────────
+
+def parse_json_robust(text: str):
+    """Extract first valid JSON object/array from text."""
+    text = re.sub(r"```json\s*", "", text)
+    text = re.sub(r"```\s*", "", text)
+    text = text.strip()
+    depth = 0
+    in_string = False
+    escape = False
+    start_idx = -1
+    for i, char in enumerate(text):
+        if escape:
+            escape = False
+            continue
+        if char == "\\":
+            escape = True
+            continue
+        if char == '"' and not escape:
+            in_string = not in_string
+        if in_string:
+            continue
+        if char in "[{":
+            if depth == 0:
+                start_idx = i
+            depth += 1
+        elif char in "]}":
+            depth -= 1
+            if depth == 0 and start_idx != -1:
+                return json.loads(text[start_idx:i + 1])
+    return json.loads(text)
+
+
+def generate_career_page_api(prompt: str) -> dict:
+    """Call Claude API to generate career page JSON."""
+    if not ANTHROPIC_API_KEY:
+        raise RuntimeError("ANTHROPIC_API_KEY not set")
+
+    import urllib.parse
+
+    payload = json.dumps({
+        "model": API_MODEL,
+        "max_tokens": 4096,
+        "messages": [{"role": "user", "content": prompt}],
+    }).encode()
+
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=payload,
+        headers={
+            "x-api-key": ANTHROPIC_API_KEY,
+            "anthropic-version": "2023-06-01",
+            "content-type": "application/json",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=120) as resp:
+        body = json.loads(resp.read())
+
+    text = body["content"][0]["text"]
+    return parse_json_robust(text)
+
+
 # ── Pass-through builder ──────────────────────────────────────────────────────
 
 def build_passthrough(occ: dict, task_data: list) -> dict:
@@ -314,7 +380,8 @@ def build_passthrough(occ: dict, task_data: list) -> dict:
     if growth_raw:
         try:
             pct = float(growth_raw)
-            growth = f"+{pct:.0f}%" if pct >= 0 else f"{pct:.0f}%"
+            rounded = round(pct)
+            growth = f"+{rounded}%" if rounded > 0 else ("0%" if rounded == 0 else f"{rounded}%")
         except ValueError:
             growth = occ.get("Projected Growth", "")
     else:
@@ -452,7 +519,7 @@ def append_career_page(card: dict):
 
 def process_occupation(code: str, scores: dict, task_table: dict, occ_metrics: dict,
                        a_scores: dict, tone_guide: str, career_spec: str,
-                       print_prompt_only: bool = False):
+                       print_prompt_only: bool = False, api_mode: bool = False):
     occ = scores.get(code)
     if not occ:
         print(f"  ✗ Code {code} not found in scores CSV")
@@ -469,13 +536,21 @@ def process_occupation(code: str, scores: dict, task_table: dict, occ_metrics: d
         print("="*80)
         return
 
-    generated = generate_career_page_interactive(prompt)
+    if api_mode:
+        print("  Calling Claude API...")
+        generated = generate_career_page_api(prompt)
+    else:
+        generated = generate_career_page_interactive(prompt)
 
     # Apply short labels from the interactive response
-    task_labels = generated.pop("taskLabels", {})
+    task_labels = {k.strip(): v for k, v in generated.pop("taskLabels", {}).items()}
     for t in tasks:
-        if t["full"] in task_labels:
-            t["task"] = task_labels[t["full"]]
+        if t["full"].strip() in task_labels:
+            t["task"] = task_labels[t["full"].strip()]
+        elif t["task"] == t["full"]:
+            # Fallback: first 5 words, truncated with ellipsis
+            words = t["full"].split()
+            t["task"] = " ".join(words[:5]).rstrip(".,;") + ("…" if len(words) > 5 else "")
 
     # Validate source URLs and dates
     if "sources" in generated:
@@ -510,8 +585,10 @@ def process_occupation(code: str, scores: dict, task_table: dict, occ_metrics: d
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--code",  help="Single O*NET code to process, e.g. 15-1254.00")
+    parser.add_argument("--cluster", help="Process all codes in this cluster (from cluster_roles.csv)")
     parser.add_argument("--batch", type=int, default=1, help="Number of unprocessed occupations to run")
     parser.add_argument("--print-prompt", action="store_true", help="Print the prompt and exit (for use with Claude.ai)")
+    parser.add_argument("--api", action="store_true", help="Use Claude API instead of interactive stdin")
     parser.add_argument("--force", action="store_true", help="Regenerate even if already in JSONL")
     args = parser.parse_args()
 
@@ -530,7 +607,24 @@ def main():
             return
         process_occupation(args.code, scores, task_table, occ_metrics,
                            a_scores, tone_guide, career_spec,
-                           print_prompt_only=args.print_prompt)
+                           print_prompt_only=args.print_prompt, api_mode=args.api)
+    elif args.cluster:
+        # Cluster mode: all codes in the cluster
+        cluster_roles_path = "data/career_clusters/cluster_roles.csv"
+        with open(cluster_roles_path, newline="", encoding="utf-8") as f:
+            cluster_codes = [
+                r["onet_code"] for r in csv.DictReader(f)
+                if r.get("cluster_id") == args.cluster
+            ]
+        if not cluster_codes:
+            print(f"No codes found for cluster '{args.cluster}'")
+            return
+        to_run = cluster_codes if args.force else [c for c in cluster_codes if c not in existing]
+        print(f"Cluster '{args.cluster}': {len(to_run)} to process (of {len(cluster_codes)} total)")
+        for code in to_run:
+            process_occupation(code, scores, task_table, occ_metrics,
+                               a_scores, tone_guide, career_spec,
+                               print_prompt_only=args.print_prompt, api_mode=args.api)
     else:
         # Batch mode: next N unprocessed, scored occupations
         candidates = [
@@ -544,7 +638,7 @@ def main():
         for code in to_run:
             process_occupation(code, scores, task_table, occ_metrics,
                                a_scores, tone_guide, career_spec,
-                               print_prompt_only=args.print_prompt)
+                               print_prompt_only=args.print_prompt, api_mode=args.api)
 
     print("\n✓ Done")
 
