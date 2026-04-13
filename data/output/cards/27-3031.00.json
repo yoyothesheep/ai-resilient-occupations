@@ -17,7 +17,11 @@
     "Public Relations Coordinator",
     "Public Relations Specialist (PR Specialist)"
   ],
-  "emergingTitles": [],
+  "emergingTitles": [
+    "PR Manager",
+    "Brand Communications Manager",
+    "External Communications Manager"
+  ],
   "keyDrivers": "PR sits at the intersection of writing and relationship management — and AI is making rapid inroads into the writing side. Press release drafting, publication editing, and content production are all being handled by AI tools at scale. The relationship layer — media trust, crisis response, stakeholder credibility — is harder to automate and is where the role's durability lives.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {

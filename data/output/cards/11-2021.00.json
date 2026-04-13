@@ -15,7 +15,11 @@
     "Marketing Manager",
     "Product Manager"
   ],
-  "emergingTitles": [],
+  "emergingTitles": [
+    "Social Media Manager",
+    "Growth Marketer",
+    "Demand Generation Manager"
+  ],
   "keyDrivers": "Marketing Managers occupy a layer above the content and campaign execution work that AI is automating most aggressively. The role's strongest protection is its complexity: setting marketing strategy, managing budgets, and coordinating across sales, product, and creative teams requires organizational context and judgment that AI tools can assist but not own. The AI exposure shows up in the analytical and drafting tasks — research, strategy documents, pricing models — which are increasingly AI-augmented. But the decision-making authority and cross-functional accountability remain human.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {

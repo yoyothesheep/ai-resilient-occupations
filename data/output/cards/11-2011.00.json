@@ -17,7 +17,11 @@
     "Promotions Director",
     "Promotions Manager"
   ],
-  "emergingTitles": [],
+  "emergingTitles": [
+    "Campaign Manager",
+    "Growth Marketing Manager",
+    "Demand Generation Manager"
+  ],
   "keyDrivers": "This role sits at the top of a function where AI is compressing the middle. The core task — planning and preparing advertising material — shows 30.8% automation across 2,700+ observed conversations, meaning the execution work that managers oversee is being increasingly automated. The role scores low because it combines AI-exposed output work with a declining market for traditional advertising management: demand for these roles was already being squeezed by programmatic advertising before AI added a second wave of pressure.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {

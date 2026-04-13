@@ -349,7 +349,9 @@ def generate_data_file(card: dict, cluster_roles: dict, scores: dict, var_name: 
     description = card.get("description") or scores.get(onet_code, {}).get("Job Description", "")
     onet_url = scores.get(onet_code, {}).get("url", "")
     job_titles = card.get("jobTitles", [])
-    emerging_titles = card.get("emergingTitles", [])
+    emerging_titles = card.get("emergingTitles") or [
+        t.strip() for t in scores.get(onet_code, {}).get("Emerging Job Titles", "").split(";") if t.strip()
+    ]
     key_drivers = card.get("keyDrivers", "")
     task_intro = card.get("taskIntro", "")
 

@@ -17,7 +17,12 @@
     "Sports Editor",
     "Web Editor"
   ],
-  "emergingTitles": [],
+  "emergingTitles": [
+    "Content Editor",
+    "Managing Editor",
+    "Copy Editor",
+    "Digital Editor"
+  ],
   "keyDrivers": "Editing sits in a difficult position: the core task of rewriting and improving copy has the highest AI usage volume of any task in this role — over 13,000 observed conversations — with 30.9% automation patterns. Editors who focus on mechanical correction are the most exposed. The role's durability comes from editorial judgment: deciding what to publish, shaping narratives, managing authors, and maintaining publication standards — work that requires institutional knowledge and contextual reasoning AI tools cannot yet replicate reliably.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {

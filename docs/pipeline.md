@@ -137,7 +137,7 @@ All weighted metrics use `sum(task_weight × metric) / sum(task_weight)` over AE
 **Owns:** real-world job title aliases that map how roles are actually listed in job postings (e.g. "Social Media Manager", "Growth Marketer") to existing O*NET codes. Consumed by Stage 7a which passes `emergingTitles` into occupation cards.
 
 ### Stage 7 — Occupation Cards (Track B)
-Three scripts write to `data/output/occupation_cards.jsonl` in sequence. Each is idempotent for its own fields.
+Three scripts write per-occupation JSON files to `data/output/cards/<onet_code>.json` in sequence. Each is idempotent for its own fields. A shared utility module `scripts/cards.py` provides `load_cards()`, `save_card()`, and `save_cards()` — all scripts import from it. Do not open `data/output/cards/` files directly in pipeline scripts; use these helpers.
 
 **7a — `scripts/generate_next_steps.py`**  
 Writes initial card: `score`, `salary`, `taskData`, `taskIntro`, `risks`, `opportunities`, `howToAdapt`, `sources`, `emergingTitles` (from `Emerging Job Titles` in scores CSV).  
@@ -150,7 +150,7 @@ Flags:
 - `--code <code>` — single occupation
 - `--all` — all occupations in scores CSV
 - `--interactive` — print prompts to stdout, read JSON responses from stdin (no API key needed)
-- `--print-prompts` — print all prompts to stdout without waiting for input (Claude Code inline workflow: paste prompts here, respond with JSON, write directly to JSONL)
+- `--print-prompts` — print all prompts to stdout without waiting for input (Claude Code inline workflow: paste prompts here, respond with JSON, write directly to card files)
 - `--skip-existing` — skip pairs that already have `fit`+`steps` data (use when patching missing pairs only)
 
 **`altpath simple title` rule:** this field in `ai_resilience_scores.csv` must be a short human-readable alias (e.g. "IT Project Manager", "Software QA Analyst"). The slug and page display title both derive from it. If it's blank or too long, the full O*NET title is used as fallback — which produces unacceptably long slugs.
@@ -159,7 +159,7 @@ Flags:
 Adds `emergingCareers` field from `data/emerging_roles/emerging_roles.csv`. Run after 7a — requires card to exist. Uses card context to generate better candidates.
 
 ### Stage 8 — Publish Career + Industry Pages (Track B)
-**Requires:** Stage 6 complete for all occupations in the cluster.
+**Requires:** Stage 6 complete (so `Emerging Job Titles` is populated in scores CSV) and Stage 7a complete (cards exist in `data/output/cards/`) for all occupations in the cluster. `generate_career_pages.py` falls back to reading `emergingTitles` directly from the scores CSV if a card's `emergingTitles` field is empty, so Stage 6 must precede Stage 8 even if Stage 7a ran before Stage 6.
 
 **Career pages** (two files per occupation):
 ```bash
@@ -195,7 +195,8 @@ Writes `src/data/industries/<slug>.ts` + `app/industry/<slug>/page.tsx`. Descrip
 | `data/career_clusters/cluster_branches.csv` | Stage 4 | From→to career transitions |
 | `data/emerging_roles/emerging_roles.csv` | Stage 5 | Emerging AI-era pivot roles per occupation |
 | `data/emerging_roles/emerging_job_titles.csv` | Stage 6 | Real-world job title aliases for O*NET codes |
-| `data/output/occupation_cards.jsonl` | Stage 7 | Per-occupation career page data (bridge to site) |
+| `data/output/cards/<onet_code>.json` | Stage 7 | Per-occupation career page data (one file per occupation, bridge to site) |
+| `scripts/cards.py` | Stage 7 | Shared helpers: `load_cards()`, `save_card()`, `save_cards()`. All Stage 7 scripts import from here — do not open card files directly. |
 
 ---
 

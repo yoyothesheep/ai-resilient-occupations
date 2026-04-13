@@ -1,6 +1,6 @@
 {
   "onet_code": "27-3043.00",
-  "title": "Writer",
+  "title": "Copywriter",
   "score": 49,
   "salary": "$72,270",
   "openings": "13,400",
@@ -16,7 +16,10 @@
     "SEO Copywriter",
     "Web Content Writer"
   ],
-  "emergingTitles": [],
+  "emergingTitles": [
+    "Copywriter",
+    "Content Writer"
+  ],
   "keyDrivers": "Writing is the task AI has advanced on most directly and most rapidly. Generative AI can now produce first drafts, ad copy, web content, and promotional materials with speed that far exceeds a human writer. The role scores at mid-range because originality, client relationship management, and the creative judgment needed to adapt voice and tone across complex briefs still require human involvement. But the volume of content a writer is expected to produce without AI assistance is shrinking fast.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {
@@ -197,7 +200,7 @@
     {
       "level": 3,
       "code": "27-3043.00",
-      "title": "Writer",
+      "title": "Copywriter",
       "isCurrent": true,
       "score": 2.4
     },
