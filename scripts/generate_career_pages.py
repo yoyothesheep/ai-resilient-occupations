@@ -22,7 +22,6 @@ import re
 import sys
 
 # ── Config ────────────────────────────────────────────────────────────────────
-CARDS_JSONL       = "data/output/occupation_cards.jsonl"
 CLUSTER_ROLES_CSV = "data/career_clusters/cluster_roles.csv"
 CLUSTERS_CSV      = "data/career_clusters/clusters.csv"
 SCORES_CSV        = "data/output/ai_resilience_scores.csv"
@@ -34,17 +33,8 @@ CAREERS_ROUTE_DIR = os.path.join(SITE_DIR, "app/career")
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 def load_cards() -> dict:
-    cards = {}
-    with open(CARDS_JSONL, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                try:
-                    c = json.loads(line)
-                    cards[c["onet_code"]] = c
-                except (json.JSONDecodeError, KeyError):
-                    pass
-    return cards
+    from cards import load_cards as _load
+    return _load()
 
 
 def load_cluster_roles() -> dict:
@@ -485,7 +475,7 @@ def process_occupation(onet_code: str, cards: dict, cluster_roles: dict,
                        scores: dict, clusters: dict, force: bool = False) -> bool:
     card = cards.get(onet_code)
     if not card:
-        print(f"  ✗ {onet_code} not found in occupation_cards.jsonl")
+        print(f"  ✗ {onet_code} not found in data/output/cards/")
         return False
 
     onet_title = card.get("title", onet_code)

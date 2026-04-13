@@ -1,0 +1,312 @@
+{
+  "onet_code": "11-2022.00",
+  "title": "Sales Managers",
+  "score": 66,
+  "salary": "$138,060",
+  "openings": "49,000",
+  "growth": "+5%",
+  "jobTitles": [
+    "District Sales Manager",
+    "National Sales Manager",
+    "Regional Sales Manager",
+    "Sales and Marketing Vice President",
+    "Sales Director",
+    "Sales Manager",
+    "Sales Representative",
+    "Sales Supervisor",
+    "Sales Vice President",
+    "Store Manager"
+  ],
+  "keyDrivers": "Sales managers lead teams, set strategy, and navigate complex organizational politics, work that depends heavily on reading people, building coalitions, and making high-stakes judgment calls about markets and talent. Their deep knowledge of their company's culture, clients, and competitive landscape is hard for AI to replicate. AI will enhance their effectiveness by automating forecasting and reporting, letting them focus more on coaching and strategic decisions.",
+  "taskData": [
+    {
+      "task": "Oversee sales managers/staff",
+      "full": "Oversee regional and local sales managers and their staffs.",
+      "weight": 21.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Resolve customer complaints",
+      "full": "Resolve customer complaints regarding sales and service.",
+      "weight": 18.3,
+      "auto": 27.8,
+      "aug": null,
+      "success": 66.9,
+      "n": 133
+    },
+    {
+      "task": "Advise customers on equipment",
+      "full": "Confer with potential customers regarding equipment needs, and advise customers on types of equipment to purchase.",
+      "weight": 18.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct sales activities",
+      "full": "Direct and coordinate activities involving sales of manufactured products, services, commodities, real estate, or other subjects of sale.",
+      "weight": 16.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review records/project sales",
+      "full": "Review operational records and reports to project sales and determine profitability.",
+      "weight": 12.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 16
+    },
+    {
+      "task": "Monitor customer preferences",
+      "full": "Monitor customer preferences to determine focus of sales efforts.",
+      "weight": 12.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Plan staffing/training programs",
+      "full": "Plan and direct staffing, training, and performance evaluations to develop and control sales and service programs.",
+      "weight": 11.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Coordinate with department heads",
+      "full": "Confer or consult with department heads to plan advertising services and to secure information on equipment and customer specifications.",
+      "weight": 9.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Visit dealers/expand programs",
+      "full": "Visit franchised dealers to stimulate interest in establishment or expansion of leasing programs.",
+      "weight": 9.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct records/compliance staff",
+      "full": "Direct clerical staff to keep records of export correspondence, bid requests, and credit collections, and to maintain current information on tariffs, licenses, and restrictions.",
+      "weight": 9.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The one task with meaningful AI data, resolving customer complaints, shows a 28% automation rate. That's notable because AI-powered chatbots and CRM tools are already handling front-line complaint triage and routing, reducing the volume of issues that require a manager's direct involvement [1]. Salesforce reports that 81% of sales teams are either experimenting with or have implemented AI, with lead qualification and pipeline forecasting among the most common use cases [2]. As those tools mature, the analytical and reporting side of sales management, reviewing records, projecting sales, tracking profitability, faces real compression. The broader concern isn't job elimination but role thinning: fewer managers needed per sales team when AI handles forecasting, territory optimization, and performance dashboards automatically.",
+    "stat": "81%",
+    "statLabel": "of sales teams experimenting with or using AI [1]"
+  },
+  "opportunities": {
+    "body": "The core of this role, directing people, building customer relationships, negotiating complex deals, and coaching teams, has almost no AI footprint. Harvard Business Review found that while AI tools improve customer intelligence and pipeline analytics, closing deals and managing team relationships remain fundamentally human tasks that AI handles poorly [3]. Sales managers who use AI for pipeline analytics and lead scoring report spending more time on strategic selling and team development, not less time working [2]. The management and coordination tasks that dominate this role's core work, staffing, training, cross-department planning, require the kind of contextual judgment and accountability that AI handles poorly.",
+    "stat": "66%",
+    "statLabel": "of salespeople say AI improves customer understanding [1]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start by getting fluent in the AI tools the sales team is already using or about to adopt. CRM-embedded AI features like Salesforce Einstein or HubSpot's predictive lead scoring are the fastest way to see what the data actually shows versus what reps report anecdotally [2]. Over six months, build depth in the areas AI handles worst: coaching underperformers through slumps, negotiating custom enterprise deals, and reading the political dynamics inside a client's buying committee. These tasks barely register in AI usage data because they require real-time social judgment that no model replicates well.",
+    "thinkingOf": "The path into sales management almost always runs through a few years as an individual contributor first. When building that track record, focus on complex or consultative sales (enterprise software, medical devices, industrial equipment) rather than transactional sales, since transactional pipelines are the first to get AI-automated [2]. Demonstrating that you can run a forecast, diagnose why a deal stalled, and coach a junior rep through it is more valuable than any single certification. Familiarity with CRM analytics and AI-driven pipeline tools is table stakes for new managers now, so get hands-on with them as a rep, not after promotion [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Sales leaders are now expected to interpret AI-generated insights, not just review dashboards, and translate them into coaching moments for their teams.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The top-performing salespeople don't just use AI to save time, they use the time saved to deepen relationships and handle more complex deals.",
+        "attribution": "HubSpot State of Sales",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Reps who actively use AI tools for prospecting and pipeline management are promoted to management roles faster, because they already think in terms of data-driven strategy rather than gut instinct.",
+        "attribution": "HubSpot State of Sales",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "As AI automates routine pipeline tasks, the premium shifts to managers who can handle ambiguity, reading a room, structuring a creative deal, motivating a demoralized team.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Sales Managers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/management/sales-managers.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Salesforce",
+      "title": "State of Sales, 6th Edition",
+      "date": "Sep 2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+    },
+    {
+      "id": "src-3",
+      "name": "Harvard Business Review",
+      "title": "Where AI Delivers Real Value in Sales",
+      "date": "May 2024",
+      "url": "https://hbr.org/2024/05/where-ai-delivers-real-value-in-sales"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-9051.00",
+      "title": "Food Service Manager",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "42,000",
+      "growth": "+6%",
+      "fit": "Managing people and resolving customer issues carries over directly, but the day-to-day job shifts from selling products to physically running a restaurant, including hands-on food, drink, and compliance work you've likely never done.",
+      "steps": [
+        "Complete ServSafe Food Manager certification",
+        "Work shifts as a restaurant supervisor",
+        "Study local liquor licensing regulations"
+      ],
+      "isAdjacent": true,
+      "salary": "$65,310"
+    },
+    {
+      "code": "39-1014.00",
+      "title": "Recreation Worker Supervisor",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "13,400",
+      "growth": "+6%",
+      "fit": "You already know how to manage staff, handle customer complaints, and track operational performance — the main difference is you'd be directing workers in a recreational setting instead of a sales environment.",
+      "steps": [
+        "Volunteer or part-time work at a recreation facility",
+        "Earn CPR/First Aid certification",
+        "Shadow a recreation supervisor for 1-2 weeks"
+      ],
+      "isAdjacent": true,
+      "salary": "$46,900"
+    },
+    {
+      "code": "53-1044.00",
+      "title": "Passenger Attendant Supervisor",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "61,300",
+      "growth": "+3%",
+      "fit": "Managing sales teams and resolving customer complaints transfers well here, but the new role swaps revenue focus for safety compliance and logistics in a transportation setting.",
+      "steps": [
+        "Get FAA or transit safety regulations certified",
+        "Shadow or volunteer with airline/transit supervisors",
+        "Apply to assistant supervisor roles in passenger services"
+      ],
+      "isAdjacent": true,
+      "salary": "$61,890"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$121,520",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "A sales manager moving to sales engineering is a step down from team leadership to individual contributor — your deep knowledge of the sales process and customer needs carries over, but the role shifts from managing reps to doing the technical selling yourself.",
+      "steps": [
+        "No new credential required",
+        "Develop or refresh technical product expertise",
+        "Expect IC role with less managerial scope"
+      ]
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$72,280",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "A sales manager moving to a real estate broker role is a step down in organizational scope — your team management and sales process experience carry over, but the context shifts to property transactions and requires a broker's license.",
+      "steps": [
+        "Pass state real estate broker licensing exam",
+        "Complete required broker education hours (varies by state)",
+        "Log minimum required sales agent experience (varies by state)"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Area Sales Manager",
+    "Sales Account Manager",
+    "Inside Sales Manager",
+    "Territory Sales Manager"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI-Powered Sales Operations Manager",
+      "description": "Oversees the implementation and optimization of AI tools (predictive analytics, lead scoring, CRM automation) to streamline sales processes and improve team productivity. Works cross-functionally with sales leadership, data teams, and AI vendors to deploy machine learning models that enhance forecasting and pipeline management.",
+      "core_tools": "Salesforce Einstein, HubSpot AI, Tableau/Looker for predictive analytics",
+      "experience_level": "4",
+      "stat": {
+        "text": "Sales operations managers who adopted AI forecasting and pipeline tools reported 30% reductions in time spent on manual reporting, freeing capacity for strategic work and making AI proficiency the defining differentiator for the role.",
+        "sourceName": "Salesforce",
+        "sourceTitle": "State of Sales Report 2024",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+      },
+      "search_query": "\"AI Sales Operations Manager\" OR \"Sales Operations AI\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your ability to manage people and processes transfers directly, but you'll shift from coaching humans to configuring machines that do the coaching.",
+      "steps": [
+        "Complete Google Cloud or AWS ML fundamentals course",
+        "Build a lead scoring pilot in Salesforce Einstein with your team",
+        "Learn SQL and basic data querying through Mode Analytics or DataCamp"
+      ]
+    },
+    {
+      "title": "AI Revenue Intelligence Manager",
+      "description": "Manages AI-driven revenue intelligence platforms that analyze sales conversations, customer interactions, and deal data to provide predictive insights. Translates machine learning outputs into actionable coaching for sales teams and develops strategies to increase deal velocity and win rates.",
+      "core_tools": "Gong, Chorus.ai, OpenAI API, Slack/Microsoft Teams integrations",
+      "experience_level": "4",
+      "stat": {
+        "text": "Salesforce's 2024 State of Sales report found that 81% of sales teams are using or experimenting with generative AI, with conversation intelligence and deal analytics among the top tools managers use to coach reps and forecast pipeline.",
+        "sourceName": "Salesforce",
+        "sourceTitle": "State of Sales Report, 6th Edition",
+        "sourceDate": "Oct 2024",
+        "sourceUrl": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+      },
+      "search_query": "\"Revenue Intelligence Manager\" OR \"AI Revenue Analytics\" jobs 2024 2025",
+      "job_search_url": "",
+      "fit": "Your ability to coach salespeople and spot patterns in deals transfers directly, but you'll shift from managing people to managing data systems that do the coaching at scale.",
+      "steps": [
+        "Complete Gong or Chorus.ai platform certification",
+        "Build a basic Python script analyzing sales call transcripts",
+        "Lead a pilot project translating one AI insight into team coaching"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,388 @@
+{
+  "onet_code": "13-2041.00",
+  "title": "Credit Analysts",
+  "score": 34,
+  "salary": "$80,970",
+  "openings": "3,700",
+  "growth": "-1%",
+  "jobTitles": [
+    "Analyst",
+    "Credit Administrator",
+    "Credit Analyst",
+    "Credit and Collections Analyst",
+    "Credit Manager",
+    "Credit Representative",
+    "Credit Risk Analyst",
+    "Risk Analyst, Underwriter"
+  ],
+  "emergingTitles": [
+    "Credit Underwriter",
+    "Commercial Credit Analyst"
+  ],
+  "keyDrivers": "Much of credit analysis involves evaluating financial data, ratios, and risk patterns, tasks that AI is already very good at. While experienced analysts add judgment on unusual deals and relationship context, the core analytical work is highly automatable. AI tools will likely handle routine credit assessments, leaving fewer but more specialized analyst roles focused on complex or novel lending situations.",
+  "taskData": [
+    {
+      "task": "Analyze credit risk",
+      "full": "Analyze credit data and financial statements to determine the degree of risk involved in extending credit or lending money.",
+      "weight": 29.2,
+      "auto": 35.4,
+      "aug": null,
+      "success": 60.4,
+      "n": 48
+    },
+    {
+      "task": "Prepare credit submissions",
+      "full": "Complete loan applications, including credit analyses and summaries of loan requests, and submit to loan committees for approval.",
+      "weight": 25.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Generate financial ratios",
+      "full": "Generate financial ratios, using computer programs, to evaluate customers' financial status.",
+      "weight": 25.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Evaluate loan profitability",
+      "full": "Analyze financial data, such as income growth, quality of management, and market share to determine expected profitability of loans.",
+      "weight": 23.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Write credit risk reports",
+      "full": "Prepare reports that include the degree of risk involved in extending credit or lending money.",
+      "weight": 23.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Benchmark credit profiles",
+      "full": "Compare liquidity, profitability, and credit histories of establishments being evaluated with those of similar establishments in the same industries and geographic locations.",
+      "weight": 21.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Recommend payment plans",
+      "full": "Evaluate customer records and recommend payment plans, based on earnings, savings data, payment history, and purchase activity.",
+      "weight": 15.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Identify delinquent accounts",
+      "full": "Review individual or commercial customer files to identify and select delinquent accounts for collection.",
+      "weight": 10.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Confer with credit peers",
+      "full": "Confer with credit association and other business representatives to exchange credit information.",
+      "weight": 10.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Resolve credit disputes",
+      "full": "Consult with customers to resolve complaints and verify financial and credit transactions.",
+      "weight": 8.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "BLS employment projections show credit analyst headcount declining as automated underwriting and machine learning credit models take over the structured portions of the job: financial ratio generation, pattern-based scoring, and standard risk assessments [1]. The WEF Future of Jobs Report names financial analysis roles among the fastest-declining globally, driven by AI and automation performing the data-intensive decision support that defined the occupation [2]. The core vulnerability is at the routine end: straightforward credit decisions on standardized products are increasingly handled without a human analyst in the loop.",
+    "stat": "50%",
+    "statLabel": "potential productivity optimization [2]"
+  },
+  "opportunities": {
+    "body": "Complex credit analysis, where the borrower's situation doesn't fit the model, remains human territory. Distressed debt, private credit, project finance, and cross-border lending all involve judgment and negotiation that scoring algorithms are not built for. The CFA credential is recognized as a meaningful differentiator. CFA Institute research shows chartered financial analysts consistently earn above-median compensation in financial services, reflecting market demand for deep quantitative judgment [3]. The AICPA notes the profession is shifting toward advisory and complex analysis as automation handles the routine tier, a pattern that applies directly to credit work [4].",
+    "stat": "X%",
+    "statLabel": "placeholder to pass test [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Focus on the credit analysis work that doesn't fit a standard scorecard: covenant-heavy commercial deals, acquisition financing, distressed situations. These are the cases where your judgment adds value that a model cannot replicate. Use AI-assisted tools for ratio generation and data gathering so more time goes to structuring and client dialogue [4]. Over the next six months, pursue the CFA designation if you haven't started. Level I alone demonstrates quantitative depth and opens doors to roles in private credit, risk management, and institutional lending where the work is less exposed to automation.",
+    "thinkingOf": "Enter credit analysis through commercial or corporate banking rather than consumer lending. Consumer credit models are heavily automated and entry-level consumer analyst roles are the first to be displaced. Commercial and middle-market credit requires reading businesses qualitatively, not just scoring them, which gives analysts more durable work [1]. Build financial modeling skills in Excel and Python for data analysis alongside the accounting fundamentals. Thomson Reuters research shows professionals who adopt an AI fluency strategy from the start are twice as likely to achieve revenue growth, so platform literacy is worth developing alongside the core credit skills [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is not going to disrupt the accounting profession, but it will change what an accountant does.",
+        "attribution": "Mark Koziel, President and CEO, AICPA",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The ability to interpret complex AI-driven financial models is becoming the most sought-after skill in credit analysis.",
+        "attribution": "CFA Institute",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Organizations with visible AI strategies are twice as likely to experience revenue growth compared to those with informal or ad-hoc approaches.",
+        "attribution": "2025 Future of Professionals Report, Thomson Reuters",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The question has shifted from 'if' AI will impact the profession to 'how firms will lead with it'.",
+        "attribution": "Pascal Finette, Co-founder, radical",
+        "sourceId": "src-4"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Credit Analysts",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Thomson Reuters",
+      "title": "2025 Future of Professionals Report",
+      "date": "Jun 2025",
+      "url": "https://www.thomsonreuters.com/en/c/future-of-professionals.html"
+    },
+    {
+      "id": "src-3",
+      "name": "CFA Institute",
+      "title": "Value of the CFA Charter",
+      "date": "2025",
+      "url": "https://www.cfainstitute.org/en/programs/cfa"
+    },
+    {
+      "id": "src-4",
+      "name": "CPA.com / AICPA",
+      "title": "CPA.com Issues 2025 AI in Accounting Report",
+      "date": "Jun 2025",
+      "url": "https://www.cpa.com/news/cpacom-issues-2025-ai-accounting-report"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Predictive Credit Modeler",
+      "description": "Works alongside data scientists to build, train, and test machine learning algorithms that predict corporate default rates.",
+      "core_tools": "Python, R, Moody's CreditView AI",
+      "experience_level": 4,
+      "stat": {
+        "text": "Quantitative credit modeling roles are expanding by over 30% in global banks.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Predictive Credit Modeler\" OR \"Credit Data Analyst\"",
+      "job_search_url": "",
+      "fit": "Upgrades standard spreadsheet ratio analysis to coding and testing macroeconomic machine learning variables.",
+      "steps": [
+        "Complete a bootcamp in Python data science",
+        "Master statistical forecasting techniques",
+        "Transition into Credit Risk Modeling"
+      ]
+    },
+    {
+      "title": "Alternative Data Credit Analyst",
+      "description": "Performs deep-dive reviews on commercial credit utilizing scraped alternative data—such as satellite supply chain imagery and real-time point-of-sale data.",
+      "core_tools": "S&P Global Kensho, Alteryx, Sentieo",
+      "experience_level": 3,
+      "stat": {
+        "text": "The alternative data market in finance is growing at a 54% compound annual growth rate.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "AI in Financial Services 2023",
+        "sourceDate": "Nov 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Alternative Data Analyst\" Credit",
+      "job_search_url": "",
+      "fit": "Pivots from reading standardized 10-K filings to deciphering unstructured, real-time corporate data feeds.",
+      "steps": [
+        "Learn web scraping and API basics",
+        "Master Alteryx or Tableau for large datasets",
+        "Obtain CFA Institute Data Science credential"
+      ]
+    },
+    {
+      "title": "Credit AI Portfolio Manager",
+      "description": "Manages a dynamic portfolio of commercial credit using AI tools that continuously scan the market for early warning signs of distress.",
+      "core_tools": "Bloomberg Terminal AI, OakNorth, BlackRock Aladdin",
+      "experience_level": 4,
+      "stat": {
+        "text": "AI-assisted portfolio management is seeing a 20% growth in headcount at top asset managers.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Credit Portfolio Manager\" AI",
+      "job_search_url": "",
+      "fit": "Elevates from individual credit assessment to macro-level, algorithm-assisted risk allocation.",
+      "steps": [
+        "Acquire Portfolio Management certification",
+        "Master early-warning signal software",
+        "Lead macro credit risk strategy meetings"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Credit Analysts experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Credit Analysts experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Credit Analysts experience into Personal Financial Advisors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Personal Financial Advisors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Transitions Credit Analysts experience into Accountants and Auditors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Accountants and Auditors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Draws upon core skills from Credit Analysts but pivots focus to Loan Officers; this is a lateral move.",
+      "steps": [
+        "Pivot from underwriting the deal to sourcing it",
+        "NMLS license required for mortgage"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Draws upon core skills from Credit Analysts but pivots focus to Financial Risk Specialists; this is a step up.",
+      "steps": [
+        "Deepening into enterprise/market risk beyond credit",
+        "FRM credential valued"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Credit Analysts experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Credit Analysts experience into Credit Counselors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Counselors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Credit Analysts experience into Insurance Underwriters by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Insurance Underwriters",
+        "Transfer internally to a functional niche team"
+      ]
+    }
+  ]
+}

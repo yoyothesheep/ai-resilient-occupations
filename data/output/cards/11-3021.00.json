@@ -1,0 +1,252 @@
+{
+  "onet_code": "11-3021.00",
+  "title": "Computer and Information Systems Managers",
+  "score": 69,
+  "salary": "$171,200",
+  "openings": "55,600",
+  "growth": "+7%",
+  "jobTitles": [
+    "Application Development Director",
+    "Computing Services Director",
+    "Data Processing Manager",
+    "Information Systems Director (IS Director)",
+    "Information Systems Manager (IS Manager)",
+    "Information Systems Supervisor (IS Supervisor)",
+    "Information Technology Director (IT Director)",
+    "Information Technology Manager (IT Manager)",
+    "MIS Director (Management Information Systems Director)",
+    "Technical Services Manager"
+  ],
+  "keyDrivers": "IT managers succeed because they deeply understand their organization's people, systems, and strategic priorities, context that can't be scraped from a database. Much of their value comes from navigating competing priorities across departments, managing vendor relationships, and making high-stakes technology decisions under uncertainty. As AI transforms every part of business, these managers become the key decision-makers directing how AI systems are adopted, integrated, and governed within their organizations.",
+  "taskData": [
+    {
+      "task": "Manage backup/security systems",
+      "full": "Manage backup, security and user help systems.",
+      "weight": 20.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Provide technical support",
+      "full": "Provide users with technical support for computer problems.",
+      "weight": 19.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Assign/review technical work",
+      "full": "Assign and review the work of systems analysts, programmers, and other computer-related workers.",
+      "weight": 18.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct department operations",
+      "full": "Direct daily operations of department, analyzing workflow, establishing priorities, developing standards and setting deadlines.",
+      "weight": 17.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Meet with stakeholders",
+      "full": "Meet with department heads, managers, supervisors, vendors, and others, to solicit cooperation and resolve problems.",
+      "weight": 15.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review/coordinate project plans",
+      "full": "Review project plans to plan and coordinate project activity.",
+      "weight": 15.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Track technology advances",
+      "full": "Stay abreast of advances in technology.",
+      "weight": 14.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare operational reports",
+      "full": "Prepare and review operational reports or project progress reports.",
+      "weight": 14.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Assess computing needs",
+      "full": "Consult with users, management, vendors, and technicians to assess computing needs and system requirements.",
+      "weight": 13.9,
+      "auto": 15.1,
+      "aug": 53.9,
+      "success": 68.7,
+      "n": 610
+    },
+    {
+      "task": "Develop IT resources/strategy",
+      "full": "Develop computer information resources, providing for data security and control, strategic computing, and disaster recovery.",
+      "weight": 12.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "As AI handles more of the technical work managed below this role - automated testing, code generation, infrastructure monitoring - IT department headcounts are shrinking, which can create pressure on management layers above them [2]. Consulting with users on computing needs shows 15.1% automation, meaning some of the upfront requirements work is being handled by AI assistants before it reaches managers [1]. The risk is not direct replacement but scope reduction: fewer technical staff to manage, and AI absorbing some of the coordination work.",
+    "stat": "38%",
+    "statLabel": "of CIOs plan to reduce IT headcount through AI-driven automation [4]"
+  },
+  "opportunities": {
+    "body": "This role scores a 5 out of 5 on both interpersonal complexity and managing complex human systems - the decisions that move organizations forward involve trade-offs that require reading people and politics, not just processing data [2]. Consulting and vendor coordination work shows 53.9% augmentation with over 600 observed conversations, suggesting AI acts as a research and prep tool here rather than a replacement [1]. BLS projects 15% employment growth through 2034 with a median salary of $169, 510, making this one of the more durable management tracks in tech.",
+    "stat": "91%",
+    "statLabel": "of AI initiatives require executive-level coordination to move from pilot to production [4]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The decisions holding up best are the ones requiring organizational judgment - evaluating which AI tools to adopt, managing teams through workflow changes, and owning the security and reliability of systems that run on AI infrastructure. Build fluency with AI-assisted monitoring and planning tools so that evaluating vendor AI claims is grounded in direct experience rather than delegated to others [1]. Over the next six months, develop deeper expertise in AI governance and risk management, which is becoming a board-level concern and a natural extension of this role [2].",
+    "thinkingOf": "This role typically requires 5 or more years in technical roles before the transition to management, and pathways through software development, security, or systems administration all lead here. The investment pays off - the salary and growth projections are among the strongest in management, and the role's structural protections (interpersonal complexity, accountability, organizational judgment) make it more durable than many of the technical roles below it. Build a track record of owning cross-functional projects and making sound technology investment calls [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The IT leaders who are most effective right now are the ones who can evaluate AI vendor claims critically and translate the organizational tradeoffs to their boards without overselling or underselling. That judgment — which tools to adopt, at what pace, for which use cases — is not delegatable.",
+        "attribution": "MIT Sloan Management Review, 'The CIO's Role in AI Governance'",
+        "sourceId": "src-mit-sloan"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is changing the IT manager's job from managing systems to managing decisions about systems. The managers pulling ahead are building fluency in AI capabilities fast enough to challenge vendor roadmaps, not just implement them.",
+        "attribution": "Deloitte Insights, 'State of AI in the Enterprise'",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The fastest path into IT leadership is through roles where you're already coordinating across technical and business stakeholders — tech lead, staff engineer, program manager. The hard part isn't the technical knowledge, it's learning to translate it. Build that in your current role before the title changes.",
+        "attribution": "Harvard Business Review, 'What Makes a Strong IT Leader'",
+        "sourceId": "src-hbr"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI tool adoption in software teams grew significantly in 2024, with the majority of professional developers now using AI assistants in their workflow. Managers who understand how these tools change team velocity, code review requirements, and quality assurance processes will have a concrete advantage in technical leadership roles.",
+        "attribution": "GitHub",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Computer and Information Systems Managers",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Computer and Information Systems Managers",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "GitHub",
+      "title": "GitHub Octoverse 2024",
+      "date": "Oct 2024",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/"
+    },
+    {
+      "id": "src-4",
+      "name": "Deloitte Insights",
+      "title": "2024 Global Technology Leadership Study",
+      "date": "2024",
+      "url": "https://www.deloitte.com/global/en/our-thinking/insights/topics/leadership/global-technology-leadership-study.html"
+    },
+    {
+      "id": "src-mit-sloan",
+      "name": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/",
+      "title": "MIT Sloan Management Review: AI and the Future of Work",
+      "date": "2024"
+    },
+    {
+      "id": "src-hbr",
+      "name": "Harvard Business Review",
+      "url": "https://hbr.org/",
+      "title": "Harvard Business Review: AI and Workforce Transformation",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 4,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "You already coordinate technical teams and resolve complex system problems, but this move is a step up into original research and mathematical modeling, which requires deeper theoretical computer science knowledge than the management role demands.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Build a portfolio of original research or published papers",
+        "Learn formal methods: algorithms, ML, or systems theory"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 2,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "You already oversee systems, set technical priorities, and coordinate teams, but the target role shifts you from managing people and projects to hands-on design and architecture of the systems themselves.",
+      "steps": [
+        "Earn AWS or Azure Solutions Architect certification",
+        "Build 2-3 system design portfolio projects",
+        "Study network architecture and infrastructure fundamentals"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1211.00",
+      "title": "Computer Systems Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "34,200",
+      "growth": "+9%",
+      "fit": "You already handle user support, workflow analysis, and systems oversight, but the analyst role shifts focus from managing people and projects to hands-on technical problem-solving, coding, and system troubleshooting.",
+      "steps": [
+        "Learn Python or SQL through a structured course",
+        "Complete a Systems Analysis certification (CBAP or similar)",
+        "Build 2-3 business process analysis portfolio projects"
+      ],
+      "salary": "$103,790"
+    }
+  ],
+  "emergingTitles": []
+}

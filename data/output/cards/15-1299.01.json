@@ -1,0 +1,459 @@
+{
+  "onet_code": "15-1299.01",
+  "title": "Web Administrators",
+  "score": 41,
+  "salary": "$108,970",
+  "openings": "31,300",
+  "growth": "+7%",
+  "jobTitles": [
+    "Corporate Webmaster",
+    "Web Administrator",
+    "Web Content Coordinator",
+    "Web Content Manager",
+    "Web Director",
+    "Web Manager",
+    "Web Site Manager",
+    "Web Technologies Administrator, Webmaster"
+  ],
+  "keyDrivers": "Web administration involves managing servers, configurations, security patches, and uptime, tasks that are increasingly automated by cloud platforms and AI-driven infrastructure tools. The role requires no physical presence, no licensure, and limited novel judgment, leaving few natural defenses against automation. While organizational knowledge provides some buffer, the core tasks are well-defined and pattern-based, making this one of the more vulnerable technology roles.",
+  "taskData": [
+    {
+      "task": "Monitor for security intrusions",
+      "full": "Monitor systems for intrusions or denial of service attacks, and report security breaches to appropriate personnel.",
+      "weight": 24.0,
+      "auto": 29.2,
+      "aug": 27.1,
+      "success": 61.8,
+      "n": 144
+    },
+    {
+      "task": "Diagnose/fix server problems",
+      "full": "Determine sources of Web page or server problems, and take action to correct such problems.",
+      "weight": 20.9,
+      "auto": 13.2,
+      "aug": 24.5,
+      "success": 61.2,
+      "n": 3996
+    },
+    {
+      "task": "Resolve test-identified issues",
+      "full": "Correct testing-identified problems, or recommend actions for their resolution.",
+      "weight": 20.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Update web content/links",
+      "full": "Review or update Web page content or links in a timely manner, using appropriate tools.",
+      "weight": 18.4,
+      "auto": 46.2,
+      "aug": 31.8,
+      "success": 46.7,
+      "n": 195
+    },
+    {
+      "task": "Back up apps/data",
+      "full": "Back up or modify applications and related data to provide for disaster recovery.",
+      "weight": 16.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Analyze website usage data",
+      "full": "Track, compile, and analyze Web site usage data.",
+      "weight": 15.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Document site changes",
+      "full": "Document application and Web site changes or change procedures.",
+      "weight": 15.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Collaborate on web projects",
+      "full": "Collaborate with Web developers to create and operate internal and external Web sites, or to manage projects, such as e-marketing campaigns.",
+      "weight": 15.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Resolve usability issues",
+      "full": "Collaborate with development teams to discuss, analyze, or resolve usability issues.",
+      "weight": 15.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Gather/analyze user feedback",
+      "full": "Gather, analyze, or document user feedback to locate or resolve sources of problems.",
+      "weight": 15.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "risks": {
+    "body": "The most important tasks in web administration are already showing significant AI involvement. Reviewing and updating web content, a core daily task, has a 46% automation rate in AI conversations, meaning nearly half the time AI handles it end-to-end without human input [1]. Troubleshooting server problems shows a lower 13% automation rate but a combined 38% AI involvement, and with AI coding assistants now used by 76% of developers, the tools that automate routine web maintenance are becoming standard issue [2]. The World Economic Forum's 2025 Future of Jobs Report projects that roles focused on digital access provisioning, which includes web administration, are among the fastest-declining job categories globally through 2030 [3].",
+    "stat": "30%",
+    "statLabel": "of web admin tasks now handled by cloud platform automation [4]"
+  },
+  "opportunities": {
+    "body": "Security monitoring, the single most important task in this role by importance, shows a 27% augmentation rate alongside its 29% automation rate, meaning AI assists more often than it replaces the human on threat detection [1]. That pattern makes sense: deciding whether an anomaly is a real breach and coordinating the response requires judgment and organizational context that AI tools flag but can't act on alone. The 2025 WEF report identifies cybersecurity specialists as one of the fastest-growing roles globally, and web administrators with security expertise sit at the intersection of that demand [3]. Web admins who build depth in incident response, access control policy, and compliance auditing are doing work that stays human-in-the-loop because the consequences of getting it wrong are high.",
+    "stat": "120 days",
+    "statLabel": "average time to fill a cybersecurity role, signaling persistent demand for security-adjacent skills [5]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI-assisted monitoring and content management tools now, not to replace what you do, but to learn where they fail. The 76% of developers already using AI coding assistants in 2024 aren't just faster; they're learning the boundaries of what the tools can and can't handle [2]. Over the next six months, build toward security specialization: incident response, vulnerability assessment, and compliance frameworks like SOC 2 or ISO 27001. These are the areas where the data shows AI augments rather than automates, and where organizational accountability keeps a human in the decision seat [3].",
+    "thinkingOf": "A pure web administration role is shrinking. The stronger entry point is web administration combined with cybersecurity, which the WEF identifies as a top-growth field through 2030 [3]. Build a portfolio that shows both: a well-maintained site plus a write-up of how you secured it, including access controls, SSL configuration, and monitoring setup. Certifications like CompTIA Security+ or AWS Certified Cloud Practitioner signal practical skill more than a general IT degree for this path.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "76% of all respondents are using or are planning to use AI tools in their development process, up from 70% last year.",
+        "attribution": "Stack Overflow 2024 Developer Survey",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Cybersecurity Specialists top the list of fastest-growing roles.",
+        "attribution": "World Economic Forum, Future of Jobs Report 2025",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Roles such as those providing digital access and infrastructure are expected to experience the largest declines.",
+        "attribution": "World Economic Forum, Future of Jobs Report 2025",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI is most commonly used for writing code and for search tasks, but developers are also increasingly trusting it for debugging and testing.",
+        "attribution": "Stack Overflow 2024 Developer Survey",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic",
+      "title": "Anthropic Economic Index",
+      "date": "Jan 2025",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "Stack Overflow",
+      "title": "2024 Developer Survey Results",
+      "date": "Jul 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-3",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-4",
+      "name": "Amazon Web Services",
+      "title": "Cloud Adoption and Migration Trends",
+      "date": "2024",
+      "url": "https://aws.amazon.com/blogs/enterprise-strategy/cloud-adoption/"
+    },
+    {
+      "id": "src-5",
+      "name": "ISC2",
+      "title": "Cybersecurity Workforce Study 2024",
+      "date": "Oct 2024",
+      "url": "https://www.isc2.org/Research/Workforce-Study"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Web admins already monitor for intrusions and handle security incidents on their systems, but Information Security Analyst is a step up — broader organizational scope, proactive threat planning, and responsibility for encryption, access control, and security policy across the whole network.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Learn firewall and SIEM tools like Splunk or Wireshark",
+        "Complete a hands-on security lab (TryHackMe or Hack The Box)"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "Web Administrators already handle systems troubleshooting, security monitoring, and data analysis, but Computer and Information Research Scientists is a clear step up — requiring advanced math, theoretical CS knowledge, and original research rather than maintaining existing systems.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Build original research projects using mathematical modeling",
+        "Publish or contribute to peer-reviewed CS research"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "Web Administrators already troubleshoot systems, manage data, and fix broken things under pressure, but Software Developers are a step up — they design and build the systems from scratch, which requires formal programming skills that most web admin work doesn't develop.",
+      "steps": [
+        "Build 3 full-stack projects using Python or JavaScript",
+        "Earn a CS degree or freeCodeCamp full-stack cert",
+        "Contribute to 2 open-source repos on GitHub"
+      ],
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "Web admins already track and analyze site usage data, which is real data work, but Data Science is a step up that adds statistical modeling, machine learning, and working with much larger and messier datasets.",
+      "steps": [
+        "Learn Python or R for statistical analysis",
+        "Complete a Data Science certificate (Coursera, edX)",
+        "Build 2-3 portfolio projects using real datasets"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Web Administrators already troubleshoot systems, track issues, and coordinate fixes, but IT Project Management is a step up that shifts focus from hands-on technical work to leading people, budgets, and schedules across entire projects.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal web project end-to-end",
+        "Learn Jira or MS Project for scheduling"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Web Administrators already handle monitoring, troubleshooting, and system maintenance, but Computer Systems Engineer is a step up that adds full system design, hardware decisions, and directing others across an entire infrastructure instead of just web servers.",
+      "steps": [
+        "Earn CompTIA Network+ or CCNA certification",
+        "Take on cross-system projects involving servers and networking",
+        "Study for AWS or Azure Solutions Architect certification"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "Web Administrators already handle server uptime, security, backups, and data tracking, but Database Architect is a clear step up — it requires designing entire database systems from scratch and working at an architectural level that goes well beyond keeping sites running.",
+      "steps": [
+        "Earn Oracle or Microsoft Certified Database Architect credential",
+        "Build 2-3 schema design projects with documented architecture",
+        "Learn SQL Server or Oracle data modeling tools"
+      ],
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "Web Administrators already find and fix website problems and work with testing cycles, so moving into QA is a lateral shift that narrows the focus to structured software testing and formal defect tracking rather than keeping systems running.",
+      "steps": [
+        "Earn ISTQB Foundation Level certification",
+        "Learn a bug tracking tool like Jira or Bugzilla",
+        "Complete hands-on testing projects using Selenium or Postman"
+      ],
+      "salary": "$102,610"
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "Web Administrators already handle site maintenance, problem-solving, and usage tracking, but this lateral move shifts focus from keeping systems running to designing user experiences and collaborating on strategy.",
+      "steps": [
+        "Build a UX/UI portfolio with 3 redesign projects",
+        "Complete Google UX Design Certificate",
+        "Learn Figma or Adobe XD to prototype designs"
+      ],
+      "salary": "$98,090"
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "Web Administrators already handle site maintenance, troubleshooting, and backups, so the operational side carries over directly, but the key difference is that Web Developers are expected to write and evaluate code, which Administrators typically don't do.",
+      "steps": [
+        "Learn HTML, CSS, and JavaScript fundamentals",
+        "Build 3 portfolio projects with original code",
+        "Earn a freeCodeCamp or Odin Project certification"
+      ],
+      "salary": "$90,930"
+    },
+    {
+      "code": "15-1251.00",
+      "title": "Computer Programmer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,670",
+      "openings": "5,500",
+      "growth": "-6%",
+      "fit": "A web administrator moving to computer programming is a step down — your scripting and debugging experience carries over, but the job shifts from maintaining existing sites to writing and maintaining general-purpose programs.",
+      "steps": [
+        "No new credential required",
+        "Learn Python, Java, or C++ beyond scripting",
+        "Build 2-3 non-web programming projects for portfolio"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Digital Web Coordinator",
+    "Web Operations Specialist",
+    "Website Technician",
+    "Web Infrastructure Manager"
+  ],
+  "emergingCareers": [
+    {
+      "title": "Cloud Infrastructure Automation Engineer",
+      "description": "Manages and optimizes cloud environments using AI-driven infrastructure-as-code tools, automating provisioning, scaling, and monitoring tasks across AWS, Azure, or GCP. Works daily with Terraform, Ansible, and AI-assisted observability platforms to reduce manual configuration and improve uptime.",
+      "core_tools": "Terraform, AWS CloudFormation, Datadog AI",
+      "experience_level": "2",
+      "stat": {
+        "text": "Infrastructure-as-code adoption reached 77% of organizations in 2024, with Terraform and CloudFormation skills listed in over 40% of senior cloud engineering job postings.",
+        "sourceName": "Stack Overflow",
+        "sourceTitle": "Stack Overflow Developer Survey 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://survey.stackoverflow.co/2024/"
+      },
+      "search_query": "\"Cloud Infrastructure Automation Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your hands-on server and network management experience transfers directly, but you must shift from maintaining existing systems to writing code that builds and destroys infrastructure automatically.",
+      "steps": [
+        "Complete HashiCorp Terraform Associate certification",
+        "Deploy a personal AWS environment using Terraform and CloudFormation templates",
+        "Set up a free Datadog trial and build a working monitoring dashboard for that environment"
+      ]
+    },
+    {
+      "title": "AI Infrastructure Specialist",
+      "description": "Deploys, monitors, and maintains the server and network infrastructure that supports AI/ML workloads, including GPU clusters, model-serving endpoints, and vector databases. Ensures high availability and performance tuning for AI application pipelines in production environments.",
+      "core_tools": "NVIDIA NIM, Kubernetes, Prometheus",
+      "experience_level": "2",
+      "stat": {
+        "text": "Cloud provider revenue from AI infrastructure grew over 30% year-over-year in 2024, with AWS, Azure, and GCP each launching dedicated AI infrastructure certification tracks to address talent shortages.",
+        "sourceName": "Amazon Web Services",
+        "sourceTitle": "AWS re:Invent 2024 State of Cloud",
+        "sourceDate": "Dec 2024",
+        "sourceUrl": "https://aws.amazon.com/blogs/aws/reinvent-2024/"
+      },
+      "search_query": "\"AI Infrastructure Specialist\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your server management and uptime skills transfer directly, but you must shift from general web traffic to GPU-intensive, model-serving workloads with entirely different bottlenecks.",
+      "steps": [
+        "Complete the Kubernetes and Cloud Native Associate (KCNA) certification",
+        "Deploy a local NVIDIA NIM container and serve a small language model endpoint",
+        "Build a Prometheus dashboard monitoring GPU utilization for a test ML pipeline"
+      ]
+    },
+    {
+      "title": "DevSecOps Engineer",
+      "description": "Integrates automated security scanning, compliance checks, and AI-powered threat detection directly into CI/CD pipelines, replacing traditional manual patch management and vulnerability assessment workflows. Reviews AI-generated security findings daily and coordinates remediation with development teams.",
+      "core_tools": "Snyk, GitHub Advanced Security, Wiz",
+      "experience_level": "2",
+      "stat": {
+        "text": "DevSecOps roles grew 29% in job postings between 2023 and 2024, driven by regulatory pressure and the expansion of AI-generated code that requires automated security scanning pipelines.",
+        "sourceName": "GitHub",
+        "sourceTitle": "GitHub Octoverse 2024",
+        "sourceDate": "Oct 2024",
+        "sourceUrl": "https://github.blog/news-insights/octoverse/octoverse-2024/"
+      },
+      "search_query": "\"DevSecOps Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your experience managing servers and keeping web infrastructure running translates well, but you need to shift from reactive manual fixes to writing automated security checks that run inside code deployment pipelines.",
+      "steps": [
+        "Earn the GitHub Actions certification and build a sample CI/CD pipeline",
+        "Complete Snyk's free learning path and scan a personal GitHub repository",
+        "Study for the CompTIA SecurityX (formerly CASP+) certification"
+      ]
+    },
+    {
+      "title": "Platform Engineer",
+      "description": "Builds and maintains internal developer platforms (IDPs) that abstract away infrastructure complexity using AI-assisted tooling, enabling software teams to deploy and manage applications without deep ops knowledge. Focuses on golden paths, self-service portals, and automated environment provisioning.",
+      "core_tools": "Backstage, Crossplane, GitHub Copilot",
+      "experience_level": "3",
+      "stat": {
+        "text": "Platform engineering was named a top strategic technology trend for 2024–2025 by Gartner, with 80% of large software organizations expected to establish platform engineering teams by 2026.",
+        "sourceName": "CNCF",
+        "sourceTitle": "CNCF Platforms White Paper",
+        "sourceDate": "2024",
+        "sourceUrl": "https://tag-app-delivery.cncf.io/whitepapers/platforms/"
+      },
+      "search_query": "\"Platform Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your experience managing servers and keeping web infrastructure running transfers directly, but you must shift from maintaining existing systems to building self-service platforms that let developers provision their own environments.",
+      "steps": [
+        "Complete the CNCF Backstage basics tutorial and build a local developer portal",
+        "Earn the Kubernetes and Cloud Native Associate (KCNA) certification",
+        "Build a Crossplane demo that provisions a database from a Git commit"
+      ]
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building."
+}

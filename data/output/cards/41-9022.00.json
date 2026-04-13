@@ -1,0 +1,357 @@
+{
+  "onet_code": "41-9022.00",
+  "title": "Real Estate Sales Agents",
+  "score": 54,
+  "salary": "$56,320",
+  "openings": "36,600",
+  "growth": "+3%",
+  "jobTitles": [
+    "Associate Broker",
+    "Broker Associate",
+    "Broker in Charge",
+    "Real Estate Agent",
+    "Real Estate Broker",
+    "Real Estate Broker Associate",
+    "Real Estate Salesperson, Realtor",
+    "Sales Agent"
+  ],
+  "keyDrivers": "Sales agents show properties, build client relationships, and handle licensed transaction work, but much of their day-to-day involves tasks AI is rapidly improving at, lead generation, market comparisons, scheduling, and initial client matching. While licensing requirements and the importance of in-person showings provide some protection, agents face more displacement risk than brokers because they typically handle more routine transactions with less complex judgment. The large number of agents relative to market need makes this role vulnerable to consolidation as AI tools make each agent more productive.",
+  "taskData": [
+    {
+      "task": "Match properties to buyers",
+      "full": "Generate lists of properties that are compatible with buyers' needs and financial resources.",
+      "weight": 25.2,
+      "auto": 49.4,
+      "aug": null,
+      "success": null,
+      "n": 77
+    },
+    {
+      "task": "Market/promote listings",
+      "full": "Promote sales of properties through advertisements, open houses, and participation in multiple listing services.",
+      "weight": 23.0,
+      "auto": 40.9,
+      "aug": null,
+      "success": 75.3,
+      "n": 381
+    },
+    {
+      "task": "Prepare transaction documents",
+      "full": "Prepare documents such as representation contracts, purchase agreements, closing statements, deeds, and leases.",
+      "weight": 22.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Negotiate between parties",
+      "full": "Act as an intermediary in negotiations between buyers and sellers, generally representing one or the other.",
+      "weight": 21.8,
+      "auto": 28.8,
+      "aug": null,
+      "success": 67.3,
+      "n": 52
+    },
+    {
+      "task": "Answer client questions",
+      "full": "Answer clients' questions regarding construction work, financing, maintenance, repairs, and appraisals.",
+      "weight": 21.5,
+      "auto": 42.4,
+      "aug": 22.4,
+      "success": 63.5,
+      "n": 85
+    },
+    {
+      "task": "Coordinate closing parties",
+      "full": "Confer with escrow companies, lenders, home inspectors, and pest control operators to ensure that terms and conditions of purchase agreements are met before closing dates.",
+      "weight": 21.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Run comp analysis",
+      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
+      "weight": 21.3,
+      "auto": 35.6,
+      "aug": null,
+      "success": 55.6,
+      "n": 45
+    },
+    {
+      "task": "Present purchase offers",
+      "full": "Present purchase offers to sellers for consideration.",
+      "weight": 20.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Schedule home showings",
+      "full": "Coordinate appointments to show homes to prospective buyers.",
+      "weight": 20.4,
+      "auto": null,
+      "aug": null,
+      "success": 88.2,
+      "n": 17
+    },
+    {
+      "task": "Interview buyer clients",
+      "full": "Interview clients to determine what kinds of properties they are seeking.",
+      "weight": 20.2,
+      "auto": 39.3,
+      "aug": null,
+      "success": 51.8,
+      "n": 56
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The tasks AI hits hardest are the ones agents spend the most time on. Property matching (generating lists for buyers) shows 49% automation, marketing and listing promotion shows 41%, and answering client questions about financing and repairs shows 42%. These are core daily activities, not back-office busywork. NAR's 2024 member profile found that 35% of Realtors already use AI tools in their business, up from near zero two years prior [1]. Zillow and similar platforms are increasingly offering AI-powered home valuations and instant property recommendations directly to consumers, compressing the information advantage that agents have traditionally held [2].",
+    "stat": "1.5M",
+    "statLabel": "active Realtors nationally, a saturated field where AI compresses agent differentiation [1]"
+  },
+  "opportunities": {
+    "body": "Negotiation, the task where agents act as intermediaries between buyers and sellers, shows a 29% automation rate That's the lowest automation rate among the core tasks with enough data, and the task itself depends on reading people, managing emotions, and navigating one-off deal structures that AI handles poorly. NAR data shows 88% of buyers purchased their home through an agent in 2024, and the top reason cited was help negotiating terms [1]. The augmentation signal on client Q&A (22%) suggests AI is useful as a research assistant for agents fielding questions about financing and appraisals, but clients still want a human explaining what it means for their specific situation. Transaction complexity also works in agents' favor: coordinating escrow, inspections, lenders, and pest control across a closing timeline involves real-time judgment calls that resist automation.",
+    "stat": "88%",
+    "statLabel": "of buyers used an agent to purchase a home [1]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI tools for the property-matching and CMA (comparative market analysis) work that already shows high automation rates. Agents who let AI handle the initial search filtering and pricing comps can spend that time on the parts AI handles worst: face-to-face negotiation, reading client anxiety during walkthroughs, and managing the multi-party coordination of a closing. NAR found that agents using AI tools reported spending more time on client relationships and less on administrative tasks [1]. Over six months, building deeper expertise in complex transactions like multi-offer situations, 1031 exchanges, or investment property analysis creates a niche that automated platforms can't replicate.",
+    "thinkingOf": "The barrier to entry in real estate is low (a state license, typically a few weeks of coursework), but that's also the problem. Low barriers mean lots of competition, and AI is making the commodity part of the job (finding listings, pulling comps) nearly free. New agents who build a reputation around a specific transaction type or neighborhood tend to survive the first two years at much higher rates. Zillow's research shows that hyperlocal market knowledge remains one of the top reasons sellers choose a specific agent [2]. Focus early on learning the negotiation and closing coordination side, not the listing side that platforms are absorbing.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Members who have integrated AI into their workflow report that they can better focus on the parts of real estate that clients most value — negotiation strategy, neighborhood expertise, and emotional support through complex transactions — rather than spending hours on property searches and CMA preparation.",
+        "attribution": "National Association of Realtors",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Consumers increasingly start their search online, but they still turn to agents for the parts that require local expertise, negotiation skill, and trust. The agent value proposition is shifting from information access — which AI now provides — to judgment, relationships, and accountability through a high-stakes transaction.",
+        "attribution": "Zillow Research",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The barrier to entry in real estate is low — a state license typically requires a few weeks of coursework — but that is also the problem. AI tools are compressing the information advantage that used to differentiate agents, so new entrants who build deep expertise in a specific geographic area or property type will have a clearer value proposition from day one.",
+        "attribution": "McKinsey Global Institute",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The real estate landscape is shifting toward a model where technology handles discovery and initial filtering while agents handle the judgment-intensive work — evaluating properties in person, reading seller motivation, and navigating inspection and financing contingencies. New entrants who position around that judgment layer, rather than competing on access to listings, will be more durable.",
+        "attribution": "Zillow Research",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "National Association of Realtors",
+      "title": "2024 Member Profile",
+      "date": "Mar 2025",
+      "url": "https://www.nar.realtor/research-and-statistics/research-reports/member-profile"
+    },
+    {
+      "id": "src-2",
+      "name": "Zillow Research",
+      "title": "Consumer Housing Trends Report 2024",
+      "date": "Oct 2024",
+      "url": "https://www.zillow.com/research/buyers-housing-trends-report-2024-34383/"
+    },
+    {
+      "id": "src-3",
+      "name": "McKinsey Global Institute",
+      "title": "The Economic Potential of Generative AI: The Next Productivity Frontier",
+      "date": "Jun 2023",
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "Real estate agents already handle client negotiations, contracts, and sales pipelines, but Sales Manager is a step up that requires managing people, budgets, and performance metrics rather than individual deals.",
+      "steps": [
+        "Earn a sales management certificate (AMA or Dale Carnegie)",
+        "Take on a team lead or mentorship role at your brokerage",
+        "Build experience reading P&L reports and sales forecasts"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "You already know how to match clients to complex products, negotiate deals, and manage technical documentation, but Sales Engineering is a step up that requires deep technical product knowledge and the ability to support engineers, not just buyers.",
+      "steps": [
+        "Earn a technical cert in target industry (e.g., AWS, HVAC, or machinery)",
+        "Shadow or intern with a B2B sales engineering team",
+        "Build a portfolio of technical proposal documents"
+      ],
+      "salary": "$121,520"
+    },
+    {
+      "code": "11-9141.00",
+      "title": "Property Manager",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "39,000",
+      "growth": "+4%",
+      "fit": "You already know contracts, property valuation, and client negotiation, but this role shifts you from closing deals to running buildings day-to-day, which includes staff management, maintenance oversight, and ongoing financial operations you haven't owned before.",
+      "steps": [
+        "Earn CPM or RPA property management certification",
+        "Shadow a property manager for 90 days",
+        "Take on a small rental portfolio to manage"
+      ],
+      "isAdjacent": true,
+      "salary": "$66,700"
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "You already handle contracts, negotiations, and client work as an agent, but broker is a step up — it adds office management, agent supervision, and independent practice rights that require extra licensing.",
+      "steps": [
+        "Complete 2 years as a licensed agent",
+        "Finish broker pre-licensing coursework (~60 hours)",
+        "Pass the state broker licensing exam"
+      ],
+      "salary": "$72,280"
+    },
+    {
+      "code": "41-3031.00",
+      "title": "Financial Services Sales Agent",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "38,100",
+      "growth": "+3%",
+      "fit": "Both roles center on matching clients to assets, negotiating deals, and managing transaction paperwork, but securities trading operates in faster, regulated financial markets rather than physical property, making this a step up in technical and regulatory complexity.",
+      "steps": [
+        "Pass the FINRA Series 7 exam",
+        "Pass the FINRA Series 63 or 66 exam",
+        "Build familiarity with Bloomberg or a brokerage trading platform"
+      ],
+      "isAdjacent": true,
+      "salary": "$78,140"
+    },
+    {
+      "code": "41-4012.00",
+      "title": "Manufacturing Sales Representative",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "114,800",
+      "growth": "0%",
+      "fit": "Both roles center on matching products to buyer needs and negotiating deals, but wholesale sales means selling physical goods to businesses rather than properties to individuals.",
+      "steps": [
+        "Apply to entry-level B2B sales or distributor rep roles",
+        "Learn inventory and CRM tools like Salesforce or NetSuite",
+        "Build familiarity with a specific product category or industry"
+      ],
+      "salary": "$66,780"
+    },
+    {
+      "code": "41-3021.00",
+      "title": "Insurance Sales Agent",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$60,370",
+      "openings": "47,000",
+      "growth": "+4%",
+      "fit": "A real estate sales agent moving to insurance sales is a step down in transaction size — your client relationship skills and consultative selling experience carry over, but the product changes from properties to policies and requires a separate state license.",
+      "steps": [
+        "Pass state insurance licensing exam (P&C or Life)",
+        "No real estate license applies to insurance role",
+        "Expect recurring commission from policy renewals"
+      ]
+    },
+    {
+      "code": "41-2031.00",
+      "title": "Retail Salesperson",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$34,580",
+      "openings": "555,800",
+      "growth": "0%",
+      "fit": "A real estate sales agent moving to retail sales is a step down in scope and earnings — your customer service and persuasion skills carry over, but the role shrinks from complex property transactions to individual retail purchases.",
+      "steps": [
+        "No credential required",
+        "Expect significant pay reduction",
+        "Apply client-facing communication skills to floor sales"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Residential Real Estate Agent",
+    "Luxury Real Estate Agent",
+    "Real Estate Sales Representative",
+    "Commercial Real Estate Agent"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI-Powered Property Valuation Specialist",
+      "description": "Uses machine learning models and predictive analytics platforms to generate automated property valuations, comparative market analyses, and investment potential assessments. Works with real estate data APIs and AI valuation tools to support agents and clients with data-driven pricing recommendations.",
+      "core_tools": "Zillow API, Redfin data feeds, TensorFlow/scikit-learn",
+      "experience_level": "2",
+      "stat": {
+        "text": "AI-powered automated valuation models are now embedded in over 50% of US real estate transactions, with demand for specialists who can interpret, verify, and communicate model outputs to buyers and sellers.",
+        "sourceName": "WEF",
+        "sourceTitle": "Future of Jobs Report 2025",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      },
+      "search_query": "\"property valuation\" AI machine learning jobs 2025",
+      "job_search_url": "",
+      "fit": "Your market knowledge and client relationships transfer directly, but you'll need to shift from intuition-based pricing to building and validating machine learning models that make those decisions automatically.",
+      "steps": [
+        "Complete a Google Cloud or Coursera machine learning fundamentals certification",
+        "Build a prototype valuation model using scikit-learn on public real estate datasets",
+        "Integrate one live API (Zillow or Redfin) into a test project and validate predictions against actual sales"
+      ]
+    },
+    {
+      "title": "Real Estate AI Content Strategist",
+      "description": "Develops and manages AI-generated marketing content, virtual property descriptions, and personalized buyer-agent messaging at scale using generative AI platforms. Optimizes listing presentations, email campaigns, and social media content using GPT and multimodal AI tools.",
+      "core_tools": "ChatGPT API, Jasper, Synthesia",
+      "experience_level": "2",
+      "stat": {
+        "text": "Real estate teams using AI-generated content see 35% higher engagement rates and 25% faster lead conversion, driving employer demand for content-AI specialists.",
+        "sourceName": "National Association of Realtors",
+        "sourceTitle": "Technology in Real Estate: Buyer & Agent Preferences Survey",
+        "sourceDate": "Oct 2024",
+        "sourceUrl": "https://www.nar.realtor/"
+      },
+      "search_query": "\"AI content\" real estate strategist jobs 2024 2025",
+      "job_search_url": "",
+      "fit": "Your ability to understand what buyers want stays valuable, but you'll shift from writing individual descriptions to building systems that generate hundreds of personalized listings automatically.",
+      "steps": [
+        "Complete ChatGPT API fundamentals course on OpenAI platform",
+        "Build three sample campaigns using Jasper for real estate listing variations",
+        "Create one Synthesia video property tour template end-to-end"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "onet_code": "13-2011.00",
+  "title": "Accountants and Auditors",
+  "score": 59,
+  "salary": "$81,680",
+  "openings": "124,200",
+  "growth": "+5%",
+  "jobTitles": [
+    "Accountant",
+    "Accounting Officer",
+    "Audit Partner, Auditor",
+    "Certified Public Accountant (CPA)",
+    "Cost Accountant",
+    "Financial Auditor",
+    "General Accountant",
+    "Internal Auditor",
+    "Revenue Tax Specialist"
+  ],
+  "emergingTitles": [
+    "Staff Accountant",
+    "Senior Accountant",
+    "Audit Associate"
+  ],
+  "keyDrivers": "Much of traditional accounting work, bookkeeping, reconciliation, and routine audits, is highly automatable, which puts downward pressure on this role. However, licensed accountants carry real legal liability for the accuracy of financial statements and tax filings, which keeps a human in the loop. AI will likely handle the grunt work, freeing accountants to focus more on advisory and complex judgment calls, but the profession will need far fewer people for the same volume of work.",
+  "taskData": [
+    {
+      "task": "Supervise/scope audits",
+      "full": "Supervise auditing of establishments, and determine scope of investigation required.",
+      "weight": 15.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Reconcile accounts",
+      "full": "Review accounts for discrepancies and reconcile differences.",
+      "weight": 14.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Analyze business operations",
+      "full": "Analyze business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses or to provide advice.",
+      "weight": 14.3,
+      "auto": 39.7,
+      "aug": 8.5,
+      "success": 60.6,
+      "n": 398
+    },
+    {
+      "task": "Prepare journal entries",
+      "full": "Prepare adjusting journal entries.",
+      "weight": 14.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Examine financial reports",
+      "full": "Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.",
+      "weight": 13.6,
+      "auto": 45.0,
+      "aug": null,
+      "success": 56.2,
+      "n": 80
+    },
+    {
+      "task": "Inspect accounting systems",
+      "full": "Inspect account books and accounting systems for efficiency, effectiveness, and use of accepted accounting procedures to record transactions.",
+      "weight": 13.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Report finances to management",
+      "full": "Report to management regarding the finances of establishment.",
+      "weight": 13.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Detect fraud/non-compliance",
+      "full": "Collect and analyze data to detect deficient controls, duplicated effort, extravagance, fraud, or non-compliance with laws, regulations, and management policies.",
+      "weight": 12.8,
+      "auto": 44.7,
+      "aug": null,
+      "success": 44.7,
+      "n": 47
+    },
+    {
+      "task": "Develop recordkeeping systems",
+      "full": "Develop, implement, modify, and document recordkeeping and accounting systems, making use of current computer technology.",
+      "weight": 12.0,
+      "auto": 42.2,
+      "aug": 16.3,
+      "success": 67.8,
+      "n": 332
+    },
+    {
+      "task": "Set up chart of accounts",
+      "full": "Establish tables of accounts and assign entries to proper accounts.",
+      "weight": 12.0,
+      "auto": null,
+      "aug": 41.0,
+      "success": 76.9,
+      "n": 39
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The tasks with the clearest AI signal, analyzing business trends and maintaining accounting systems, already show automation rates near 40%. BLS still projects faster-than-average employment growth (6%) for accountants and auditors through 2034, but that headline number masks a shift toward higher-complexity work as software handles routine analysis [1]. Thomson Reuters found that 44% of tax and accounting firms using AI deploy it daily, accelerating the compression of routine analytical work that occupies much of the mid-level accountant role [2].",
+    "stat": "44%",
+    "statLabel": "of tax and accounting firms using AI deploy it daily [2]"
+  },
+  "opportunities": {
+    "body": "Audit judgment, fraud detection, and internal controls assessment sit in the no-AI-signal bucket, and there is a structural reason: these tasks carry personal legal accountability that cannot be delegated to software. CPA licensure creates a credential barrier that self-service tools cannot cross. The Intuit 2025 survey found 93% of accounting firms now use AI to enhance strategic advisory services, and firms making this shift report both efficiency gains and higher revenue per engagement [3]. The AICPA reports that AI is accelerating the profession's shift from transaction processing to advisory work, a transition that amplifies the value of accounting credentials rather than undermining them [4].",
+    "stat": "93%",
+    "statLabel": "of accounting firms use AI to enhance advisory services [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Focus your development on the tasks where AI signal is absent: audit judgment, internal controls review, fraud detection, and management reporting. These are your durable edges. In the near term, use AI-assisted tools for financial statement analysis and reconciliation so more time goes to the judgment work [3]. Over the next six months, pick a specialization, ESG reporting, cybersecurity audit, or forensic accounting, where the complexity is high enough that AI is a tool rather than a substitute. The AICPA notes that credentialed accountants who specialize are positioned above the automation floor [4].",
+    "thinkingOf": "The CPA credential remains the clearest path to the durable part of the role. Candidates who sit for the exam immediately after completing 150 credit hours gain access to the audit and advisory work that software cannot do. BLS data shows accountants and auditors are expected to add roughly 91,000 positions over the next decade despite AI automation, concentrated in audit, tax advisory, and financial management [1]. Thomson Reuters data shows professionals who pair technical credentials with a visible AI strategy are twice as likely to see revenue growth than those without one [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI isn't taking over our jobs. It's giving us more room to do the work that matters.",
+        "attribution": "Dan Luthi, Partner, Ignite Spot Accounting Services",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is fundamentally reshaping the accounting profession, accelerating the move toward more strategic advisory services.",
+        "attribution": "Erik Asgeirsson, President and CEO, CPA.com",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI is not going to disrupt the accounting profession, but it will change what an accountant does.",
+        "attribution": "Mark Koziel, President and CEO, AICPA",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Organizations with visible AI strategies are twice as likely to experience revenue growth compared to those with informal or ad-hoc approaches.",
+        "attribution": "2025 Future of Professionals Report, Thomson Reuters",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Accountants and Auditors",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/accountants-and-auditors.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Thomson Reuters",
+      "title": "2025 Future of Professionals Report",
+      "date": "Jun 2025",
+      "url": "https://www.thomsonreuters.com/en/c/future-of-professionals.html"
+    },
+    {
+      "id": "src-3",
+      "name": "Intuit QuickBooks",
+      "title": "The Future of Accounting: How Intuit's AI Innovations Are Reshaping the Profession",
+      "date": "Aug 2025",
+      "url": "https://www.cpapracticeadvisor.com/2025/08/22/the-future-of-accounting-how-intuits-ai-innovations-are-reshaping-the-profession/164854/"
+    },
+    {
+      "id": "src-4",
+      "name": "CPA.com / AICPA",
+      "title": "CPA.com Issues 2025 AI in Accounting Report",
+      "date": "Jun 2025",
+      "url": "https://www.cpa.com/news/cpacom-issues-2025-ai-accounting-report"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Financial AI Systems Auditor",
+      "description": "Inspects and audits the algorithms used by finance departments to ensure they comply with accounting standards and do not introduce systematic errors.",
+      "core_tools": "MindBridge AI, Python, Idea Data Analysis",
+      "experience_level": 3,
+      "stat": {
+        "text": "The demand for algorithm auditors in finance is projected to increase by 40% as AI regulation tightens.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"AI Systems Auditor\" finance jobs",
+      "job_search_url": "",
+      "fit": "Applies rigorous audit methodologies to software logic rather than human ledger entries.",
+      "steps": [
+        "Earn CISA (Certified Information Systems Auditor) cert",
+        "Learn to read Python scripts",
+        "Complete AI risk management frameworks training"
+      ]
+    },
+    {
+      "title": "Predictive Accounting Analyst",
+      "description": "Couples historical financial data with machine learning forecasts to provide real-time rolling financial forecasts for corporate planning.",
+      "core_tools": "Planful, Anaplan AI, Microsoft Copilot for Finance",
+      "experience_level": 4,
+      "stat": {
+        "text": "72% of CFOs plan to increase investment in predictive analytics and algorithmic forecasting.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "State of FP&A 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Predictive Accounting\" OR \"FP&A AI\"",
+      "job_search_url": "",
+      "fit": "Moves from backward-looking reporting (what happened) to forward-looking predictive modeling (what will happen).",
+      "steps": [
+        "Transition from accounting to FP&A",
+        "Master Anaplan or similar predictive tools",
+        "Complete intermediate statistics courses"
+      ]
+    },
+    {
+      "title": "Continuous Audit Strategist",
+      "description": "Sets up \"always-on\" automated audit systems that flag high-risk transactions in real time using anomaly detection models.",
+      "core_tools": "ACL Robotics, Alteryx, Splunk",
+      "experience_level": 3,
+      "stat": {
+        "text": "Continuous auditing is ranked as the #1 priority for modern internal audit divisions.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Continuous Audit\" Manager",
+      "job_search_url": "",
+      "fit": "Uses sampling and risk assessment knowledge to deploy automated 100% population testing.",
+      "steps": [
+        "Master scripting languages like Python/R",
+        "Build continuous monitoring dashboards",
+        "Lead an AI-assisted audit pilot"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Financial Managers; this is a step up.",
+      "steps": [
+        "Leadership destination",
+        "MBA optional but common; many advance via internal promotion (Controller → CFO track)"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Financial Examiners; this is a step up.",
+      "steps": [
+        "Senior regulatory track",
+        "Federal/state bank examiner roles (FDIC"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Personal Financial Advisors; this is a lateral move.",
+      "steps": [
+        "Pivot to client-facing wealth management",
+        "CFP certification (~1yr coursework + exam) + Series 65/66 required"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Loan Officers; this is a lateral move.",
+      "steps": [
+        "Pivot from financial reporting to consumer/commercial lending",
+        "NMLS license (~20hr pre-licensing + exam) required for mortgage"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Financial Risk Specialists; this is a step up.",
+      "steps": [
+        "Progression into quant/risk analytics",
+        "FRM certification (2-part exam) common"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Fraud Examiners, Investigators and Analysts; this is a lateral move.",
+      "steps": [
+        "Pivot to forensic/investigative work",
+        "CFE credential (ACFE exam) is standard"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Accountants and Auditors experience into Credit Counselors by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Credit Counselors",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2082.00",
+      "title": "Tax Preparer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$50,560",
+      "openings": "10,400",
+      "growth": "+4%",
+      "fit": "Transitions Accountants and Auditors experience into Tax Preparers by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Tax Preparers",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Insurance Underwriters; this is a lateral move.",
+      "steps": [
+        "Pivot to risk assessment within insurance carriers",
+        "AU or CPCU designations earned on the job"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Draws upon core skills from Accountants and Auditors but pivots focus to Credit Analysts; this is a step up.",
+      "steps": [
+        "Natural step into bank or corporate credit risk",
+        "Financial statement analysis transfers directly"
+      ]
+    },
+    {
+      "code": "43-3031.00",
+      "title": "Bookkeeper",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$49,210",
+      "openings": "170,000",
+      "growth": "-6%",
+      "fit": "Transitions Accountants and Auditors experience into Bookkeeping, Accounting, and Auditing Clerks by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Bookkeeping, Accounting, and Auditing Clerks",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    }
+  ]
+}

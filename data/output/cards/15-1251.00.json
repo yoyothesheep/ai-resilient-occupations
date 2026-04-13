@@ -1,0 +1,486 @@
+{
+  "onet_code": "15-1251.00",
+  "title": "Computer Programmers",
+  "score": 23,
+  "salary": "$98,670",
+  "openings": "5,500",
+  "growth": "-1%",
+  "jobTitles": [
+    "Analyst Programmer",
+    "Application Programmer Analyst",
+    "Computer Programmer",
+    "Computer Programmer Analyst",
+    "Internet Programmer",
+    "Java Developer, Programmer",
+    "Programmer Analyst",
+    "Web Applications Programmer",
+    "Web Programmer"
+  ],
+  "emergingTitles": [
+    "Junior Software Developer",
+    "Full Stack Developer",
+    "Backend Developer",
+    "Frontend Developer"
+  ],
+  "keyDrivers": "Computer programmers who primarily write code to specifications are among the most directly threatened by AI, as code generation tools can already produce working software from natural-language descriptions. The role lacks physical requirements, legal protections, or deep relationship-based value, it's defined almost entirely by producing a functional output that AI is rapidly learning to deliver. While experienced programmers who architect solutions and understand complex systems will adapt, the traditional role of translating requirements into code is shrinking fast.",
+  "taskData": [
+    {
+      "task": "Write/analyze programs",
+      "full": "Write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",
+      "weight": 22.8,
+      "auto": 23.0,
+      "aug": 35.8,
+      "success": 73.5,
+      "n": 3648
+    },
+    {
+      "task": "Debug/correct errors",
+      "full": "Correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.",
+      "weight": 22.5,
+      "auto": 18.2,
+      "aug": 12.7,
+      "success": 56.5,
+      "n": 13570
+    },
+    {
+      "task": "Revise/expand programs",
+      "full": "Perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",
+      "weight": 20.6,
+      "auto": 35.5,
+      "aug": 12.9,
+      "success": 53.4,
+      "n": 874
+    },
+    {
+      "task": "Maintain software packages",
+      "full": "Write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",
+      "weight": 20.3,
+      "auto": 32.7,
+      "aug": 13.0,
+      "success": 65.1,
+      "n": 14117
+    },
+    {
+      "task": "Consult with stakeholders",
+      "full": "Consult with managerial, engineering, and technical personnel to clarify program intent, identify problems, and suggest changes.",
+      "weight": 18.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Test programs/applications",
+      "full": "Conduct trial runs of programs and software applications to be sure they will produce the desired information and that the instructions are correct.",
+      "weight": 16.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Write documentation",
+      "full": "Compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",
+      "weight": 15.0,
+      "auto": 35.0,
+      "aug": 17.5,
+      "success": 70.3,
+      "n": 7387
+    },
+    {
+      "task": "Troubleshoot with teams",
+      "full": "Consult with and assist computer operators or system analysts to define and resolve problems in running computer programs.",
+      "weight": 13.7,
+      "auto": 8.6,
+      "aug": 77.4,
+      "success": 77.4,
+      "n": 747
+    },
+    {
+      "task": "Systems analysis/programming",
+      "full": "Perform systems analysis and programming tasks to maintain and control the use of computer systems software as a systems programmer.",
+      "weight": 13.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Create workflow diagrams",
+      "full": "Prepare detailed workflow charts and diagrams that describe input, output, and logical operation, and convert them into a series of instructions coded in a computer language.",
+      "weight": 13.3,
+      "auto": 35.2,
+      "aug": 6.9,
+      "success": 70.5,
+      "n": 923
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The core of this job, writing and maintaining code, already shows 33% automation in real AI usage data across over 14,000 observed conversations. Revising and expanding existing programs runs even higher at 36% automation. GitHub's 2024 research found that developers using Copilot completed tasks 55% faster, which means fewer programmer-hours needed per project [1]. BLS projects computer programmer employment to decline 10% from 2023 to 2033, a loss of roughly 12,400 jobs, as companies consolidate programming work into broader software developer roles and offshore routine coding [2].",
+    "stat": "10%",
+    "statLabel": "employment expected to shrink over the next decade [2]"
+  },
+  "opportunities": {
+    "body": "The strongest augmentation signal sits in consulting with teams to resolve problems in running programs: 77% augmentation rate across 747 conversations. AI acts as a diagnostic partner here, but the human still drives the fix. The 2024 Stack Overflow Developer Survey found that 76% of developers are using or planning to use AI tools, but only 43% trust the accuracy of the output [3]. That trust gap is where experienced programmers add value: reviewing AI-generated code, catching subtle logic errors, and understanding system context that AI misses. Roles that combine programming skill with domain knowledge, like systems analysis or DevOps, are growing even as pure coding positions shrink.",
+    "stat": "17%",
+    "statLabel": "projected growth in software developer roles that programmers can transition into [2]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI code-generation tools (GitHub Copilot, Claude, or similar) on real production tasks now, and track where they fail. The 2024 Stack Overflow survey found 43% of developers don't trust AI output accuracy [3], which means the ability to audit, debug, and correct AI-generated code is immediately valuable. Over the next six months, build depth in areas AI handles worst for this role: cross-team troubleshooting, understanding legacy system context, and translating business requirements into technical specs. Those collaborative, context-heavy tasks show the highest augmentation rates and lowest automation rates in the data.",
+    "thinkingOf": "Pure coding skills alone are a shrinking market. GitHub's research shows AI is already handling a meaningful share of routine code generation [1]. A stronger entry strategy: build a portfolio that demonstrates code review, debugging complex systems, and integrating components rather than writing greenfield code from scratch. Pair programming proficiency with a specific domain (healthcare data, financial systems, embedded hardware) to differentiate from both AI tools and generalist programmers. Consider aiming for software developer or DevOps roles rather than \"computer programmer\" titles specifically, since BLS projects software developers to grow 17% over the same period programmers decline [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The programmers who are thriving with AI coding tools are the ones who treat the output as a first draft from a junior engineer — always reviewed, often restructured. Speed went up. So did the importance of architecture judgment, because now you are reviewing a lot more code than you used to write.",
+        "attribution": "Gergely Orosz, The Pragmatic Engineer",
+        "sourceId": "src-pragmatic"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI code generation has shifted the bottleneck in programming from writing code to understanding what you wrote. Programmers who can read, debug, and reason about large codebases quickly are more valuable than ever — that skill does not go away when the AI writes the first draft.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The entry bar has shifted from \"can you write code\" to \"can you evaluate code, catch bugs in AI output, and reason about system design.\" Bootcamp graduates who understand that shift — and build portfolios that demonstrate it — are getting hired. Those who treat AI tools as a substitute for fundamentals are not.",
+        "attribution": "ThoughtWorks Technology Radar, Vol. 31",
+        "sourceId": "src-thoughtworks"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "67% of developers report using AI coding tools in their workflow, but the survey shows senior developers are adopting them at higher rates than juniors — not because they need more help, but because they can evaluate the output critically and redirect it when it is wrong.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "quotes": [
+    {
+      "persona": "alreadyIn",
+      "quote": "Developers with AI tools completed tasks 55% faster. The skill isn't prompting, it's evaluating what comes back and knowing when the output is subtly wrong.",
+      "attribution": "GitHub Research",
+      "sourceId": "src-1"
+    },
+    {
+      "persona": "alreadyIn",
+      "quote": "76% of developers are using or planning to use AI tools in their development process, but only 43% trust the accuracy of AI output.",
+      "attribution": "Stack Overflow 2024 Developer Survey",
+      "sourceId": "src-3"
+    },
+    {
+      "persona": "thinkingOf",
+      "quote": "Employment of software developers is projected to grow 17 percent from 2023 to 2033, while computer programmers are projected to decline 10 percent, suggesting the market rewards broader engineering skills over pure coding.",
+      "attribution": "U.S. Bureau of Labor Statistics",
+      "sourceId": "src-2"
+    },
+    {
+      "persona": "thinkingOf",
+      "quote": "Developers who pair coding with domain-specific knowledge and system design responsibilities report higher satisfaction and less concern about AI displacement.",
+      "attribution": "Stack Overflow 2024 Developer Survey",
+      "sourceId": "src-3"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "GitHub Blog",
+      "title": "Research: Quantifying GitHub Copilot's impact on developer productivity and happiness",
+      "date": "Sep 2024",
+      "url": "https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Computer Programmers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-programmers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "2024 Developer Survey Results",
+      "date": "Jul 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-pragmatic",
+      "name": "The Pragmatic Engineer",
+      "title": "How AI Is Changing Software Development",
+      "date": "2024",
+      "url": "https://newsletter.pragmaticengineer.com/"
+    },
+    {
+      "id": "src-thoughtworks",
+      "name": "ThoughtWorks Technology Radar",
+      "title": "Technology Radar Vol. 31",
+      "date": "Nov 2024",
+      "url": "https://www.thoughtworks.com/radar"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Your programming background gives you a real head start — you already understand how software works, which makes spotting vulnerabilities easier — but this is a step up that requires learning threat monitoring, security protocols, and compliance frameworks you haven't been responsible for before.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Build a home lab, practice network monitoring",
+        "Study NIST cybersecurity framework basics"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "You already write and debug complex programs, but this is a step up into original research, mathematical modeling, and designing the systems themselves rather than implementing specs others define.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Publish or contribute to peer-reviewed research",
+        "Build projects applying novel algorithms or models"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "You already write, test, and fix code daily, but Software Developer is a step up — it adds system design, user needs analysis, and ownership of the full software lifecycle beyond just the code itself.",
+      "steps": [
+        "Lead a full project from design to deployment",
+        "Study systems design (e.g., Grokking the System Design Interview)",
+        "Build 2-3 portfolio projects with documented architecture decisions"
+      ],
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "Programming experience with data handling and logic carries over directly, but Data Science is a step up that requires statistical modeling, machine learning, and analytical skills that go well beyond writing functional code.",
+      "steps": [
+        "Complete a statistics or ML course (Coursera, edX)",
+        "Learn Python data stack: pandas, scikit-learn, matplotlib",
+        "Build 2-3 portfolio projects with real datasets"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already work with technical teams and debug complex systems, but this is a step up — the job shifts from writing code to owning schedules, budgets, and people.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal project as unofficial PM",
+        "Learn Jira or MS Project for scheduling"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already write and debug code, which is real systems knowledge, but this is a step up into designing full systems, directing others, and owning hardware and infrastructure decisions, not just the software.",
+      "steps": [
+        "Earn AWS or Azure Solutions Architect certification",
+        "Take on system design ownership in current role",
+        "Study networking fundamentals via CompTIA Network+"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "You already write and debug code that handles data, but Database Architect is a step up — it requires designing the full data infrastructure that programmers build on top of, not just writing programs that use it.",
+      "steps": [
+        "Earn Oracle or Microsoft database architect certification",
+        "Build 2-3 schema design and data modeling portfolio projects",
+        "Learn ERwin, ER/Studio, or similar data modeling tools"
+      ],
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "You already write and debug code and run trial programs, which maps directly to QA work, but this is a step up because the role owns the full testing process, defect documentation, and quality standards rather than just fixing your own code.",
+      "steps": [
+        "Earn ISTQB Foundation Level certification",
+        "Learn Selenium, JIRA, or similar bug tracking tools",
+        "Build a test plan portfolio with real defect reports"
+      ],
+      "salary": "$102,610"
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "You already know how to build and fix software, but this role is a step up — it adds user research, visual design, and business strategy on top of the technical work you're used to.",
+      "steps": [
+        "Complete a UX/UI design certification (Google or Nielsen Norman)",
+        "Build 3 portfolio projects with Figma wireframes and user testing",
+        "Learn SEO fundamentals and e-commerce strategy basics"
+      ],
+      "salary": "$98,090"
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already write and debug code, which helps with diagnosing server and web page problems, but Web Administrator is a step up — it adds system security monitoring, disaster recovery, and site infrastructure ownership that programming alone doesn't cover.",
+      "steps": [
+        "Earn CompTIA Security+ or Network+ certification",
+        "Set up and manage an Apache or Nginx server hands-on",
+        "Learn server log analysis with tools like Splunk or AWStats"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "Computer programmers already write, test, and fix code, so the core skill carries over, but web development is a step up that adds browser compatibility, web-specific frameworks, and user-facing design responsibilities.",
+      "steps": [
+        "Build a web-focused portfolio with 2-3 projects",
+        "Learn a frontend framework like React or Vue",
+        "Learn a backend framework like Node.js or Django"
+      ],
+      "salary": "$90,930"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Integration Engineer",
+      "description": "Designs and implements pipelines that connect large language models and AI APIs into existing enterprise software systems, ensuring reliability, security, and scalability. Day-to-day work involves prompt engineering, API orchestration, and building middleware layers between AI services and business applications.",
+      "core_tools": "LangChain, OpenAI API, Azure OpenAI Service",
+      "experience_level": "2",
+      "stat": {
+        "text": "Job postings requiring generative AI skills grew by over 1,000% between 2022 and 2024, with AI integration and deployment roles among the fastest-growing technical positions.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI Integration Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your coding and systems-thinking skills transfer directly, but you must shift from writing deterministic logic to orchestrating unpredictable, probabilistic AI outputs.",
+      "steps": [
+        "Complete DeepLearning.AI's LangChain for LLM Application Development course",
+        "Build a working middleware project connecting OpenAI API to a mock enterprise database",
+        "Earn the Microsoft Azure AI Engineer Associate (AI-102) certification"
+      ]
+    },
+    {
+      "title": "MLOps Engineer",
+      "description": "Builds and maintains the infrastructure and CI/CD pipelines required to deploy, monitor, and retrain machine learning models in production environments. Responsibilities include model versioning, performance monitoring, drift detection, and automating model lifecycle management.",
+      "core_tools": "MLflow, Kubeflow, AWS SageMaker",
+      "experience_level": "2",
+      "stat": {
+        "text": "MLOps Engineer was among the top 10 fastest-growing job titles on LinkedIn in 2024, with demand concentrated at companies moving from AI experimentation to production deployment at scale.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://business.linkedin.com/talent-solutions/resources/talent-acquisition/jobs-on-the-rise-us"
+      },
+      "search_query": "\"MLOps Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your scripting, automation, and deployment skills transfer directly, but you must now learn to treat trained models as versioned artifacts that degrade over time and need monitoring.",
+      "steps": [
+        "Complete the MLflow Model Registry tutorial and track a scikit-learn model end to end",
+        "Deploy a containerized model on AWS SageMaker using a free-tier account",
+        "Earn the AWS Certified Machine Learning – Specialty certification"
+      ]
+    },
+    {
+      "title": "Prompt Engineer",
+      "description": "Develops, tests, and iterates on structured prompts and prompt frameworks to optimize the performance of large language models for specific business use cases such as customer support, code generation, or content creation. Works closely with product and engineering teams to translate requirements into reliable AI behaviors.",
+      "core_tools": "OpenAI Playground, Anthropic Claude API, PromptFlow",
+      "experience_level": "1",
+      "stat": {
+        "text": "Prompt engineering was among the top 5 fastest-growing job skills listed on LinkedIn in 2024, with demand concentrated at companies moving AI from experimentation to production deployment.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"Prompt Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your debugging mindset and comfort with iterative testing carry over directly, but you must shift from writing instructions for machines to writing instructions for language models, which behave probabilistically rather than deterministically.",
+      "steps": [
+        "Complete DeepLearning.AI's free 'ChatGPT Prompt Engineering for Developers' course",
+        "Build three working prompts in OpenAI Playground for code review, bug explanation, and test generation",
+        "Publish a GitHub repo documenting your prompt experiments with version history and output comparisons"
+      ]
+    },
+    {
+      "title": "AI Safety Engineer",
+      "description": "Evaluates and mitigates risks in AI systems including bias, hallucination, adversarial vulnerabilities, and misuse, implementing technical safeguards and red-teaming protocols before and after model deployment. Works within trust-and-safety or responsible AI teams to ensure models meet regulatory and ethical standards.",
+      "core_tools": "Garak, Microsoft Azure AI Content Safety, Weights & Biases",
+      "experience_level": "3",
+      "stat": {
+        "text": "The EU AI Act, which entered into force in August 2024, mandates conformity assessments and technical safety documentation for high-risk AI systems, directly driving demand for AI safety and compliance engineering roles across organizations operating in or selling into the EU.",
+        "sourceName": "European Parliament",
+        "sourceTitle": "EU AI Act: first regulation on artificial intelligence",
+        "sourceDate": "Aug 2024",
+        "sourceUrl": "https://www.europarl.europa.eu/topics/en/article/20230601STO93804/eu-ai-act-first-regulation-on-artificial-intelligence"
+      },
+      "search_query": "\"AI Safety Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your coding skills transfer directly, but you must shift from building features to actively breaking and auditing AI systems for harm.",
+      "steps": [
+        "Complete DeepLearning.AI's 'Red Teaming LLMs' short course",
+        "Run Garak against an open-source LLM and document findings in a public GitHub repo",
+        "Earn the Microsoft Azure AI Fundamentals (AI-900) certification with focus on responsible AI modules"
+      ]
+    }
+  ]
+}

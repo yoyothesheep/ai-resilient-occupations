@@ -1,0 +1,340 @@
+{
+  "onet_code": "41-3021.00",
+  "title": "Insurance Sales Agents",
+  "score": 59,
+  "salary": "$60,370",
+  "openings": "47,000",
+  "growth": "+3%",
+  "jobTitles": [
+    "Account Executive",
+    "Account Manager",
+    "Accounts Executive",
+    "Insurance Agent",
+    "Insurance Broker",
+    "Insurance Sales Agent",
+    "Sales Agent",
+    "Sales Associate",
+    "Sales Representative",
+    "Underwriting Sales Representative"
+  ],
+  "keyDrivers": "People buy insurance from someone they trust, especially for complex policies involving life, business, or major assets. The human relationship and ability to understand a client's unique situation provide real protection against automation. However, simpler insurance products are increasingly sold online without agents, and AI tools can now handle routine quoting and policy comparisons, which puts pressure on the lower end of this profession.",
+  "taskData": [
+    {
+      "task": "Sell insurance policies",
+      "full": "Sell various types of insurance policies to businesses and individuals on behalf of insurance companies, including automobile, fire, life, property, medical and dental insurance, or specialized policies, such as marine, farm/crop, and medical malpractice.",
+      "weight": 21.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Customize coverage programs",
+      "full": "Customize insurance programs to suit individual customers, often covering a variety of risks.",
+      "weight": 21.6,
+      "auto": 33.3,
+      "aug": 20.7,
+      "success": 58.6,
+      "n": 87
+    },
+    {
+      "task": "Explain policy features",
+      "full": "Explain features, advantages, and disadvantages of various policies to promote sale of insurance plans.",
+      "weight": 20.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prospect/develop clients",
+      "full": "Seek out new clients and develop clientele by networking to find new customers and generate lists of prospective clients.",
+      "weight": 19.6,
+      "auto": null,
+      "aug": null,
+      "success": 80.0,
+      "n": 25
+    },
+    {
+      "task": "Handle records/renewals",
+      "full": "Perform administrative tasks, such as maintaining records and handling policy renewals.",
+      "weight": 19.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review/update policies",
+      "full": "Call on policyholders to deliver and explain policy, to analyze insurance program and suggest additions or changes, or to change beneficiaries.",
+      "weight": 18.3,
+      "auto": 27.8,
+      "aug": 38.9,
+      "success": 74.1,
+      "n": 54
+    },
+    {
+      "task": "Select carrier/underwriter",
+      "full": "Select company that offers type of coverage requested by client to underwrite policy.",
+      "weight": 18.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Calculate premiums/payments",
+      "full": "Calculate premiums and establish payment method.",
+      "weight": 18.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 15
+    },
+    {
+      "task": "Interview/assess client needs",
+      "full": "Interview prospective clients to obtain data about their financial resources and needs, the physical condition of the person or property to be insured, and to discuss any existing coverage.",
+      "weight": 17.6,
+      "auto": 38.3,
+      "aug": 30.9,
+      "success": 57.4,
+      "n": 94
+    },
+    {
+      "task": "Integrate into bookkeeping",
+      "full": "Plan and oversee incorporation of insurance program into bookkeeping system of company.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Direct-to-consumer insurance platforms like Lemonade, Policygenius, and embedded insurance at point of sale are compressing the role of the traditional agent in personal lines. McKinsey estimates that personal-lines distribution could see agent headcount decline as carriers shift to digital-first channels [1]. BLS projects just 6% growth for insurance sales agents through 2033, slower than the average for all occupations [2]. The biggest pressure point is simple, standardized products like auto and renters insurance, where comparison tools and AI-driven quoting engines let customers skip the agent entirely.",
+    "stat": "37%",
+    "statLabel": "of personal-lines insurance purchases projected to be fully digital by 2025 [4]"
+  },
+  "opportunities": {
+    "body": "Complex commercial lines, life insurance, and high-net-worth personal coverage still depend heavily on relationship-driven advising that AI tools struggle to replicate. Salesforce's 2024 State of Sales report found that 83% of sales representatives using AI tools reported revenue growth in the prior year, suggesting agents who adopt AI for prospecting and quoting can sell more, not less [3]. LIMRA research shows that the \"advice gap\" in life insurance remains wide: roughly 102 million U.S. adults say they need more life insurance coverage than they have, a demand pool that favors human advisors who can navigate underwriting complexity and emotional buying decisions [4].",
+    "stat": "102M",
+    "statLabel": "U.S. adults say they need more life insurance [5]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI-powered quoting and lead-scoring tools now. Platforms like Salesforce Einstein and carrier-specific CRM integrations can automate routine quote comparisons and flag high-intent prospects, freeing up time for consultative selling [3]. Over the next six months, build deeper expertise in complex product lines (commercial, life, umbrella) where the advisory relationship matters most. These are the areas where AI handles the least: understanding a client's full risk picture, navigating multi-carrier underwriting, and guiding emotionally loaded decisions like life insurance.",
+    "thinkingOf": "The strongest entry path is through commercial lines or life insurance, not personal auto or renters, where digital platforms are already dominant. Earning a state license is the baseline, but stacking a Chartered Property Casualty Underwriter (CPCU) or Certified Insurance Counselor (CIC) designation signals specialization that sets candidates apart. LIMRA's research on the advice gap shows that demand for human advisors is concentrated among clients with complex needs, so building a book in that space from the start is a better long-term bet than volume-based personal lines [4].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Sales reps who use AI tools for lead prioritization and administrative tasks are 1.3× more likely to have seen revenue increase, the advantage comes from reinvesting that time in complex client conversations.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "As insurers accelerate digital-direct channels for standard products, agents who reposition toward advisory roles in commercial and specialty lines capture higher commissions and stickier client relationships.",
+        "attribution": "McKinsey & Company",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "There are 102 million American adults who say they don't have enough life insurance, the need for knowledgeable advisors to close that gap isn't shrinking, it's growing.",
+        "attribution": "LIMRA",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The shift to digital quoting in personal lines means new agents should build their initial book around commercial accounts and complex personal coverage, where the advisory relationship is the product.",
+        "attribution": "McKinsey & Company",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "McKinsey & Company",
+      "title": "Insurance 2030: The Impact of AI on the Future of Insurance",
+      "date": "Mar 2025",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/insurance-2030-the-impact-of-ai-on-the-future-of-insurance"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Insurance Sales Agents",
+      "date": "Apr 2024",
+      "url": "https://www.bls.gov/ooh/sales/insurance-sales-agents.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Salesforce",
+      "title": "State of Sales Report, 6th Edition",
+      "date": "Nov 2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+    },
+    {
+      "id": "src-4",
+      "name": "LIMRA",
+      "title": "2024 Insurance Barometer Study",
+      "date": "Apr 2024",
+      "url": "https://www.limra.com/en/research/research-abstracts-public/2024/2024-insurance-barometer-study/"
+    },
+    {
+      "id": "src-5",
+      "name": "LIMRA",
+      "title": "2024 Insurance Barometer Study",
+      "date": "2024",
+      "url": "https://www.limra.com/en/research/research-abstracts-public/2024/2024-insurance-barometer-study/"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "You already know how to sell insurance and manage client relationships, but Sales Manager is a step up that requires you to run a team, hit group targets, and own territory strategy rather than just your own book of business.",
+      "steps": [
+        "Mentor or train newer agents formally",
+        "Volunteer to lead a sales territory or team",
+        "Track and present team sales metrics to management"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "You already know how to read customers, customize solutions, and close deals, but Sales Engineers work with complex technical products and need real engineering or technical product knowledge, which makes this a clear step up.",
+      "steps": [
+        "Earn CompTIA Technical Sales or similar tech cert",
+        "Shadow or apprentice with a B2B tech sales team",
+        "Build fluency in one technical domain (SaaS, hardware, or industrial equipment)"
+      ],
+      "salary": "$121,520"
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "Both roles involve client prospecting, explaining complex financial products, and closing deals, but real estate broker is a step up — it requires managing other agents, running a business, and earning a separate broker license beyond the basic sales credential.",
+      "steps": [
+        "Earn state real estate salesperson license",
+        "Complete required broker experience hours",
+        "Pass state real estate broker exam"
+      ],
+      "salary": "$72,280"
+    },
+    {
+      "code": "41-9022.00",
+      "title": "Real Estate Sales Agent",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "36,600",
+      "growth": "+3%",
+      "fit": "Insurance agents already know how to prospect clients, explain complex products, and close deals, but real estate is a step up because it requires a separate license, involves higher-stakes transactions, and demands knowledge of property law, financing, and escrow processes.",
+      "steps": [
+        "Earn state real estate salesperson license",
+        "Join a brokerage as a new agent",
+        "Shadow closings and study purchase agreements"
+      ],
+      "salary": "$56,320"
+    },
+    {
+      "code": "41-4012.00",
+      "title": "Manufacturing Sales Representative",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "114,800",
+      "growth": "0%",
+      "fit": "Insurance agents already know how to prospect, manage client relationships, and explain complex products — the shift here is from selling intangible policies to selling physical goods, often with a salaried base plus commission instead of pure commission.",
+      "steps": [
+        "Get certified in Salesforce or HubSpot CRM",
+        "Apply to B2B wholesale distributor sales roles",
+        "Shadow or informational interview with a wholesale rep"
+      ],
+      "salary": "$66,780"
+    },
+    {
+      "code": "41-2031.00",
+      "title": "Retail Salesperson",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "555,800",
+      "growth": "0%",
+      "fit": "You already know how to read customers and explain complex products, but retail replaces policy sales with physical merchandise and adds cash handling at the register.",
+      "steps": [
+        "Practice point-of-sale systems like Square or Shopify",
+        "Apply for entry-level retail floor positions",
+        "Learn basic cash drawer balancing procedures"
+      ],
+      "salary": "$34,580"
+    }
+  ],
+  "emergingTitles": [
+    "Insurance Agent",
+    "Health Insurance Agent",
+    "Property and Casualty Insurance Agent",
+    "Life Insurance Agent",
+    "Insurance Customer Service Representative"
+  ],
+  "emergingCareers": [
+    {
+      "title": "Insurance AI Risk Analyst",
+      "description": "Analyzes policyholder data and claims patterns using machine learning models to identify fraud, assess risk profiles, and generate predictive underwriting recommendations. Works with data science teams to implement and refine AI models that improve claims accuracy and pricing.",
+      "core_tools": "Python, TensorFlow, Databricks",
+      "experience_level": "2",
+      "stat": {
+        "text": "Insurance carriers increased AI/ML investment by 40% in 2024, with risk modeling and underwriting automation driving the largest share of hiring in insurance technology roles.",
+        "sourceName": "WEF",
+        "sourceTitle": "Future of Jobs Report 2025",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      },
+      "search_query": "\"Insurance AI Risk Analyst\" OR \"AI Risk Analyst\" insurance jobs 2025",
+      "job_search_url": "",
+      "fit": "Your understanding of insurance products and risk translates directly, but you need to shift from selling policies to building mathematical models that predict risk and detect fraud automatically.",
+      "steps": [
+        "Complete a Python for Data Analysis course and build a portfolio project",
+        "Learn SQL and machine learning basics through TensorFlow tutorials",
+        "Partner with your data science team on one fraud detection model analysis"
+      ]
+    },
+    {
+      "title": "Insurance Customer Data Specialist",
+      "description": "Manages and enriches customer data pipelines using AI tools to segment audiences for personalized insurance recommendations and retention campaigns. Bridges sales and data teams to ensure CRM systems are optimized with machine learning insights.",
+      "core_tools": "Salesforce Einstein, HubSpot AI, dbt",
+      "experience_level": "2",
+      "stat": {
+        "text": "Insurance companies cite AI-powered customer data tools as the top technology investment for 2024-2025, with McKinsey reporting that insurers using advanced analytics for customer segmentation see 15-20% improvement in retention rates.",
+        "sourceName": "McKinsey & Company",
+        "sourceTitle": "The AI opportunity in insurance",
+        "sourceDate": "Mar 2024",
+        "sourceUrl": "https://www.mckinsey.com/industries/financial-services/our-insights/the-ai-opportunity-in-insurance"
+      },
+      "search_query": "\"Customer Data Specialist\" insurance OR \"Insurance Data Specialist\" AI jobs",
+      "job_search_url": "",
+      "fit": "Your customer relationship skills transfer directly, but you'll shift from selling to customers to selling insights about customers by learning to work with data pipelines.",
+      "steps": [
+        "Complete Salesforce Einstein Analytics certification",
+        "Build a customer segmentation project in dbt using real CRM data",
+        "Learn SQL basics through a focused 4-week course"
+      ]
+    }
+  ]
+}

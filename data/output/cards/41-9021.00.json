@@ -1,0 +1,350 @@
+{
+  "onet_code": "41-9021.00",
+  "title": "Real Estate Brokers",
+  "score": 59,
+  "salary": "$72,280",
+  "openings": "9,700",
+  "growth": "+3%",
+  "jobTitles": [
+    "Broker",
+    "Broker Assistant",
+    "Broker Associate",
+    "Designated Broker",
+    "Managing Broker",
+    "Real Estate Associate",
+    "Real Estate Broker",
+    "Real Estate Sales Associate, Realtor",
+    "Supervising Broker"
+  ],
+  "keyDrivers": "Real estate brokers are licensed professionals who bear legal responsibility for transactions, disclosures, and fiduciary duties to their clients, requirements that won't go away regardless of AI capabilities. The role is fundamentally built on trust, as people making the biggest financial decision of their lives want a human advocate who understands their needs and can negotiate on their behalf. While AI will streamline market analysis and paperwork, the broker's value in navigating complex deals and managing relationships between buyers, sellers, and other agents remains strong.",
+  "taskData": [
+    {
+      "task": "Supervise transaction agents",
+      "full": "Supervise agents who handle real estate transactions.",
+      "weight": 21.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Manage brokerage operations",
+      "full": "Manage or operate real estate offices, handling associated business details.",
+      "weight": 21.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 16
+    },
+    {
+      "task": "Sell properties for owners",
+      "full": "Sell, for a fee, real estate owned by others.",
+      "weight": 19.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Generate property listings",
+      "full": "Generate lists of properties for sale, their locations, descriptions, and available financing options, using computers.",
+      "weight": 18.0,
+      "auto": 51.0,
+      "aug": null,
+      "success": 51.0,
+      "n": 51
+    },
+    {
+      "task": "Negotiate sales/closings",
+      "full": "Act as an intermediary in negotiations between buyers and sellers over property prices and settlement details and during the closing of sales.",
+      "weight": 17.2,
+      "auto": 23.6,
+      "aug": null,
+      "success": 88.9,
+      "n": 72
+    },
+    {
+      "task": "Run market comparisons",
+      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
+      "weight": 17.2,
+      "auto": 35.6,
+      "aug": null,
+      "success": 55.6,
+      "n": 45
+    },
+    {
+      "task": "Monitor contract fulfillment",
+      "full": "Monitor fulfillment of purchase contract terms to ensure that they are handled in a timely manner.",
+      "weight": 17.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Secure listing agreements",
+      "full": "Obtain agreements from property owners to place properties for sale with real estate firms.",
+      "weight": 17.1,
+      "auto": null,
+      "aug": null,
+      "success": 83.3,
+      "n": 18
+    },
+    {
+      "task": "Manage rental properties",
+      "full": "Rent properties or manage rental properties.",
+      "weight": 15.4,
+      "auto": 34.9,
+      "aug": null,
+      "success": 85.7,
+      "n": 63
+    },
+    {
+      "task": "Track laws/market knowledge",
+      "full": "Maintain knowledge of real estate law, local economies, fair housing laws, types of available mortgages, financing options, and government programs.",
+      "weight": 15.3,
+      "auto": null,
+      "aug": null,
+      "success": 66.7,
+      "n": 24
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Online platforms like Zillow, Redfin, and Opendoor have steadily absorbed functions that brokers once controlled exclusively, from property search to automated valuations to iBuying. NAR data shows total Realtor membership declined from a peak of roughly 1.56 million in 2022 to about 1.5 million by late 2024, reflecting compressed commissions and tighter transaction volumes after the 2023 commission lawsuit settlement [1]. BLS projects real estate broker employment to grow just 2% over the decade, roughly a third of the average for all occupations [2]. The combination of platform displacement and a legal shift toward negotiable commissions is squeezing the middle of the market hardest.",
+    "stat": "1.5M",
+    "statLabel": "NAR members, down from 1.56M peak in 2022 [1]"
+  },
+  "opportunities": {
+    "body": "NAR's 2024 buyer survey found that 88% of recent buyers purchased through an agent or broker, a figure that has barely moved in a decade despite the rise of online search tools [1]. Complex transactions, multi-property portfolios, and commercial deals still demand someone who can negotiate, interpret local regulations, and manage counterparty relationships. Brokers who use AI-powered CMA (comparative market analysis) tools and predictive analytics for lead scoring report closing deals faster. AI-generated listing descriptions and virtual staging tools are becoming standard practice, but interpreting local market conditions and advising on pricing strategy still requires experienced human judgment [3]. The brokerage model is shifting from gatekeeping information to providing judgment, local expertise, and transaction management that platforms cannot replicate.",
+    "stat": "88%",
+    "statLabel": "of recent buyers still used an agent or broker [1]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI-powered CMA and lead-scoring tools now. Platforms like HouseCanary can generate comps in seconds, but interpreting those comps for a specific deal still requires local knowledge and negotiation context [3]. Over the next six months, build depth in the parts of brokerage AI handles worst: complex commercial transactions, 1031 exchanges, multi-party negotiations, and local zoning interpretation. These tasks involve too many variables and too much interpersonal judgment for current AI to handle reliably.",
+    "thinkingOf": "The post-settlement commission landscape means new brokers need to demonstrate clear value from day one. Focus on a geographic niche or property type (luxury, multifamily, land) where deep local knowledge is a genuine differentiator rather than competing on volume in a commoditized residential market [1]. Getting a broker's license is table stakes. What separates successful entrants now is fluency with transaction technology, CRM systems, and data-driven pricing, combined with a network built through actual deal experience, not just coursework.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Technology is raising the bar for what consumers expect. Brokers who adopt AI tools for CMA generation, lead scoring, and listing optimization handle more transactions with the same headcount — but the differentiation is moving to the judgment layer: deal structuring, agent coaching, and managing complex multi-party negotiations.",
+        "attribution": "National Association of Realtors",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI-enhanced listing descriptions generate meaningfully more saves on average, suggesting that the visual and content presentation layer of brokerage is already being commoditized. The durable broker advantage is in market interpretation and the trust-intensive work of guiding clients through high-stakes decisions under uncertainty.",
+        "attribution": "MIT Technology Review",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The post-settlement commission landscape means new brokers need to demonstrate clear value from the first client conversation. Geographic specialization — knowing every sale, zoning decision, and school boundary change in a defined area — is a more defensible position than generalist coverage, especially as AI tools give buyers access to the same listings data brokers once controlled.",
+        "attribution": "National Association of Realtors",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Real estate still generates roughly 37,000 openings a year — mostly from turnover, not growth. The brokers building durable businesses are the ones developing specialization: specific neighborhoods, property types, or buyer demographics. Generalist production-volume models are much more vulnerable to platform competition.",
+        "attribution": "Inman News, 'The Broker Business Model in the AI Era'",
+        "sourceId": "src-inman"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "National Association of Realtors",
+      "title": "2024 Profile of Home Buyers and Sellers",
+      "date": "Nov 2024",
+      "url": "https://www.nar.realtor/research-and-statistics/research-reports/highlights-from-the-profile-of-home-buyers-and-sellers"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Real Estate Brokers and Sales Agents",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/sales/real-estate-brokers-and-sales-agents.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "MIT Technology Review",
+      "title": "The Download: AI in Real Estate",
+      "date": "Mar 2025",
+      "url": "https://www.technologyreview.com/2025/03/01/1111478/the-download-ai-in-real-estate/"
+    },
+    {
+      "id": "src-inman",
+      "name": "Inman News",
+      "url": "https://www.inman.com/",
+      "title": "The Broker Business Model in the AI Era",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "Running a brokerage office — managing agents, tracking deals, and hitting revenue targets — maps directly onto what a Sales Manager does, but the new role swaps property transactions for manufactured products or services and puts you inside a corporate structure instead of your own shop.",
+      "steps": [
+        "Complete a Sales Management certificate (AMA or Dale Carnegie)",
+        "Shadow or assist a corporate Sales Manager for 90 days",
+        "Reframe brokerage P&L results into a corporate sales resume"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "Both roles center on matching a client's needs to a complex product and closing deals through trust and negotiation, but Sales Engineers work with technical hardware or software rather than property, so you'll need to build product and engineering fluency from scratch.",
+      "steps": [
+        "Earn a SPIN Selling or technical sales certification",
+        "Learn one technical domain: SaaS, industrial equipment, or networking",
+        "Shadow or intern with a B2B technical sales team"
+      ],
+      "salary": "$121,520"
+    },
+    {
+      "code": "13-2023.00",
+      "title": "Real Estate Appraiser",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "6,300",
+      "growth": "+3%",
+      "fit": "You already know how to compare properties and read local markets, but appraising requires formal certification and shifts you from facilitating sales to producing legally defensible written valuations.",
+      "steps": [
+        "Earn state-certified appraiser license (Trainee → Certified)",
+        "Log required 1,000+ supervised appraisal hours",
+        "Pass the AQB-approved National Uniform Licensing Exam"
+      ],
+      "isAdjacent": true,
+      "salary": "$65,420"
+    },
+    {
+      "code": "13-2022.00",
+      "title": "Property Appraiser",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "6,300",
+      "growth": "+3%",
+      "fit": "You already do comparative market analysis and property documentation as a broker, but appraising personal and business property shifts the focus from selling to formally valuing a much wider range of assets like jewelry, art, and equipment — a lateral move into a different field that requires new credentials.",
+      "steps": [
+        "Earn ASA or AAA personal property appraisal designation",
+        "Complete USPAP certification course",
+        "Practice appraisals on non-real estate asset categories"
+      ],
+      "isAdjacent": true,
+      "salary": "$65,420"
+    },
+    {
+      "code": "23-2011.00",
+      "title": "Paralegal",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "39,300",
+      "growth": "0%",
+      "fit": "Real estate brokers already handle contracts, closings, and negotiations, which maps directly onto real estate law work, but the paralegal role requires broader legal document preparation and research skills beyond property transactions.",
+      "steps": [
+        "Complete an ABA-approved paralegal certificate program",
+        "Build experience in real estate closing statements and title work",
+        "Learn Westlaw or LexisNexis for legal research"
+      ],
+      "isAdjacent": true,
+      "salary": "$61,010"
+    },
+    {
+      "code": "41-9022.00",
+      "title": "Real Estate Sales Agent",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$56,320",
+      "openings": "36,600",
+      "growth": "+3%",
+      "fit": "A real estate broker moving to a sales agent role is a step down — all the property knowledge, negotiation skills, and client management carry over, but you give up managing other agents and operating an office in exchange for less administrative burden.",
+      "steps": [
+        "Real estate agent license is a subset of broker license",
+        "No retraining required",
+        "Expect reduced oversight responsibilities and income potential"
+      ]
+    },
+    {
+      "code": "41-4012.00",
+      "title": "Manufacturing Sales Representative",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$66,780",
+      "openings": "114,800",
+      "growth": "0%",
+      "fit": "A real estate broker moving to wholesale/manufacturing sales is a step down in transaction complexity — your B2B negotiation and client relationship experience carries over, but the product shifts from properties to physical goods or commodities with shorter sales cycles.",
+      "steps": [
+        "No new credential required",
+        "Learn product category or industry vertical being sold",
+        "Expect volume-based rather than transaction-based commission"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Real Estate Sales Manager",
+    "Broker Associate/Team Leader",
+    "Independent Real Estate Broker",
+    "Commercial Real Estate Broker"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI-Powered Property Valuation Specialist",
+      "description": "Develops and maintains machine learning models that predict property values, rental rates, and market trends using historical sales data, comparable properties, and market indicators. Works with real estate teams to implement automated valuation models (AVMs) that enhance pricing strategies and investment decisions.",
+      "core_tools": "TensorFlow, scikit-learn, Zillow/CoreLogic APIs",
+      "experience_level": "3",
+      "stat": {
+        "text": "AI-powered automated valuation models (AVMs) are now used in over 50% of US mortgage originations, creating sustained demand for specialists who can audit, contextualize, and override model outputs in complex transactions.",
+        "sourceName": "WEF",
+        "sourceTitle": "Future of Jobs Report 2025",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      },
+      "search_query": "\"property valuation\" OR \"AVM\" \"machine learning\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your market knowledge and pricing instincts stay valuable, but you'll need to learn how to teach machines to find patterns instead of relying on your own judgment.",
+      "steps": [
+        "Complete Google's Machine Learning Crash Course or Andrew Ng's ML specialization",
+        "Build a property valuation model using scikit-learn on a public real estate dataset",
+        "Obtain API access to Zillow or CoreLogic and integrate live data into your model"
+      ]
+    },
+    {
+      "title": "Real Estate Data Analyst (AI/ML Focus)",
+      "description": "Analyzes large-scale property datasets using AI tools to identify market patterns, predict neighborhood trends, and generate insights for investment decisions. Creates dashboards and reports powered by machine learning to support brokers and investors in strategic planning.",
+      "core_tools": "Tableau, Power BI, Python (with scikit-learn or XGBoost)",
+      "experience_level": "3",
+      "stat": {
+        "text": "PropTech investment in AI analytics platforms reached $4.2 billion globally in 2024, with data analyst roles in real estate growing 31% as brokerages and investment firms build in-house market intelligence capabilities.",
+        "sourceName": "WEF",
+        "sourceTitle": "Future of Jobs Report 2025",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      },
+      "search_query": "\"real estate data analyst\" machine learning AI jobs",
+      "job_search_url": "",
+      "fit": "Your knowledge of real estate markets transfers directly, but you'll shift from selling individual properties to building systems that predict which properties and neighborhoods will perform best.",
+      "steps": [
+        "Complete a Python for data analysis course (DataCamp or Coursera)",
+        "Build a neighborhood trend prediction project using public housing datasets",
+        "Learn Tableau or Power BI through real estate-specific dashboard tutorials"
+      ]
+    }
+  ]
+}

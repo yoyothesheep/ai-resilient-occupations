@@ -1,0 +1,356 @@
+{
+  "onet_code": "11-2021.00",
+  "title": "Marketing Manager",
+  "score": 59,
+  "salary": "$161,030",
+  "openings": "34,300",
+  "growth": "+7%",
+  "jobTitles": [
+    "Account Supervisor",
+    "Brand Manager",
+    "Business Development Director",
+    "Business Development Manager",
+    "Marketing Coordinator",
+    "Marketing Director",
+    "Marketing Manager",
+    "Product Manager"
+  ],
+  "emergingTitles": [],
+  "keyDrivers": "Marketing Managers occupy a layer above the content and campaign execution work that AI is automating most aggressively. The role's strongest protection is its complexity: setting marketing strategy, managing budgets, and coordinating across sales, product, and creative teams requires organizational context and judgment that AI tools can assist but not own. The AI exposure shows up in the analytical and drafting tasks — research, strategy documents, pricing models — which are increasingly AI-augmented. But the decision-making authority and cross-functional accountability remain human.",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#ea580c",
+    "body": "The two highest-usage tasks in AI data for this role — formulating marketing activities (269 conversations, 32.3% automation) and developing marketing strategy (354 conversations, 23.4% automation) — show AI being used for drafting, analysis, and research inputs. As AI makes the execution layer below this role cheaper to operate, team sizes are compressing and managers are expected to do more with less [1]. McKinsey estimates that marketing strategy and campaign planning are among the functions where AI will add the most economic value by automating the research and analytical groundwork that formerly required junior and mid-level staff time [2]."
+  },
+  "opportunities": {
+    "stat": "+7%",
+    "statLabel": "projected 10-year job growth for marketing managers [1]",
+    "statColor": "#5a9a6e",
+    "body": "Marketing strategy development shows the strongest augmentation signal (16.4% aug alongside 23.4% auto in 354 conversations), suggesting AI is being used as a tool that sharpens human decision-making rather than replacing it outright. Pricing strategy shows a similar mixed signal (16.5% auto, 12.8% aug) — AI is helping model scenarios, but the judgment call about which strategy to pursue remains with the manager. The WEF 2025 Future of Jobs Report projects above-average growth for marketing managers, driven by increased complexity in AI-enabled channel management and the continued need for human accountability at the strategy level [1]."
+  },
+  "howToAdapt": {
+    "alreadyIn": "Build fluency in AI marketing tools — analytics platforms, content generation, campaign optimization — so the work your team produces is faster and cheaper, which protects your budget position. Over six months, focus on the skills that most distinguish a marketing manager from what AI can generate: pricing judgment under uncertainty, cross-functional alignment with product and sales, and building the organizational relationships that determine what actually gets executed [2]. The managers who are pulling ahead are those who can direct AI-assisted campaigns while maintaining the strategic accountability that their role requires [1].",
+    "thinkingOf": "The path into marketing management runs through demonstrated campaign performance data — not credentials or titles. Build a track record of measurable outcomes in digital channels before targeting management roles [3]. The entry point matters: brand-side roles and in-house positions are more durable than agency roles, which are facing steeper headcount pressure as AI handles more of the production work they previously charged for [1].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Marketing managers who will be most resilient are those who can lead teams that use AI effectively, set clear strategic direction, and evaluate AI-generated outputs with the same critical judgment they would apply to work from a junior analyst.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "In marketing and sales, generative AI adds the most value on research, campaign drafting, and analytics tasks. The remaining human value is concentrated in strategy, cross-functional coordination, and the judgment calls about which campaigns to run and how to allocate budget.",
+        "attribution": "The economic potential of generative AI, McKinsey Global Institute",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Employment of advertising, promotions, and marketing managers is projected to grow faster than average — growth is concentrated in digital marketing functions and roles that require coordinating AI-assisted marketing systems with human strategic oversight.",
+        "attribution": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook: Advertising, Promotions, and Marketing Managers",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The strongest entry path into marketing management runs through data-fluent digital marketing roles — paid search, growth marketing, or marketing analytics — where practitioners build both the technical skills and measurable track records that translate directly into management credibility.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "taskData": [
+    {
+      "task": "Direct marketing activities",
+      "full": "Formulate, direct, or coordinate marketing activities or policies to promote products or services, working with advertising or promotion managers.",
+      "auto": 32.3,
+      "aug": 11.9,
+      "success": 62.5,
+      "n": 269
+    },
+    {
+      "task": "Develop marketing strategy",
+      "full": "Identify, develop, or evaluate marketing strategy, based on knowledge of establishment objectives, market characteristics, and cost and markup factors.",
+      "auto": 23.4,
+      "aug": 16.4,
+      "success": 73.4,
+      "n": 354
+    },
+    {
+      "task": "Evaluate financial aspects",
+      "full": "Evaluate the financial aspects of product development, such as budgets, expenditures, research and development appropriations, or return-on-investment and profit-loss projections.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop pricing strategies",
+      "full": "Develop pricing strategies, balancing firm objectives and customer satisfaction.",
+      "auto": 16.5,
+      "aug": 12.8,
+      "success": 72.9,
+      "n": 133
+    },
+    {
+      "task": "Compile product descriptions",
+      "full": "Compile lists describing product or service offerings.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Manage marketing staff",
+      "full": "Direct the hiring, training, or performance evaluations of marketing or sales staff and oversee their daily activities.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Advise on product design",
+      "full": "Consult with product development personnel on product specifications, such as design, color, or packaging.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Forecast sales/market trends",
+      "full": "Use sales forecasting or strategic planning to ensure the sale and profitability of products, lines, or services, analyzing business developments and monitoring market trends.",
+      "auto": null,
+      "aug": null,
+      "success": 79.3,
+      "n": 29
+    },
+    {
+      "task": "Coordinate trade shows/promotions",
+      "full": "Coordinate or participate in promotional activities or trade shows, working with developers, advertisers, or production managers, to market products or services.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Consult with buyers on demand",
+      "full": "Consult with buying personnel to gain advice regarding the types of products or services expected to be in demand.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "careerCluster": [
+    {
+      "level": 1,
+      "code": "13-1161.00",
+      "title": "Marketing Specialist",
+      "isCurrent": false,
+      "score": 1.8,
+      "salary": "$74,680",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Entry-level research and communications role that builds the analytical and market knowledge foundation.",
+      "steps": [
+        "Build a portfolio of research summaries and data visualizations",
+        "Learn SQL and a BI tool (Tableau or Power BI)",
+        "Develop subject matter expertise in a specific industry vertical"
+      ]
+    },
+    {
+      "level": 2,
+      "code": "13-1161.01",
+      "title": "Search Marketing Strategist",
+      "isCurrent": false,
+      "score": 2.3,
+      "salary": "$76,950",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Digital marketing specialist role; search/SEO skills complement content strategy and brand management.",
+      "steps": [
+        "Earn Google Analytics and Google Ads certifications",
+        "Build a portfolio showing SEO-driven content performance",
+        "Learn paid media fundamentals via Meta Blueprint"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3031.00",
+      "title": "Public Relations Specialist",
+      "isCurrent": false,
+      "score": 2.2,
+      "salary": "$67,440",
+      "openings": "26,900",
+      "growth": "+6%",
+      "fit": "PR and communications skills transfer well; editorial voice and media relations are directly applicable.",
+      "steps": [
+        "Build a media coverage portfolio with measurable outcomes",
+        "Develop crisis communication case studies",
+        "Learn Cision or Meltwater for media monitoring"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3043.00",
+      "title": "Writer",
+      "isCurrent": false,
+      "score": 2.4,
+      "salary": "$72,270",
+      "openings": "13,400",
+      "growth": "+3%",
+      "fit": "Writing and content creation skills transfer directly; editorial judgment and brand voice expertise are directly applicable.",
+      "steps": [
+        "Build a portfolio of brand voice work across multiple formats",
+        "Learn AI writing tool workflows (ChatGPT, Claude, Jasper)",
+        "Develop content strategy credentials via HubSpot or Coursera"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3041.00",
+      "title": "Editor",
+      "isCurrent": false,
+      "score": 2.5,
+      "salary": "$75,260",
+      "openings": "9,800",
+      "growth": "+1%",
+      "fit": "Editorial standards and content quality control skills carry directly; structural editing experience is valued.",
+      "steps": [
+        "Build a portfolio of edited long-form content",
+        "Learn content management systems (WordPress, Contentful)",
+        "Earn a copy editing certificate from ACES or Poynter"
+      ]
+    },
+    {
+      "level": 4,
+      "code": "11-2011.00",
+      "title": "Advertising Manager",
+      "isCurrent": false,
+      "score": 2.5,
+      "relationship": "less_trained",
+      "salary": "$126,960",
+      "openings": "2,100",
+      "growth": "-2%",
+      "fit": "Advertising & Promotions Manager is a step down from Marketing Manager in scope — it focuses on campaign execution and promotional work rather than full brand strategy and team leadership.",
+      "steps": [
+        "Take ownership of a specific campaign budget",
+        "Build experience managing creative agency or freelance relationships",
+        "Develop paid media and promotional channel expertise"
+      ]
+    },
+    {
+      "level": 5,
+      "code": "11-2021.00",
+      "title": "Marketing Manager",
+      "isCurrent": true,
+      "score": 2.9
+    },
+    {
+      "code": "11-1011.00",
+      "title": "Chief Executives",
+      "isCurrent": false,
+      "score": 4.1,
+      "relationship": "adjacent",
+      "salary": "$206,420",
+      "openings": "22,200",
+      "growth": "+4%",
+      "fit": "Marketing Managers with P&L ownership and cross-functional leadership experience are positioned to grow toward C-suite roles, though Chief Executive is a significant step up that requires broader business operations accountability.",
+      "steps": [
+        "Build P&L management experience",
+        "Develop cross-functional leadership beyond marketing",
+        "Pursue an MBA or executive leadership program"
+      ]
+    },
+    {
+      "code": "41-4011.00",
+      "title": "Sales Representatives, Technical and Scientific",
+      "isCurrent": false,
+      "score": 2.9,
+      "relationship": "adjacent",
+      "salary": "$100,070",
+      "openings": "27,200",
+      "growth": "+2%",
+      "fit": "Marketing Managers who move into technical sales take a lateral move into a revenue-generating role — the customer and product knowledge transfers, but the focus shifts from strategy and campaigns to individual deal execution.",
+      "steps": [
+        "Build technical product knowledge in the target domain",
+        "Develop prospecting and enterprise sales skills",
+        "Learn CRM and sales pipeline management tools"
+      ]
+    },
+    {
+      "code": "41-1012.00",
+      "title": "First-Line Supervisors of Non-Retail Sales Workers",
+      "isCurrent": false,
+      "score": 2.8,
+      "relationship": "adjacent",
+      "salary": "$84,130",
+      "openings": "24,800",
+      "growth": "0%",
+      "fit": "Marketing Managers who shift to sales team supervision move laterally into a revenue-closer role — the team management skills carry over, but the performance metrics shift from marketing outcomes to sales quota attainment.",
+      "steps": [
+        "Build experience coaching and managing a sales team",
+        "Develop quota management and pipeline forecasting skills",
+        "Learn sales compensation and incentive structure design"
+      ]
+    },
+    {
+      "level": 4,
+      "code": "11-2022.00",
+      "title": "Sales Managers",
+      "isCurrent": false,
+      "score": 3.5,
+      "relationship": "adjacent",
+      "salary": "$138,060",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "Sales Manager is a natural lateral for Marketing Managers who develop strong cross-functional alignment with sales — it trades marketing strategy for revenue leadership, with higher pay and more openings.",
+      "steps": [
+        "Build experience managing a sales team or territory",
+        "Develop expertise in sales forecasting and pipeline management",
+        "Take ownership of a revenue number, not just a marketing budget"
+      ]
+    },
+    {
+      "code": "11-1021.00",
+      "title": "General and Operations Managers",
+      "isCurrent": false,
+      "score": 3.6,
+      "relationship": "adjacent",
+      "salary": "$102,950",
+      "openings": "308,700",
+      "growth": "+4%",
+      "fit": "Marketing Managers with broader business operations experience can move into General Manager roles — one of the largest management categories with strong growth, though it requires expanding accountability beyond the marketing function.",
+      "steps": [
+        "Build experience with operations, finance, or supply chain",
+        "Develop full P&L ownership experience",
+        "Take on cross-functional project leadership roles"
+      ]
+    }
+  ],
+  "emergingCareers": [],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-2",
+      "name": "McKinsey Global Institute",
+      "title": "The economic potential of generative AI: The next productivity frontier",
+      "date": "Jun 2023",
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+    },
+    {
+      "id": "src-3",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Advertising, Promotions, and Marketing Managers: Occupational Outlook Handbook",
+      "date": "Apr 2025",
+      "url": "https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm"
+    }
+  ]
+}

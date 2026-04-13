@@ -1,0 +1,297 @@
+{
+  "onet_code": "27-3031.00",
+  "title": "Public Relations Specialist",
+  "score": 49,
+  "salary": "$69,780",
+  "openings": "27,600",
+  "growth": "+5%",
+  "jobTitles": [
+    "Account Executive",
+    "Communications Director",
+    "Communications Specialist",
+    "Corporate Communications Specialist",
+    "Media Relations Specialist",
+    "Public Affairs Specialist",
+    "Public Information Officer",
+    "Public Information Specialist",
+    "Public Relations Coordinator",
+    "Public Relations Specialist (PR Specialist)"
+  ],
+  "emergingTitles": [],
+  "keyDrivers": "PR sits at the intersection of writing and relationship management — and AI is making rapid inroads into the writing side. Press release drafting, publication editing, and content production are all being handled by AI tools at scale. The relationship layer — media trust, crisis response, stakeholder credibility — is harder to automate and is where the role's durability lives.",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#ea580c",
+    "body": "Press release writing and organizational publication editing — two of the highest-volume tasks in AI usage data for this role — show 26-29% automation patterns across thousands of observed conversations. The WEF 2025 Future of Jobs Report lists media and communications roles among those facing above-average displacement pressure, as AI writing tools allow organizations to produce more content output with smaller specialist teams [1]. PR strategy development also shows 34.4% automation, suggesting that AI is taking on portions of the analysis and drafting work that previously required a dedicated practitioner [2]."
+  },
+  "opportunities": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#5a9a6e",
+    "body": "The tasks AI handles worst are the ones that require sustained human relationships: media coaching, spokesperson preparation, and managing high-stakes communications under pressure. Edelman's 2025 Trust Barometer found that trust in AI-generated content is significantly lower than trust in human-authored communications, creating a durable premium for PR practitioners who can deliver credible, accountable messaging [3]. PR strategy development shows both automation and augmentation signals (34.4% / 18.8%), suggesting AI is being used as a research and drafting aid while human judgment still drives the final strategy [1]."
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start building depth in crisis communications and media coaching — two areas where AI tools have the least traction and clients pay the most for expertise. Over six months, focus on developing a track record in earned media placements, not just content volume [1]. The practitioners pulling ahead are those who can combine AI-assisted content production with the relationship-building and spokesperson coaching that still requires a human [3].",
+    "thinkingOf": "A PR portfolio that shows measurable outcomes — coverage secured, messaging that shifted public opinion, crisis situations managed well — is far more compelling than a writing sample portfolio [2]. Build media relationship skills from day one: following specific journalists, understanding their beats, and practicing pitching. AI can draft the pitch, but the relationship is yours to build [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "As AI takes over content production at scale, the PR practitioners who will be most valuable are those who can build and maintain the media relationships, earned trust, and crisis judgment that no tool can replicate.",
+        "attribution": "Edelman Trust Barometer 2025, Edelman",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Communications roles are shifting from content production to strategic counsel. Workers who develop skills in scenario planning, stakeholder engagement, and cross-functional decision support are better positioned as AI absorbs more of the drafting workload.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Trust in AI-generated content is measurably lower than trust in human-authored communications, particularly on sensitive or high-stakes topics — this structural premium for authentic human voices is likely to persist as AI-generated content becomes ubiquitous.",
+        "attribution": "Edelman Trust Barometer 2025, Edelman",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Entry-level PR roles are contracting on the content production side, but demand persists for practitioners who can demonstrate analytical thinking, media relationship-building, and the ability to advise senior decision-makers under pressure.",
+        "attribution": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook: Public Relations Specialists",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskData": [
+    {
+      "task": "Post social/web content",
+      "full": "Post and update content on the company's Web site and social media outlets.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Handle media inquiries",
+      "full": "Respond to requests for information from the media or designate an appropriate spokesperson or information source.",
+      "auto": 50.0,
+      "aug": null,
+      "success": 75.0,
+      "n": 72
+    },
+    {
+      "task": "Write press releases",
+      "full": "Write press releases or other media communications to promote clients.",
+      "auto": 26.3,
+      "aug": null,
+      "success": 85.2,
+      "n": 668
+    },
+    {
+      "task": "Plan public programs",
+      "full": "Plan or direct development or communication of programs to maintain favorable public or stockholder perceptions of an organization's accomplishments, agenda, or environmental responsibility.",
+      "auto": null,
+      "aug": null,
+      "success": 57.9,
+      "n": 38
+    },
+    {
+      "task": "Maintain stakeholder relationships",
+      "full": "Establish or maintain cooperative relationships with representatives of community, consumer, employee, or public interest groups.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Advise on communications",
+      "full": "Confer with other managers to identify trends or key group interests or concerns or to provide advice on business decisions.",
+      "auto": null,
+      "aug": null,
+      "success": 77.8,
+      "n": 27
+    },
+    {
+      "task": "Develop PR strategies",
+      "full": "Study the objectives, promotional policies, or needs of organizations to develop public relations strategies that will influence public opinion or promote ideas, products, or services.",
+      "auto": 34.4,
+      "aug": 18.8,
+      "success": 69.6,
+      "n": 276
+    },
+    {
+      "task": "Edit organizational publications",
+      "full": "Prepare or edit organizational publications, such as employee newsletters or stockholders' reports, for internal or external audiences.",
+      "auto": 29.1,
+      "aug": 3.3,
+      "success": 84.7,
+      "n": 2147
+    },
+    {
+      "task": "Coach client communicators",
+      "full": "Coach client representatives in effective communication with the public or with employees.",
+      "auto": 21.6,
+      "aug": 10.2,
+      "success": 93.8,
+      "n": 176
+    },
+    {
+      "task": "Develop CSR communications",
+      "full": "Develop plans or materials to communicate organizational activities that are beneficial to the environment, public safety, or other important social issues.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "careerCluster": [
+    {
+      "level": 1,
+      "code": "13-1161.00",
+      "title": "Marketing Specialist",
+      "isCurrent": false,
+      "score": 1.8,
+      "salary": "$74,680",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Entry-level research and communications role that builds the analytical and market knowledge foundation.",
+      "steps": [
+        "Build a portfolio of research summaries and data visualizations",
+        "Learn SQL and a BI tool (Tableau or Power BI)",
+        "Develop subject matter expertise in a specific industry vertical"
+      ]
+    },
+    {
+      "level": 2,
+      "code": "13-1161.01",
+      "title": "Search Marketing Strategist",
+      "isCurrent": false,
+      "score": 2.3,
+      "relationship": "less_trained",
+      "salary": "$76,950",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "A PR Specialist who already handles digital content and audience engagement can step into Search Marketing Strategist work, though it is a step down in scope — the focus narrows to search and paid channels with less stakeholder and media relationship work.",
+      "steps": [
+        "Earn Google Ads and Google Analytics 4 certifications",
+        "Build SEO fundamentals knowledge (Semrush, Ahrefs)",
+        "Develop paid search campaign experience"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3031.00",
+      "title": "Public Relations Specialist",
+      "isCurrent": true,
+      "score": 2.2
+    },
+    {
+      "level": 3,
+      "code": "27-3043.00",
+      "title": "Writer",
+      "isCurrent": false,
+      "score": 2.4,
+      "relationship": "specialization",
+      "salary": "$72,270",
+      "openings": "13,400",
+      "growth": "+3%",
+      "fit": "PR Specialists spend significant time writing for different audiences, and Writers and Authors is a lateral move that deepens craft focus — shifting from communication strategy to narrative quality as the primary measure of success.",
+      "steps": [
+        "Build bylined portfolio across 3-5 formats or genres",
+        "Write independently from employer contexts (essays, features)",
+        "Study narrative and editorial craft"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3041.00",
+      "title": "Editor",
+      "isCurrent": false,
+      "score": 2.5,
+      "relationship": "specialization",
+      "salary": "$75,260",
+      "openings": "9,800",
+      "growth": "+1%",
+      "fit": "PR Specialists who already edit organizational publications and communications materials can move laterally into editing — the skill transfer is direct but the context shifts from organizational reputation to editorial quality and content standards.",
+      "steps": [
+        "Build substantive editing portfolio (3+ publications)",
+        "Study AP Style and editorial standards",
+        "Practice developmental editing on long-form pieces"
+      ]
+    },
+    {
+      "level": 4,
+      "code": "11-2011.00",
+      "title": "Advertising Manager",
+      "isCurrent": false,
+      "score": 2.5,
+      "relationship": "progression",
+      "salary": "$126,960",
+      "openings": "2,100",
+      "growth": "-1%",
+      "fit": "A common advancement path for senior PR Specialists — it is a step up in scope and budget ownership, adding paid media management and campaign coordination to earned media expertise.",
+      "steps": [
+        "Build experience overseeing paid media campaigns",
+        "Manage creative agency relationships",
+        "Lead integrated campaign from strategy through execution"
+      ]
+    },
+    {
+      "level": 5,
+      "code": "11-2021.00",
+      "title": "Marketing Manager",
+      "isCurrent": false,
+      "score": 2.9,
+      "relationship": "progression",
+      "salary": "$161,030",
+      "openings": "34,300",
+      "growth": "+7%",
+      "fit": "PR Specialists who develop brand and communications expertise are a natural step away from Marketing Manager — the role adds budget ownership, team management, and cross-channel strategy beyond earned media.",
+      "steps": [
+        "Build experience managing a marketing budget",
+        "Add brand strategy work alongside PR campaigns",
+        "Manage at least 2 direct reports"
+      ]
+    },
+    {
+      "code": "11-2032.00",
+      "title": "Public Relations Managers",
+      "isCurrent": false,
+      "score": 3.1,
+      "relationship": "adjacent",
+      "salary": "$138,520",
+      "openings": "6,600",
+      "growth": "+5%",
+      "fit": "PR Manager is the natural senior path from PR Specialist — same domain, same skills, but with ownership of team strategy, client relationships, and budget rather than individual campaign execution.",
+      "steps": [
+        "Lead a PR team or major client account independently",
+        "Build crisis communications portfolio",
+        "Develop business development and client management skills"
+      ]
+    }
+  ],
+  "emergingCareers": [],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Public Relations Specialists: Occupational Outlook Handbook",
+      "date": "Apr 2025",
+      "url": "https://www.bls.gov/ooh/media-and-communication/public-relations-specialists.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Edelman",
+      "title": "Edelman Trust Barometer 2025",
+      "date": "Jan 2025",
+      "url": "https://www.edelman.com/trust/2025/trust-barometer"
+    }
+  ]
+}

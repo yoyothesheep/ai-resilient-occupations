@@ -48,7 +48,6 @@ SCORE_LOG     = "data/output/score_log.txt"
 TONE_GUIDE       = "docs/tone_guide_career_pages.md"
 CAREER_SPEC      = "docs/career_page_spec.md"
 APPROVED_SOURCES = "docs/approved_sources.md"
-OUTPUT_JSONL  = "data/output/occupation_cards.jsonl"
 
 TOP_N_TASKS   = 10   # tasks to include in taskData
 
@@ -103,19 +102,9 @@ def load_a_scores(log_path: str) -> dict:
 
 
 def load_existing_codes() -> set:
-    """Return set of onet_codes already in occupation_cards.jsonl."""
-    if not os.path.exists(OUTPUT_JSONL):
-        return set()
-    codes = set()
-    with open(OUTPUT_JSONL, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                try:
-                    codes.add(json.loads(line)["onet_code"])
-                except (json.JSONDecodeError, KeyError):
-                    pass
-    return codes
+    """Return set of onet_codes already saved as individual card files."""
+    from cards import load_existing_codes as _load
+    return _load()
 
 
 def load_text(path: str) -> str:
@@ -567,34 +556,18 @@ def validate_sources(sources: list) -> list:
 # ── Writer ────────────────────────────────────────────────────────────────────
 
 def append_career_page(card: dict):
-    os.makedirs(os.path.dirname(OUTPUT_JSONL), exist_ok=True)
-    # Load existing, replace if code already present, else append
-    cards = {}
-    if os.path.exists(OUTPUT_JSONL):
-        decoder = json.JSONDecoder()
-        content = open(OUTPUT_JSONL, encoding="utf-8").read().strip()
-        pos = 0
-        while pos < len(content):
-            cf = content[pos:].lstrip()
-            if not cf:
-                break
-            skip = len(content[pos:]) - len(cf)
-            obj, end = decoder.raw_decode(cf)
-            cards[obj["onet_code"]] = obj
-            pos += skip + end
-    replaced = card["onet_code"] in cards
+    from cards import load_cards, save_card, CARDS_DIR
+    existing = load_cards()
+    onet_code = card["onet_code"]
+    replaced = onet_code in existing
     # Preserve fields owned by other pipeline scripts (adjacent_roles.py)
     if replaced:
-        existing = cards[card["onet_code"]]
         for preserve_key in ("careerCluster", "adjacentRoles", "careerLadder"):
-            if preserve_key in existing and existing[preserve_key] is not None:
-                card.setdefault(preserve_key, existing[preserve_key])
-    cards[card["onet_code"]] = card
-    with open(OUTPUT_JSONL, "w", encoding="utf-8") as f:
-        for c in cards.values():
-            f.write(json.dumps(c, ensure_ascii=False) + "\n")
+            if existing[onet_code].get(preserve_key):
+                card.setdefault(preserve_key, existing[onet_code][preserve_key])
+    save_card(card)
     action = "Replaced" if replaced else "Written"
-    print(f"  ✓ {action} in {OUTPUT_JSONL}")
+    print(f"  ✓ {action} data/output/cards/{onet_code}.json")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────

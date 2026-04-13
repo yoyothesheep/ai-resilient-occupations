@@ -1,0 +1,468 @@
+{
+  "onet_code": "15-1253.00",
+  "title": "Software QA Analyst",
+  "score": 47,
+  "salary": "$102,610",
+  "openings": "14,000",
+  "growth": "+7%",
+  "jobTitles": [
+    "Automation Tester",
+    "Information Technology Analyst (IT Analyst)",
+    "Quality Assurance Analyst (QA Analyst)",
+    "Quality Assurance Engineer (QA Engineer)",
+    "Quality Engineer",
+    "Software Quality Assurance Analyst (SQA Analyst)",
+    "Software Quality Assurance Engineer (SQA Engineer)",
+    "Software Quality Engineer",
+    "Software Test Engineer",
+    "Test Engineer"
+  ],
+  "keyDrivers": "QA testing is heavily pattern-based work, writing test cases, running regression suites, and identifying bugs, that AI tools are already automating at increasing speed and accuracy. The role has no physical presence requirements, no licensing protections, and limited need for novel judgment, leaving few hard barriers against displacement. While some QA professionals will shift toward managing automated testing pipelines and evaluating AI-generated code, the overall number of positions is likely to shrink significantly as AI handles the bulk of testing work.",
+  "taskData": [
+    {
+      "task": "Identify/document program problems",
+      "full": "Identify, analyze, and document problems with program function, output, online screen, or content.",
+      "weight": 27.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Track/report software defects",
+      "full": "Document software defects, using a bug tracking system, and report defects to software developers.",
+      "weight": 27.1,
+      "auto": 21.8,
+      "aug": 29.4,
+      "success": 58.9,
+      "n": 1332
+    },
+    {
+      "task": "Maintain testing tools",
+      "full": "Install, maintain, or use software testing programs.",
+      "weight": 20.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Document test procedures",
+      "full": "Document test procedures to ensure replicability and compliance with standards.",
+      "weight": 20.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop test programs",
+      "full": "Develop testing programs that address areas such as database impacts, software scenarios, regression testing, negative testing, error or bug retests, or usability.",
+      "weight": 20.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Recommend usability improvements",
+      "full": "Provide feedback and recommendations to developers on software usability and functionality.",
+      "weight": 19.8,
+      "auto": 12.6,
+      "aug": 66.6,
+      "success": 72.4,
+      "n": 4148
+    },
+    {
+      "task": "Maintain defect databases",
+      "full": "Create or maintain databases of known test defects.",
+      "weight": 19.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Monitor program performance",
+      "full": "Monitor program performance to ensure efficient and problem-free operations.",
+      "weight": 19.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Track bug resolution",
+      "full": "Monitor bug resolution efforts and track successes.",
+      "weight": 19.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Design test plans/scripts",
+      "full": "Design test plans, scenarios, scripts, or procedures.",
+      "weight": 18.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "AI code generation tools are writing tests automatically as part of development workflows, compressing the manual test writing work that has traditionally anchored this role [3]. Bug documentation - the most important task with AI data - shows 21.8% automation across 1, 332 conversations, suggesting AI is handling some of the routine defect reporting and ticket creation [1]. This role has the lowest resilience score in the software career cluster, reflecting limited structural protections: most QA work lacks physical presence requirements, real-time judgment demands, or legal accountability that would insulate it from automation pressure.",
+    "stat": "62%",
+    "statLabel": "of developers say AI tools improved their bug detection [3]"
+  },
+  "opportunities": {
+    "body": "Providing feedback and recommendations to developers shows 66.6% augmentation across 4, 148 conversations - the strongest augmentation signal in this role, indicating AI acts as a research and analysis tool while humans own the quality judgment [1]. The work that holds up best is quality architecture: defining test strategies, evaluating system-wide risk, and communicating findings to engineering and product teams. Roles shifting toward quality engineering - writing test frameworks, building CI/CD pipelines, evaluating AI-generated code for correctness - are where QA skills are growing in value rather than declining [3].",
+    "stat": "24,100",
+    "statLabel": "annual job openings for QA analysts, concentrated in roles bridging testing and development [2]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start moving from executing test cases to designing test strategy - the architectural decisions about what to test, how to structure automation frameworks, and how to evaluate AI-generated code are where human judgment matters most. Over the next six months, build skills in test automation engineering (Playwright, pytest, or Cypress) and CI/CD pipeline integration, since the QA roles growing in value are those that own the quality infrastructure rather than run scripts against it [3].",
+    "thinkingOf": "Manual QA testing as a standalone role is under meaningful pressure from AI code generation and automated testing tools, but quality engineering - the discipline of designing systems that catch bugs by construction - is growing in demand [3]. Build a portfolio that shows test framework design and automation engineering, not just test case execution. A background in software development alongside QA skills is increasingly the combination that leads to senior roles [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is writing a lot more code now — which means QA engineers are being asked to review a lot more output that looks right but may not be. The highest-value skill shift is toward adversarial thinking: not just does this work, but how does it fail, and what does the model get confidently wrong.",
+        "attribution": "ACM Queue, 'Testing in the Age of AI-Generated Code'",
+        "sourceId": "src-acm"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "62% of developers say AI tools have improved their ability to find and fix bugs — but the strategic QA work is shifting toward designing the test architecture that catches what AI misses. Building skills in exploratory testing, security testing, and API contract testing positions QA engineers above the automation layer rather than beneath it.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The QA roles with the most demand are the ones bridging testing and development — engineers who can write code, understand CI/CD pipelines, and own automation frameworks. Pure manual testing roles are contracting. The transition to SDET-style work is where the career growth is.",
+        "attribution": "Lightcast, Software QA Labor Market Report",
+        "sourceId": "src-lightcast"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI-generated code increases the surface area that QA engineers need to cover. Engineers who specialize in validating AI outputs — testing for consistency, edge case failures, and hallucinated logic — are in a genuinely new and high-demand niche that traditional QA tooling wasn't built for.",
+        "attribution": "InfoQ, 'QA in AI-Assisted Development Workflows'",
+        "sourceId": "src-infoq"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Software QA Analysts",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Software Quality Assurance Analysts and Testers",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-quality-assurance-analysts-and-testers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "Stack Overflow Developer Survey 2024",
+      "date": "Jun 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-acm",
+      "name": "ACM Queue",
+      "url": "https://queue.acm.org/",
+      "title": "ACM Queue: Practitioner Perspectives on AI in Software",
+      "date": "2024"
+    },
+    {
+      "id": "src-lightcast",
+      "name": "Lightcast",
+      "url": "https://lightcast.io/resources",
+      "title": "Lightcast Labor Market Outlook",
+      "date": "2024"
+    },
+    {
+      "id": "src-infoq",
+      "name": "InfoQ",
+      "url": "https://www.infoq.com/",
+      "title": "QA in AI-Assisted Development Workflows",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "QA work builds real habits around finding system weaknesses and documenting failures, which carries over directly, but Information Security is a step up — it adds legal accountability, active threat response, and network-level thinking that QA doesn't require.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Learn network fundamentals via CompTIA Network+",
+        "Practice on TryHackMe or Hack The Box"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "QA work builds strong analytical and documentation habits that carry over, but this is a clear step up — research scientists design and theorize new systems from scratch, while QA analysts validate systems others build.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Publish or contribute to applied research projects",
+        "Build expertise in algorithms, modeling, or AI/ML"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "QA work gives you a real foundation in software behavior, requirements, and testing cycles, but moving to developer is a step up that requires you to write and own the code itself, not just evaluate it.",
+      "steps": [
+        "Build 3 portfolio projects in Python, Java, or JavaScript",
+        "Earn a freeCodeCamp or CS50 completion certificate",
+        "Contribute bug fixes to open-source repos on GitHub"
+      ],
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "QA work builds real habits around structured problem-solving, documentation, and data validation, but Data Science is a step up that adds statistical modeling, machine learning, and programming skills the QA role doesn't require.",
+      "steps": [
+        "Learn Python and SQL for data analysis",
+        "Complete a statistics or ML certification (Coursera, DataCamp)",
+        "Build 2-3 portfolio projects using real datasets"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "QA work gives you real exposure to project workflows, defect cycles, and cross-team communication, but moving to IT Project Manager is a step up that requires owning budgets, schedules, and people — not just reporting on them.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead a small internal project end-to-end",
+        "Learn MS Project or Jira for project tracking"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "QA work builds real familiarity with how systems break and what good software looks like, but this is a step up into designing and directing full systems rather than testing what others build.",
+      "steps": [
+        "Earn CompTIA Network+ or AWS Solutions Architect cert",
+        "Build a portfolio designing system architecture diagrams",
+        "Take on systems integration or infrastructure projects at work"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "QA work builds real familiarity with database behavior, defect patterns, and system requirements, but Database Architect is a step up that requires designing the databases from scratch rather than testing what others built.",
+      "steps": [
+        "Earn Oracle or AWS database architect certification",
+        "Build 2-3 original database schema design projects",
+        "Study data modeling with ERwin or Lucidchart"
+      ],
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "Both roles require close attention to how software behaves and communicates with users, but the QA role is about finding what's broken while the Web Designer role is about building what works — making this a lateral move into a more creative, design-focused specialty.",
+      "steps": [
+        "Complete a UX/UI design cert (Google or Nielsen Norman)",
+        "Build a portfolio of 3 original web interface designs",
+        "Learn Figma and basic HTML/CSS"
+      ],
+      "salary": "$98,090"
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "QA testers already find and document system problems, which overlaps directly with web admin work, but the web admin role shifts from reporting problems to owning the fix, plus adds server management, security monitoring, and uptime responsibility.",
+      "steps": [
+        "Earn CompTIA Linux+ or Server+ certification",
+        "Set up and manage a personal web server (Apache/Nginx)",
+        "Learn basic security monitoring with tools like Splunk or Fail2Ban"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "QA testers already read code, catch bugs, and think in terms of standards and browser compatibility, but web developers write and build the code rather than evaluate someone else's.",
+      "steps": [
+        "Complete freeCodeCamp's full web development curriculum",
+        "Build 3 portfolio sites using HTML, CSS, and JavaScript",
+        "Earn a Meta Front-End Developer certificate"
+      ],
+      "salary": "$90,930"
+    },
+    {
+      "code": "15-1251.00",
+      "title": "Computer Programmer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,670",
+      "openings": "5,500",
+      "growth": "-6%",
+      "fit": "A software QA analyst moving to computer programming is a step down in seniority — your understanding of how code fails and your testing knowledge carry over, but the role shifts from finding bugs to writing the programs that will later be tested.",
+      "steps": [
+        "No new credential required",
+        "Expand from test scripting to full application development",
+        "Build a software portfolio outside of test automation"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "QA Automation Engineer",
+    "Test Automation Engineer",
+    "Quality Assurance Tester",
+    "SDET (Software Development Engineer in Test)"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI QA Engineer",
+      "description": "Designs and runs test suites for AI-powered products — evaluating model output quality, testing edge cases in LLM behavior, validating safety guardrails, and building regression frameworks that catch model degradation after updates. Applies QA discipline to probabilistic systems where outputs are never fully deterministic.",
+      "core_tools": "LangSmith, Pytest, Braintrust",
+      "experience_level": "2",
+      "stat": {
+        "text": "AI QA is now a distinct engineering discipline with dedicated tooling — companies building LLM products report spending 30-40% of development time on evaluation and testing, creating demand for engineers who specialize in AI-specific quality assurance.",
+        "sourceName": "Anthropic",
+        "sourceTitle": "Responsible Scaling Policy",
+        "sourceDate": "Sep 2023",
+        "sourceUrl": "https://www.anthropic.com/news/anthropics-responsible-scaling-policy"
+      },
+      "search_query": "\"AI QA engineer\" OR \"LLM testing engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your systematic thinking about test coverage, edge cases, and regression testing applies directly — the shift is from testing deterministic code paths to testing probabilistic outputs, which requires statistical rigor rather than just boolean pass/fail.",
+      "steps": [
+        "Build an eval framework using Braintrust or LangSmith for a public LLM app and document 5 failure modes you discovered through systematic testing",
+        "Complete Anthropic's free 'Evals' documentation and implement a custom eval suite for a specific domain (customer support, code review, or document Q&A)",
+        "Study the HELM benchmark methodology and replicate one evaluation dimension on a model of your choice, publishing your findings publicly"
+      ]
+    },
+    {
+      "title": "Prompt QA Specialist",
+      "description": "Systematically evaluates and red-teams LLM prompts for reliability, safety, and performance consistency. Tests prompts across edge cases, adversarial inputs, and distribution shifts. Works with product and engineering teams to harden prompt chains before production deployment.",
+      "core_tools": "PromptFlow, Garak, OpenAI Evals",
+      "experience_level": "2",
+      "stat": {
+        "text": "Prompt injection and jailbreaking were among the top 10 OWASP security risks for LLM applications in 2024, creating demand for specialists who can systematically find and document prompt vulnerabilities before deployment.",
+        "sourceName": "OWASP",
+        "sourceTitle": "OWASP Top 10 for Large Language Model Applications 2025",
+        "sourceDate": "Nov 2024",
+        "sourceUrl": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+      },
+      "search_query": "\"prompt QA\" OR \"prompt engineer\" testing evaluation jobs 2025",
+      "job_search_url": "",
+      "fit": "Your QA instinct for finding edge cases and documenting failure modes is exactly the skill that makes a good prompt red-teamer — the domain shifts from code behavior to language model behavior.",
+      "steps": [
+        "Work through the OWASP LLM Top 10 and attempt each attack type against a publicly accessible LLM app, documenting successful exploits and mitigations",
+        "Run Garak against an open-source model and write a structured test report covering injection, jailbreak, and data leakage categories",
+        "Build a prompt regression test suite using OpenAI Evals or PromptFlow that detects behavioral changes across model versions"
+      ]
+    },
+    {
+      "title": "LLM Evaluation Engineer",
+      "description": "Designs and maintains evaluation frameworks that measure LLM performance on domain-specific tasks. Builds automated scoring pipelines, curates gold-standard test sets, and develops metrics that correlate with real user outcomes. Owns the feedback loop between model quality and product decisions.",
+      "core_tools": "Braintrust, RAGAS, dspy",
+      "experience_level": "3",
+      "stat": {
+        "text": "LLM evaluation is now a core engineering discipline, with evaluation infrastructure cited as the top technical bottleneck by AI teams at companies shipping LLM products to production.",
+        "sourceName": "Hamel Husain",
+        "sourceTitle": "Your AI Product Needs Evals",
+        "sourceDate": "Mar 2024",
+        "sourceUrl": "https://hamel.dev/blog/posts/evals/"
+      },
+      "search_query": "\"LLM evaluation engineer\" OR \"AI eval engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your experience writing test cases and thinking about coverage maps directly to eval design — the new skill is building scoring metrics for outputs that don't have a single correct answer.",
+      "steps": [
+        "Implement RAGAS on a RAG pipeline you build, measuring faithfulness, relevance, and context recall across at least 50 test queries",
+        "Read and implement the methodology from one published LLM evaluation paper (e.g. MT-Bench or MMLU) on a smaller domain-specific dataset",
+        "Build a human-in-the-loop annotation pipeline using Label Studio and use it to create a gold-standard eval set for a specific task"
+      ]
+    },
+    {
+      "title": "Test Automation Engineer (AI-Augmented)",
+      "description": "Builds and maintains AI-powered test automation infrastructure — using LLMs to generate test cases, self-healing locators for UI tests, and intelligent test selection systems that prioritize high-risk areas. Reduces manual test writing time while expanding coverage through AI-generated edge cases.",
+      "core_tools": "Playwright, GitHub Copilot, Applitools",
+      "experience_level": "2",
+      "stat": {
+        "text": "AI-augmented test automation is projected to reduce manual QA effort by 40% while increasing test coverage, with 65% of QA teams planning to adopt AI testing tools by 2025.",
+        "sourceName": "Capgemini",
+        "sourceTitle": "World Quality Report 2024-25",
+        "sourceDate": "Oct 2024",
+        "sourceUrl": "https://www.capgemini.com/insights/research-library/world-quality-report/"
+      },
+      "search_query": "\"test automation engineer\" AI-powered OR \"AI testing\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your existing automation skills are the foundation — the shift is from writing every test manually to directing AI tools to generate, maintain, and prioritize tests while you focus on strategy and edge case design.",
+      "steps": [
+        "Set up Playwright with GitHub Copilot and use AI to generate a full test suite for an open-source web app, then audit the AI-generated tests for correctness",
+        "Implement self-healing test locators using Applitools or Heal.dev and document the reduction in test maintenance overhead",
+        "Build an LLM-powered test case generator that takes a feature description and outputs Playwright tests, with a QA step to filter out hallucinated assertions"
+      ]
+    }
+  ]
+}

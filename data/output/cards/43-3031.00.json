@@ -1,0 +1,421 @@
+{
+  "onet_code": "43-3031.00",
+  "title": "Bookkeeping, Accounting, and Auditing Clerks",
+  "score": 28,
+  "salary": "$49,210",
+  "openings": "170,000",
+  "growth": "-1%",
+  "jobTitles": [
+    "Account Clerk",
+    "Accounting Assistant",
+    "Accounting Associate",
+    "Accounting Clerk",
+    "Accounting Specialist",
+    "Accounting Technician",
+    "Accounts Payable Clerk",
+    "Accounts Payable Specialist",
+    "Accounts Payables Clerk",
+    "Accounts Receivable Clerk"
+  ],
+  "emergingTitles": [
+    "Bookkeeper",
+    "AP/AR Specialist",
+    "Staff Accountant"
+  ],
+  "keyDrivers": "Bookkeeping and accounting clerk work is highly structured and rule-based, recording transactions, reconciling accounts, and generating reports, making it one of the most automatable roles as AI tools handle these tasks faster and more accurately. There is no requirement for physical presence, licensure, or high-stakes novel judgment. AI doesn't create new demand for this role; instead, it directly replaces the core tasks, leaving very little protection.",
+  "taskData": [
+    {
+      "task": "Operate accounting software",
+      "full": "Operate computers programmed with accounting software to record, store, and analyze information.",
+      "weight": 29.1,
+      "auto": 35.4,
+      "aug": null,
+      "success": 41.7,
+      "n": 48
+    },
+    {
+      "task": "Use office equipment",
+      "full": "Operate 10-key calculators, typewriters, and copy machines to perform calculations and produce documents.",
+      "weight": 27.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Verify entries/accuracy",
+      "full": "Check figures, postings, and documents for correct entry, mathematical accuracy, and proper codes.",
+      "weight": 26.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Handle office duties",
+      "full": "Perform general office duties, such as filing, answering telephones, and handling routine correspondence.",
+      "weight": 24.9,
+      "auto": null,
+      "aug": null,
+      "success": 85.0,
+      "n": 20
+    },
+    {
+      "task": "Ensure regulatory compliance",
+      "full": "Comply with federal, state, and company policies, procedures, and regulations.",
+      "weight": 23.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Code/classify documents",
+      "full": "Code documents according to company procedures.",
+      "weight": 22.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Process cash/receipts",
+      "full": "Receive, record, and bank cash, checks, and vouchers.",
+      "weight": 21.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare bank deposits",
+      "full": "Prepare bank deposits by compiling data from cashiers, verifying and balancing receipts, and sending cash, checks, or other forms of payment to banks.",
+      "weight": 21.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare payment checks",
+      "full": "Calculate and prepare checks for utilities, taxes, and other payments.",
+      "weight": 21.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 16
+    },
+    {
+      "task": "Calculate financial amounts",
+      "full": "Perform financial calculations, such as amounts due, interest charges, balances, discounts, equity, and principal.",
+      "weight": 21.1,
+      "auto": 57.7,
+      "aug": 22.2,
+      "success": 81.9,
+      "n": 343
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "BLS projects bookkeeping clerk employment to decline 6% over the next decade, a loss of roughly 100,000 positions, as accounting software increasingly handles data entry, reconciliation, and basic reporting [1]. The WEF Future of Jobs Report names accounting and bookkeeping clerks among the fastest-declining roles globally, driven by AI and automation performing the structured, repetitive work that defines the occupation [2]. The financial calculations task already shows 57.7% automation in AI usage data, and that task represents the analytical core of the role.",
+    "stat": "95%",
+    "statLabel": "of accounting firms adopted automation technologies in the past year [3]"
+  },
+  "opportunities": {
+    "body": "The Intuit QuickBooks 2025 survey found that 81% of accountants report AI boosts their productivity, with firms using automation reporting near-unanimous improvements in accuracy (98%) and efficiency (97%) [3]. This creates demand for bookkeepers who can operate AI-powered tools and interpret results rather than just enter data. The AICPA reports that AI is accelerating the shift from compliance-focused bookkeeping toward strategic advisory services, a transition that opens new value for clerks willing to move up the skill ladder [4].",
+    "stat": "81%",
+    "statLabel": "of accountants report AI boosts their productivity [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Learn the AI features in whatever accounting platform you use daily. QuickBooks, Xero, and Sage all now offer automated categorization, anomaly flagging, and reconciliation. Start there rather than chasing a separate AI certification [3]. Over the next six months, build advisory skills: interpreting reports for clients, spotting cash flow trends, and communicating financial insights. The AICPA notes that the profession is shifting from transaction processing to strategic advising, and bookkeepers who can bridge both sides are in the strongest position [4].",
+    "thinkingOf": "Target employers and roles that emphasize cloud accounting and client interaction rather than pure data entry. Those positions are the most durable. BLS still projects 170,000 annual openings for bookkeeping clerks despite the overall decline, nearly all from replacement needs as experienced workers retire [1]. The WEF Future of Jobs Report highlights that while clerical roles are declining, the skills gap in AI-literate finance workers is widening, creating an opening for new entrants who arrive with both accounting fundamentals and platform proficiency [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI isn't taking over our jobs. It's giving us more room to do the work that matters.",
+        "attribution": "Dan Luthi, Partner, Ignite Spot Accounting Services",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is fundamentally reshaping the accounting profession, accelerating the move toward more strategic advisory services.",
+        "attribution": "Erik Asgeirsson, President and CEO, CPA.com",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI is not going to disrupt the accounting profession, but it will change what an accountant does.",
+        "attribution": "Mark Koziel, President and CEO, AICPA",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Accountants are moving away from manual data entry to become strategic advisors as AI handles the transactional work.",
+        "attribution": "2025 Intuit QuickBooks Survey",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Bookkeeping, Accounting, and Auditing Clerks",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/office-and-administrative-support/bookkeeping-accounting-and-auditing-clerks.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025: The Fastest Growing and Declining Jobs",
+      "date": "Jan 2025",
+      "url": "https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf"
+    },
+    {
+      "id": "src-3",
+      "name": "Intuit QuickBooks",
+      "title": "Accountants Embrace AI and Strategic Advisory Services to Fuel Growth, According to 2025 Intuit QuickBooks Survey",
+      "date": "Jul 2025",
+      "url": "https://www.cpapracticeadvisor.com/2025/08/22/the-future-of-accounting-how-intuits-ai-innovations-are-reshaping-the-profession/164854/"
+    },
+    {
+      "id": "src-4",
+      "name": "CPA.com / AICPA",
+      "title": "CPA.com Issues 2025 AI in Accounting Report",
+      "date": "Jun 2025",
+      "url": "https://www.cpa.com/news/cpacom-issues-2025-ai-accounting-report"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Bookkeeping Systems Specialist",
+      "description": "Oversees and configures automated accounting platforms, ensuring AI categorization models accurately code transactions and reconcile accounts.",
+      "core_tools": "QuickBooks Advanced Automations, Botkeeper, Xero AI",
+      "experience_level": 2,
+      "stat": {
+        "text": "By 2026, 75% of accounting tasks will be automated through AI applications, fundamentally shifting the role of bookkeepers.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "The Future of Jobs Report 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2023"
+      },
+      "search_query": "\"AI Bookkeeping\" OR \"Botkeeper\" jobs",
+      "job_search_url": "",
+      "fit": "Transitions from manual ledger entry to exception-handling and system configuration.",
+      "steps": [
+        "Master major accounting platform automations",
+        "Take introductory prompt engineering for finance",
+        "Implement automation for a small client base"
+      ]
+    },
+    {
+      "title": "Automated Payroll Validator",
+      "description": "Monitors AI-driven payroll systems to resolve anomalies, audit compliance logic, and handle edge cases that algorithms flag for human review.",
+      "core_tools": "Gusto AI, Rippling, Workday Machine Learning",
+      "experience_level": 1,
+      "stat": {
+        "text": "The market for AI-driven payroll and HR software is growing 15% annually, demanding new validators.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research"
+      },
+      "search_query": "\"Automated Payroll\" specialist jobs",
+      "job_search_url": "",
+      "fit": "Pivots deep payroll rule knowledge into overseeing software execution accuracy.",
+      "steps": [
+        "Complete Workday or Gusto advanced admin certs",
+        "Study data privacy and compliance basics",
+        "Transition into software support or administration"
+      ]
+    },
+    {
+      "title": "Financial Data Quality Analyst",
+      "description": "Audits the raw data pipelines feeding into predictive financial models, ensuring correct formatting and anomaly resolution.",
+      "core_tools": "Alteryx, Excel Power Query, Tableau Prep",
+      "experience_level": 2,
+      "stat": {
+        "text": "Data quality management roles within finance have surged 35% as AI adoption hinges on good data.",
+        "sourceName": "GitHub",
+        "sourceTitle": "State of Software Quality",
+        "sourceDate": "Oct 2023",
+        "sourceUrl": "https://octoverse.github.com/"
+      },
+      "search_query": "\"Financial Data Quality Analyst\" jobs",
+      "job_search_url": "",
+      "fit": "Transforms extreme attention to numeric detail into systemic data cleansing workflows.",
+      "steps": [
+        "Learn advanced SQL and Excel Power Query",
+        "Obtain Alteryx Core Certification",
+        "Lead a data sanitization project at work"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Personal Financial Advisors by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Personal Financial Advisors",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Draws upon core skills from Bookkeeping, Accounting, and Auditing Clerks but pivots focus to Accountants and Auditors; this is a step up.",
+      "steps": [
+        "Core progression in the cluster",
+        "Bachelor's in accounting required; most clerks complete part-time while working"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Loan Officers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Loan Officers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Financial Risk Specialists by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Risk Specialists",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Credit Counselors by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Credit Counselors",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2082.00",
+      "title": "Tax Preparer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$50,560",
+      "openings": "10,400",
+      "growth": "+4%",
+      "fit": "Draws upon core skills from Bookkeeping, Accounting, and Auditing Clerks but pivots focus to Tax Preparers; this is a lateral move.",
+      "steps": [
+        "Lateral into seasonal/year-round tax prep",
+        "IRS AFSP (~18hr) or registered tax return preparer credential"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Insurance Underwriters by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Insurance Underwriters",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Bookkeeping, Accounting, and Auditing Clerks experience into Credit Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Credit Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    }
+  ]
+}

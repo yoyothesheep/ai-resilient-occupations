@@ -1,0 +1,390 @@
+{
+  "onet_code": "13-2072.00",
+  "title": "Loan Officers",
+  "score": 56,
+  "salary": "$74,180",
+  "openings": "20,300",
+  "growth": "+1%",
+  "jobTitles": [
+    "Branch Manager",
+    "Business Banking Officer",
+    "Commercial Banker",
+    "Commercial Loan Officer",
+    "Corporate Banking Officer",
+    "Loan Officer",
+    "Mortgage Loan Officer",
+    "Mortgage Loan Originator",
+    "Portfolio Manager",
+    "Relationship Manager"
+  ],
+  "emergingTitles": [
+    "Mortgage Loan Originator",
+    "Relationship Banker"
+  ],
+  "keyDrivers": "Loan officers build trusted relationships with borrowers, guiding them through complex financial decisions where human reassurance and accountability genuinely matter, especially for large purchases like homes. They carry regulatory responsibilities and must exercise judgment on borderline cases that automated systems flag but can't resolve. AI will likely handle much of the routine underwriting and paperwork, freeing loan officers to focus on client advising and complex deal structuring, though simpler loan products may increasingly bypass them entirely.",
+  "taskData": [
+    {
+      "task": "Analyze loan applications",
+      "full": "Analyze applicants' financial status, credit, and property evaluations to determine feasibility of granting loans.",
+      "weight": 22.6,
+      "auto": null,
+      "aug": null,
+      "success": 69.0,
+      "n": 29
+    },
+    {
+      "task": "Meet with applicants",
+      "full": "Meet with applicants to obtain information for loan applications and to answer questions about the process.",
+      "weight": 21.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Explain loan options",
+      "full": "Explain to customers the different types of loans and credit options that are available, as well as the terms of those services.",
+      "weight": 20.7,
+      "auto": 22.9,
+      "aug": 58.0,
+      "success": 65.9,
+      "n": 595
+    },
+    {
+      "task": "Approve/refer loans",
+      "full": "Approve loans within specified limits, and refer loan applications outside those limits to management for approval.",
+      "weight": 19.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Maintain loan files",
+      "full": "Review and update credit and loan files.",
+      "weight": 18.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Gather applicant documents",
+      "full": "Obtain and compile copies of loan applicants' credit histories, corporate financial statements, and other financial information.",
+      "weight": 18.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Supervise loan staff",
+      "full": "Supervise loan personnel.",
+      "weight": 18.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Identify client goals",
+      "full": "Work with clients to identify their financial goals and to find ways of reaching those goals.",
+      "weight": 17.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Submit applications to credit analysts…",
+      "full": "Submit applications to credit analysts for verification and recommendation.",
+      "weight": 17.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review loan agreements to ensure…",
+      "full": "Review loan agreements to ensure that they are complete and accurate according to policy.",
+      "weight": 16.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Automated underwriting systems from Fannie Mae and Freddie Mac already handle the bulk of conforming loan decisions algorithmically, and a 2025 STRATMOR Group survey found 38% of lenders now use some form of AI or machine learning in origination, up from 15% in 2023 [2]. Document classification and indexing, core administrative tasks for loan officers, are being automated at 63% of AI-using lenders [2]. BLS projects slower-than-average employment growth for loan officers (1–2%), reflecting this headcount pressure even as total mortgage volume fluctuates [1].",
+    "stat": "38%",
+    "statLabel": "of mortgage lenders now use AI in origination, up from 15% in 2023 [2]"
+  },
+  "opportunities": {
+    "body": "Loan approval requires a licensed officer under NMLS regulation and carries fiduciary accountability, two barriers that automated systems cannot cross for final decisions. The AEI data shows that the explanation and advisory work is where AI augments rather than replaces: 58% augmentation on explaining loan options means AI helps officers communicate, not substitute for them [3]. Research on the future of financial services professionals consistently finds advisory roles anchored in client relationships more resilient than transactional ones, precisely because trust and compliance accountability cannot be delegated to automated systems [4].",
+    "stat": "58%",
+    "statLabel": "AI efficiency gain on explaining loan options to clients [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI tools built into your LOS for document processing and application review so that capacity goes to client-facing relationship work. STRATMOR data shows lenders deploying AI inside the workflow, not just adjacent to it, see measurably better throughput [2]. Over the next six months, build depth in purchase mortgage advising and small-business lending, these are the segments where complexity and relationship trust create the most defensible position against automated approval platforms. Renewing NMLS credits in compliance and fair lending is also worth prioritizing as AI raises regulatory scrutiny in lending.",
+    "thinkingOf": "Enter the field targeting purchase mortgages and small-business lending rather than refinance volume. Refi pipelines are most exposed to automated platforms because the client already knows the product. Purchase buyers are making one of the largest financial decisions of their lives and still want a human to walk them through it [1]. Get NMLS licensed first, then look for positions at community banks or credit unions where the loan mix is more complex and relationship-driven than at large mortgage-only shops. Thomson Reuters data shows professionals who adopt AI tools actively are twice as likely to see revenue growth, so platform fluency is worth building from day one [4].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI alone can't deliver outcomes. True AI needs to be in the workflow, not adjacent to it.",
+        "attribution": "Rob Chrisman, Senior Advisor, STRATMOR Group",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is fundamentally reshaping the accounting profession, accelerating the move toward more strategic advisory services.",
+        "attribution": "Erik Asgeirsson, President and CEO, CPA.com",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The real opportunity isn't chasing shiny AI tools from companies that just learned what the mortgage industry is. It's embedding AI into the process where it creates repeatable value.",
+        "attribution": "Rob Chrisman, Senior Advisor, STRATMOR Group",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Organizations with visible AI strategies are twice as likely to experience revenue growth compared to those with informal or ad-hoc approaches.",
+        "attribution": "2025 Future of Professionals Report, Thomson Reuters",
+        "sourceId": "src-4"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Loan Officers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/loan-officers.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "STRATMOR Group",
+      "title": "Artificial Intelligence in Mortgage Lending",
+      "date": "Nov 2025",
+      "url": "https://www.stratmorgroup.com/artificial-intelligence-in-mortgage-lending/"
+    },
+    {
+      "id": "src-3",
+      "name": "CPA.com / AICPA",
+      "title": "CPA.com Issues 2025 AI in Accounting Report",
+      "date": "Jun 2025",
+      "url": "https://www.cpa.com/news/cpacom-issues-2025-ai-accounting-report"
+    },
+    {
+      "id": "src-4",
+      "name": "Thomson Reuters",
+      "title": "2025 Future of Professionals Report",
+      "date": "Jun 2025",
+      "url": "https://www.thomsonreuters.com/en/c/future-of-professionals.html"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Algorithmic Lending Strategist",
+      "description": "Oversees the deployment of AI credit models, tuning parameters to balance loan volume against automated default predictions.",
+      "core_tools": "Upstart AI, Zest AI, DataRobot",
+      "experience_level": 4,
+      "stat": {
+        "text": "AI-driven lending increased approval rates by 27% while decreasing yield losses by 16%.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "AI in Financial Services",
+        "sourceDate": "Nov 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Algorithmic Lending\" \"Lending Strategy\"",
+      "job_search_url": "",
+      "fit": "Translates human intuition about borrower risk into programmatic configurations and model oversight.",
+      "steps": [
+        "Learn fundamentals of credit loss modeling",
+        "Partner with data science teams on underwriting",
+        "Transition to a credit risk strategy role"
+      ]
+    },
+    {
+      "title": "Automated Underwriting Supervisor",
+      "description": "Handles the complex cases that automated loan origination systems (LOS) flag for manual review, acting as the human escalation point.",
+      "core_tools": "Encompass AI, Blend, MeridianLink",
+      "experience_level": 4,
+      "stat": {
+        "text": "The role of human-in-the-loop underwriting managers is growing 22% as basic loans automate.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Underwriting Supervisor\" AI",
+      "job_search_url": "",
+      "fit": "Shifts from routine processing to handling exclusively high-complexity, edge-case borrower scenarios.",
+      "steps": [
+        "Master complex tax return analysis",
+        "Become power user of advanced LOS systems",
+        "Assume team lead or escalation duties"
+      ]
+    },
+    {
+      "title": "Alternative Data Loan Officer",
+      "description": "Evaluates borrowers utilizing non-traditional, AI-aggregated data points—like cash flow trends and digital footprints—to approve unbanked applicants.",
+      "core_tools": "Plaid AI, Nova Credit, Python",
+      "experience_level": 3,
+      "stat": {
+        "text": "Alternative credit data usage is expanding credit access to 50 million underserved consumers.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Financial Services",
+        "sourceDate": "Dec 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Alternative Data\" \"Credit Officer\"",
+      "job_search_url": "",
+      "fit": "Adapts traditional FICO-based mindset to analyzing unstructured and open-banking data streams.",
+      "steps": [
+        "Understand Open Banking API integrations",
+        "Learn alternative scoring models",
+        "Work with FinTech lending startups"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Loan Officers experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Loan Officers experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Draws upon core skills from Loan Officers but pivots focus to Personal Financial Advisors; this is a lateral move.",
+      "steps": [
+        "Client relationship skills transfer directly",
+        "CFP or Series 65/66 required"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Transitions Loan Officers experience into Accountants and Auditors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Accountants and Auditors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Loan Officers experience into Financial Risk Specialists by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Financial Risk Specialists",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Loan Officers experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Loan Officers experience into Credit Counselors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Counselors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Loan Officers experience into Insurance Underwriters by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Insurance Underwriters",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Draws upon core skills from Loan Officers but pivots focus to Credit Analysts; this is a lateral move.",
+      "steps": [
+        "Underwriting focus shift",
+        "Internal transition common at banks"
+      ]
+    }
+  ]
+}

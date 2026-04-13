@@ -50,7 +50,6 @@ import urllib.error
 SCORES_CSV        = "data/output/ai_resilience_scores.csv"
 EMERGING_CSV      = "data/emerging_roles/emerging_roles.csv"
 CLUSTER_ROLES_CSV = "data/career_clusters/cluster_roles.csv"
-OUTPUT_JSONL      = "data/output/occupation_cards.jsonl"
 
 MODEL      = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 2048
@@ -125,26 +124,7 @@ def save_emerging_csv(rows: dict):
             writer.writerow(row)
 
 
-def load_jsonl() -> dict:
-    cards = {}
-    if not os.path.exists(OUTPUT_JSONL):
-        return cards
-    with open(OUTPUT_JSONL, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                try:
-                    card = json.loads(line)
-                    cards[card["onet_code"]] = card
-                except (json.JSONDecodeError, KeyError):
-                    pass
-    return cards
-
-
-def save_jsonl(cards: dict):
-    with open(OUTPUT_JSONL, "w", encoding="utf-8") as f:
-        for card in cards.values():
-            f.write(json.dumps(card, ensure_ascii=False) + "\n")
+from cards import load_cards as load_jsonl, save_cards as save_jsonl
 
 
 # ── Claude helpers ────────────────────────────────────────────────────────────
@@ -308,7 +288,7 @@ def print_prompts_for_cluster(cluster_id: str, scores: dict,
 
     Claude Code reads each printed prompt, authors a JSON array, then writes
     the rows to emerging_roles.csv and the cards to occupation_cards.jsonl
-    using save_emerging_csv() and save_jsonl() directly.
+    using save_emerging_csv() and save_jsonl() (alias for save_cards()) directly.
     """
     cluster_roles = load_cluster_roles(cluster_id)
     if not cluster_roles:

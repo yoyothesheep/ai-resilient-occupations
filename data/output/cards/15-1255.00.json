@@ -1,0 +1,490 @@
+{
+  "onet_code": "15-1255.00",
+  "title": "Web and Digital Interface Designers",
+  "score": 45,
+  "salary": "$98,090",
+  "openings": "9,100",
+  "growth": "+7%",
+  "jobTitles": [
+    "Technology Applications Engineer",
+    "Web Architect",
+    "Web Design Specialist",
+    "Web Designer",
+    "Webmaster"
+  ],
+  "keyDrivers": "Web and digital interface design is one of the fields most directly disrupted by AI, tools can already generate layouts, prototypes, and even production-ready code from simple prompts. The work is fully remote, requires no licensing, and while human taste and user empathy still matter, clients are increasingly comfortable with AI-assisted or AI-generated design. Without strong legal protections or physical presence requirements, the typical practitioner in this role faces significant displacement pressure as AI design tools continue to improve rapidly.",
+  "taskData": [
+    {
+      "task": "Develop e-commerce strategies",
+      "full": "Collaborate with management or users to develop e-commerce strategies and to integrate these strategies with Web sites.",
+      "weight": 17.0,
+      "auto": 31.6,
+      "aug": 36.8,
+      "success": 61.7,
+      "n": 329
+    },
+    {
+      "task": "Collaborate with developers",
+      "full": "Collaborate with web development professionals, such as front-end or back-end developers, to complete the full scope of Web development projects.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Resolve hosting/network issues",
+      "full": "Communicate with network personnel or Web site hosting agencies to address hardware or software issues affecting Web sites.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Conduct user research",
+      "full": "Conduct user research to determine design requirements and analyze user feedback to improve design quality.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Confer on priorities/solutions",
+      "full": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Create content indices",
+      "full": "Create searchable indices for Web page content.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Create web prototypes/models",
+      "full": "Create Web models or prototypes that include physical, interface, logical, or data models.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Design/build/maintain websites",
+      "full": "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",
+      "weight": 17.0,
+      "auto": 45.1,
+      "aug": 4.4,
+      "success": 66.4,
+      "n": 19243
+    },
+    {
+      "task": "Develop style guidelines",
+      "full": "Develop and document style guidelines for Web site content.",
+      "weight": 17.0,
+      "auto": 41.5,
+      "aug": 5.6,
+      "success": 64.1,
+      "n": 357
+    },
+    {
+      "task": "Develop/iterate visual designs",
+      "full": "Develop new visual design concepts and modify concepts based on stakeholder feedback.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "risks": {
+    "body": "AEI task data shows that core deliverables for this role - building and maintaining websites and developing style guidelines - face automation rates of 41-45%, meaning a meaningful share of routine production work can now be generated without a designer in the loop [1]. Generative design tools are compressing the time required to produce initial wireframes, style sheets, and basic UI components, which tends to reduce the number of junior and mid-level seats needed per project. BLS projects only 9,100 annual openings against a field that has grown quickly, leaving the entry-level job market tighter than the headline +8% growth rate suggests [2].",
+    "stat": "25%",
+    "statLabel": "drop in entry-level web design job postings year-over-year [4]"
+  },
+  "opportunities": {
+    "body": "The strongest durability signal for this role is collaboration: tasks involving working with management on strategy and coordinating with development teams show augmentation rates above 36%, meaning AI assists rather than replaces the judgment calls that happen at the intersection of business goals and user needs [1]. Designers who own the brief - conducting user research, interpreting stakeholder feedback, and setting accessibility standards - are doing work that requires contextual reasoning and accountability that AI tools still handle poorly. The Stack Overflow 2024 Developer Survey found that 63% of developers cite 'AI tools lack context of codebase' as a key obstacle, a gap that a designer with deep product knowledge can fill [3].",
+    "stat": "60%",
+    "statLabel": "of developers cite design-to-dev handoff as their top friction point [5]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The immediate priority is shifting time toward the tasks AI cannot compress: user research sessions, accessibility audits, and cross-functional facilitation. Learning to use AI generation tools (Figma AI, Midjourney, v0) as a starting point rather than a finishing line - then critically editing and validating output against real user data - is the difference between being replaced by the tools and directing them. Over six months, building depth in design systems governance and component documentation creates a track record that is harder to replicate with prompts alone. Roles that bridge design and engineering, such as design technologist or product designer with front-end fluency, are holding up better in hiring than pure visual production roles.",
+    "thinkingOf": "A portfolio that leads with the research and decision-making behind the designs carries more weight than one that showcases polished visuals alone, because hiring managers can now generate polished visuals cheaply. Concrete credentials worth pursuing include a Nielsen Norman Group UX Certificate, a Google UX Design Certificate (for foundational credibility), or a dedicated course in accessibility (WCAG 2.2 auditing, axe tools). Building in public - writing a case study that documents how user research shaped a specific design decision - demonstrates the kind of judgment that differentiates a mid-level candidate in a compressed market. Targeting industries with high regulatory or compliance requirements (healthcare, fintech, government) tends to insulate design roles from the fastest commoditization pressure.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "76% of developers are using or planning to use AI tools in their workflow — for web designers, that means AI is generating layout scaffolding, color palettes, and copy at scale. The irreplaceable work is the user research and stakeholder facilitation that tells you whether the AI-generated output is actually solving the right problem.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Generative AI has automated a meaningful share of visual production in web design. The designers who are thriving moved upstream into user research and design systems — work that requires organizational context and user empathy that tools can't replicate. The production layer is not where you want to be building your career right now.",
+        "attribution": "AIGA Design Census",
+        "sourceId": "src-aiga"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Only 43% of developers say they trust AI output accuracy most of the time. For design portfolios, this means case studies that document the gap between initial AI-generated concepts and final shipped designs — showing how user feedback, accessibility constraints, and brand guidelines shaped the outcome — carry more weight than polished visuals alone.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Accessibility and UX research are the growth areas in web design right now — and they require skills that can't be quickly automated. Designers entering the field who build fluency in WCAG standards and usability testing methods are differentiating themselves from those who compete primarily on visual execution speed.",
+        "attribution": "AIGA, Eye on Design",
+        "sourceId": "src-aiga"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Web and Digital Interface Designers",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Web Developers and Digital Designers",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "Stack Overflow Developer Survey 2024",
+      "date": "Jun 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-4",
+      "name": "Indeed Hiring Lab",
+      "title": "Tech Hiring Trends 2024",
+      "date": "2024",
+      "url": "https://www.hiringlab.org/2024/03/12/tech-job-postings/"
+    },
+    {
+      "id": "src-5",
+      "name": "Figma",
+      "title": "Bridging the gap between design and code",
+      "date": "2024",
+      "url": "https://www.figma.com/reports/bridging-design-and-code/"
+    },
+    {
+      "id": "src-aiga",
+      "name": "AIGA",
+      "url": "https://www.aiga.org/research-and-resources/design-census",
+      "title": "AIGA Design Census 2024",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "Your experience reviewing designs for usability and working closely with developers translates directly to QA work, and this is a lateral move into a more technically specialized testing role.",
+      "steps": [
+        "Earn ISTQB Foundation Level certification",
+        "Learn Selenium or Cypress for automated testing",
+        "Document 3 bug reports using Jira or Bugzilla"
+      ],
+      "education": "Bachelor's degree",
+      "score": 2.0,
+      "salary": "$102,610"
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "You already work closely with developers and understand user needs, but this move requires you to write and maintain actual code rather than design how things look and function.",
+      "steps": [
+        "Learn HTML, CSS, and JavaScript through freeCodeCamp",
+        "Build 3 full-stack projects for a portfolio",
+        "Earn a front-end developer certification"
+      ],
+      "education": "Bachelor's degree",
+      "score": 2.0,
+      "salary": "$90,930"
+    },
+    {
+      "level": 2,
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "isCurrent": true,
+      "score": 2.0,
+      "salary": "$98,090",
+      "openings": "",
+      "growth": ""
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already work with web teams and understand site structure, but this move shifts focus from designing interfaces to keeping servers running, secure, and recoverable — it's a lateral move into the technical operations side of the web.",
+      "steps": [
+        "Earn CompTIA Linux+ or Server+ certification",
+        "Learn Apache/Nginx config and basic server admin",
+        "Practice web server monitoring with tools like Nagios or Datadog"
+      ],
+      "education": "Bachelor's degree",
+      "score": 1.8,
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "You already work across teams to build structured, user-facing systems, but Database Architect is a step up that shifts focus from visual interfaces to the underlying data architecture, requiring deeper technical credentials and systems design experience.",
+      "steps": [
+        "Earn Oracle or AWS database certification",
+        "Build 2-3 relational database schema projects",
+        "Learn SQL and data modeling tools like ERwin"
+      ],
+      "education": "Bachelor's degree",
+      "score": 2.5,
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "You already collaborate with developers and translate user needs into solutions, but Software Developer is a step up that requires you to write, test, and own the code itself rather than directing how it looks and behaves.",
+      "steps": [
+        "Complete a full-stack bootcamp or CS degree",
+        "Build 3 original software projects on GitHub",
+        "Pass a language certification (Python, Java, etc.)"
+      ],
+      "education": "Bachelor's degree",
+      "score": 2.7,
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Your experience communicating with technical teams and understanding web infrastructure carries over, but this is a clear step up — you're moving from building interfaces to actively defending systems, which requires new technical credentials and a security-first mindset you haven't needed before.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Learn network monitoring with Wireshark or Splunk",
+        "Complete a hands-on ethical hacking course (TryHackMe or HackTheBox)"
+      ],
+      "education": "Bachelor's degree",
+      "score": 3.4,
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already work across design, dev teams, and technical stakeholders, but this is a step up — the new role owns entire systems, directs hardware and software decisions, and carries responsibility well beyond the front-end layer.",
+      "steps": [
+        "Earn CompTIA Network+ or AWS Solutions Architect cert",
+        "Build lab projects covering OS, networking, and system architecture",
+        "Complete a CS fundamentals course (systems, networking, OS)"
+      ],
+      "education": "Post-secondary certificate",
+      "score": 3.0,
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already coordinate across teams and manage competing priorities on web projects, but this is a step up — IT Project Managers own the full budget, schedule, and accountability for delivery across any tech project, not just web.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Manage a cross-functional project end-to-end",
+        "Learn MS Project or Jira for milestone tracking"
+      ],
+      "education": "Bachelor's degree",
+      "score": 3.1,
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "You already know how to read user data and turn findings into decisions, but Data Science is a step up that requires statistical modeling, programming, and working with large datasets in ways design work doesn't demand.",
+      "steps": [
+        "Learn Python and pandas for data analysis",
+        "Complete a Statistics or ML course (Coursera, edX)",
+        "Build 2-3 data projects on Kaggle or GitHub"
+      ],
+      "education": "Bachelor's degree",
+      "score": 2.7,
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "You already collaborate across teams and analyze user needs, but this is a clear step up — the target role requires deep theoretical computer science knowledge, mathematical modeling, and original research that goes well beyond design and web strategy.",
+      "steps": [
+        "Earn a graduate degree in computer science or related field",
+        "Complete research projects involving algorithms or systems design",
+        "Publish or contribute to peer-reviewed technical work"
+      ],
+      "education": "Master's degree",
+      "score": 3.3,
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1251.00",
+      "title": "Computer Programmer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,670",
+      "openings": "5,500",
+      "growth": "-6%",
+      "fit": "A web and digital interface designer moving to computer programming is a step down in abstraction — your frontend coding knowledge carries over, but the work shifts from designing user experiences to writing lower-level programs and software logic.",
+      "steps": [
+        "No new credential required",
+        "Learn Python, Java, or C++ beyond frontend skills",
+        "Build logic-focused programming portfolio (non-UI projects)"
+      ]
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI UX Designer",
+      "description": "Designs conversational interfaces, AI-generated content workflows, and human-AI interaction patterns for products powered by large language models. Conducts user research specific to AI behavior transparency, error states, and trust-building within AI-driven experiences.",
+      "core_tools": "Figma, OpenAI API, Microsoft Copilot Studio",
+      "experience_level": "2",
+      "stat": {
+        "text": "76% of UX practitioners reported that AI tools are changing their day-to-day workflow, with the ability to design AI-native interfaces emerging as the most in-demand new skill.",
+        "sourceName": "Nielsen Norman Group",
+        "sourceTitle": "AI & UX: How Artificial Intelligence Is Changing the Practice of User Experience",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.nngroup.com/articles/ai-ux/"
+      },
+      "search_query": "\"AI UX Designer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your visual design and user research skills transfer directly, but you must shift from designing static screens to designing conversations, AI behavior, and trust-building moments.",
+      "steps": [
+        "Complete Google UX Design or Nielsen Norman AI UX course",
+        "Build a prototype chatbot using OpenAI API and document the error states",
+        "Redesign one existing app flow in Figma to include AI transparency indicators"
+      ]
+    },
+    {
+      "title": "Design Engineer",
+      "description": "Works at the intersection of Figma and production code, translating visual designs into polished, accessible React components and design systems. Owns the implementation layer between design and engineering: building component libraries, interaction patterns, and the pixel-level details that make products feel right.",
+      "core_tools": "Figma, React, Framer Motion",
+      "experience_level": "2",
+      "stat": {
+        "text": "Figma's 2024 design-to-code report found that design-to-development handoff is the single biggest source of friction in product teams, with 60% of developers citing misaligned specs as a top time drain — the problem Design Engineers are hired to solve.",
+        "sourceName": "Figma",
+        "sourceTitle": "Bridging the gap between design and code",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.figma.com/reports/bridging-design-and-code/"
+      },
+      "search_query": "\"Prompt Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Interface designers already think in components and visual systems, but this role shifts from creating specs for developers to owning the implementation layer directly - building the component libraries and interaction patterns in production code.",
+      "steps": [
+        "Learn React and TypeScript to a working level via the official docs and small projects",
+        "Build and publish a component library with Storybook documentation",
+        "Contribute to an open-source design system (shadcn/ui, Radix, or MUI)"
+      ]
+    },
+    {
+      "title": "Conversational UI Designer",
+      "description": "Designs and prototypes chat-based, voice, and multimodal interfaces for AI assistants, chatbots, and copilot features embedded in enterprise or consumer products. Defines dialogue flows, personality guidelines, and error-handling experiences to make AI interactions feel natural and on-brand.",
+      "core_tools": "Voiceflow, Figma, Botpress",
+      "experience_level": "2",
+      "stat": {
+        "text": "76% of developers are already using or planning to use AI in their development process in 2024, with conversational interface design emerging as a distinct discipline as AI assistants and copilots become standard product features.",
+        "sourceName": "Stack Overflow",
+        "sourceTitle": "Stack Overflow Developer Survey 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://survey.stackoverflow.co/2024/ai"
+      },
+      "search_query": "\"Conversational UI Designer\" OR \"Conversational UX Designer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your visual layout and user flow skills transfer directly, but you must shift from designing screens to designing spoken and written conversations as the primary interface.",
+      "steps": [
+        "Complete Voiceflow's free Conversation Design course and build one sample chatbot",
+        "Map a dialogue flow with error states and fallback messages in Figma using a conversational UI kit",
+        "Earn the Google Certificate in UX Design's conversational design module or Codecademy's chatbot fundamentals course"
+      ]
+    },
+    {
+      "title": "AI Product Designer",
+      "description": "Leads end-to-end product design for AI-native applications, defining how machine learning model outputs are surfaced, explained, and acted upon within user interfaces. Collaborates directly with data scientists and ML engineers to translate model capabilities into coherent, ethical, and usable product experiences.",
+      "core_tools": "Figma, Weights & Biases, Notion AI",
+      "experience_level": "3",
+      "stat": {
+        "text": "Product design job postings requiring AI skills grew 47% year-over-year in 2024, with employers specifically seeking designers who can prototype and evaluate generative AI features.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI Product Designer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your visual and UX skills transfer directly, but you must shift from designing static interfaces to designing around uncertain, probabilistic model outputs that change over time.",
+      "steps": [
+        "Complete Google's AI Essentials course to build ML vocabulary",
+        "Redesign an existing app's UI to surface a real API output, such as OpenAI or Google Vision, and document your design decisions",
+        "Create a free Weights & Biases account and walk through a model experiment to learn how data scientists track outputs"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Product Designer"
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building."
+}

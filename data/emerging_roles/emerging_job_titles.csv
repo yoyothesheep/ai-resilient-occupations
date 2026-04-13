@@ -117,3 +117,50 @@ onet_code,job_title,notes
 11-3031.00,Controller,Common title for senior financial managers overseeing accounting and reporting functions
 11-3031.00,CFO,Chief Financial Officer; top financial management title at companies of all sizes
 11-3031.00,VP of Finance,Common corporate title for senior financial managers below CFO level
+27-3031.00,PR Manager,"Mid-senior title used in job postings for practitioners who manage a PR program or small team, distinct from the more junior PR Specialist designation."
+27-3031.00,Brand Communications Manager,Hybrid title used in tech and consumer companies for PR practitioners who combine earned media with brand messaging responsibilities.
+27-3031.00,External Communications Manager,Corporate title common in large organizations for the PR function focused on media relations and public-facing communications.
+27-3041.00,Content Editor,"Extremely common in digital publishing and content marketing, covering editing and quality control of web content, blog posts, and branded content."
+27-3041.00,Managing Editor,"Widely used for editors who oversee publication workflow, editorial calendars, and team coordination rather than primarily editing copy themselves."
+27-3041.00,Copy Editor,"O*NET lists Newspaper Copy Editor but Copy Editor without the qualifier is broadly used across digital, book, and brand publishing."
+27-3041.00,Digital Editor,Covers editing roles in online publications and digital media organizations where web-first content editing is the primary responsibility.
+11-2011.00,Campaign Manager,"Extremely common in digital advertising for roles managing multi-channel promotional campaigns, broader than Advertising Manager in scope."
+11-2011.00,Growth Marketing Manager,"Common in tech/startup environments for practitioners managing paid acquisition, promotions, and conversion optimization."
+11-2011.00,Demand Generation Manager,B2B-focused title for roles managing advertising and promotional programs aimed at pipeline and lead generation.
+27-1026.00,Visual Merchandising Coordinator,Common posting title for the coordinator-level role that doesn't appear separately in O*NET's sample titles.
+27-1026.00,Brand Experience Associate,Used by retail brands for in-store display roles that emphasize customer experience over traditional window dressing.
+27-1026.00,Retail Display Stylist,Freelance and contract title used in fashion retail for visual merchandising assignments.
+27-1014.00,VFX Artist,"Industry-standard term for visual effects specialists in film and TV, more common than O*NET's 'Special Effects Artist' in job postings."
+27-1014.00,Motion Graphics Designer,"Widely used in advertising, broadcast, and digital media for animators working primarily in 2D/After Effects pipelines."
+27-1014.00,Character Animator,"Specific title for animators focused on character performance, common in gaming and feature animation studios."
+27-1014.00,3D Generalist,"Catch-all title for animators/VFX artists who work across modeling, rigging, and rendering in smaller studios."
+27-1021.00,Product Designer,"Dominant job posting title for industrial designers in tech and consumer goods, more common than 'Industrial Designer' on boards like LinkedIn."
+27-1021.00,UX/Industrial Designer,Hybrid title used by companies seeking designers who span physical and digital product experience.
+27-1021.00,Mechanical Product Designer,Used in manufacturing and engineering firms for designers with strong CAD and DFM (design for manufacturing) skills.
+27-1022.00,Apparel Technical Designer,Common posting title for fashion designers focused on technical specs and pattern grading rather than concept work.
+27-1022.00,Textile Designer,"Used for designers focusing on fabric patterns and material design, a common specialization within fashion that O*NET covers separately."
+27-1022.00,Costume Designer,"Specific title in film, TV, and theater for fashion designers, not fully covered by O*NET's sample titles."
+27-1013.00,Concept Artist,Common in gaming and film industries for fine artists who create character and environment concepts in pre-production.
+27-1013.00,Illustrator,"Broad commercial title for fine artists working in editorial, publishing, and brand illustration, searched far more than 'Fine Artist' on job boards."
+27-1013.00,Mural Artist,Growing title for fine artists focused on large-scale public and commercial wall art commissions.
+27-1025.00,Space Planner,Common in corporate real estate and facilities for interior designers focused on workspace layout and occupancy planning.
+27-1025.00,Residential Interior Designer,Sector-specific posting title that distinguishes residential from commercial practice.
+27-1025.00,FF&E Designer,"Furniture, fixtures, and equipment designer title common in hospitality and commercial interiors."
+27-1027.00,Environmental Graphic Designer,"Emerging title for designers who blend wayfinding, spatial branding, and exhibit design in corporate and museum environments."
+27-1027.00,Experience Designer,"Used for exhibit and spatial designers in museums, theme parks, and retail where the emphasis is on visitor experience."
+27-1027.00,Art Department Coordinator,"Film and TV title for set designers managing props, sets, and environment production under the production designer."
+27-1011.00,Head of Design,"Common in tech companies and startups for the senior-most design leadership role, overlapping with Art Director in smaller organizations."
+27-1011.00,Visual Director,Used in fashion and retail brands for the role that owns visual brand standards across channels.
+27-1011.00,Brand Creative Director,"Common in marketing-heavy companies where art direction spans brand identity, campaigns, and content."
+13-2031.00,FP&A Analyst,"Finance & Planning Analyst is the dominant job board title for budget/forecasting work in corporate settings, distinct from the O*NET 'Budget Analyst' label."
+13-2031.00,Financial Planning Analyst,"Common corporate title for roles that build annual budgets, forecasts, and variance reports — broader scope than 'Budget Coordinator'."
+13-2031.00,Fiscal Analyst,Used widely in government and public-sector job postings for the same budget review and appropriations work covered by this occupation.
+13-1111.00,Strategy Analyst,Frequently posted by consulting firms and in-house strategy teams for roles that assess operations and recommend improvements — closely mirrors management analyst work.
+13-1111.00,Operations Analyst,"Common title in tech and enterprise companies for analyzing workflows and driving process efficiency, the core of this occupation."
+13-1111.00,Process Improvement Analyst,"Appears frequently in manufacturing, healthcare, and logistics job postings for Lean/Six Sigma-oriented work that O*NET lists under management analysts."
+13-2051.00,Quantitative Analyst,High-frequency job board title (often 'Quant Analyst') for model-driven investment research roles not covered by the O*NET sample title list.
+13-2051.00,Fixed Income Analyst,"Specific bond/debt market title that appears heavily in banking and asset management postings, distinct from the generic 'Securities Analyst'."
+13-2051.00,Valuation Analyst,Common in investment banking and private equity for DCF and comparable-company analysis work that maps directly to this occupation's core tasks.
+13-1041.00,Compliance Analyst,The most-searched job board title for entry/mid-level compliance work — O*NET's sample titles skew toward DMV licensing examiners and miss this corporate usage.
+13-1041.00,Regulatory Affairs Specialist,"Standard title in pharma, finance, and tech for professionals who interpret and enforce regulations, central to the compliance officer role."
+13-1041.00,AML Analyst,Anti-Money Laundering Analyst is a high-volume posting in banking/fintech for the transaction monitoring and regulatory reporting tasks this occupation covers.

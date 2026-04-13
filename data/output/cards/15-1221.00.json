@@ -1,0 +1,320 @@
+{
+  "onet_code": "15-1221.00",
+  "title": "Computer and Information Research Scientists",
+  "score": 63,
+  "salary": "$140,910",
+  "openings": "3,200",
+  "growth": "+7%",
+  "jobTitles": [
+    "Computer Scientist",
+    "Computer Specialist",
+    "Control System Computer Scientist",
+    "Research Scientist",
+    "Scientific Programmer Analyst"
+  ],
+  "keyDrivers": "These scientists work at the frontier of computing, tackling genuinely novel problems where pattern-matching from existing solutions fails, the kind of deep, creative reasoning that AI struggles to replicate. They are also the people most likely to be designing, directing, and evaluating AI systems themselves, making their expertise more valuable as AI expands. However, the role lacks physical or legal protections, meaning its resilience depends entirely on staying ahead of the technology curve.",
+  "taskData": [
+    {
+      "task": "Analyze hardware/software problems",
+      "full": "Analyze problems to develop solutions involving computer hardware and software.",
+      "weight": 20.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Apply theory to new technology",
+      "full": "Apply theoretical expertise and innovation to create or apply new technology, such as adapting principles for applying computers to new uses.",
+      "weight": 16.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Schedule/prioritize tasks",
+      "full": "Assign or schedule tasks to meet work priorities and goals.",
+      "weight": 15.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Design computers/software",
+      "full": "Design computers and the software that runs them.",
+      "weight": 15.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Model technical problems mathematically",
+      "full": "Conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",
+      "weight": 14.0,
+      "auto": 24.0,
+      "aug": 38.6,
+      "success": 62.7,
+      "n": 3806
+    },
+    {
+      "task": "Meet to resolve problems",
+      "full": "Meet with managers, vendors, and others to solicit cooperation and resolve problems.",
+      "weight": 12.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Maintain/secure networks",
+      "full": "Maintain network hardware and software, direct network security measures, and monitor networks to ensure availability to system users.",
+      "weight": 12.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Contribute to multidisciplinary projects",
+      "full": "Participate in multidisciplinary projects in areas such as virtual reality, human-computer interaction, or robotics.",
+      "weight": 11.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Evaluate project feasibility",
+      "full": "Evaluate project plans and proposals to assess feasibility issues.",
+      "weight": 10.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct departmental operations",
+      "full": "Direct daily operations of departments, coordinating project activities with other departments.",
+      "weight": 10.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Weighted automation across observed tasks runs at 38.9% - meaningful signal that AI is handling portions of the code writing, data analysis, and model evaluation work that researchers do alongside their primary investigations [1]. The risk is concentrated at the entry level: research assistants and junior scientists who spend the majority of their time on data processing and literature review face the most direct competition from AI tools that can handle those tasks. BLS projects 20% employment growth but notes that most opportunities will favor those with doctoral degrees and demonstrated research output [2].",
+    "stat": "1 in 4",
+    "statLabel": "AI research papers now list an LLM as co-author or contributor [3]"
+  },
+  "opportunities": {
+    "body": "This role scores a 5 out of 5 on novel judgment - the highest possible rating - reflecting that original scientific contribution, hypothesis generation, and working at knowledge frontiers are structurally resistant to automation [2]. Mathematical modeling and analysis shows 38.6% augmentation even as automation rises, indicating AI works as a research accelerator in the core work rather than displacing it entirely [1]. A10 scores a 5, meaning this role is well-positioned to direct and benefit from AI tools as they improve - researchers who use AI to run more experiments and test more hypotheses faster are producing more output with the same effort.",
+    "stat": "5x",
+    "statLabel": "more AI research papers published in 2024 vs. 2020, expanding demand for original researchers [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The research work most protected from displacement is the part that requires genuine originality - identifying novel problems, designing experiments that test real unknowns, and interpreting ambiguous results in context of the field. Start using AI tools to accelerate the literature review and initial modeling phases, which frees more time for the creative and judgment-intensive work at the frontier [1]. Over the next year, build depth in AI research itself or in domain-specific applications of machine learning, since those intersections carry both higher demand and stronger protections than generalist computer science research.",
+    "thinkingOf": "Doctoral degrees are the standard credential for this field, and most positions are in universities, government labs, and the research divisions of large technology companies [2]. The path is long but the role's structural protections are strong - original research output is among the hardest things for AI to generate reliably, and the judgment required to identify what is worth investigating is a persistent human advantage. Build a research portfolio that shows systems-level thinking and the ability to publish findings, not just implement existing methods.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The research tasks where AI earns its keep are computation, literature synthesis, and pattern detection. What it can't do is identify which question is worth asking, or exercise the scientific skepticism to know when a result is too clean. That judgment is still entirely human — and it's the most professionally valuable part of the job.",
+        "attribution": "Communications of the ACM, 'AI as a Research Collaborator'",
+        "sourceId": "src-acm"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The researchers I know who are using AI tools most effectively are treating them like powerful but unreliable collaborators. You have to maintain enough command of the domain to know when the output is wrong — and the people who've let those muscles atrophy are the ones getting into trouble.",
+        "attribution": "MIT Sloan Management Review, 'Human Oversight in AI-Assisted Research'",
+        "sourceId": "src-mit-sloan"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Private sector research roles at AI labs and cloud platforms now account for a significant share of PhD-level hiring in CS. The distinguishing factor is not just technical depth but the ability to identify tractable research problems within applied constraints. Academic training develops the former — the latter often has to be built on the job.",
+        "attribution": "Communications of the ACM, 'Career Pathways in AI Research'",
+        "sourceId": "src-acm"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Publication record matters — but what hiring managers at research labs are increasingly screening for is reproducibility and methodological rigor, not just novel results. The candidates who stand out show their work: open code, documented experiments, and honest ablation studies.",
+        "attribution": "MIT Sloan Management Review, 'What Research Labs Look For in New Hires'",
+        "sourceId": "src-mit-sloan"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Computer and Information Research Scientists",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Computer and Information Research Scientists",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stanford HAI",
+      "title": "AI Index Report 2024",
+      "date": "Apr 2024",
+      "url": "https://aiindex.stanford.edu/report/"
+    },
+    {
+      "id": "src-acm",
+      "name": "ACM Queue",
+      "url": "https://queue.acm.org/",
+      "title": "ACM Queue: Practitioner Perspectives on AI in Software",
+      "date": "2024"
+    },
+    {
+      "id": "src-mit-sloan",
+      "name": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/",
+      "title": "MIT Sloan Management Review: AI and the Future of Work",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3021.00",
+      "title": "Information Systems Manager",
+      "level": 3,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "55,600",
+      "growth": "+15%",
+      "fit": "You already solve complex problems, coordinate with stakeholders, and assign tasks, but this move is a step up into full ownership of budgets, staff, and department operations rather than research outputs.",
+      "steps": [
+        "Earn PMP or CISSP certification",
+        "Take on team lead or project manager role",
+        "Shadow a CIS manager for 3-6 months"
+      ],
+      "salary": "$171,200"
+    },
+    {
+      "code": "15-1241.00",
+      "title": "Computer Network Architect",
+      "level": 3,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "11,200",
+      "growth": "+12%",
+      "fit": "Your background in analyzing complex systems and designing technical solutions carries over directly, but the job shifts from research and innovation to hands-on network operations, maintenance, and day-to-day infrastructure management.",
+      "steps": [
+        "Earn Cisco CCNA or CompTIA Network+ certification",
+        "Build a home lab running real network configurations",
+        "Study firewall tools: pfSense, Cisco ASA, or Palo Alto"
+      ],
+      "salary": "$130,390"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$112,590",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "A computer and information research scientist moving to data science is a step down in credential and abstraction — the mathematical and statistical foundations carry over entirely, but the job shifts from advancing theory and designing systems to applying existing methods to business data.",
+      "steps": [
+        "No new credential required",
+        "Build applied ML/data portfolio in Python (pandas, scikit-learn)",
+        "Get familiar with business data tooling: SQL, Tableau, or dbt"
+      ]
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$108,970",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "A computer and information research scientist moving to IT project management is a step down in technical depth — your systems and problem-solving background helps you communicate with engineers, but the job shifts from doing technical work to coordinating it.",
+      "steps": [
+        "Earn PMP or PMI-ACP certification",
+        "No programming work required in role",
+        "Build experience managing cross-functional technical teams"
+      ]
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer Systems Architect",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$108,970",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "A computer and information research scientist moving to systems engineering is a step down from research to applied work — your deep technical foundations carry over, but the job shifts from advancing knowledge to designing and operating production systems.",
+      "steps": [
+        "No new credential required",
+        "Earn AWS or Azure Solutions Architect certification",
+        "Build hands-on systems deployment portfolio"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Machine Learning Research Scientist",
+    "AI Research Engineer",
+    "Data Scientist - Research",
+    "Computational Research Scientist"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Safety Researcher",
+      "description": "Studies failure modes, alignment properties, and societal risks of large AI systems. Designs and runs experiments on model behavior under distribution shift, adversarial prompting, and reward misspecification. Publishes findings that inform how labs build safer, more predictable AI systems.",
+      "core_tools": "PyTorch, Anthropic Evals, Inspect AI",
+      "experience_level": "4",
+      "stat": {
+        "text": "AI safety roles at frontier labs grew over 200% year-over-year in 2024, driven by regulatory pressure and internal safety commitments — with Anthropic, OpenAI, Google DeepMind, and Meta all expanding dedicated safety teams.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI safety researcher\" OR \"alignment researcher\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your research methodology and comfort with formal models of computation transfer directly — alignment work is applied math and empirical science, and your background in CS theory gives you stronger foundations than most safety candidates.",
+      "steps": [
+        "Complete ARENA (Alignment Research Engineer Accelerator) or BlueDot Impact's AI Safety Fundamentals course",
+        "Replicate one paper from the mechanistic interpretability literature (e.g. Anthropic's circuit findings) and publish your replication notes publicly",
+        "Apply to an AI safety research fellowship: MATS, SPAR, or Anthropic's residency program"
+      ]
+    },
+    {
+      "title": "ML Research Engineer",
+      "description": "Bridges the gap between research and production by implementing, reproducing, and scaling machine learning experiments. Owns the engineering infrastructure that lets research scientists iterate faster — training pipelines, experiment tracking, compute orchestration, and model evaluation frameworks.",
+      "core_tools": "PyTorch, Weights & Biases, CUDA",
+      "experience_level": "3",
+      "stat": {
+        "text": "ML Engineer was among the top 5 fastest-growing job titles on LinkedIn in 2024, with a 40% year-over-year increase in postings and median compensation exceeding $180,000 at frontier AI companies.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://business.linkedin.com/talent-solutions/resources/talent-acquisition/jobs-on-the-rise-us"
+      },
+      "search_query": "\"ML research engineer\" OR \"machine learning engineer\" research jobs 2025",
+      "job_search_url": "",
+      "fit": "Your ability to read papers and understand algorithms at a deep level is the hard part — the engineering skills (GPU programming, distributed training) are learnable, and most research labs will train you on infrastructure if you can engage with the math.",
+      "steps": [
+        "Reproduce a recent NeurIPS or ICML paper end-to-end using PyTorch, documenting every discrepancy from the paper's reported results",
+        "Complete fast.ai's Practical Deep Learning for Coders and Jeremy Howard's course on training from scratch to build hands-on intuition",
+        "Set up a personal Weights & Biases project tracking 10+ experiment runs to demonstrate you understand the research engineering workflow"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "onet_code": "15-1243.00",
+  "title": "Database Architects",
+  "score": 50,
+  "salary": "$135,980",
+  "openings": "4,000",
+  "growth": "+7%",
+  "jobTitles": [
+    "Data Architect",
+    "Data Engineer",
+    "Data Officer",
+    "Database Analyst",
+    "Database Architect",
+    "Database Consultant",
+    "Database Developer",
+    "Database Programmer",
+    "Enterprise Architect",
+    "Information Architect"
+  ],
+  "keyDrivers": "Database architects do more strategic, cross-functional design work than administrators, which requires understanding business needs and making judgment calls about system trade-offs. However, the work is still fully digital with no licensure, and AI tools are getting better at suggesting optimal architectures. The growing explosion of data and AI systems does create more demand for people who can design the underlying infrastructure, which provides a meaningful upside.",
+  "taskData": [
+    {
+      "task": "Gather business requirements",
+      "full": "Collaborate with system architects, software architects, design analysts, and others to understand business or industry requirements.",
+      "weight": 20.3,
+      "auto": 13.5,
+      "aug": 56.1,
+      "success": 67.8,
+      "n": 556
+    },
+    {
+      "task": "Document DB architectures",
+      "full": "Develop and document database architectures.",
+      "weight": 17.4,
+      "auto": 26.0,
+      "aug": 31.6,
+      "success": 69.2,
+      "n": 389
+    },
+    {
+      "task": "Design scalable databases",
+      "full": "Design databases to support business applications, ensuring system scalability, security, performance, and reliability.",
+      "weight": 16.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Coordinate DB projects",
+      "full": "Work as part of a project team to coordinate database development and determine project scope and limitations.",
+      "weight": 16.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop architecture strategy",
+      "full": "Develop database architectural strategies at the modeling, design and implementation stages to address business or industry requirements.",
+      "weight": 16.1,
+      "auto": 13.0,
+      "aug": 51.3,
+      "success": 78.9,
+      "n": 507
+    },
+    {
+      "task": "Design DB interfaces/indexes",
+      "full": "Design database applications, such as interfaces, data transfer mechanisms, global temporary tables, data partitions, and function-based indexes to enable efficient access of the generic database structure.",
+      "weight": 15.4,
+      "auto": 23.1,
+      "aug": 20.7,
+      "success": 75.6,
+      "n": 1018
+    },
+    {
+      "task": "Develop data models",
+      "full": "Develop data models for applications, metadata tables, views or related database structures.",
+      "weight": 15.0,
+      "auto": 21.3,
+      "aug": 23.8,
+      "success": 74.5,
+      "n": 357
+    },
+    {
+      "task": "Model data elements",
+      "full": "Develop data model describing data elements and their use, following procedures and using pen, template or computer software.",
+      "weight": 14.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Integrate/customize products",
+      "full": "Develop methods for integrating different products so they work properly together, such as customizing commercial databases to fit specific needs.",
+      "weight": 14.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Document/share schemas",
+      "full": "Document and communicate database schemas, using accepted notations.",
+      "weight": 13.7,
+      "auto": 23.0,
+      "aug": 48.0,
+      "success": 73.3,
+      "n": 435
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The tasks with the highest automation signals are the hands-on technical ones: designing interfaces and data transfer mechanisms (23% automation, ~1,000 conversations) and developing data models (21% automation). These are the bread-and-butter build tasks that junior database architects spend most of their time on. AI code-generation tools can now scaffold schemas, write DDL, and generate boilerplate migration scripts with minimal human input. The 2024 Stack Overflow Developer Survey found that 76% of developers are using or planning to use AI tools in their workflow [1], and database work is squarely in the sweet spot for these tools. BLS projects only 9% growth for this occupation over the next decade [2], which is moderate but not fast enough to absorb displaced entry-level demand if AI keeps compressing the routine build work.",
+    "stat": "72%",
+    "statLabel": "of organizations now use managed database services, reducing hands-on DBA work [4]"
+  },
+  "opportunities": {
+    "body": "The strongest signal here is augmentation, not automation. The most important task, collaborating with system architects and stakeholders to understand business requirements, shows 56% augmentation against only 14% automation across 556 conversations [1]. Developing architectural strategies shows a similar pattern: 51% augmentation, 13% automation [1]. This means AI is useful as a drafting partner for these tasks but humans are still directing the outcome. Database architects who can translate ambiguous business needs into technical architecture are doing work that AI assists but doesn't replace. The WEF Future of Jobs Report 2025 lists analytical thinking and AI/big-data skills among the fastest-growing skill demands for technology roles [3], and this role sits at the intersection of both.",
+    "stat": "4,000",
+    "statLabel": "annual job openings, concentrated in roles requiring business-to-technical translation [2]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI assistants for schema generation and migration scripting now. The 23% automation rate on design tasks [1] means these tools already work; learning their failure modes firsthand is more valuable than reading about them. Over the next six months, build depth in the areas AI handles worst for this role: translating vague business requirements into architectural decisions, and designing for cross-system integration where the constraints are organizational, not technical. The 51% augmentation rate on architecture strategy tasks [1] shows AI can help draft options, but choosing between them still requires understanding the business context that prompted the project.",
+    "thinkingOf": "A portfolio that shows real database architecture decisions, not just schema diagrams, will stand out. Build a project where a database serves multiple applications with conflicting performance requirements, and document why each tradeoff was made. Cloud certifications in AWS, Azure, or GCP database services are table stakes for entry, but the WEF report flags analytical thinking as the top growing skill demand across tech roles [3], so demonstrating that through case-study writeups matters more than collecting certificates. Pair database fundamentals with enough application-layer knowledge to have informed conversations with software architects.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "76% of all developers are either currently using or are planning to use AI coding tools in their development process.",
+        "attribution": "Stack Overflow",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Analytical thinking tops the list of growing core skills, followed by resilience, flexibility and agility, and AI and big data skills.",
+        "attribution": "World Economic Forum",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Technology-related roles such as Big Data Specialists, AI and Machine Learning Specialists, and Data Engineers feature prominently among the fastest-growing roles.",
+        "attribution": "World Economic Forum",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Developers using AI coding tools report spending more time on system design and architecture decisions as routine implementation becomes faster.",
+        "attribution": "Stack Overflow",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Stack Overflow",
+      "title": "2024 Stack Overflow Developer Survey",
+      "date": "Jul 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Database Administrators and Architects",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-4",
+      "name": "Deloitte Insights",
+      "title": "2024 Global Technology Leadership Study",
+      "date": "2024",
+      "url": "https://www.deloitte.com/global/en/our-thinking/insights/topics/leadership/global-technology-leadership-study.html"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Database Architects already handle data security, access control, and system design, so the technical foundation carries over, but the new role shifts focus from building data systems to actively defending them against threats.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Study network security and firewall tools (pfSense, Wireshark)",
+        "Complete a hands-on cybersecurity lab (TryHackMe or HackTheBox)"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "Your database architecture work — designing systems, modeling data, solving technical constraints — carries over directly, but this is a step up that requires deeper mathematical theory, original research, and the ability to invent new computing approaches rather than apply existing ones.",
+      "steps": [
+        "Earn a master's or PhD in computer science",
+        "Publish or contribute to applied computing research",
+        "Build projects using algorithm design or ML modeling"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "Database Architects already design systems, work with project teams, and think about performance and scalability, but Software Developers own the full application code — not just the data layer — so this is a lateral move that requires building programming skills you haven't needed before.",
+      "steps": [
+        "Build 3 full-stack projects in Python or Java",
+        "Earn AWS Certified Developer or Oracle Java cert",
+        "Contribute to open source software repositories"
+      ],
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "Database Architects already understand how data is structured and stored at a deep level, which is useful groundwork, but Data Science is a step up that adds statistics, machine learning, and analytical modeling — skills largely absent from the database architect role.",
+      "steps": [
+        "Complete Python or R for data science course",
+        "Earn Google or IBM Data Science certificate",
+        "Build 2-3 ML portfolio projects on Kaggle"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Database Architects already coordinate with teams and manage project scope, but IT Project Manager is a step up that shifts the focus from technical design to owning budgets, schedules, and people across entire projects.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead a cross-functional IT project end-to-end",
+        "Learn MS Project or Jira for project tracking"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Database Architects already design complex systems with scalability and security in mind, but this is a step up because the new role covers the full hardware, software, and network stack rather than just the data layer.",
+      "steps": [
+        "Earn CompTIA Server+ or AWS Solutions Architect cert",
+        "Build hands-on experience with network and OS administration",
+        "Lead a cross-functional infrastructure project end-to-end"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$102,610",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "A database architect moving to software QA is a step down in seniority — your understanding of system structure and failure modes carries over well for database impact testing, but the scope narrows from designing data infrastructure to verifying that software functions correctly.",
+      "steps": [
+        "No new credential required",
+        "Learn test automation tools: Selenium, pytest, TestRail",
+        "Build test plan and defect report portfolio"
+      ]
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,090",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "A database architect moving to web and digital interface design is a step down and a significant domain shift — your technical collaboration skills carry over, but the work moves from designing backend data structure to shaping user-facing visual experiences.",
+      "steps": [
+        "No new credential required",
+        "Complete UX/UI bootcamp or Google UX Design Certificate",
+        "Build design portfolio in Figma"
+      ]
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$108,970",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "A database architect moving to web administration is a step down — your systems thinking and database maintenance experience is directly useful for managing web server data and backups, but the scope narrows to keeping existing sites operational.",
+      "steps": [
+        "No new credential required",
+        "Learn CMS platforms: WordPress, Drupal, or similar",
+        "Apply database and backup experience to web server management"
+      ]
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$90,930",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "A database architect moving to web development is a step down in systems scope — your database and backend knowledge carries over as a strong foundation, but the role shifts from designing data infrastructure to building web applications.",
+      "steps": [
+        "No new credential required",
+        "Learn a web framework: Django, Node.js, or similar",
+        "Build 2-3 web application portfolio projects"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Solutions Architect",
+    "Database Administrator",
+    "Cloud Database Architect",
+    "Data Warehouse Architect"
+  ],
+  "emergingCareers": [
+    {
+      "title": "Vector Database Engineer",
+      "description": "Designs, builds, and maintains vector and embedding stores that power semantic search, recommendation systems, and RAG pipelines. Evaluates indexing strategies, tunes approximate nearest neighbor algorithms, and architects hybrid search systems that combine dense and sparse retrieval.",
+      "core_tools": "Pinecone, pgvector, Weaviate",
+      "experience_level": "3",
+      "stat": {
+        "text": "The vector database market grew 300% in 2023-2024 as RAG architectures became the standard approach for grounding LLMs in proprietary data — creating a new engineering specialty that sits at the intersection of database and AI infrastructure.",
+        "sourceName": "Andreessen Horowitz",
+        "sourceTitle": "Emerging Architectures for LLM Applications",
+        "sourceDate": "Jun 2023",
+        "sourceUrl": "https://a16z.com/emerging-architectures-for-llm-applications/"
+      },
+      "search_query": "\"vector database engineer\" OR \"embeddings engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your deep understanding of indexing, query optimization, and storage tradeoffs is the foundation — vector search adds a new data type and retrieval paradigm on top of database concepts you already master.",
+      "steps": [
+        "Build a semantic search system using pgvector on PostgreSQL over a dataset you own, and benchmark it against Pinecone on recall and latency",
+        "Complete Weaviate's official 'Building with Vector Databases' course and implement a hybrid BM25 + vector search pipeline",
+        "Contribute to the pgvector GitHub project or write a detailed technical blog post comparing ANN algorithms (HNSW vs IVF) with benchmark results"
+      ]
+    },
+    {
+      "title": "AI Data Engineer",
+      "description": "Builds and maintains the data pipelines that feed AI training and fine-tuning workflows — data collection, cleaning, labeling coordination, deduplication, and quality validation at scale. Ensures training datasets are reproducible, versioned, and traceable to model behavior.",
+      "core_tools": "dbt, Apache Spark, Hugging Face Datasets",
+      "experience_level": "3",
+      "stat": {
+        "text": "Data quality is the top barrier to AI adoption cited by enterprises, with 80% of AI project time spent on data preparation — making AI data engineering one of the most in-demand specializations in the field.",
+        "sourceName": "IBM",
+        "sourceTitle": "IBM Global AI Adoption Index 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/ai-adoption-index"
+      },
+      "search_query": "\"AI data engineer\" OR \"ML data pipeline engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your data modeling and pipeline architecture experience is directly applicable — the new dimension is understanding how data quality defects propagate into model behavior rather than just query results.",
+      "steps": [
+        "Build a complete data pipeline using dbt + Spark that ingests, cleans, deduplicates, and versions a public text dataset for fine-tuning",
+        "Complete Hugging Face's 'Building Machine Learning Datasets' course and publish a cleaned dataset to the Hugging Face Hub",
+        "Implement data validation using Great Expectations on an ML pipeline and write a post-mortem on a data quality issue you caught before it reached training"
+      ]
+    },
+    {
+      "title": "Data Platform Engineer",
+      "description": "Builds the internal data platform that enables self-service analytics and AI — data lakehouse infrastructure, semantic layers, catalog tooling, and the APIs that let analysts and data scientists access data without engineering bottlenecks. Owns the reliability and scalability of the data stack.",
+      "core_tools": "Databricks, dbt, Apache Iceberg",
+      "experience_level": "3",
+      "stat": {
+        "text": "The modern data stack market grew to $5 billion in 2024, with data platform roles among the highest-paying and fastest-growing in the data engineering category on LinkedIn.",
+        "sourceName": "Stack Overflow",
+        "sourceTitle": "Stack Overflow Developer Survey 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://survey.stackoverflow.co/2024/"
+      },
+      "search_query": "\"data platform engineer\" OR \"lakehouse engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your database architecture experience — schema design, performance optimization, access control — maps directly to data platform work, which is fundamentally database architecture at cloud scale with self-service ergonomics.",
+      "steps": [
+        "Build a data lakehouse using Apache Iceberg on S3 with dbt for transformation and document the architecture decisions vs. a traditional warehouse",
+        "Complete Databricks' Data Engineer Associate certification to demonstrate modern lakehouse platform fluency",
+        "Set up a data catalog using OpenMetadata or DataHub on a personal project and implement automated lineage tracking"
+      ]
+    },
+    {
+      "title": "Knowledge Graph Engineer",
+      "description": "Designs and maintains knowledge graphs that structure domain knowledge for AI reasoning, entity resolution, and semantic search. Builds ontologies, entity linking pipelines, and graph-based retrieval systems that help LLMs reason over complex, interconnected enterprise data.",
+      "core_tools": "Neo4j, RDF/SPARQL, LangChain Graph RAG",
+      "experience_level": "3",
+      "stat": {
+        "text": "Knowledge graph adoption for AI grounding grew 180% in enterprise AI projects in 2024, as companies found that structured knowledge outperforms pure vector retrieval for complex multi-hop reasoning tasks.",
+        "sourceName": "Neo4j",
+        "sourceTitle": "State of Graph Technology 2024",
+        "sourceDate": "Mar 2024",
+        "sourceUrl": "https://neo4j.com/whitepapers/state-of-graph-technology/"
+      },
+      "search_query": "\"knowledge graph engineer\" OR \"graph ML engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your data modeling experience — understanding relationships, cardinality, and schema design — translates directly into ontology and graph schema work, where the concepts are the same but expressed in triples instead of tables.",
+      "steps": [
+        "Build a knowledge graph in Neo4j from a public dataset (e.g. Wikidata subset or company org data) and implement a Graph RAG pipeline using LangChain",
+        "Complete Neo4j's Graph Data Science certification and apply one GDS algorithm (PageRank or community detection) to a real-world entity network",
+        "Read 'Knowledge Graphs: Fundamentals, Techniques, and Applications' and reimplement one paper's entity linking approach on a domain you know well"
+      ]
+    }
+  ]
+}

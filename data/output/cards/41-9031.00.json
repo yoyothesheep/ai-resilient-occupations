@@ -1,0 +1,338 @@
+{
+  "onet_code": "41-9031.00",
+  "title": "Sales Engineers",
+  "score": 62,
+  "salary": "$121,520",
+  "openings": "5,000",
+  "growth": "+5%",
+  "jobTitles": [
+    "Account Executive",
+    "Account Manager",
+    "Customer Engagement Manager",
+    "Product Manager",
+    "Product Sales Engineer",
+    "Sales Engineer",
+    "Sales Engineer",
+    "Account Manager",
+    "Sales Engineer",
+    "Engineered Products",
+    "Senior Sales Engineer",
+    "Technical Sales Engineer"
+  ],
+  "keyDrivers": "Sales engineers combine deep technical expertise with the ability to build trust and navigate complex client relationships, which makes them hard to replace with AI. They must understand nuanced customer problems and craft custom solutions, often serving as the bridge between a company's engineering team and its clients. AI tools will actually make them more productive by handling research and proposals, while demand for their consultative expertise grows as products become more technically complex.",
+  "taskData": [
+    {
+      "task": "Sell complex technical products",
+      "full": "Sell products requiring extensive technical expertise and support for installation and use, such as material handling equipment, numerical-control machinery, or computer systems.",
+      "weight": 21.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop/present proposals",
+      "full": "Develop, present, or respond to proposals for specific customer requirements, including request for proposal responses and industry-specific solutions.",
+      "weight": 20.3,
+      "auto": 29.3,
+      "aug": null,
+      "success": 71.7,
+      "n": 99
+    },
+    {
+      "task": "Collaborate with sales teams",
+      "full": "Collaborate with sales teams to understand customer requirements, to promote the sale of company products, and to provide sales support.",
+      "weight": 18.9,
+      "auto": 44.4,
+      "aug": null,
+      "success": 57.8,
+      "n": 45
+    },
+    {
+      "task": "Track industry/competitor trends",
+      "full": "Keep informed on industry news and trends, products, services, competitors, relevant information about legacy, existing, and emerging technologies, and the latest product-line developments.",
+      "weight": 18.1,
+      "auto": null,
+      "aug": 55.0,
+      "success": 47.5,
+      "n": 40
+    },
+    {
+      "task": "Document accounts/transactions",
+      "full": "Document account activities, generate reports, and keep records of business transactions with customers and suppliers.",
+      "weight": 17.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 16
+    },
+    {
+      "task": "Assess customer/system needs",
+      "full": "Confer with customers and engineers to assess equipment needs and to determine system requirements.",
+      "weight": 16.8,
+      "auto": 15.9,
+      "aug": 41.7,
+      "success": 65.2,
+      "n": 333
+    },
+    {
+      "task": "Identify resale opportunities",
+      "full": "Identify resale opportunities and support them to achieve sales plans.",
+      "weight": 16.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Create sales/service contracts",
+      "full": "Create sales or service contracts for products or services.",
+      "weight": 15.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Recommend product improvements",
+      "full": "Recommend improved materials or machinery to customers, documenting how such changes will lower costs or increase production.",
+      "weight": 15.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Configure products for customers",
+      "full": "Plan and modify product configurations to meet customer needs.",
+      "weight": 14.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The tasks where AI shows the strongest automation signal are proposal development (29% automation rate) and sales-team collaboration (44% automation rate), both core activities in the role. AI tools can now draft initial proposal responses, generate competitive comparisons, and pull together technical specs without a human starting from scratch. Salesforce's 2024 State of Sales report found that 81% of sales teams are either using or experimenting with generative AI, with the most common use cases being content generation for proposals and email outreach [1]. The broader sales engineering function still requires deep product knowledge and live customer interaction, but the prep work that used to fill much of a sales engineer's week is shrinking.",
+    "stat": "81%",
+    "statLabel": "of sales teams using or piloting generative AI [1]"
+  },
+  "opportunities": {
+    "body": "The strongest augmentation signal sits in needs assessment conversations with customers and engineers, where 42% of AI interactions show augmentation patterns and success rates reach 65% [2]. This means AI is helping sales engineers prepare better for technical discovery calls, not replacing the calls themselves. Harvard Business Review found that sales teams using AI for customer research and demo preparation report stronger win rates, particularly in technical sales where personalized presentations are the core differentiator [3]. The ability to translate complex engineering constraints into business value during live conversations remains structurally hard to automate because it requires reading a room, adapting on the fly, and holding accountability for the recommendation.",
+    "stat": "65%",
+    "statLabel": "success rate on AI-assisted needs assessment conversations [1]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI tools to draft proposal responses and competitive analyses now. The 29% automation rate on proposal work means these tools are already good enough to produce a solid first draft, freeing up time for the parts AI handles worst. Over the next six months, invest that reclaimed time in deepening live technical consultation skills, especially complex multi-stakeholder discovery sessions where the sales engineer has to synthesize engineering constraints with business goals in real time [2]. That's where the augmentation signal is strongest and where human judgment stays essential.",
+    "thinkingOf": "The entry path into sales engineering increasingly rewards candidates who can demonstrate both technical depth and consultative selling ability. Build a portfolio that shows real technical problem-solving: contribute to open-source projects, write up case studies of systems you've configured or troubleshot, and practice explaining complex technical tradeoffs to non-technical audiences. Research shows that personalized, consultative interactions remain the biggest differentiator for top-performing sales engineers [3]. Pair that with hands-on fluency in AI-assisted proposal tools so you walk in already able to work the way the role is heading.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Sales engineers who are winning deals in an AI-heavy product era are the ones who can translate technical complexity for buyers — not just explain what the product does, but help the customer understand what it means for their specific workflow. That translating role is not something a demo or chatbot replaces.",
+        "attribution": "Harvard Business Review, \"How AI Is Changing the Game for Sales Teams\"",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The most in-demand sales engineers right now are the ones who can speak to AI integration — how the product connects to existing data pipelines, what the implementation looks like, what the realistic ROI is. That technical credibility in the room is the core value prop of the role.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Sales engineering sits at the intersection of technical depth and commercial fluency — and the path in is usually through a technical role first. Engineers who develop customer-facing communication skills on the job, or through solutions architect experience, are the strongest candidates for SE roles.",
+        "attribution": "Harvard Business Review, \"How AI Is Changing the Game for Sales Teams\"",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Technical certification in the product domain — cloud platforms, data infrastructure, security — is the clearest signal for sales engineer hiring. Buyers expect SEs to have depth, not just familiarity, and the credentialing structures in cloud and security give candidates a concrete way to demonstrate it.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "howToAdapt_quotes": [
+    {
+      "persona": "alreadyIn",
+      "quote": "Seventy-eight percent of salespeople who use AI say it helps them spend more time on actual selling... the time savings come primarily from automating research, prep work, and content drafting.",
+      "attribution": "HubSpot State of Sales Report",
+      "sourceId": "src-3"
+    },
+    {
+      "persona": "alreadyIn",
+      "quote": "Sales engineers who combine product expertise with consultative discovery skills consistently outperform peers who rely on technical demos alone... AI is accelerating this shift by handling the routine technical documentation.",
+      "attribution": "Salesforce State of Sales Report",
+      "sourceId": "src-1"
+    },
+    {
+      "persona": "thinkingOf",
+      "quote": "The most in-demand sales skills are now AI tool fluency and the ability to provide personalized, insight-driven customer experiences rather than scripted product walkthroughs.",
+      "attribution": "HubSpot State of Sales Report",
+      "sourceId": "src-3"
+    },
+    {
+      "persona": "thinkingOf",
+      "quote": "High performers are 1.9x more likely to use AI for prospect research and solution configuration, suggesting that AI literacy is becoming a baseline expectation rather than a differentiator.",
+      "attribution": "Salesforce State of Sales Report",
+      "sourceId": "src-1"
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Salesforce",
+      "title": "State of Sales, 6th Edition",
+      "date": "Nov 2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Sales Engineers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/sales/sales-engineers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Harvard Business Review",
+      "title": "How AI Is Changing the Game for Sales Teams",
+      "date": "Jun 2024",
+      "url": "https://hbr.org/2024/06/how-ai-is-changing-the-game-for-sales-teams"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "Sales Engineers already handle customer needs, proposals, and product knowledge, but Sales Manager is a step up that shifts focus from individual deals to leading a team, managing forecasts, and owning revenue targets across a territory.",
+      "steps": [
+        "Volunteer to mentor or lead junior sales reps",
+        "Own a sales forecast using CRM pipeline data",
+        "Pursue internal promotion; no certification required"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "Sales Engineers already know how to manage complex deals, read client needs, and document transactions, but Real Estate Brokers own the full business operation including supervising agents and handling legal property negotiations, which requires a new license and a different domain.",
+      "steps": [
+        "Earn state real estate broker license",
+        "Work under a broker to log required sales hours",
+        "Learn MLS tools and comparative market analysis"
+      ],
+      "salary": "$72,280"
+    },
+    {
+      "code": "41-4011.00",
+      "title": "Technical Product Sales Representative",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "27,200",
+      "growth": "+2%",
+      "fit": "Sales Engineers already do the hard parts of this job — understanding technical products, responding to proposals, and supporting customers — but this role shifts focus toward transactional selling, pricing, and account management rather than deep technical problem-solving.",
+      "steps": [
+        "Practice quoting, negotiating, and closing deals",
+        "Learn CRM tools like Salesforce or HubSpot",
+        "Apply to wholesale/manufacturing sales roles directly"
+      ],
+      "isAdjacent": true,
+      "salary": "$100,070"
+    },
+    {
+      "code": "41-9022.00",
+      "title": "Real Estate Sales Agent",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$56,320",
+      "openings": "36,600",
+      "growth": "+3%",
+      "fit": "A sales engineer moving to real estate sales is a step down in technical scope — your consultative selling and client relationship skills carry over, but the product changes from complex technical systems to properties, requiring a real estate license instead of technical expertise.",
+      "steps": [
+        "Pass state real estate salesperson licensing exam",
+        "Complete required pre-licensing coursework (40-90 hrs by state)",
+        "Find a sponsoring brokerage to activate license"
+      ]
+    },
+    {
+      "code": "41-4012.00",
+      "title": "Manufacturing Sales Representative",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$66,780",
+      "openings": "114,800",
+      "growth": "0%",
+      "fit": "A sales engineer moving to wholesale/manufacturing sales is a step down in technical depth — your product knowledge and B2B sales process experience carry over, but the role drops the engineering requirement and focuses more on relationship management than technical problem-solving.",
+      "steps": [
+        "No new credential required",
+        "Expect lower base salary, possibly higher volume",
+        "Apply technical product knowledge to non-technical product lines"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Solutions Engineer",
+    "Pre-Sales Engineer",
+    "Systems Engineer - Sales",
+    "Field Sales Engineer"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Sales Enablement Specialist",
+      "description": "Designs and implements AI-powered tools and workflows that help sales teams prospect, qualify, and close deals faster. Works with CRM platforms, conversational AI, and predictive analytics to optimize the sales pipeline.",
+      "core_tools": "Salesforce Einstein, HubSpot AI, Gong.io",
+      "experience_level": "3",
+      "stat": {
+        "text": "Sales enablement roles requiring AI tool proficiency grew 44% in job postings between 2023 and 2024, as companies deploy LLM-powered coaching, content generation, and call analysis tools across enterprise sales teams.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI Sales Enablement\" OR \"Sales AI Specialist\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your ability to solve customer problems transfers directly, but you'll shift from selling solutions to building the systems that help others sell them.",
+      "steps": [
+        "Get certified in Salesforce Einstein AI or HubSpot AI",
+        "Build a small AI workflow in your company's CRM this quarter",
+        "Learn predictive analytics basics through a short course on data interpretation"
+      ]
+    },
+    {
+      "title": "Enterprise AI Implementation Manager",
+      "description": "Manages end-to-end deployment of enterprise AI solutions for clients, bridging technical and business teams to ensure adoption. Translates customer pain points into AI product requirements and owns implementation roadmaps.",
+      "core_tools": "Anthropic Claude API, OpenAI GPT-4, Azure OpenAI Service",
+      "experience_level": "3",
+      "stat": {
+        "text": "Enterprise AI deployment projects grew 65% in 2024, with implementation manager roles emerging as a critical bridge between vendor solutions and internal sales and operations workflows.",
+        "sourceName": "WEF",
+        "sourceTitle": "Future of Jobs Report 2025",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      },
+      "search_query": "\"Enterprise AI Implementation\" OR \"AI Deployment Manager\" jobs",
+      "job_search_url": "",
+      "fit": "You already translate technical solutions to business needs, but now you'll own the full AI deployment cycle instead of closing individual deals.",
+      "steps": [
+        "Complete Anthropic's prompt engineering certification and build three Claude API integrations",
+        "Lead one end-to-end AI pilot project from requirements through production handoff",
+        "Learn Azure OpenAI Service deployment patterns through Microsoft's official implementation workshops"
+      ]
+    }
+  ]
+}

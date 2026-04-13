@@ -1,0 +1,367 @@
+{
+  "onet_code": "13-2053.00",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "AI has made more documented contact with insurance underwriting than with almost any other financial role. BLS projects employment for insurance underwriters to decline 3% through 2033, and major carriers including Zurich, Allianz, and Prudential have publicly attributed headcount reductions to AI-driven straight-through processing that handles standard personal lines policies without human review [1]. Deloitte found that AI models now handle the majority of auto and home underwriting decisions at leading carriers, with human underwriters increasingly focused on commercial, specialty, and complex accounts [2].",
+    "stat": "3%",
+    "statLabel": "through 2033 and major carriers [1]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "The automation pressure is real but concentrated: it is heaviest in personal lines (auto, home, standard life) and lightest in specialty and commercial lines, where risk complexity still requires human judgment [2]. LIMRA research shows that group benefits, excess and surplus (E&S) lines, and large commercial accounts are growing as a share of underwriting activity, and these segments are the least automated [3]. Underwriters who develop expertise in complex commercial risk, cyber liability, or climate-exposed property will be working on accounts that AI models cannot price reliably [3].",
+    "stat": "50%",
+    "statLabel": "potential productivity optimization [2]",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The most direct near-term move is to shift your focus toward complex commercial, specialty, or E&S lines if you are currently in personal lines -- those segments are growing relative to standard lines, and they are where human judgment still drives decisions [2]. Over the next six months, build familiarity with the AI-driven underwriting platforms your firm uses (applied AI systems like Attune, Bold Penguin, or similar tools) so you understand what they can and cannot evaluate. Underwriters who can override or augment AI decisions credibly -- explaining why a nonstandard account warrants approval -- are in a structurally different position from those who just process volume [3].",
+    "thinkingOf": "Entering insurance underwriting today means positioning specifically for the segments AI is not yet handling well: large commercial accounts, cyber risk, environmental liability, and construction projects [2]. The CPCU (Chartered Property Casualty Underwriter) designation is the strongest credential signal in the field, particularly for commercial lines, and firms hiring for complex accounts continue to treat it as a differentiator [3]. Candidates who combine CPCU coursework with experience reading loss runs, engineering reports, and financial statements will be prepared for the segment of underwriting that is most durable [1].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The personal lines underwriter of the future is a machine. The commercial lines underwriter of the future is a human with better tools. The industry is bifurcating, and which side of that you're on matters enormously for career planning.",
+        "attribution": "Deloitte Insights, 'AI in Insurance Underwriting: The Human-Machine Balance' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Carriers are not eliminating underwriting expertise -- they are concentrating it. The firms that are investing in AI are also investing in senior underwriters who can handle the accounts that fall outside the model's training data, which is where the real risk lives.",
+        "attribution": "LIMRA, 'InsurTech and the Future of Underwriting' (2024)",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The CPCU is still the clearest signal in commercial underwriting. It tells hiring managers that a candidate understands risk at a technical level that goes beyond workflow processing, which is exactly what distinguishes the accounts AI cannot price.",
+        "attribution": "LIMRA, 'InsurTech and the Future of Underwriting' (2024)",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Candidates who enter underwriting focused on specialty lines -- cyber, construction, excess casualty -- are entering the part of the market that is least automated and most actively growing. That's a different career trajectory than starting in personal auto.",
+        "attribution": "Deloitte Insights, 'AI in Insurance Underwriting: The Human-Machine Balance' (2024)",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Examine documents to determine degree of risk from factors such as applicant health, financial standing and value, and condition of property.": "Assess risk documents",
+    "Write to field representatives, medical personnel, or others to obtain further information, quote rates, or explain company underwriting policies.": "Communicate with field reps",
+    "Decline excessive risks.": "Decline excessive risks",
+    "Evaluate possibility of losses due to catastrophe or excessive insurance.": "Evaluate catastrophe risk",
+    "Review company records to determine amount of insurance in force on single risk or group of closely related risks.": "Review insurance records",
+    "Decrease value of policy when risk is substandard and specify applicable endorsements or apply rating to ensure safe, profitable distribution of risks, using reference materials.": "Rate substandard risks",
+    "Authorize reinsurance of policy when risk is high.": "Authorize reinsurance"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Insurance Underwriters",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/insurance-underwriters.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Deloitte Insights",
+      "title": "AI in Insurance Underwriting: The Human-Machine Balance",
+      "date": "Mar 2024",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/financial-services/ai-insurance-underwriting.html"
+    },
+    {
+      "id": "src-3",
+      "name": "LIMRA",
+      "title": "InsurTech and the Future of Underwriting",
+      "date": "Oct 2024",
+      "url": "https://www.limra.com/en/research/research-abstracts-public/2024/insurtech-and-the-future-of-underwriting/"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Automated Underwriting Auditor",
+      "description": "Reviews the specific exceptions and edge-cases that straight-through processing (STP) AI systems flag, identifying potential algorithmic blindspots.",
+      "core_tools": "Shift Technology, Tractable AI, Guidewire Machine Learning",
+      "experience_level": 4,
+      "stat": {
+        "text": "Insurance tech hiring is up 30%, with a major focus on governing automated policy issuance.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Underwriting Auditor\" AI",
+      "job_search_url": "",
+      "fit": "Combines deep manual underwriting intuition with the ability to spot systemic flaws in automated rule engines.",
+      "steps": [
+        "Master complex high-risk commercial policies",
+        "Participate in AI model implementation projects",
+        "Learn data anomaly detection"
+      ]
+    },
+    {
+      "title": "AI Pricing Strategy Analyst",
+      "description": "Works with actuaries to incorporate new dynamic, unstructured data variables—like telematics or aerial drone imagery—into real-time pricing engines.",
+      "core_tools": "Earnix, Python, Cape Analytics",
+      "experience_level": 3,
+      "stat": {
+        "text": "Usage-based and AI-driven insurance models are projected to represent 20% of the market by 2026.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Financial Services",
+        "sourceDate": "Dec 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Pricing Analyst\" Telematics",
+      "job_search_url": "",
+      "fit": "Pivots from static table lookups to working with continuous, real-time data ingestion models.",
+      "steps": [
+        "Complete basic actuarial science coursework",
+        "Learn telematics data analysis",
+        "Transition to a pricing strategy team"
+      ]
+    },
+    {
+      "title": "Algorithmic Policy Evaluator",
+      "description": "Evaluates complex commercial and cyber risks that are too large or novel for standard AI underwriting engines to accurately price.",
+      "core_tools": "CyberCube, Guidewire Predictive Analytics",
+      "experience_level": 3,
+      "stat": {
+        "text": "Specialty line underwriters (like Cyber) have seen a 50% surge in demand.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Cyber Underwriter\" OR \"Specialty Underwriter\"",
+      "job_search_url": "",
+      "fit": "Escapes automation by moving completely into niche, unprecedented risk categories (like cyber or climate).",
+      "steps": [
+        "Earn CPCU designation",
+        "Specialize strictly in Cyber or Specialty lines",
+        "Study emerging risk macroeconomics"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Insurance Underwriters experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Insurance Underwriters experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Insurance Underwriters experience into Personal Financial Advisors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Personal Financial Advisors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Transitions Insurance Underwriters experience into Accountants and Auditors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Accountants and Auditors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Insurance Underwriters experience into Loan Officers by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Loan Officers",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Insurance Underwriters experience into Financial Risk Specialists by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Financial Risk Specialists",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Insurance Underwriters experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Insurance Underwriters experience into Credit Counselors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Counselors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Insurance Underwriters experience into Credit Analysts by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Analysts",
+        "Transfer internally to a functional niche team"
+      ]
+    }
+  ],
+  "title": "Insurance Underwriters",
+  "score": 2.4,
+  "salary": "$79,880",
+  "openings": "8,200",
+  "growth": "-1%",
+  "taskData": [
+    {
+      "task": "Assess risk documents",
+      "full": "Examine documents to determine degree of risk from factors such as applicant health, financial standing and value, and condition of property.",
+      "weight": 27.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Communicate with field reps",
+      "full": "Write to field representatives, medical personnel, or others to obtain further information, quote rates, or explain company underwriting policies.",
+      "weight": 24.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Decline excessive risks",
+      "full": "Decline excessive risks.",
+      "weight": 20.5,
+      "auto": 44.7,
+      "aug": null,
+      "success": null,
+      "n": 123
+    },
+    {
+      "task": "Evaluate catastrophe risk",
+      "full": "Evaluate possibility of losses due to catastrophe or excessive insurance.",
+      "weight": 20.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review insurance records",
+      "full": "Review company records to determine amount of insurance in force on single risk or group of closely related risks.",
+      "weight": 19.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Rate substandard risks",
+      "full": "Decrease value of policy when risk is substandard and specify applicable endorsements or apply rating to ensure safe, profitable distribution of risks, using reference materials.",
+      "weight": 19.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Authorize reinsurance",
+      "full": "Authorize reinsurance of policy when risk is high.",
+      "weight": 13.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "keyDrivers": "Underwriting is fundamentally about risk assessment using data—a task where AI already outperforms humans in many standard scenarios. While complex or unusual cases still need human judgment, and regulatory requirements keep a human in the loop for now, the volume of routine underwriting decisions that require human involvement is shrinking rapidly. The role is likely to consolidate around fewer, more senior underwriters who handle exceptions and oversee AI systems.",
+  "jobTitles": [
+    "Account Underwriter",
+    "Automobile and Property Underwriter",
+    "Commercial Lines Underwriter",
+    "Health Underwriter",
+    "Life Underwriter",
+    "Personal Lines Underwriter",
+    "Underwriter",
+    "Underwriting Consultant",
+    "Underwriting Director",
+    "Underwriting Manager"
+  ],
+  "emergingTitles": [
+    "Commercial Lines Underwriter",
+    "Specialty Lines Underwriter"
+  ]
+}

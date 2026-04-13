@@ -115,19 +115,20 @@ You are writing a 1-2 sentence description for the "{cluster_name}" career clust
 The cluster includes these occupations (AI resilience tier = how protected the role is from AI disruption, higher tier = more protected):
 {career_lines}
 
-Write 1-2 plain sentences that summarize the AI landscape for this cluster. Describe where the pressure is highest and where it is lowest, in plain human terms. Name the actual pattern — what kinds of work are more exposed vs. more protected.
+Write 1-2 plain sentences that summarize the AI landscape for this cluster. Describe where the pressure is highest and where it is lowest, in plain human terms. Name the actual pattern: what kinds of work are more exposed vs. more protected.
 
 Rules:
 - NEVER mention scores, numbers, ratings, or percentages. No "39/100", no "62%", nothing like that.
 - No em dashes. Use commas or short sentences instead.
-- No jargon: no "future-proof", "upskill", "leverage", "resilience"
+- No jargon: no "future-proof", "upskill", "leverage", "resilience", "compression", "disruption"
 - Write about the jobs, not the reader. Third person.
-- Short, plain language. A high schooler should get it immediately.
-- Under 40 words.
+- Short, plain language. A high schooler should understand it immediately.
+- Hard limit: 35 words or fewer. Count carefully.
+- Do NOT reference scores or rankings to make a point. Describe the work itself.
 
-Good example: "Routine transactional sales work is the most exposed to AI, while roles built around complex relationships and technical judgment hold up better. Growth is concentrated at the senior end of the ladder."
+Good example (31 words): "Routine transactional sales work is the most exposed to AI, while roles built around complex client relationships and technical judgment hold up better. Growth is concentrated at the senior end."
 
-Respond ONLY with the description, no preamble."""
+Respond ONLY with the description text. No preamble, no quotes around the output."""
 
     if is_inline:
         print("\n" + "="*80)

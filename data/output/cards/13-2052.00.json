@@ -1,0 +1,405 @@
+{
+  "onet_code": "13-2052.00",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The analytical core of this role has meaningful AI exposure. Recommending financial products — one of the top tasks by importance — shows a 34.7% automation rate [1]. Market monitoring, another high-weight task, is 37.4% automated [1]. Deloitte found that AI-driven wealth management tools are compressing the number of advisors needed at the lower end of the AUM spectrum, as robo-advisory platforms handle routine portfolio rebalancing and basic planning at scale [2].",
+    "stat": "37%",
+    "statLabel": "of financial advisor market monitoring tasks show automation patterns [1]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "The strongest durability signal is in client communication: answering client questions shows a 49.1% augmentation rate [1], the highest of any task in this role — meaning AI is helping advisors be more thorough and responsive, not replacing the conversation. Fiduciary accountability and the CFP credential create structural barriers: the SEC and FINRA require a licensed human in the advisory relationship for most investment decisions [3]. McKinsey research on AI in wealth management found that the highest-value advisors are using AI to expand their client capacity, not reduce it [2].",
+    "stat": "49%",
+    "statLabel": "efficiency gain [1] the highest",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start by integrating an AI planning tool — platforms like eMoney Advisor or MoneyGuidePro now include AI-assisted scenario modeling — to handle routine projection work faster [2]. Over the next six months, invest in the areas AI handles worst for this role: the trust-building conversations, estate planning complexity, and behavioral coaching that require human judgment and licensure. Advisors who can manage more clients with AI support while maintaining personalized service will have a structural advantage [3].",
+    "thinkingOf": "The CFP credential remains the clearest differentiator: it signals fiduciary competence and is required for many planning roles that AI tools cannot fill [3]. Entry-level candidates who also demonstrate fluency with AI planning platforms — not just general AI tools, but the specific software wealth management firms use — will stand out in hiring [2]. Focus your portfolio on complex planning scenarios: tax-loss harvesting strategy, retirement income sequencing, estate coordination. These show judgment that a robo-advisor cannot document [4].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The advisors who thrive will be those who use AI to handle the data and analysis work, freeing themselves to focus on the emotional and relational dimensions of financial planning that clients genuinely value.",
+        "attribution": "Deloitte Insights, 'AI and the Future of Wealth Management' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Firms that deploy AI effectively in financial planning are seeing advisors expand client capacity by 20 to 30 percent without adding headcount, by automating routine review preparation and portfolio rebalancing communications.",
+        "attribution": "McKinsey Global Institute, 'AI in Wealth Management: The Human-Machine Frontier' (2024)",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The CFP designation has become more valuable, not less, in an environment where AI can generate a basic financial plan in seconds. What clients are paying for is the judgment, accountability, and relationship that the credential represents.",
+        "attribution": "CFP Board, '2025 Consumer Survey on Financial Planning'",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Candidates entering wealth management today need to demonstrate both planning expertise and comfort with AI-assisted tools. The job has changed: the interview question is no longer whether you can build a plan, but whether you can build the right plan with AI and explain it to a client who's anxious about it.",
+        "attribution": "Deloitte Insights, 'AI and the Future of Wealth Management' (2024)",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Manage client portfolios, keeping client plans up-to-date.": "Manage client portfolios",
+    "Analyze financial information obtained from clients to determine strategies for meeting clients' financial objectives.": "Analyze client finances",
+    "Recommend to clients strategies in cash management, insurance coverage, investment planning, or other areas to help them achieve their financial goals.": "Recommend planning strategies",
+    "Recommend financial products, such as stocks, bonds, mutual funds, or insurance.": "Recommend financial products",
+    "Answer clients' questions about the purposes and details of financial plans and strategies.": "Answer client questions",
+    "Implement financial planning recommendations, or refer clients to someone who can assist them with plan implementation.": "Implement plan recommendations",
+    "Review clients' accounts and plans regularly to determine whether life changes, economic changes, environmental concerns, or financial performance indicate a need for plan reassessment.": "Review/reassess client plans",
+    "Prepare or interpret for clients information, such as investment performance reports, financial document summaries, or income projections.": "Prepare client reports",
+    "Interview clients to determine their current income, expenses, insurance coverage, tax status, financial objectives, risk tolerance, or other information needed to develop a financial plan.": "Interview clients",
+    "Monitor financial market trends to ensure that client plans are responsive.": "Monitor market trends"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Personal Financial Advisors",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/personal-financial-advisors.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Deloitte Insights",
+      "title": "AI and the Future of Wealth Management",
+      "date": "Mar 2024",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/financial-services/ai-wealth-management.html"
+    },
+    {
+      "id": "src-3",
+      "name": "CFP Board",
+      "title": "Consumer Survey on Financial Planning and AI",
+      "date": "Jan 2025",
+      "url": "https://www.cfp.net/knowledge/reports-and-statistics/consumer-research"
+    },
+    {
+      "id": "src-4",
+      "name": "McKinsey Global Institute",
+      "title": "AI in Wealth Management: The Human-Machine Frontier",
+      "date": "Jun 2024",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/ai-wealth-management"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Robo-Advisory Wealth Strategist",
+      "description": "Works at the intersection of automated investing software and human clients, managing complex tax-loss harvesting and estate planning that algorithms cannot handle natively.",
+      "core_tools": "Betterment for Advisors, Wealthfront AI, eMoney Advisor",
+      "experience_level": 4,
+      "stat": {
+        "text": "Hybrid advisory models (AI + Human) are capturing 70% of new wealth management assets.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Financial Services",
+        "sourceDate": "Dec 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Robo-Advisory Wealth Strategist\" OR \"Hybrid Advisor\"",
+      "job_search_url": "",
+      "fit": "Removes manual portfolio rebalancing from their daily work, focusing entirely on high-EQ behavioral counseling.",
+      "steps": [
+        "Earn Certified Financial Planner (CFP) designation",
+        "Master behavioral finance psychology",
+        "Transition to a flat-fee or hybrid firm"
+      ]
+    },
+    {
+      "title": "Algorithmic Portfolio Optimizer",
+      "description": "Employs machine learning models to design custom, bespoke direct-indexing portfolios for high-net-worth clients at scale.",
+      "core_tools": "Parametric Direct Indexing, BlackRock Aladdin, Python",
+      "experience_level": 4,
+      "stat": {
+        "text": "Direct indexing fueled by AI is projected to reach $1.5 trillion in AUM by 2025.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Portfolio Optimizer\" direct indexing",
+      "job_search_url": "",
+      "fit": "Applies investment strategy logic to algorithmic constraints rather than picking single stocks or mutual funds manually.",
+      "steps": [
+        "Complete CFA charter",
+        "Study custom indexing optimization techniques",
+        "Learn Python for API integrations"
+      ]
+    },
+    {
+      "title": "AI Wealth Technology Consultant",
+      "description": "Consults independent financial practices on how to integrate generative AI and CRM automations into their client service workflows.",
+      "core_tools": "Salesforce Financial Services Cloud AI, FMG Suite, ChatGPT Enterprise",
+      "experience_level": 3,
+      "stat": {
+        "text": "WealthTech consulting is one of the fastest-growing niches in financial services, expanding by 25% annually.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"WealthTech Consultant\" OR \"Advisor Technology\"",
+      "job_search_url": "",
+      "fit": "Pivots industry knowledge into software implementation and workflow design for peers.",
+      "steps": [
+        "Master Salesforce and Wealthtech CRMs",
+        "Build a track record of tech-driven practice growth",
+        "Pivot to a broker-dealer home office tech role"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Draws upon core skills from Personal Financial Advisors but pivots focus to Financial Managers; this is a step up.",
+      "steps": [
+        "Less common path — advisors usually stay individual contributor",
+        "Branch manager or regional director roles are the in-track equivalent."
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Personal Financial Advisors experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Transitions Personal Financial Advisors experience into Accountants and Auditors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Accountants and Auditors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Personal Financial Advisors experience into Loan Officers by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Loan Officers",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Personal Financial Advisors experience into Financial Risk Specialists by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Financial Risk Specialists",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Personal Financial Advisors experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Personal Financial Advisors experience into Credit Counselors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Counselors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Personal Financial Advisors experience into Insurance Underwriters by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Insurance Underwriters",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Personal Financial Advisors experience into Credit Analysts by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Analysts",
+        "Transfer internally to a functional niche team"
+      ]
+    }
+  ],
+  "title": "Personal Financial Advisors",
+  "score": 2.9,
+  "salary": "$102,140",
+  "openings": "24,100",
+  "growth": "+7%",
+  "taskData": [
+    {
+      "task": "Manage client portfolios",
+      "full": "Manage client portfolios, keeping client plans up-to-date.",
+      "weight": 16.9,
+      "auto": 26.3,
+      "aug": 27.8,
+      "success": 63.4,
+      "n": 205
+    },
+    {
+      "task": "Analyze client finances",
+      "full": "Analyze financial information obtained from clients to determine strategies for meeting clients' financial objectives.",
+      "weight": 16.7,
+      "auto": 29.0,
+      "aug": 34.8,
+      "success": 58.7,
+      "n": 858
+    },
+    {
+      "task": "Recommend planning strategies",
+      "full": "Recommend to clients strategies in cash management, insurance coverage, investment planning, or other areas to help them achieve their financial goals.",
+      "weight": 15.0,
+      "auto": null,
+      "aug": null,
+      "success": 70.8,
+      "n": 24
+    },
+    {
+      "task": "Recommend financial products",
+      "full": "Recommend financial products, such as stocks, bonds, mutual funds, or insurance.",
+      "weight": 14.7,
+      "auto": 34.7,
+      "aug": 26.7,
+      "success": 48.8,
+      "n": 1062
+    },
+    {
+      "task": "Answer client questions",
+      "full": "Answer clients' questions about the purposes and details of financial plans and strategies.",
+      "weight": 14.7,
+      "auto": 19.0,
+      "aug": 49.1,
+      "success": 77.2,
+      "n": 527
+    },
+    {
+      "task": "Implement plan recommendations",
+      "full": "Implement financial planning recommendations, or refer clients to someone who can assist them with plan implementation.",
+      "weight": 14.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review/reassess client plans",
+      "full": "Review clients' accounts and plans regularly to determine whether life changes, economic changes, environmental concerns, or financial performance indicate a need for plan reassessment.",
+      "weight": 14.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare client reports",
+      "full": "Prepare or interpret for clients information, such as investment performance reports, financial document summaries, or income projections.",
+      "weight": 14.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Interview clients",
+      "full": "Interview clients to determine their current income, expenses, insurance coverage, tax status, financial objectives, risk tolerance, or other information needed to develop a financial plan.",
+      "weight": 13.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Monitor market trends",
+      "full": "Monitor financial market trends to ensure that client plans are responsive.",
+      "weight": 12.4,
+      "auto": 37.4,
+      "aug": 42.3,
+      "success": 31.3,
+      "n": 163
+    }
+  ],
+  "keyDrivers": "People often choose a financial advisor because they want a trusted human guiding them through major life decisions—retirement, college savings, estate planning—where emotional reassurance matters as much as the numbers. The role carries meaningful regulatory accountability and requires understanding each client's full personal picture. However, robo-advisors and AI tools are already automating portfolio management and basic planning, and the work is fully remote-compatible, which creates real competitive pressure on advisors who don't offer deep relationship value.",
+  "jobTitles": [
+    "Account Executive",
+    "Analyst",
+    "Certified Financial Planner (CFP)",
+    "Financial Advisor",
+    "Financial Consultant",
+    "Financial Counselor",
+    "Financial Planner",
+    "Investment Advisor",
+    "Portfolio Manager",
+    "Registered Representative"
+  ],
+  "emergingTitles": [
+    "Wealth Manager",
+    "Retirement Planning Specialist",
+    "Wealth Advisor"
+  ]
+}

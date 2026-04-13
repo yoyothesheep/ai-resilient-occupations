@@ -1,0 +1,420 @@
+{
+  "onet_code": "13-2082.00",
+  "title": "Tax Preparers",
+  "score": 40,
+  "salary": "$50,560",
+  "openings": "10,400",
+  "growth": "+5%",
+  "jobTitles": [
+    "Certified Income Tax Preparer (CTP)",
+    "Corporate Tax Preparer",
+    "Enrolled Agent",
+    "Income Tax Preparer",
+    "Master Tax Advisor",
+    "Tax Advisor",
+    "Tax Associate",
+    "Tax Consultant",
+    "Tax Preparer",
+    "Tax Specialist"
+  ],
+  "emergingTitles": [
+    "Tax Associate",
+    "Tax Analyst"
+  ],
+  "keyDrivers": "Most tax preparation work follows well-defined rules that AI can already handle faster and more accurately than humans. While some clients value a personal relationship with their preparer, the core task, applying tax code to financial data, is highly automatable. This role faces significant displacement as AI-powered tax software continues to improve.",
+  "taskData": [
+    {
+      "task": "Compute taxes owed",
+      "full": "Compute taxes owed or overpaid, using adding machines or personal computers, and complete entries on forms, following tax form instructions and tax tables.",
+      "weight": 27.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Apply deductions/credits",
+      "full": "Use all appropriate adjustments, deductions, and credits to keep clients' taxes to a minimum.",
+      "weight": 25.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare tax returns",
+      "full": "Prepare or assist in preparing simple to complex tax returns for individuals or small businesses.",
+      "weight": 24.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Advise on form completion",
+      "full": "Furnish taxpayers with sufficient information and advice to ensure correct tax form completion.",
+      "weight": 23.9,
+      "auto": 21.6,
+      "aug": 65.8,
+      "success": 62.2,
+      "n": 111
+    },
+    {
+      "task": "Interview clients",
+      "full": "Interview clients to obtain additional information on taxable income and deductible expenses and allowances.",
+      "weight": 22.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review financial records",
+      "full": "Review financial records, such as income statements and documentation of expenditures to determine forms needed to prepare tax returns.",
+      "weight": 21.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Verify data/totals",
+      "full": "Check data input or verify totals on forms prepared by others to detect errors in arithmetic, data entry, or procedures.",
+      "weight": 21.2,
+      "auto": 21.4,
+      "aug": 61.4,
+      "success": 64.3,
+      "n": 70
+    },
+    {
+      "task": "Explain tax laws",
+      "full": "Explain federal and state tax laws to individuals and companies.",
+      "weight": 20.6,
+      "auto": 15.1,
+      "aug": 72.8,
+      "success": 78.6,
+      "n": 747
+    },
+    {
+      "task": "Answer/plan client taxes",
+      "full": "Answer questions and provide future tax planning to clients.",
+      "weight": 19.7,
+      "auto": null,
+      "aug": 64.7,
+      "success": 67.6,
+      "n": 34
+    },
+    {
+      "task": "Calculate prep fees",
+      "full": "Calculate form preparation fees according to return complexity and processing time required.",
+      "weight": 18.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The structural threat to tax preparers is not AI replacing professionals but AI-powered consumer software replacing the client. TurboTax, H&R Block, and similar platforms now handle most straightforward W-2 returns with embedded AI guidance, shrinking the addressable market for simple seasonal prep work [1]. BLS still projects faster-than-average employment growth (5–6%) overall, but that growth is concentrated in small-business, self-employment, and complex return work where software falls short [1]. Thomson Reuters found that 44% of tax firms using generative AI already deploy it daily, compressing the skill floor while raising the ceiling for what clients expect [2].",
+    "stat": "44%",
+    "statLabel": "of tax firms using generative AI deploy it daily [2]"
+  },
+  "opportunities": {
+    "body": "The 72.8% augmentation rate on the explaining-tax-laws task is a durable signal: AI surfaces answers quickly, but clients need someone to interpret those answers and connect them to their specific situation [3]. Enrolled Agent (EA) and CPA credentials unlock IRS representation rights, the one category of tax work that software can't perform. The Intuit 2025 survey found 93% of accounting firms now use AI to enhance strategic advisory services, and firms making this shift report higher revenue per client [3]. The AICPA sees the profession accelerating toward advisory, where judgment and relationship skills define the value delivered [4].",
+    "stat": "93%",
+    "statLabel": "of accounting firms use AI to enhance advisory services [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using whatever AI research tools are built into your tax software platform. Drake, Lacerte, and ProConnect all now include AI-assisted research features. Use them to handle the lookup work so your time goes to the judgment calls AI cannot make [3]. Over the next six months, pursue the Enrolled Agent credential if you do not have it. EA gives unlimited IRS representation rights and positions you for audits, collections, and appeals work that self-service software will never touch. The AICPA is clear that advisory services are where the profession is heading [4].",
+    "thinkingOf": "Do not enter tax prep as a seasonal W-2 filer. That segment is being compressed by consumer software. Instead, target small business, self-employed, and investment-income returns where the tax picture is complex enough that clients need ongoing professional help [1]. Get an AFSP (Annual Filing Season Program) designation first to establish IRS credentials, then pursue the EA exam. Thomson Reuters found that professionals who adopt a visible AI strategy are twice as likely to see revenue growth, entering with both technical credentials and AI fluency puts you ahead of incumbents who are still catching up [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "AI isn't taking over our jobs. It's giving us more room to do the work that matters.",
+        "attribution": "Dan Luthi, Partner, Ignite Spot Accounting Services",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is fundamentally reshaping the accounting profession, accelerating the move toward more strategic advisory services.",
+        "attribution": "Erik Asgeirsson, President and CEO, CPA.com",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI is not going to disrupt the accounting profession, but it will change what an accountant does.",
+        "attribution": "Mark Koziel, President and CEO, AICPA",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Organizations with visible AI strategies are twice as likely to experience revenue growth compared to those with informal or ad-hoc approaches.",
+        "attribution": "2025 Future of Professionals Report, Thomson Reuters",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Tax Preparers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/tax-preparers.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Thomson Reuters",
+      "title": "2025 Future of Professionals Report",
+      "date": "Jun 2025",
+      "url": "https://www.thomsonreuters.com/en/c/future-of-professionals.html"
+    },
+    {
+      "id": "src-3",
+      "name": "Intuit QuickBooks",
+      "title": "Accountants Embrace AI and Strategic Advisory Services to Fuel Growth, According to 2025 Intuit QuickBooks Survey",
+      "date": "Jul 2025",
+      "url": "https://www.cpapracticeadvisor.com/2025/08/22/the-future-of-accounting-how-intuits-ai-innovations-are-reshaping-the-profession/164854/"
+    },
+    {
+      "id": "src-4",
+      "name": "CPA.com / AICPA",
+      "title": "CPA.com Issues 2025 AI in Accounting Report",
+      "date": "Jun 2025",
+      "url": "https://www.cpa.com/news/cpacom-issues-2025-ai-accounting-report"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Tax Compliance Analyst",
+      "description": "Uses machine learning tools to cross-reference multi-jurisdictional tax laws and validate automated compliance returns.",
+      "core_tools": "Thomson Reuters ONESOURCE AI, Avalara, ChatGPT Advanced Data Analysis",
+      "experience_level": 2,
+      "stat": {
+        "text": "AI in taxation is projected to reduce compliance errors by up to 50% by 2025.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "The Future of Jobs Report 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org/reports/the-future-of-jobs-report-2023"
+      },
+      "search_query": "\"Tax Compliance Analyst\" AI software jobs",
+      "job_search_url": "",
+      "fit": "Leverages deep tax code expertise into training and auditing algorithmic rule engines.",
+      "steps": [
+        "Earn Enrolled Agent (EA) certification",
+        "Master ONESOURCE or Vertex tools",
+        "Learn Python for data extraction"
+      ]
+    },
+    {
+      "title": "Algorithmic Deduction Specialist",
+      "description": "Designs and tests the specific logic parameters that AI tax preparation software uses to discover allowable deductions for corporate clients.",
+      "core_tools": "Intuit ProConnect AI, UiPath for tax, Excel Copilot",
+      "experience_level": 3,
+      "stat": {
+        "text": "Demand for tax technologists has grown 28% over the past two years.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Algorithmic Tax\" OR \"Tax Technology Specialist\"",
+      "job_search_url": "",
+      "fit": "Shifts from manual deduction searching to building the logic that software uses to search.",
+      "steps": [
+        "Transition to tax technology team",
+        "Study decision tree logic and basic coding",
+        "Partner with RPA developers on tax bots"
+      ]
+    },
+    {
+      "title": "Automated Tax Workflow Coordinator",
+      "description": "Manages the automated flow of client documents through OCR and AI extraction, organizing tax document pipelines for scaling firms.",
+      "core_tools": "Vic.ai, Hubdoc AI, Kofax",
+      "experience_level": 1,
+      "stat": {
+        "text": "Intelligent Document Processing (IDP) is the fastest-growing workflow automation sector.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Tax Workflow Coordinator\" OCR",
+      "job_search_url": "",
+      "fit": "Turns existing document management skills into high-volume digital pipeline operations.",
+      "steps": [
+        "Gain expertise in OCR solutions",
+        "Master API integrations between accounting software",
+        "Build automated Zapier/Make document flows"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Tax Preparers experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Tax Preparers experience into Financial Examiners by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Examiners",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Tax Preparers experience into Personal Financial Advisors by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Personal Financial Advisors",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Draws upon core skills from Tax Preparers but pivots focus to Accountants and Auditors; this is a step up.",
+      "steps": [
+        "Bachelor's required",
+        "Tax prep experience is valued but does not substitute for the degree"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Tax Preparers experience into Loan Officers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Loan Officers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Tax Preparers experience into Financial Risk Specialists by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Risk Specialists",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Tax Preparers experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Tax Preparers experience into Credit Counselors by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Credit Counselors",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Tax Preparers experience into Insurance Underwriters by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Insurance Underwriters",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Tax Preparers experience into Credit Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Credit Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "43-3031.00",
+      "title": "Bookkeeper",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$49,210",
+      "openings": "170,000",
+      "growth": "-6%",
+      "fit": "Transitions Tax Preparers experience into Bookkeeping, Accounting, and Auditing Clerks by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Bookkeeping, Accounting, and Auditing Clerks",
+        "Transfer internally to a functional niche team"
+      ]
+    }
+  ]
+}

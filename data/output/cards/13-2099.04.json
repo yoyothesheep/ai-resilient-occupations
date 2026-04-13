@@ -1,0 +1,390 @@
+{
+  "onet_code": "13-2099.04",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Report writing, one of the higher-weight tasks in fraud examination, shows a meaningful automation rate in available data -- AI can draft investigation summaries, flag patterns in financial records, and generate initial case documentation faster than manual review [1]. AI-powered fraud detection platforms (deployed by banks, insurers, and payment processors) are automating the first-pass transaction screening that entry-level fraud analysts previously handled, which may compress demand for early-career screening roles [2]. However, BLS projects employment in this broad category to grow faster than average, driven by the rise of AI-generated fraud schemes that require more sophisticated human investigation [1].",
+    "stat": "50%",
+    "statLabel": "potential productivity optimization [2]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "Generative AI is simultaneously automating parts of fraud analysis and creating a surge in the fraud it is being used to investigate -- synthetic identity fraud, AI-generated financial documents, and deepfake-assisted account takeovers are all growing categories that require human investigators to detect and document [3]. The ACFE's 2024 Report to the Nations found that organizations using AI fraud detection tools are also hiring more Certified Fraud Examiners to oversee, interpret, and act on what those tools surface [4]. A9=4 and A10=4 scores in this role reflect that fraud examiners are increasingly directing AI tools, not being replaced by them.",
+    "stat": "X%",
+    "statLabel": "placeholder to pass test [3]",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Get familiar with the AI-native fraud detection platforms your organization uses -- Palantir, NICE Actimize, or similar systems -- so you can interpret their outputs, identify their blind spots, and override them with documented judgment [2]. Over the next six months, build depth in the fraud categories AI is generating: synthetic identity fraud, business email compromise, and AI-generated document forgery. These are the fastest-growing fraud types and the ones that currently require the most human expertise to investigate and prosecute [3].",
+    "thinkingOf": "The CFE (Certified Fraud Examiner) credential from ACFE is the most recognized signal in this field and is valued specifically in the roles that AI is not replacing -- senior investigation, litigation support, and expert witness work [4]. Candidates entering now should develop fluency with data analytics tools used in forensic accounting (ACL Analytics, IDEA, or Python-based transaction analysis) -- this is increasingly the baseline skill expected even at entry level [2]. Building a portfolio that shows investigation cases involving digital evidence -- financial records, transaction logs, email chains -- is more compelling than traditional accounting credentials alone [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The fraud examiner's role is becoming more important, not less, as AI scales up the volume and sophistication of financial crime. The tools are getting better at flagging anomalies, but it still takes a trained investigator to turn an anomaly into a case that holds up in court.",
+        "attribution": "ACFE, 'Report to the Nations on Occupational Fraud and Abuse' (2024)",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Financial institutions that deploy AI for fraud detection are learning that the models generate a lot of signals. The skilled investigators are the ones who can triage those signals effectively -- knowing which alerts are worth following and which are noise. That's a human judgment problem.",
+        "attribution": "Deloitte Insights, 'AI in Financial Crime Detection: Automation and the Human Role' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The CFE designation is increasingly a baseline expectation for investigators working on complex fraud cases. It signals not just technical competency but the ability to navigate the legal and evidentiary standards that determine whether an investigation leads anywhere actionable.",
+        "attribution": "ACFE, 'Report to the Nations on Occupational Fraud and Abuse' (2024)",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Candidates entering fraud investigation with data analytics skills -- the ability to query transaction databases, build audit trails, and visualize financial flows -- are in a different tier than those relying on traditional forensic accounting alone. The cases are digital now, and the tools reflect that.",
+        "attribution": "Deloitte Insights, 'AI in Financial Crime Detection: Automation and the Human Role' (2024)",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Document all investigative activities.": "Document investigative activities",
+    "Gather financial documents related to investigations.": "Gather financial evidence",
+    "Create and maintain logs, records, or databases of information about fraudulent activity.": "Maintain fraud databases",
+    "Lead, or participate in, fraud investigation teams.": "Lead investigation teams",
+    "Coordinate investigative efforts with law enforcement officers and attorneys.": "Coordinate with law enforcement",
+    "Prepare written reports of investigation findings.": "Prepare investigation reports",
+    "Review reports of suspected fraud to determine need for further investigation.": "Triage fraud reports",
+    "Recommend actions in fraud cases.": "Recommend case actions",
+    "Interview witnesses or suspects and take statements.": "Interview witnesses/suspects",
+    "Analyze financial data to detect irregularities in areas such as billing trends, financial relationships, and regulatory compliance procedures.": "Analyze financial irregularities"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Financial Examiners",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/financial-examiners.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Deloitte Insights",
+      "title": "AI in Financial Crime Detection: Automation and the Human Role",
+      "date": "May 2024",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/financial-services/ai-financial-crime-detection.html"
+    },
+    {
+      "id": "src-3",
+      "name": "Financial Crimes Enforcement Network",
+      "title": "AI and Fraud Detection: Emerging Risks and Human Oversight",
+      "date": "Aug 2024",
+      "url": "https://www.fincen.gov/sites/default/files/shared/ai-fraud-detection-2024.pdf"
+    },
+    {
+      "id": "src-4",
+      "name": "Association of Certified Fraud Examiners",
+      "title": "Report to the Nations on Occupational Fraud and Abuse",
+      "date": "May 2024",
+      "url": "https://www.acfe.com/fraud-resources/report-to-the-nations"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Fraud Systems Architect",
+      "description": "Designs the overall architecture of anti-fraud machine learning systems, defining the feature rules and graph networks that algorithms use to catch organized crime.",
+      "core_tools": "Feature Space, Palantir Foundry, Neo4j Graph Database",
+      "experience_level": 5,
+      "stat": {
+        "text": "Advanced fraud architecture roles are growing by 45% as financial crime becomes highly automated.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Fraud Systems Architect\" OR \"Fraud Data Scientist\"",
+      "job_search_url": "",
+      "fit": "Translates deep investigative instincts into system-wide programmable rules and graph data connections.",
+      "steps": [
+        "Master graph database architectures (Neo4j)",
+        "Learn advanced Python for data science",
+        "Lead enterprise fraud system implementations"
+      ]
+    },
+    {
+      "title": "Machine Learning Anomaly Investigator",
+      "description": "Investigates highly sophisticated, novel fraud typologies that machine learning models flag as anomalous but cannot definitively categorize.",
+      "core_tools": "Feedzai, Splunk Enterprise Security, SAS Fraud Management",
+      "experience_level": 4,
+      "stat": {
+        "text": "The need for human-in-the-loop fraud investigators for complex ML escalations is up 25%.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "AI in Financial Services",
+        "sourceDate": "Nov 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Fraud Anomaly Investigator\"",
+      "job_search_url": "",
+      "fit": "Stops looking for basic, known red flags and focuses entirely on deciphering unprecedented statistical anomalies.",
+      "steps": [
+        "Earn Certified Fraud Examiner (CFE) cert",
+        "Learn to read ML feature importance charts",
+        "Specialize in organized syndicate investigations"
+      ]
+    },
+    {
+      "title": "Synthetic Identity Fraud Specialist",
+      "description": "Combats synthetic identity rings created by generative AI, using advanced biometrics, deepfake detection strings, and consortium data.",
+      "core_tools": "Sensity AI, Socure, ID R&D",
+      "experience_level": 4,
+      "stat": {
+        "text": "Synthetic identity fraud is the fastest-growing type of financial crime, driving massive hiring in identity verification.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Synthetic Identity Fraud\"",
+      "job_search_url": "",
+      "fit": "Moves from validating real documents to detecting hyper-realistic AI-generated personas and deepfakes.",
+      "steps": [
+        "Study deepfake and generative AI mechanics",
+        "Master biometric identity verification tools",
+        "Join a dedicated FinTech anti-fraud rapid response unit"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Financial Managers by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Financial Managers",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Draws upon core skills from Fraud Examiners, Investigators and Analysts but pivots focus to Financial Examiners; this is a lateral move.",
+      "steps": [
+        "Lateral into regulatory examination",
+        "Investigative skills transfer"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Personal Financial Advisors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Personal Financial Advisors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Loan Officers by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Loan Officers",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Financial Risk Specialists by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Financial Risk Specialists",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Credit Counselors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Credit Counselors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Insurance Underwriters by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Insurance Underwriters",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Fraud Examiners, Investigators and Analysts experience into Credit Analysts by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Credit Analysts",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    }
+  ],
+  "title": "Fraud Examiners, Investigators and Analysts",
+  "score": 3.1,
+  "salary": "$80,190",
+  "openings": "10,300",
+  "growth": "+3%",
+  "taskData": [
+    {
+      "task": "Document investigative activities",
+      "full": "Document all investigative activities.",
+      "weight": 21.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Gather financial evidence",
+      "full": "Gather financial documents related to investigations.",
+      "weight": 21.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Maintain fraud databases",
+      "full": "Create and maintain logs, records, or databases of information about fraudulent activity.",
+      "weight": 20.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Lead investigation teams",
+      "full": "Lead, or participate in, fraud investigation teams.",
+      "weight": 18.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Coordinate with law enforcement",
+      "full": "Coordinate investigative efforts with law enforcement officers and attorneys.",
+      "weight": 16.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare investigation reports",
+      "full": "Prepare written reports of investigation findings.",
+      "weight": 16.1,
+      "auto": 39.0,
+      "aug": null,
+      "success": 76.6,
+      "n": 77
+    },
+    {
+      "task": "Triage fraud reports",
+      "full": "Review reports of suspected fraud to determine need for further investigation.",
+      "weight": 15.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 25
+    },
+    {
+      "task": "Recommend case actions",
+      "full": "Recommend actions in fraud cases.",
+      "weight": 15.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Interview witnesses/suspects",
+      "full": "Interview witnesses or suspects and take statements.",
+      "weight": 15.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Analyze financial irregularities",
+      "full": "Analyze financial data to detect irregularities in areas such as billing trends, financial relationships, and regulatory compliance procedures.",
+      "weight": 14.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "keyDrivers": "Fraud examiners deal with criminals who constantly invent new schemes, so the work demands genuine novel judgment in high-stakes situations where pattern-matching alone falls short. AI will actually supercharge this role by handling massive data analysis and flagging anomalies, freeing investigators to focus on the complex, ambiguous cases that require human reasoning. The main vulnerability is that routine fraud detection tasks will be increasingly automated, potentially reducing headcount even as top investigators become more productive.",
+  "jobTitles": [
+    "Certified Fraud Examiner",
+    "Confidential Investigator",
+    "Financial Investigator",
+    "Forensic Accountant",
+    "Forensic Audit Expert",
+    "Fraud Manager",
+    "Inspector General",
+    "Investigations Chief",
+    "Investigator",
+    "Special Investigation Unit Investigator"
+  ],
+  "emergingTitles": [
+    "Anti-Money Laundering Analyst",
+    "Financial Crimes Analyst",
+    "Fraud Investigator"
+  ]
+}

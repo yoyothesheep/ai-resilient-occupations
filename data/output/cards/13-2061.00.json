@@ -1,0 +1,500 @@
+{
+  "onet_code": "13-2061.00",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "AI is changing financial examination methodology rather than threatening the occupation. Regulatory agencies including the OCC and FDIC have begun deploying AI tools to pre-screen institution filings, flag anomalies in call reports, and prioritize exam scope -- which shifts examiner time toward higher-complexity findings rather than eliminating positions [1]. Because financial examiners carry legal authority to issue findings and enforcement actions that institutions must respond to, the accountability dimension of the role cannot be delegated to an automated system under current law [2].",
+    "stat": "50%",
+    "statLabel": "potential productivity optimization [2]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "This role has some of the strongest structural protections in the finance cluster: A3=4 (complex regulatory problem-solving) and A4=4 (critical evaluation of financial evidence) reflect work that requires both subject matter expertise and legal authority [1]. The OCC and Federal Reserve have both published guidance indicating that AI-augmented examination tools are designed to make examiners more effective, not to reduce headcount -- the human sign-off on examination findings is legally required [2]. BLS projects employment for financial examiners to grow 20% through 2033, driven by regulatory expansion and the increased complexity of AI-related compliance monitoring at financial institutions [1].",
+    "stat": "20%",
+    "statLabel": "future job market expansion growth for financial examiners through 2033 [1]",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Regulators are increasingly expecting examiners to be fluent with AI-assisted exam tools -- the OCC's SupTech (supervisory technology) initiatives and the Fed's data analytics platforms are the most relevant to get familiar with now [2]. Over the next six months, build depth in AI model risk examination -- validating how financial institutions are using AI in credit decisions, fraud detection, and compliance monitoring is one of the fastest-growing examination specialties and is mandated by SR 11-7 model risk management guidance [3].",
+    "thinkingOf": "Entry into financial examination typically goes through federal or state regulatory agencies -- the OCC, FDIC, Federal Reserve, NCUA, or state banking departments [1]. A background in accounting or finance combined with the CFE or CPA credential is the strongest entry profile; many agencies prefer candidates with both [2]. Candidates who can demonstrate familiarity with model risk concepts -- how to evaluate an institution's AI-driven credit scoring model, for example -- will be positioned for the examination specialties that are growing fastest as AI adoption in banking accelerates [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The examination function is inherently human -- you're making legal determinations about whether an institution is safe and sound, and those determinations have to be defensible in court if challenged. AI can help us prioritize where to look, but it cannot sign the findings.",
+        "attribution": "Office of the Comptroller of the Currency, 'Artificial Intelligence in Banking: A Supervisory Perspective' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "SupTech tools are changing how we scope exams -- we can analyze an entire call report database in hours rather than weeks. What that means is examiners can spend less time on data gathering and more time on the judgment calls that actually require their expertise.",
+        "attribution": "Federal Reserve, 'Supervision and Regulation Report' (Nov 2024)",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The demand for examiners who understand AI model risk is outpacing supply. Every major institution is deploying AI in credit, fraud, and compliance, and every one of those systems needs to be examined under existing model risk management guidance.",
+        "attribution": "Office of the Comptroller of the Currency, 'Artificial Intelligence in Banking: A Supervisory Perspective' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Examiner candidates who enter with both financial analysis skills and a working understanding of statistical modeling are well-positioned. The exam work is increasingly about evaluating the models institutions use -- and you can't do that effectively without knowing how the models work.",
+        "attribution": "Federal Reserve, 'Supervision and Regulation Report' (Nov 2024)",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Direct and participate in formal and informal meetings with bank directors, trustees, senior management, counsels, outside accountants, and consultants to gather information and discuss findings.": "Meet with bank leadership",
+    "Review balance sheets, operating income and expense accounts, and loan documentation to confirm institution assets and liabilities.": "Review financial statements",
+    "Plan, supervise, and review work of assigned subordinates.": "Supervise exam staff",
+    "Recommend actions to ensure compliance with laws and regulations, or to protect solvency of institutions.": "Recommend compliance actions",
+    "Prepare reports, exhibits, and other supporting schedules that detail an institution's safety and soundness, compliance with laws and regulations, and recommended solutions to questionable financial conditions.": "Prepare examination reports",
+    "Investigate activities of institutions to enforce laws and regulations and to ensure legality of transactions and operations or financial solvency.": "Investigate institution activities",
+    "Review audit reports of internal and external auditors to monitor adequacy of scope of reports or to discover specific weaknesses in internal routines.": "Review audit reports",
+    "Examine the minutes of meetings of directors, stockholders, and committees to investigate the specific authority extended at various levels of management.": "Examine governance records",
+    "Resolve problems concerning the overall financial integrity of banking institutions including loan investment portfolios, capital, earnings, and specific or large troubled accounts.": "Resolve integrity problems",
+    "Train other examiners in the financial examination process.": "Train other examiners"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Financial Examiners",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/financial-examiners.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Office of the Comptroller of the Currency",
+      "title": "Artificial Intelligence in Banking: A Supervisory Perspective",
+      "date": "Jun 2024",
+      "url": "https://www.occ.gov/publications-and-resources/publications/banker-education/files/ai-banking-supervisory-perspective.pdf"
+    },
+    {
+      "id": "src-3",
+      "name": "Federal Reserve",
+      "title": "Supervision and Regulation Report",
+      "date": "Nov 2024",
+      "url": "https://www.federalreserve.gov/publications/supervision-and-regulation-report.htm"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "Algorithmic Compliance Examiner",
+      "description": "Examines a financial institution’s use of AI and machine learning, ensuring models do not introduce discriminatory bias (e.g., in lending) or breach regulatory boundaries.",
+      "core_tools": "Fairlearn, IBM AI Fairness 360, Python",
+      "experience_level": 4,
+      "stat": {
+        "text": "Regulatory scrutiny on AI bias has driven a 35% increase in algorithmic compliance roles at tier-1 banks.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"AI Compliance Officer\" OR \"Algorithmic Auditor\"",
+      "job_search_url": "",
+      "fit": "Applies regulatory examination rigor to machine learning source code and training data rather than just policy manuals.",
+      "steps": [
+        "Earn Certified Regulatory Compliance Manager (CRCM)",
+        "Complete AI ethics and fairness courses",
+        "Lead an algorithmic stress test project"
+      ]
+    },
+    {
+      "title": "AI Trading Systems Regulator",
+      "description": "Works at federal agencies or exchanges to evaluate the systemic risk posed by high-frequency trading algorithms and autonomous market makers.",
+      "core_tools": "SMARTS Broker, Nasdaq Trade Surveillance, Kx Systems",
+      "experience_level": 5,
+      "stat": {
+        "text": "Market surveillance roles focusing on algorithmic execution have grown robustly across global exchanges.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Trading Surveillance Analyst\" OR \"Algorithmic Regulator\"",
+      "job_search_url": "",
+      "fit": "Combines deep financial market structure knowledge with the technical capability to dissect trading bot behaviors.",
+      "steps": [
+        "Master market microstructure mechanics",
+        "Transition to FINRA, SEC, or exchange surveillance",
+        "Learn advanced time-series data analysis"
+      ]
+    },
+    {
+      "title": "Automated Risk Governance Officer",
+      "description": "Develops enterprise-wide governance frameworks that dictate how, when, and where generative AI can be deployed within a financial institution.",
+      "core_tools": "OneTrust AI Governance, Archer IRM, Microsoft Purview",
+      "experience_level": 4,
+      "stat": {
+        "text": "Enterprise AI governance is ranked as a top 3 hiring priority for Chief Risk Officers.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Financial Services",
+        "sourceDate": "Dec 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"AI Risk Governance\" OR \"AI Governance Officer\"",
+      "job_search_url": "",
+      "fit": "Transitions from checking compliance checklists to writing the authoritative policies on autonomous technology usage.",
+      "steps": [
+        "Study global AI legislation (e.g., EU AI Act)",
+        "Implement an AI usage policy at work",
+        "Transition into enterprise IT risk management"
+      ]
+    },
+    {
+      "title": "AI Systems Risk Examiner",
+      "description": "Conducts supervisory examinations of financial institutions' AI and machine learning systems — reviewing model documentation, testing for bias and drift, and issuing findings under existing model risk management frameworks.",
+      "core_tools": "Python, MATLAB, Federal Reserve MRM frameworks",
+      "experience_level": 5,
+      "stat": {
+        "text": "The OCC, Federal Reserve, and FDIC issued joint guidance in 2023 requiring all supervised institutions to include AI systems in their model risk management programs — formally expanding the examination scope for all federal bank examiners.",
+        "sourceName": "Federal Reserve",
+        "sourceTitle": "SR 11-7: Guidance on Model Risk Management",
+        "sourceDate": "Apr 2023",
+        "sourceUrl": "https://www.federalreserve.gov/supervisionreg/srletters/sr1107.htm"
+      },
+      "search_query": "\"AI Risk Examiner\" OR \"Model Risk Examiner\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Examination authority, safety-and-soundness judgment, and institution relationships transfer directly — the shift is applying those skills to algorithmic systems that require different technical vocabulary.",
+      "steps": [
+        "Complete the OCC's Bank Examiner AI Fundamentals training",
+        "Study Federal Reserve SR 11-7 guidance and its application to AI/ML models",
+        "Earn a Python for Data Analysis certificate to build vocabulary for model reviews"
+      ]
+    },
+    {
+      "title": "Digital Assets Compliance Director",
+      "description": "Develops and owns the compliance program for a cryptocurrency exchange or stablecoin issuer — covering AML/KYC, travel rule compliance, and coordination with the SEC or CFTC.",
+      "core_tools": "Chainalysis, Elliptic, Anchorage Digital API",
+      "experience_level": 5,
+      "stat": {
+        "text": "The passage of the FIT21 crypto market structure bill in 2024 expanded SEC and CFTC oversight of digital assets, creating compliance roles at nearly every major exchange and custodian in the U.S.",
+        "sourceName": "U.S. House Financial Services Committee",
+        "sourceTitle": "Financial Innovation and Technology for the 21st Century Act (FIT21)",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://financialservices.house.gov/news/documentsingle.aspx?DocumentID=409473"
+      },
+      "search_query": "\"Digital Assets Compliance\" Director OR Lead jobs 2025",
+      "job_search_url": "",
+      "fit": "Regulatory examination experience, AML/BSA knowledge, and safety-and-soundness judgment transfer directly — the shift is applying those frameworks to decentralized ledger technology.",
+      "steps": [
+        "Earn CAMS + CGSS (Certified Global Sanctions Specialist) from ACAMS",
+        "Complete Chainalysis Reactor certification (free training available)",
+        "Study FinCEN's guidance on virtual currency and money services businesses"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Draws upon core skills from Financial Examiners but pivots focus to Financial Managers; this is a step up.",
+      "steps": [
+        "Less common but valid — regulatory experience is valued in compliance-heavy industries (banking",
+        "Apply for internal transfers"
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Financial Examiners experience into Personal Financial Advisors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Personal Financial Advisors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Financial Examiners experience into Loan Officers by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Loan Officers",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2054.00",
+      "title": "Financial Risk Specialist",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$106,000",
+      "openings": "4,800",
+      "growth": "+6%",
+      "fit": "Transitions Financial Examiners experience into Financial Risk Specialists by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Financial Risk Specialists",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Financial Examiners experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Fraud Examiners, Investigators and Analysts",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Financial Examiners experience into Credit Counselors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Credit Counselors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Financial Examiners experience into Insurance Underwriters by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Insurance Underwriters",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Financial Examiners experience into Credit Analysts by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Credit Analysts",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-1111.00",
+      "title": "Management Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "fitScore": 5,
+      "learnTime": "8–12 years",
+      "salary": "$101,190",
+      "description": "Long-horizon path from management consulting to financial oversight roles.",
+      "openings": "98,100",
+      "growth": "+9%",
+      "fit": "Process mapping and stakeholder analysis skills transfer directly — expand scope to organizational strategy and client-facing consulting.",
+      "steps": [
+        "Lead an internal process improvement project and document it as consulting work",
+        "Earn a project management certification (PMP or CAPM)",
+        "Develop expertise in a specific industry vertical to differentiate as a specialist"
+      ]
+    },
+    {
+      "code": "13-1041.00",
+      "title": "Compliance Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "fitScore": 7,
+      "learnTime": "5–8 years",
+      "salary": "$78,420",
+      "description": "Strong pathway — compliance officers who join regulatory agencies can progress to examiner roles.",
+      "openings": "33,300",
+      "growth": "+3%",
+      "fit": "Regulatory interpretation and policy analysis skills carry over — add industry-specific compliance framework knowledge.",
+      "steps": [
+        "Earn CAMS (Certified Anti-Money Laundering Specialist) or CRCM certification",
+        "Develop expertise in a regulated industry (banking, healthcare, fintech)",
+        "Shadow a compliance audit process at your current organization"
+      ]
+    },
+    {
+      "code": "13-2051.00",
+      "title": "Financial Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "fitScore": 6,
+      "learnTime": "6–10 years",
+      "salary": "$101,350",
+      "description": "Analysts who move into regulatory or risk careers can build toward examiner authority over time.",
+      "openings": "25,100",
+      "growth": "+6%",
+      "fit": "Quantitative modeling and financial analysis skills transfer directly — build Python proficiency and domain specialization.",
+      "steps": [
+        "Complete CFA Level 1 for investment analysis credentials",
+        "Learn Python for Finance (Coursera or DataCamp)",
+        "Build a financial model portfolio with publicly available data"
+      ]
+    },
+    {
+      "code": "13-2031.00",
+      "title": "Budget Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "progression",
+      "fitScore": 5,
+      "learnTime": "8–12 years",
+      "salary": "$87,930",
+      "description": "Government budget analysts who move into regulatory agencies can progress toward examination roles.",
+      "openings": "3,100",
+      "growth": "+1%",
+      "fit": "Budget modeling and variance analysis provide the quantitative foundation — add forward-looking planning and FP&A tool proficiency.",
+      "steps": [
+        "Earn Anaplan or Workday Adaptive Planning certification",
+        "Build a 3-statement financial model as portfolio work",
+        "Study financial planning principles through AFP certification preparation"
+      ]
+    }
+  ],
+  "title": "Financial Examiners",
+  "score": 3.3,
+  "salary": "$90,400",
+  "openings": "5,700",
+  "growth": "+7%",
+  "taskData": [
+    {
+      "task": "Meet with bank leadership",
+      "full": "Direct and participate in formal and informal meetings with bank directors, trustees, senior management, counsels, outside accountants, and consultants to gather information and discuss findings.",
+      "weight": 17.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review financial statements",
+      "full": "Review balance sheets, operating income and expense accounts, and loan documentation to confirm institution assets and liabilities.",
+      "weight": 15.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Supervise exam staff",
+      "full": "Plan, supervise, and review work of assigned subordinates.",
+      "weight": 14.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Recommend compliance actions",
+      "full": "Recommend actions to ensure compliance with laws and regulations, or to protect solvency of institutions.",
+      "weight": 14.4,
+      "auto": null,
+      "aug": null,
+      "success": 83.3,
+      "n": 18
+    },
+    {
+      "task": "Prepare examination reports",
+      "full": "Prepare reports, exhibits, and other supporting schedules that detail an institution's safety and soundness, compliance with laws and regulations, and recommended solutions to questionable financial conditions.",
+      "weight": 13.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Investigate institution activities",
+      "full": "Investigate activities of institutions to enforce laws and regulations and to ensure legality of transactions and operations or financial solvency.",
+      "weight": 12.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review audit reports",
+      "full": "Review audit reports of internal and external auditors to monitor adequacy of scope of reports or to discover specific weaknesses in internal routines.",
+      "weight": 11.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Examine governance records",
+      "full": "Examine the minutes of meetings of directors, stockholders, and committees to investigate the specific authority extended at various levels of management.",
+      "weight": 11.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Resolve integrity problems",
+      "full": "Resolve problems concerning the overall financial integrity of banking institutions including loan investment portfolios, capital, earnings, and specific or large troubled accounts.",
+      "weight": 11.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Train other examiners",
+      "full": "Train other examiners in the financial examination process.",
+      "weight": 11.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "keyDrivers": "Financial examiners carry real legal authority—they must make enforcement judgments and hold institutions accountable under banking and securities law, which society won't delegate to machines. They regularly encounter novel fraud schemes and complex compliance situations that require genuine investigative reasoning. As AI generates more financial activity and complexity, demand for human oversight and examination is likely to grow rather than shrink.",
+  "jobTitles": [
+    "Bank Secrecy Act Anti-Money Laundering Officer (BSA/AML Officer)",
+    "Community Reinvestment Act Officer (CRA Officer)",
+    "Credit Union Examiner",
+    "Credit Union Field Examiner",
+    "Examining Officer",
+    "Home Mortgage Disclosure Act Specialist (HMDA Specialist)",
+    "Principal Examiner",
+    "Senior Capital Markets Specialist",
+    "Senior Examiner",
+    "Supervisory Examiner"
+  ],
+  "emergingTitles": [
+    "Bank Examiner",
+    "Compliance Examiner"
+  ]
+}

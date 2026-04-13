@@ -1,0 +1,366 @@
+{
+  "onet_code": "15-1299.08",
+  "title": "Computer Systems Engineers/Architects",
+  "score": 56,
+  "salary": "$108,970",
+  "openings": "31,300",
+  "growth": "+7%",
+  "jobTitles": [
+    "Infrastructure Engineer",
+    "IT Architect (Information Technology Architect)",
+    "IT Engineer (Information Technology Engineer)",
+    "Network and Infrastructure Engineer",
+    "Solutions Architect",
+    "Systems Application Engineer",
+    "Systems Architect",
+    "Systems Consultant",
+    "Systems Engineer",
+    "Web Architect"
+  ],
+  "keyDrivers": "Systems architects make high-stakes design decisions about complex infrastructure where mistakes can be costly and situations are often genuinely novel. AI will handle more routine design patterns, but someone still needs to make the big-picture architectural calls and integrate competing constraints. These professionals are also well-positioned to direct and validate AI-generated designs, keeping them relevant as AI tools expand what's possible.",
+  "taskData": [
+    {
+      "task": "Gather system requirements",
+      "full": "Communicate with staff or clients to understand specific system requirements.",
+      "weight": 20.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 20
+    },
+    {
+      "task": "Monitor system operations",
+      "full": "Monitor system operation to detect potential problems.",
+      "weight": 19.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct systems development",
+      "full": "Direct the analysis, development, and operation of complete computer systems.",
+      "weight": 18.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Evaluate component suitability",
+      "full": "Investigate system component suitability for specified purposes, and make recommendations regarding component use.",
+      "weight": 17.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct software/hardware installs",
+      "full": "Direct the installation of operating systems, network or application software, or computer or network hardware.",
+      "weight": 16.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Maintain/upgrade hardware and software",
+      "full": "Perform ongoing hardware and software maintenance operations, including installing or upgrading hardware or software.",
+      "weight": 14.9,
+      "auto": 44.4,
+      "aug": 22.2,
+      "success": 71.9,
+      "n": 171
+    },
+    {
+      "task": "Guide secure implementation",
+      "full": "Provide customers or installation teams guidelines for implementing secure systems.",
+      "weight": 14.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Guide/troubleshoot systems",
+      "full": "Provide technical guidance or support for the development or troubleshooting of systems.",
+      "weight": 14.2,
+      "auto": 12.6,
+      "aug": 62.5,
+      "success": 77.9,
+      "n": 1532
+    },
+    {
+      "task": "Identify system components",
+      "full": "Identify system data, hardware, or software components required to meet user needs.",
+      "weight": 14.0,
+      "auto": 30.6,
+      "aug": 26.9,
+      "success": 66.7,
+      "n": 108
+    },
+    {
+      "task": "Verify system architecture",
+      "full": "Verify stability, interoperability, portability, security, or scalability of system architecture.",
+      "weight": 12.9,
+      "auto": 32.7,
+      "aug": null,
+      "success": 65.4,
+      "n": 52
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The maintenance and installation side of this role shows real automation pressure. Routine hardware and software maintenance tasks have a 44% automation rate in AI conversations, meaning AI tools are already handling a meaningful share of patching, upgrades, and configuration work without human involvement. Infrastructure-as-code platforms and AI-assisted provisioning tools are accelerating this trend. GitHub's 2024 Octoverse report found that AI-generated code now accounts for a growing share of commits in infrastructure repositories, with Copilot adoption among DevOps and infrastructure engineers rising sharply [1]. The broader systems engineering labor market is projected to grow just 3% over the next decade according to BLS data [2], which is slower than average and suggests muted new-job creation even as existing roles shift.",
+    "stat": "77%",
+    "statLabel": "of organizations adopted infrastructure-as-code, automating routine system maintenance [4]"
+  },
+  "opportunities": {
+    "body": "Technical guidance and troubleshooting is the strongest augmentation signal in this role. That task shows a 63% augmentation rate across over 1,500 AI conversations, meaning engineers are using AI as a research and diagnostic partner rather than handing off the work entirely [1]. This pattern fits: designing and debugging complex distributed systems requires contextual judgment that AI assists but can't own. The 2024 Stack Overflow Developer Survey found that 76% of developers are using or plan to use AI tools in their workflow, but only 43% trust AI output for architectural decisions [3]. Systems architecture work, where the role involves evaluating tradeoffs across security, scalability, and cost, scores high on specialized expertise (A9: 3) and AI-direction capability (A10: 5), both durable advantages.",
+    "stat": "31,300",
+    "statLabel": "annual job openings across computer systems roles, driven by cloud migration complexity [2]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI coding assistants for infrastructure-as-code reviews and troubleshooting workflows now. The data shows AI is already a strong partner for technical guidance tasks, with a 63% augmentation rate [1]. Over the next six months, build depth in the areas AI handles worst for this role: cross-system architecture tradeoff analysis, security posture evaluation, and stakeholder requirement translation. These tasks involve ambiguity and organizational context that AI tools consistently struggle with.",
+    "thinkingOf": "Entry-level infrastructure work, the maintenance and provisioning layer, is the part most exposed to automation. A stronger entry point is building a portfolio around system design: document architecture decisions for real or simulated multi-service deployments, including why alternatives were rejected. The Stack Overflow survey shows employers still don't trust AI for architectural decisions [3], so demonstrated design judgment stands out. Cloud provider certifications (AWS Solutions Architect, Azure Solutions Architect Expert) remain useful signals, but pair them with hands-on projects that show tradeoff reasoning, not just configuration knowledge.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Developers are integrating AI into their workflows at a rapid pace , 97% of respondents have used AI coding tools at some point. The shift is toward using these tools for code generation, debugging, and documentation rather than replacing design work.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI-powered code generation is becoming embedded in the developer workflow, with Copilot now active in infrastructure and DevOps repositories at growing rates, but adoption is highest in routine commits, not architectural changes.",
+        "attribution": "GitHub Octoverse 2024",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Only 43% of developers trust AI tools for complex tasks like architectural decisions, compared to much higher trust for code completion and documentation, suggesting that design skills remain a differentiator.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The fastest-growing repositories in 2024 involved infrastructure-as-code and platform engineering, areas where AI accelerates routine work but human review of system-level tradeoffs remains the norm.",
+        "attribution": "GitHub Octoverse 2024",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "GitHub",
+      "title": "Octoverse 2024: The state of open source and rise of AI",
+      "date": "Oct 2024",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-2024/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Computer and Information Technology Occupations",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/home.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "2024 Developer Survey Results",
+      "date": "Jul 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-4",
+      "name": "Stack Overflow",
+      "title": "Stack Overflow Developer Survey 2024",
+      "date": "May 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "You already monitor systems, work with hardware/software, and talk to users about technical needs — the shift is narrowing all of that work specifically to security threats, access control, and data protection.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Set up a home lab running SIEM tools like Splunk",
+        "Complete a hands-on cybersecurity course on TryHackMe or HackTheBox"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "You already design and analyze complex systems, but this is a step up — research scientists work at the theory and invention level, not just implementation, and typically require a graduate degree.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Publish or contribute to peer-reviewed research",
+        "Build original projects applying novel algorithms"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "Systems engineers understand data pipelines, infrastructure, and how software operates at scale, but data science requires statistical modeling and machine learning skills that aren't part of that work.",
+      "steps": [
+        "Complete Python for Data Science and ML course",
+        "Build 3 portfolio projects using pandas, scikit-learn",
+        "Earn Google or IBM Data Science Professional Certificate"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "You already coordinate technical work and talk to stakeholders, but this role shifts the focus entirely to managing schedules, budgets, and people rather than doing the hands-on technical work yourself.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal IT project end-to-end",
+        "Learn Jira or MS Project for tracking"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1241.00",
+      "title": "Computer Network Architect",
+      "level": 3,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "11,200",
+      "growth": "+12%",
+      "fit": "You already design, monitor, and maintain complex systems and work directly with clients on requirements, so moving into network architecture is a lateral shift in focus — the same core skills applied specifically to network infrastructure rather than full systems.",
+      "steps": [
+        "Earn Cisco CCNP or CCIE certification",
+        "Build hands-on experience with SD-WAN and BGP routing",
+        "Complete CompTIA Network+ or AWS Advanced Networking specialty"
+      ],
+      "salary": "$130,390"
+    },
+    {
+      "code": "15-1241.01",
+      "title": "Telecomm Engineering Specialist",
+      "level": 2,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "11,200",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "Both roles involve understanding system requirements, managing hardware/software, and coordinating with technical stakeholders, but the target role shifts focus specifically to telecom infrastructure — voice, video, and data networks — which requires domain knowledge you likely don't have yet, making it a lateral move into a specialized field.",
+      "steps": [
+        "Earn CompTIA Network+ or Cisco CCNA certification",
+        "Study VoIP, SIP, and telecom protocols hands-on",
+        "Join IEEE Communications Society or similar org"
+      ],
+      "salary": "$130,390"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$133,080",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "A computer systems engineer moving to software development is a step down from full-stack systems oversight to code-level execution — your architecture knowledge and systems context carry over as a strong advantage, but the role narrows to writing and maintaining software.",
+      "steps": [
+        "No new credential required",
+        "Deepen proficiency in one language stack (Python, Java, C++)",
+        "Build software portfolio projects outside of systems design"
+      ]
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$135,980",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "A computer systems engineer moving to database architecture is a step down in breadth — your experience designing systems and specifying component requirements carries over directly, but the scope narrows from full system oversight to database design and performance.",
+      "steps": [
+        "Earn Oracle, Microsoft, or AWS database certification",
+        "Learn SQL and NoSQL at depth",
+        "Build database schema design and optimization portfolio"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Enterprise Architect",
+    "Cloud Architect",
+    "Technical Architect",
+    "DevOps Architect"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Infrastructure Architect",
+      "description": "Designs the compute, networking, and storage systems that support large-scale AI training and inference workloads. Evaluates GPU cluster configurations, optimizes model serving latency, and architects multi-region deployment strategies for AI systems in production.",
+      "core_tools": "NVIDIA CUDA, Kubernetes, Ray",
+      "experience_level": "4",
+      "stat": {
+        "text": "Global AI infrastructure spending is projected to reach $200 billion by 2025, with cloud providers and enterprises competing to build dedicated AI compute capacity — driving demand for architects who understand both AI workloads and distributed systems.",
+        "sourceName": "Goldman Sachs",
+        "sourceTitle": "AI Infrastructure: Sizing the Opportunity",
+        "sourceDate": "Apr 2024",
+        "sourceUrl": "https://www.goldmansachs.com/intelligence/pages/gs-research/ai-investment-forecast-to-approach-200-billion-globally-by-2025/report.pdf"
+      },
+      "search_query": "\"AI infrastructure architect\" OR \"ML infrastructure engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your systems architecture background is the core qualification — the new domain is understanding GPU memory constraints, model parallelism, and inference optimization, which layer on top of distributed systems principles you already know.",
+      "steps": [
+        "Complete NVIDIA's Deep Learning Institute course on GPU computing and run a benchmark comparing inference performance across serving frameworks (vLLM, TGI, TensorRT-LLM)",
+        "Architect a multi-node Ray cluster on a cloud provider and document the tradeoffs between spot instances and reserved capacity for AI training workloads",
+        "Earn the AWS Machine Learning Specialty or Google Professional ML Engineer certification to demonstrate cloud AI infrastructure fluency"
+      ]
+    },
+    {
+      "title": "MLOps Engineer",
+      "description": "Builds and maintains the CI/CD infrastructure for machine learning — automated training pipelines, model registries, A/B testing frameworks, and production monitoring systems. Ensures models are reproducible, versioned, and can be safely updated without service disruption.",
+      "core_tools": "MLflow, Kubeflow, GitHub Actions",
+      "experience_level": "3",
+      "stat": {
+        "text": "MLOps Engineer was one of the top 10 fastest-growing job titles on LinkedIn in 2024, reflecting the gap between companies that can train models and those that can reliably deploy and maintain them.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://business.linkedin.com/talent-solutions/resources/talent-acquisition/jobs-on-the-rise-us"
+      },
+      "search_query": "\"MLOps engineer\" OR \"ML platform engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your systems engineering instincts around reliability, automation, and observability translate directly — MLOps is DevOps applied to the ML lifecycle, and the concepts map closely once you understand model-specific failure modes.",
+      "steps": [
+        "Complete the MLOps Specialization on Coursera (DeepLearning.AI) covering the full lifecycle from data versioning to production monitoring",
+        "Set up a complete MLOps pipeline using MLflow + GitHub Actions that trains, versions, evaluates, and deploys a model on a push to main",
+        "Implement data drift detection on a production model using Evidently AI and set up automated retraining triggers"
+      ]
+    }
+  ]
+}

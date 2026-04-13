@@ -1,0 +1,297 @@
+{
+  "onet_code": "27-3041.00",
+  "title": "Editor",
+  "score": 45,
+  "salary": "$75,260",
+  "openings": "9,800",
+  "growth": "+1%",
+  "jobTitles": [
+    "Acquisitions Editor",
+    "Business Editor",
+    "Editor",
+    "Features Editor",
+    "Legal Editor",
+    "News Editor",
+    "Newspaper Copy Editor",
+    "Science Editor",
+    "Sports Editor",
+    "Web Editor"
+  ],
+  "emergingTitles": [],
+  "keyDrivers": "Editing sits in a difficult position: the core task of rewriting and improving copy has the highest AI usage volume of any task in this role — over 13,000 observed conversations — with 30.9% automation patterns. Editors who focus on mechanical correction are the most exposed. The role's durability comes from editorial judgment: deciding what to publish, shaping narratives, managing authors, and maintaining publication standards — work that requires institutional knowledge and contextual reasoning AI tools cannot yet replicate reliably.",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#ea580c",
+    "body": "The single highest-signal task in AI usage data for this role is rewriting and editing copy — over 13,000 observed conversations with a 30.9% automation pattern. This is one of the clearest AI displacement signals in any media or communications occupation. The WEF 2025 Future of Jobs Report lists editors among media and communications roles facing above-average displacement as AI tools take on more copy editing, headline writing, and content optimization work [1]. As AI handles more of the mechanical editing workload, team sizes at digital publishers and content operations have contracted [2]."
+  },
+  "opportunities": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#5a9a6e",
+    "body": "Substantive editing — evaluating manuscripts, working with authors on structure and argument, making decisions about what to publish — shows almost no AI automation signal, because it requires contextual judgment and institutional relationships that AI tools cannot replicate. The weighted augmentation signal (18.1%) suggests editors are using AI as a support tool for mechanical tasks while retaining decision authority on what actually matters editorially [1]. McKinsey notes that content roles requiring evaluation of ambiguous quality criteria, author relationship management, and strategic publication decisions are among the most durable as automation advances [2]."
+  },
+  "howToAdapt": {
+    "alreadyIn": "Use AI tools for mechanical editing tasks now — proofreading, readability improvements, headline variants — to free up time for the substantive editorial work that actually requires judgment. Over six months, build depth in the areas AI handles worst: acquisitions, author relationships, and editorial strategy decisions that require understanding an audience at an institutional level [2]. Editors who can also manage freelance contributor networks and production processes are more valuable than those who focus on copy editing alone [1].",
+    "thinkingOf": "Build a portfolio demonstrating editorial judgment, not just clean copy. Editing samples that show structural improvements, developmental feedback to authors, or content strategy decisions are more compelling than proofreading examples [3]. Specializing in a subject area where editors need substantive expertise — legal, science, technical, or financial publishing — provides more structural defense than general content editing [1].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The editors who are most durable are those who serve as a trusted adviser to writers — understanding voice, shaping argument, and making the judgment calls about what a publication should stand for. That relationship layer is where human editors remain irreplaceable.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Generative AI performs well at surface-level editing tasks but struggles with the evaluation of structural quality, argument coherence, and audience fit — the decisions that define what editorial judgment actually means.",
+        "attribution": "The economic potential of generative AI, McKinsey Global Institute",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Entry-level positions in copy editing and content coordination are contracting as AI tools handle more mechanical work. But acquisitions roles, developmental editing, and editorial leadership positions that require domain expertise and author relationships are more resilient.",
+        "attribution": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook: Editors",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Subject-matter expertise is becoming the most valuable differentiator for editors. Practitioners with deep knowledge of a specific field — science, law, finance, technology — can evaluate content accuracy and relevance in ways that neither generalist editors nor AI tools can match.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "taskData": [
+    {
+      "task": "Proofread copy",
+      "full": "Read copy or proof to detect and correct errors in spelling, punctuation, and syntax.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 16
+    },
+    {
+      "task": "Edit and confer with authors",
+      "full": "Read, evaluate and edit manuscripts or other materials submitted for publication, and confer with authors regarding changes in content, style or organization, or publication.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Verify facts/statistics",
+      "full": "Verify facts, dates, and statistics, using standard reference sources.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Monitor news gathering",
+      "full": "Monitor news-gathering operations to ensure utilization of all news sources, such as press releases, telephone contacts, radio, television, wire services, and other reporters.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Rewrite/edit copy",
+      "full": "Prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",
+      "auto": 30.9,
+      "aug": 3.3,
+      "success": 81.0,
+      "n": 13512
+    },
+    {
+      "task": "Develop story ideas",
+      "full": "Develop story or content ideas, considering reader or audience appeal.",
+      "auto": 34.5,
+      "aug": null,
+      "success": 72.7,
+      "n": 55
+    },
+    {
+      "task": "Supervise reporters/editors",
+      "full": "Supervise and coordinate work of reporters and other editors.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Oversee publication production",
+      "full": "Oversee publication production, including artwork, layout, computer typesetting, and printing, ensuring adherence to deadlines and budget requirements.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 15
+    },
+    {
+      "task": "Select news items",
+      "full": "Select local, state, national, and international news items received from wire services, based on assessment of items' significance and interest value.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Confer with editorial staff",
+      "full": "Confer with management and editorial staff members regarding placement and emphasis of developing news stories.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "careerCluster": [
+    {
+      "level": 1,
+      "code": "13-1161.00",
+      "title": "Marketing Specialist",
+      "isCurrent": false,
+      "score": 1.8,
+      "salary": "$74,680",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Entry-level research and communications role that builds the analytical and market knowledge foundation.",
+      "steps": [
+        "Build a portfolio of research summaries and data visualizations",
+        "Learn SQL and a BI tool (Tableau or Power BI)",
+        "Develop subject matter expertise in a specific industry vertical"
+      ]
+    },
+    {
+      "level": 2,
+      "code": "13-1161.01",
+      "title": "Search Marketing Strategist",
+      "isCurrent": false,
+      "score": 2.3,
+      "relationship": "less_trained",
+      "salary": "$76,950",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "An Editor with digital content experience can step into Search Marketing Strategist work, though it is a step down in editorial authority — the focus narrows to search performance and analytics rather than editorial judgment and content quality standards.",
+      "steps": [
+        "Earn Google Ads and Google Analytics 4 certifications",
+        "Build SEO technical knowledge (Semrush, Ahrefs)",
+        "Develop content performance tracking and A/B testing skills"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3031.00",
+      "title": "Public Relations Specialist",
+      "isCurrent": false,
+      "score": 2.2,
+      "relationship": "specialization",
+      "salary": "$69,780",
+      "openings": "27,600",
+      "growth": "+5%",
+      "fit": "Editors who specialize in organizational communications can move laterally into PR — the writing and editorial judgment skills carry over, but the success metric shifts from content quality to media coverage and stakeholder perception.",
+      "steps": [
+        "Build press release and media pitch writing experience",
+        "Develop a media contact list in a target industry",
+        "Learn crisis communications frameworks"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3043.00",
+      "title": "Writer",
+      "isCurrent": false,
+      "score": 2.4,
+      "relationship": "specialization",
+      "salary": "$72,270",
+      "openings": "13,400",
+      "growth": "+4%",
+      "fit": "Editors who shift back to producing their own work become Writers and Authors — a lateral move that trades editorial oversight for individual craft, giving up team management in favor of creative autonomy.",
+      "steps": [
+        "Build an independent bylined portfolio",
+        "Develop a consistent publishing relationship (publication, blog, or client)",
+        "Write across multiple formats to demonstrate range"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3041.00",
+      "title": "Editor",
+      "isCurrent": true,
+      "score": 2.5
+    },
+    {
+      "level": 4,
+      "code": "11-2011.00",
+      "title": "Advertising Manager",
+      "isCurrent": false,
+      "score": 2.5,
+      "relationship": "progression",
+      "salary": "$126,960",
+      "openings": "2,100",
+      "growth": "-2%",
+      "fit": "Editors who add campaign oversight and budget management to their content expertise can step up to Advertising & Promotions Manager — it adds paid media coordination and team management to editorial work.",
+      "steps": [
+        "Build experience managing a creative budget",
+        "Oversee an integrated campaign from brief to measurement",
+        "Manage agency or freelance creative relationships"
+      ]
+    },
+    {
+      "level": 5,
+      "code": "11-2021.00",
+      "title": "Marketing Manager",
+      "isCurrent": false,
+      "score": 2.9,
+      "relationship": "lateral",
+      "salary": "$161,030",
+      "openings": "34,300",
+      "growth": "+7%",
+      "fit": "Editors with content strategy and audience development experience can move laterally into Marketing Manager — it is a different track that adds paid media, campaign budgets, and cross-channel coordination to the editorial content expertise.",
+      "steps": [
+        "Build content strategy and channel performance experience",
+        "Develop budget management and ROI tracking skills",
+        "Lead a campaign from editorial brief to distribution"
+      ]
+    },
+    {
+      "code": "27-3023.00",
+      "title": "News Analysts, Reporters, and Journalists",
+      "isCurrent": false,
+      "score": 2.7,
+      "relationship": "adjacent",
+      "salary": "$60,280",
+      "openings": "4,100",
+      "growth": "-4%",
+      "fit": "Editors and journalists work closely together and the skill sets overlap — but journalism is a lateral move toward reporting and investigation, with less editorial authority and lower pay, in a sector facing steeper decline.",
+      "steps": [
+        "Build original reporting clips across multiple beats",
+        "Develop source cultivation and interview skills",
+        "Practice writing under deadline pressure"
+      ]
+    }
+  ],
+  "emergingCareers": [],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-2",
+      "name": "McKinsey Global Institute",
+      "title": "The economic potential of generative AI: The next productivity frontier",
+      "date": "Jun 2023",
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+    },
+    {
+      "id": "src-3",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Editors: Occupational Outlook Handbook",
+      "date": "Apr 2025",
+      "url": "https://www.bls.gov/ooh/media-and-communication/editors.htm"
+    }
+  ]
+}

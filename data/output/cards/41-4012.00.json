@@ -1,0 +1,357 @@
+{
+  "onet_code": "41-4012.00",
+  "title": "Sales Representatives, Wholesale and Manufacturing, Except Technical and Scientific Products",
+  "score": 52,
+  "salary": "$66,780",
+  "openings": "114,800",
+  "growth": "0%",
+  "jobTitles": [
+    "Account Executive",
+    "Account Manager",
+    "Outside Sales",
+    "Outside Sales Representative, Sales",
+    "Sales Consultant",
+    "Sales Director",
+    "Sales Rep",
+    "Sales Representative, Salesman"
+  ],
+  "keyDrivers": "Wholesale and manufacturing sales reps rely on relationship-building and product knowledge to serve their accounts, which offers some protection. However, many of their routine tasks, order processing, inventory checks, pricing, are being automated by e-commerce platforms and AI tools. The reps who survive will be those handling complex, high-value accounts where trust and negotiation still matter, but the overall number of positions is likely to shrink.",
+  "taskData": [
+    {
+      "task": "Answer product/pricing questions",
+      "full": "Answer customers' questions about products, prices, availability, product uses, and credit terms.",
+      "weight": 23.9,
+      "auto": 36.9,
+      "aug": 41.6,
+      "success": 51.4,
+      "n": 1258
+    },
+    {
+      "task": "Recommend products to customers",
+      "full": "Recommend products to customers, based on customers' needs and interests.",
+      "weight": 23.7,
+      "auto": 33.0,
+      "aug": 16.5,
+      "success": 56.9,
+      "n": 109
+    },
+    {
+      "task": "Check stock / reorder inventory",
+      "full": "Check stock levels and reorder merchandise as necessary.",
+      "weight": 23.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Quote prices / contract terms",
+      "full": "Estimate or quote prices, credit or contract terms, warranties, and delivery dates.",
+      "weight": 22.5,
+      "auto": null,
+      "aug": null,
+      "success": 85.7,
+      "n": 21
+    },
+    {
+      "task": "Plan retail displays / promotions",
+      "full": "Plan, assemble, and stock product displays in retail stores, or make recommendations to retailers regarding product displays, promotional programs, and advertising.",
+      "weight": 22.1,
+      "auto": null,
+      "aug": null,
+      "success": 72.7,
+      "n": 22
+    },
+    {
+      "task": "Monitor market / competitors",
+      "full": "Monitor market conditions, product innovations, and competitors' products, prices, and sales.",
+      "weight": 20.6,
+      "auto": 55.3,
+      "aug": null,
+      "success": null,
+      "n": 38
+    },
+    {
+      "task": "Negotiate retail product placement",
+      "full": "Negotiate with retail merchants to improve product exposure, such as shelf positioning and advertising.",
+      "weight": 20.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare contracts / order forms",
+      "full": "Prepare sales contracts and order forms.",
+      "weight": 20.4,
+      "auto": null,
+      "aug": null,
+      "success": 70.3,
+      "n": 37
+    },
+    {
+      "task": "Provide samples / catalogs",
+      "full": "Provide customers with product samples and catalogs.",
+      "weight": 20.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Negotiate contract details",
+      "full": "Negotiate details of contracts and payments.",
+      "weight": 19.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The two most important tasks in this role, answering customer questions and recommending products, already show automation rates of 37% and 33% respectively. That's significant because those tasks are the core of inside and routine sales work. AI-powered product configurators, chatbots, and CRM-driven recommendation engines are handling a growing share of what used to require a rep on the phone or in an email thread. Salesforce's 2024 State of Sales report found that 81% of sales teams are either using or experimenting with generative AI, with lead qualification and customer communications among the top use cases [1]. The broader pattern: routine order-taking and informational sales calls are increasingly self-service, which compresses demand for reps whose value is primarily transactional.",
+    "stat": "81%",
+    "statLabel": "of sales teams using or piloting generative AI [3]"
+  },
+  "opportunities": {
+    "body": "The augmentation signal on answering customer questions is 42%, the highest of any task with sufficient data in this role. That means AI is frequently used as a co-pilot rather than a replacement, helping reps pull up specs, pricing history, and competitive comparisons in real time. HubSpot's 2024 State of Sales report found that sales professionals using AI tools save roughly two hours per day on manual tasks like data entry and note-taking, freeing time for relationship-building and complex deal negotiation [2]. The tasks with no AI signal, negotiating contracts, managing retail merchandising relationships, and in-person client work, are structurally harder to automate because they depend on reading a room, building trust over time, and handling ambiguity. Reps who spend most of their time on consultative and relationship-driven selling are in a fundamentally different position than those doing transactional order fulfillment.",
+    "stat": "35%",
+    "statLabel": "increase in meetings booked per rep using AI-assisted outreach tools [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI tools for pre-call research and proposal drafting now. CRM platforms like Salesforce and HubSpot already embed generative AI for call summaries, email drafts, and deal scoring, and reps who use them report saving roughly two hours a day on administrative work [2]. Over the next six months, focus on deepening consultative selling skills: complex multi-stakeholder negotiations, custom solution design, and in-person relationship management. These are the tasks where AI has no recorded activity and where the structural barriers to automation, reading body language, navigating politics, building trust, are highest.",
+    "thinkingOf": "The version of this role worth entering is consultative B2B sales, not transactional order-taking. Look for positions where the sales cycle is long, the deal size is large, and the product requires customization or technical explanation. When building a resume, demonstrate competency with CRM and AI-assisted sales tools like Salesforce Einstein or HubSpot's AI features. McKinsey's 2024 B2B sales research found that buyers increasingly favor reps who demonstrate deep understanding of their specific business challenges over those who lead with product features [3]. That's the skill that matters, and it's hard to fake on a resume without real examples of complex deals closed.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Generative AI is helping sellers spend more time actually selling, top performers use AI for research, outreach, and CRM updates so they can focus on conversations that close deals.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Sales professionals who use AI to automate manual tasks like data entry and note-taking save an average of two hours and 15 minutes per day.",
+        "attribution": "HubSpot State of Sales Report",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "65% of B2B buyers say a rep who understands their specific business needs and pain points is more important than pricing in their purchase decision.",
+        "attribution": "LinkedIn State of Sales Report",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The highest-performing sales teams are 1.9 times more likely to use AI, but they pair it with deeper product expertise and account strategy, not just faster outreach.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Salesforce",
+      "title": "State of Sales, 6th Edition",
+      "date": "Nov 2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+    },
+    {
+      "id": "src-2",
+      "name": "HubSpot",
+      "title": "The State of AI in Sales: New Research From 1400+ Sales Professionals",
+      "date": "Oct 2024",
+      "url": "https://blog.hubspot.com/sales/ai-in-sales"
+    },
+    {
+      "id": "src-3",
+      "name": "McKinsey & Company",
+      "title": "The future of B2B sales: The big reframe",
+      "date": "Feb 2024",
+      "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-future-of-b2b-sales-the-big-reframe"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "You already know the sales cycle, customers, and products cold — this is a step up into managing the people who do that work and owning the numbers across a whole team.",
+      "steps": [
+        "Consistently hit or exceed sales quota",
+        "Volunteer to mentor or lead junior reps",
+        "Complete a sales leadership training program"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "You already handle customer needs, quotes, and product recommendations, but a Sales Engineer role adds a technical layer — you need to understand and explain complex systems, not just products.",
+      "steps": [
+        "Gain domain expertise in software or technical field",
+        "Earn a relevant cert (e.g., AWS, Salesforce, or MEDDIC)",
+        "Shadow or partner with a Sales Engineer on deals"
+      ],
+      "salary": "$121,520"
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "You already know how to read customers, negotiate deals, and track market conditions, but becoming a Real Estate Broker is a step up that requires a state license, managing agents, and taking legal responsibility for transactions.",
+      "steps": [
+        "Earn state real estate broker license",
+        "Work 2-3 years as a licensed sales agent first",
+        "Study property valuation and contract law"
+      ],
+      "salary": "$72,280"
+    },
+    {
+      "code": "41-4011.00",
+      "title": "Technical Product Sales Representative",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "27,200",
+      "growth": "+2%",
+      "fit": "You already do the core sales job — quoting prices, reading customers, monitoring the market — but the technical role requires deep product knowledge of complex equipment or scientific goods, which is a step up in expertise.",
+      "steps": [
+        "Study industry-specific technical product certifications",
+        "Shadow a technical sales rep on client calls",
+        "Learn cost-benefit analysis for industrial equipment"
+      ],
+      "isAdjacent": true,
+      "salary": "$100,070"
+    },
+    {
+      "code": "41-9022.00",
+      "title": "Real Estate Sales Agent",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "36,600",
+      "growth": "+3%",
+      "fit": "You already know how to read customers, quote terms, and close deals, but real estate means working with individuals on the biggest purchase of their lives instead of businesses buying inventory, and you'll need a state license before you can earn a dollar.",
+      "steps": [
+        "Complete state salesperson licensing course (75–150hrs)",
+        "Pass state real estate salesperson exam",
+        "Join a brokerage to earn while learning commission structure"
+      ],
+      "salary": "$56,320"
+    },
+    {
+      "code": "41-3091.00",
+      "title": "Service Sales Representative",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "adjacent",
+      "openings": "123,000",
+      "growth": "+3%",
+      "fit": "You already do the core job — answering questions, quoting prices, reading the market — the main difference is you'd be selling services instead of physical products, which means no inventory or displays but more emphasis on ongoing client relationships and contracts.",
+      "steps": [
+        "Shadow a services sales rep for one week",
+        "Practice building service agreements or SOW templates",
+        "Apply to service-sector sales roles in a familiar industry"
+      ],
+      "isAdjacent": true,
+      "salary": "$66,260"
+    },
+    {
+      "code": "41-3021.00",
+      "title": "Insurance Sales Agent",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$60,370",
+      "openings": "47,000",
+      "growth": "+4%",
+      "fit": "A wholesale/manufacturing sales rep moving to insurance sales is a step down in product complexity — your customer relationship skills and sales process experience carry over, but the product narrows to insurance policies and requires a state license instead of industry expertise.",
+      "steps": [
+        "Pass state insurance licensing exam (P&C or Life)",
+        "No prior insurance knowledge required",
+        "Expect commission-heavy compensation structure"
+      ]
+    },
+    {
+      "code": "41-2031.00",
+      "title": "Retail Salesperson",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$34,580",
+      "openings": "555,800",
+      "growth": "0%",
+      "fit": "A wholesale/manufacturing sales rep moving to retail sales is a step down in scope and pay — your customer service and product knowledge skills carry over, but the role shrinks from B2B account management to individual transaction-level selling.",
+      "steps": [
+        "No credential required",
+        "Expect significant pay reduction",
+        "Apply product knowledge and consultative selling skills directly"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Territory Manager",
+    "Business Development Representative",
+    "Inside Sales Representative",
+    "Key Account Manager"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Sales Operations Analyst",
+      "description": "Leverages AI tools to optimize sales processes, analyze pipeline data, and automate lead scoring and forecasting for wholesale/manufacturing teams. Bridges sales strategy with AI-driven insights to improve conversion rates and deal velocity.",
+      "core_tools": "Salesforce Einstein, HubSpot AI, Tableau",
+      "experience_level": "2",
+      "stat": {
+        "text": "Sales operations roles requiring CRM AI skills grew 41% in job postings in 2024, as companies deploy Salesforce Einstein, HubSpot AI, and Gong to automate pipeline forecasting and rep coaching.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI Sales Operations\" OR \"Sales Operations AI\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your understanding of sales pipelines and customer relationships stays valuable, but you need to shift from closing deals to building systems that help others close them faster.",
+      "steps": [
+        "Complete Salesforce Einstein Analytics certification",
+        "Build a lead-scoring model in your current CRM using historical win/loss data",
+        "Learn Tableau through a 4-week bootcamp focused on sales dashboards"
+      ]
+    },
+    {
+      "title": "AI-Powered Account Manager",
+      "description": "Uses AI assistants and predictive analytics to manage customer relationships, identify upsell/cross-sell opportunities, and personalize outreach at scale. Focuses on retention and expansion revenue in B2B wholesale/manufacturing accounts.",
+      "core_tools": "ChatGPT API, Gong.io, Outreach.io",
+      "experience_level": "2",
+      "stat": {
+        "text": "B2B sales teams using AI-assisted tools for account research and outreach reported a 35% increase in meetings booked per rep in 2024, accelerating adoption and demand for account managers who can direct AI workflows.",
+        "sourceName": "Salesforce",
+        "sourceTitle": "State of Sales Report 2024",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+      },
+      "search_query": "\"Account Manager\" AI predictive analytics jobs 2025",
+      "job_search_url": "",
+      "fit": "Your relationship-building and deal-closing skills transfer directly, but you'll shift from manual account juggling to letting AI handle routine tasks while you focus on strategic decisions.",
+      "steps": [
+        "Complete ChatGPT API fundamentals course on OpenAI's platform",
+        "Build a small pilot using Outreach.io to automate one customer segment's outreach",
+        "Learn Gong.io call analysis to identify patterns you'd previously spot manually"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "onet_code": "15-1254.00",
+  "title": "Web Developers",
+  "score": 39,
+  "salary": "$90,930",
+  "openings": "5,400",
+  "growth": "+7%",
+  "jobTitles": [
+    "Technology Applications Engineer",
+    "Web Architect",
+    "Web Design Specialist",
+    "Web Developer, Webmaster"
+  ],
+  "keyDrivers": "Web development involves writing code for websites and applications, exactly the kind of well-structured, pattern-based work that AI coding tools are already handling with increasing competence. The role has no physical component, no legal accountability, and delivers output where clients care about results, not who or what built it. As AI code generation continues to improve, much of the standard web development workload can be completed faster and cheaper by AI-assisted workflows, significantly reducing demand for dedicated web developers.",
+  "taskData": [
+    {
+      "task": "Write web application code",
+      "full": "Write supporting code for Web applications or Web sites.",
+      "weight": 23.9,
+      "auto": 39.5,
+      "aug": 9.7,
+      "success": 71.5,
+      "n": 6655
+    },
+    {
+      "task": "Design/build/maintain websites",
+      "full": "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",
+      "weight": 22.7,
+      "auto": 45.1,
+      "aug": 4.4,
+      "success": 66.4,
+      "n": 19243
+    },
+    {
+      "task": "Back up website files",
+      "full": "Back up files from Web sites to local directories for instant recovery in case of problems.",
+      "weight": 20.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Evaluate/validate code quality",
+      "full": "Evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",
+      "weight": 16.0,
+      "auto": 25.3,
+      "aug": 58.9,
+      "success": 58.1,
+      "n": 399
+    },
+    {
+      "task": "Handle user inquiries",
+      "full": "Respond to user email inquiries, or set up automated systems to send responses.",
+      "weight": 15.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Perform website updates",
+      "full": "Perform or direct Web site updates.",
+      "weight": 14.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Test website functionality",
+      "full": "Perform Web site tests according to planned schedules, or after any Web site or product revision.",
+      "weight": 13.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Confer on priorities/solutions",
+      "full": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
+      "weight": 13.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Select tools/languages",
+      "full": "Select programming languages, design tools, or applications.",
+      "weight": 13.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Stay current on web tech",
+      "full": "Maintain understanding of current Web technologies or programming practices through continuing education, reading, or participation in professional conferences, workshops, or groups.",
+      "weight": 12.3,
+      "auto": 11.3,
+      "aug": 83.7,
+      "success": 75.9,
+      "n": 875
+    }
+  ],
+  "risks": {
+    "body": "AI can already automate core web development tasks like building sites and writing supporting code, especially boilerplate and routine implementations. Entry-level tech hiring dropped 25% year-over-year in 2024, and software developer employment for workers aged 22-25 declined nearly 20% from its 2022 peak [1]. Developers who have not yet built depth in judgment, architecture, or system design are the most exposed.",
+    "stat": "25%",
+    "statLabel": "drop in entry-level tech hiring, year-over-year [6]"
+  },
+  "opportunities": {
+    "body": "80% of developers now use AI tools, but trust in AI output collapsed from 40% to 29% year-over-year, and 66% say they spend more time fixing AI-generated code than they save writing it [2]. The emerging skill is knowing what to give AI, how to structure the problem, and how to catch if the output comes back wrong. Researchers are calling this context engineering [3].",
+    "stat": "66%",
+    "statLabel": "of developers spend more time fixing AI code than they save writing it [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The immediate move is to treat AI output like untrusted code: review every diff, question every assumption, document the decisions AI does not make for you [4]. Over the next six months, build depth where AI handles things worst - system design, cross-team architecture decisions, and requirements too ambiguous for a model to interpret reliably [3].",
+    "thinkingOf": "Companies now expect AI literacy from day one - build a GitHub portfolio of real projects that shows you can direct AI tools, review their output, and ship working systems [5]. Code review discipline and catching AI failures matter more to hiring managers than volume of code written.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Developers are ready to push back on enterprise AI through a nuanced conversation about trust, reliability, and the enduring value of human expertise.",
+        "attribution": "Stack Overflow, 2025 Developer Survey",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Code review is a conversation, not a test.",
+        "attribution": "Sarah Vessels, GitHub Staff Engineer",
+        "sourceId": "src-5"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "We're entering an era where interns and junior developers are showing up already fluent in the best tools for AI code-gen on the market.",
+        "attribution": "Thomas Dohmke, GitHub CEO",
+        "sourceId": "src-5"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Being good isn't good enough.",
+        "attribution": "Head of Data and AI, cited in Stack Overflow Blog",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Stack Overflow Blog",
+      "title": "AI vs Gen Z: How AI has changed the career pathway for junior developers",
+      "date": "Dec 2025",
+      "url": "https://stackoverflow.blog/2025/12/26/ai-vs-gen-z/"
+    },
+    {
+      "id": "src-2",
+      "name": "Stack Overflow Blog",
+      "title": "Developers remain willing but reluctant to use AI: 2025 Developer Survey results",
+      "date": "Dec 2025",
+      "url": "https://stackoverflow.blog/2025/12/29/developers-remain-willing-but-reluctant-to-use-ai-the-2025-developer-survey-results-are-here/"
+    },
+    {
+      "id": "src-3",
+      "name": "MIT Technology Review",
+      "title": "From vibe coding to context engineering: 2025 in software development",
+      "date": "Nov 2025",
+      "url": "https://www.technologyreview.com/2025/11/05/1127477/from-vibe-coding-to-context-engineering-2025-in-software-development/"
+    },
+    {
+      "id": "src-4",
+      "name": "MIT Technology Review",
+      "title": "AI coding is now everywhere. But not everyone is convinced.",
+      "date": "Dec 2025",
+      "url": "https://www.technologyreview.com/2025/12/15/1128352/rise-of-ai-coding-developers-2026/"
+    },
+    {
+      "id": "src-5",
+      "name": "GitHub Blog",
+      "title": "Junior developers aren't obsolete: Here's how to thrive in the age of AI",
+      "date": "Aug 2025",
+      "url": "https://github.blog/ai-and-ml/generative-ai/junior-developers-arent-obsolete-heres-how-to-thrive-in-the-age-of-ai/"
+    },
+    {
+      "id": "src-6",
+      "name": "Indeed Hiring Lab",
+      "title": "Tech Hiring Trends 2024",
+      "date": "2024",
+      "url": "https://www.hiringlab.org/2024/03/12/tech-job-postings/"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Integration Engineer",
+      "description": "Builds and maintains pipelines that connect large language models and AI APIs into existing web applications and backend systems. Designs prompt workflows, manages API orchestration, and ensures reliable AI feature delivery in production environments.",
+      "core_tools": "LangChain, OpenAI API, Hugging Face",
+      "experience_level": "2",
+      "stat": {
+        "text": "Job postings requiring generative AI skills grew by over 1,000% between 2022 and 2024, with AI integration and deployment roles among the fastest-growing technical positions.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI Integration Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your existing skills in APIs, backend integration, and building web systems transfer directly, but you must shift from consuming APIs to orchestrating AI model behavior and managing unpredictable outputs in production.",
+      "steps": [
+        "Complete DeepLearning.AI's LangChain short course on Udemy",
+        "Build a working chatbot using OpenAI API and LangChain in a personal project",
+        "Deploy a Hugging Face model via API into an existing web app you own"
+      ]
+    },
+    {
+      "title": "Context Engineer",
+      "description": "Architects the information environment that AI models work within — designing system prompts, retrieval pipelines, memory structures, and context windows that determine what a model sees and how it responds. Distinct from prompt engineering in that the focus is on the full context architecture, not individual prompts.",
+      "core_tools": "LangChain, Claude API, LlamaIndex",
+      "experience_level": "2",
+      "stat": {
+        "text": "Researchers and practitioners are converging on \"context engineering\" as the core skill in AI product development — the discipline of precisely controlling what information models receive to produce reliable outputs.",
+        "sourceName": "MIT Technology Review",
+        "sourceTitle": "From vibe coding to context engineering: 2025 in software development",
+        "sourceDate": "Nov 2025",
+        "sourceUrl": "https://www.technologyreview.com/2025/11/05/1127477/from-vibe-coding-to-context-engineering-2025-in-software-development/"
+      },
+      "search_query": "\"context engineer\" OR \"context engineering\" AI jobs 2025",
+      "job_search_url": "",
+      "fit": "Web developers already structure information for browsers and APIs — the same instinct applies here, shifted to structuring what AI models see. The job requires understanding retrieval, token budgets, and how context shapes model behavior.",
+      "steps": [
+        "Complete fast.ai or DeepLearning.AI RAG course to learn retrieval-augmented generation",
+        "Build a production context pipeline using LangChain and LlamaIndex with multiple data sources",
+        "Read and implement the techniques from Anthropic's prompt engineering guide end-to-end"
+      ]
+    },
+    {
+      "title": "AI Product Engineer",
+      "description": "Bridges the gap between product management and engineering by building full-stack web features powered by AI models, owning everything from UI to model selection and evaluation. Takes AI prototypes from proof-of-concept to scalable, user-facing products.",
+      "core_tools": "Vercel AI SDK, OpenAI API, Supabase",
+      "experience_level": "3",
+      "stat": {
+        "text": "76% of developers expect to use or are already using AI tools in their development process, with the majority integrating them directly into their coding workflow.",
+        "sourceName": "Stack Overflow Developer Survey 2024",
+        "sourceTitle": "Stack Overflow Developer Survey 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://survey.stackoverflow.co/2024/ai"
+      },
+      "search_query": "\"AI Product Engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your full-stack UI and API skills transfer directly, but you must shift from displaying data to designing around unpredictable model outputs and evaluation loops.",
+      "steps": [
+        "Build a chatbot using Vercel AI SDK and OpenAI API with streaming responses",
+        "Complete Supabase's official full-stack Next.js tutorial, adding pgvector for semantic search",
+        "Ship a small public tool that lets users rate AI outputs, so you practice prompt iteration and evaluation"
+      ]
+    },
+    {
+      "title": "Design Engineer",
+      "description": "Works at the intersection of Figma and production code, translating visual designs into polished, accessible React components and design systems. Owns the implementation layer between design and engineering: building component libraries, interaction patterns, and the pixel-level details that make products feel right.",
+      "core_tools": "Figma, React, Framer Motion",
+      "experience_level": "2",
+      "stat": {
+        "text": "Figma's 2024 design-to-code report found that design-to-development handoff is the single biggest source of friction in product teams, with 60% of developers citing misaligned specs as a top time drain — the problem Design Engineers are hired to solve.",
+        "sourceName": "Figma",
+        "sourceTitle": "Bridging the gap between design and code",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.figma.com/reports/bridging-design-and-code/"
+      },
+      "search_query": "\"design engineer\" frontend React jobs 2025",
+      "job_search_url": "",
+      "fit": "Web development's HTML, CSS, and React skills carry over directly, but the job shifts from building features to perfecting the craft of UI implementation — owning component fidelity, interaction quality, and design system coherence rather than feature delivery.",
+      "steps": [
+        "Build and publish a React component library to npm with a Storybook docs site",
+        "Learn Framer Motion: rebuild one polished animation from a site you admire",
+        "Contribute to an open-source design system (shadcn/ui, Radix, MUI)"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Web developers already understand code structure, browser security, and file management, but information security analyst is a step up — it requires defending entire systems, not just building them, and carries broader organizational responsibility.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Practice on TryHackMe or HackTheBox labs",
+        "Study network security and encryption protocols"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "Web development builds real coding and problem-solving experience that carries over, but this is a clear step up — research scientists work on theoretical and mathematical foundations of computing, far beyond building and maintaining websites.",
+      "steps": [
+        "Earn a master's or PhD in computer science",
+        "Publish or contribute to peer-reviewed research",
+        "Build projects using algorithms or machine learning"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "Web developers already write and evaluate code for real users, but software development is a step up that requires working across backend systems, hardware constraints, and broader software architecture beyond the browser.",
+      "steps": [
+        "Build backend projects in Python, Java, or C#",
+        "Learn data structures and algorithms fundamentals",
+        "Contribute to a non-web open source project"
+      ],
+      "salary": "$133,080"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "Web developers already write code and work with structured data, but data science is a step up that requires statistical modeling, machine learning, and analytical thinking that web work rarely touches.",
+      "steps": [
+        "Complete Python for Data Science + pandas/NumPy",
+        "Earn IBM Data Science or Google Data Analytics cert",
+        "Build 3 portfolio projects with real datasets"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Web development gives you real technical credibility on IT projects, but this is a step up — the job shifts from writing and maintaining code to running teams, managing budgets, and owning project outcomes.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal web project end-to-end",
+        "Learn Jira or MS Project for scheduling"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Web development builds real code and systems experience that carries over, but this is a step up — the new role requires owning entire system architectures, hardware decisions, and infrastructure, not just websites.",
+      "steps": [
+        "Earn CompTIA Network+ or AWS Solutions Architect cert",
+        "Build and document a full system architecture project",
+        "Gain hands-on experience with OS, networking, and hardware"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "Web developers already work with data structures and databases at a surface level, but Database Architect is a clear step up — it requires deep expertise in designing entire data systems for scale, security, and reliability, not just writing code that queries them.",
+      "steps": [
+        "Earn Oracle or AWS Database specialty certification",
+        "Build and document 2-3 full database architecture designs",
+        "Learn data modeling tools: ERwin or ER/Studio"
+      ],
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "You already read and write code and evaluate it for correctness, which maps directly onto QA work — the shift is from building the thing to systematically breaking it and documenting what goes wrong.",
+      "steps": [
+        "Learn Playwright automated testing framework",
+        "Practice writing bug reports in Jira or Linear",
+        "Complete ISTQB Foundation Level certification"
+      ],
+      "salary": "$102,610"
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "Web developers already know how sites are built, which is useful context, but this move shifts the daily work from writing code to designing interfaces and conducting user research — it's a lateral move into a different discipline.",
+      "steps": [
+        "Learn Figma through hands-on practice",
+        "Complete a short UX research bootcamp",
+        "Build a portfolio of 2-3 interface design projects"
+      ],
+      "salary": "$98,090"
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "Both roles involve building and maintaining web systems, but Web Administrator shifts focus from writing code to keeping servers secure, stable, and running — a lateral move into the infrastructure side of the same field.",
+      "steps": [
+        "Earn Linux Professional Institute (LPIC-1) cert",
+        "Practice server management on AWS or DigitalOcean",
+        "Set up and monitor a live web server independently"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1251.00",
+      "title": "Computer Programmer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,670",
+      "openings": "5,500",
+      "growth": "-6%",
+      "fit": "A web developer moving to computer programming is a step down in scope — your coding skills transfer directly, but the role shifts from building complete web products to writing and maintaining specific programs or software packages.",
+      "steps": [
+        "No new credential required",
+        "Expand beyond web stack to Python, Java, or C++",
+        "Build non-web project portfolio"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Frontend Developer",
+    "Full Stack Developer",
+    "WordPress Developer",
+    "React Developer"
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building."
+}

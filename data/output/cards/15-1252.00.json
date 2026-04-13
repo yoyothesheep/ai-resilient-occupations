@@ -1,0 +1,401 @@
+{
+  "onet_code": "15-1252.00",
+  "title": "Software Developers",
+  "score": 62,
+  "salary": "$133,080",
+  "openings": "115,200",
+  "growth": "+7%",
+  "jobTitles": [
+    "Application Developer",
+    "Application Integration Engineer, Developer",
+    "DevOps Engineer (Development Operations Engineer)",
+    "Infrastructure Engineer",
+    "Software Architect",
+    "Software Developer",
+    "Software Development Engineer",
+    "Software Engineer",
+    "Systems Engineer"
+  ],
+  "keyDrivers": "Software developers are in a paradoxical position: AI code generation tools are already transforming the work, compressing routine coding tasks dramatically, yet developers who can architect systems, understand business needs, and manage AI-generated code will be more productive than ever. The role lacks physical presence or legal accountability protections, making pure coding work highly vulnerable. The strongest protection is that demand for software keeps growing, and experienced developers are well-positioned to direct and validate AI coding tools, but fewer developers may be needed to produce the same output.",
+  "taskData": [
+    {
+      "task": "Monitor system conformance",
+      "full": "Monitor functioning of equipment to ensure system operates in conformance with specifications.",
+      "weight": 18.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Modify/upgrade existing software",
+      "full": "Modify existing software to correct errors, adapt it to new hardware, or upgrade interfaces and improve performance.",
+      "weight": 16.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Analyze requirements/feasibility",
+      "full": "Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.",
+      "weight": 16.8,
+      "auto": 22.5,
+      "aug": 44.0,
+      "success": 62.5,
+      "n": 4643
+    },
+    {
+      "task": "Develop/direct testing procedures",
+      "full": "Develop or direct software system testing or validation procedures, programming, or documentation.",
+      "weight": 16.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Confer on system design",
+      "full": "Confer with systems analysts, engineers, programmers and others to design systems and to obtain information on project limitations and capabilities, performance requirements and interfaces.",
+      "weight": 16.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Manipulate data for analysis",
+      "full": "Store, retrieve, and manipulate data for analysis of system capabilities and requirements.",
+      "weight": 15.4,
+      "auto": 42.6,
+      "aug": 15.2,
+      "success": 61.3,
+      "n": 2151
+    },
+    {
+      "task": "Supervise technical staff",
+      "full": "Supervise the work of programmers, technologists and technicians and other engineering and scientific personnel.",
+      "weight": 14.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Design/develop software systems",
+      "full": "Design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcomes and consequences of design.",
+      "weight": 14.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Prepare project reports",
+      "full": "Prepare reports or correspondence concerning project specifications, activities, or status.",
+      "weight": 13.7,
+      "auto": 33.5,
+      "aug": 3.6,
+      "success": 66.7,
+      "n": 475
+    },
+    {
+      "task": "Determine system performance standards",
+      "full": "Determine system performance standards.",
+      "weight": 13.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Data storage and retrieval work - the kind of database querying, data wrangling, and scripting that junior developers spend significant time on - shows 42.6% automation in over 2, 000 observed conversations, the clearest signal of AI handling real execution work in this role [1]. GitHub Copilot and similar tools are now used by 76% of developers, and entry-level hiring has contracted as AI handles more of the code-to-spec work that once required junior headcount [3].",
+    "stat": "76%",
+    "statLabel": "of developers now use or plan to use AI coding tools [3]"
+  },
+  "opportunities": {
+    "body": "Analyzing user needs and software requirements - the most important task with AI data - shows 44% augmentation across 4, 643 conversations, a strong signal that system design and requirements work keeps humans in the loop even as AI assists [1]. This role scores 4 out of 5 on both specialized expertise and directing AI tools, reflecting that the most valuable developer work involves architectural judgment and cross-system thinking that AI augments rather than replaces [2]. BLS projects 17% employment growth through 2034 - 40, 000+ annual openings - concentrated in roles requiring full-system ownership.",
+    "stat": "66%",
+    "statLabel": "of developers spend more time reviewing AI code than they save generating it [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The immediate move is to stop writing boilerplate code manually and start spending that time on the design decisions AI cannot make - system architecture, API contract design, cross-team requirements gathering. Over the next six months, build depth in the areas that show high augmentation rather than automation: requirements analysis, system design tradeoffs, and the stakeholder conversations that determine what gets built [1]. Developers who own the full system - requirements through deployment through operations - are more durable than those who specialize in execution [3].",
+    "thinkingOf": "The portfolio that gets hired in 2026 shows system-level thinking, not just clean code: deploy a full application with a database, API, and frontend, document the architectural decisions, and explain why you made them. Entry-level coding tasks are under the most direct AI pressure, so demonstrating judgment that goes beyond code output is how new developers differentiate [3]. BLS projects strong growth but the market has shifted - generic web development skills are less valuable than domain-specific technical depth or expertise in AI-assisted development workflows [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "76% of developers are using or planning to use AI tools in their development process — but the differentiated skill is knowing when to trust the output and when to override it. Learning to prompt for specific architectural patterns and then critically review what comes back is the new core loop.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The developers I see thriving with AI coding tools are the ones who treat the output as a first draft from a junior engineer — always reviewed, often restructured. Speed went up. So did the importance of architecture judgment, because now you're reviewing a lot more code than you used to write.",
+        "attribution": "Gergely Orosz, The Pragmatic Engineer",
+        "sourceId": "src-pragmatic-eng"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The entry bar has shifted from 'can you write code' to 'can you evaluate code, catch bugs in AI output, and reason about system design.' Bootcamp graduates who understand that shift — and build portfolios that demonstrate it — are getting hired. Those who treat AI tools as a substitute for fundamentals are not.",
+        "attribution": "ThoughtWorks Technology Radar, 'The Changing Shape of Software Entry Roles'",
+        "sourceId": "src-thoughtworks"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Only 43% of developers who use AI coding tools say they trust the accuracy of the output most of the time. A portfolio that demonstrates debugging AI-generated code, catching subtle logic errors, and writing comprehensive tests for AI-assisted features signals exactly the judgment gap employers are trying to hire for.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Software Developers",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Software Developers",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "Stack Overflow Developer Survey 2024",
+      "date": "Jun 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-pragmatic-eng",
+      "name": "The Pragmatic Engineer",
+      "url": "https://newsletter.pragmaticengineer.com/",
+      "title": "How AI Is Changing Software Development",
+      "date": "2024"
+    },
+    {
+      "id": "src-thoughtworks",
+      "name": "ThoughtWorks Technology Radar",
+      "url": "https://www.thoughtworks.com/radar",
+      "title": "Technology Radar Vol. 31",
+      "date": "Nov 2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Writing and debugging code gives you a strong foundation for understanding how systems get attacked and defended, but the job shifts from building software to protecting it, which requires dedicated security training.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Study CEH or OSCP for offensive security work",
+        "Build a home lab simulating real attack/defense scenarios"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "You already design and analyze software systems, but this is a step up into original research, mathematical modeling, and inventing new computing approaches rather than building to known specifications.",
+      "steps": [
+        "Earn a Master's or PhD in Computer Science",
+        "Publish or contribute to peer-reviewed research",
+        "Build projects applying novel algorithms or models"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "23,400",
+      "growth": "+34%",
+      "fit": "You already write code and work with data to analyze system requirements, but data science shifts the focus from building software to building statistical models that explain or predict things.",
+      "steps": [
+        "Learn statistical modeling via Python (scikit-learn, statsmodels)",
+        "Complete a course in statistics and machine learning (Coursera, fast.ai)",
+        "Build 2-3 end-to-end data analysis portfolio projects"
+      ],
+      "salary": "$112,590"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already coordinate across teams and analyze project constraints as a developer, but the PM role shifts your focus entirely from building software to managing the people and plans around it.",
+      "steps": [
+        "Earn PMP or PMI-ACP certification",
+        "Volunteer to lead a project at current job",
+        "Shadow an IT PM for 30–60 days"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "You already design, test, and debug software systems, but this role is a step up — it requires owning the full system architecture across hardware, software, and infrastructure, not just the code layer.",
+      "steps": [
+        "Earn AWS or Azure Solutions Architect certification",
+        "Design and document two end-to-end system architectures",
+        "Study hardware/network fundamentals via CompTIA Network+"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "Software developers already analyze system requirements, work across teams, and manipulate data, so moving into database architecture is a lateral shift that narrows focus specifically to designing and documenting the data layer of systems.",
+      "steps": [
+        "Earn Oracle or Microsoft Certified Database Architect credential",
+        "Build 2-3 portfolio database schema designs with documentation",
+        "Learn data modeling tools: ERwin, Lucidchart, or dbdiagram.io"
+      ],
+      "salary": "$135,980"
+    },
+    {
+      "code": "15-1253.00",
+      "title": "Software Quality Assurance Analyst",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$102,610",
+      "openings": "14,000",
+      "growth": "+10%",
+      "fit": "A software developer moving to QA is a step down in scope — your knowledge of how code works and breaks carries over directly, but you stop designing systems and focus instead on finding what's wrong with them.",
+      "steps": [
+        "No new credential required",
+        "Learn Selenium, Pytest, or JIRA bug tracking",
+        "Build a portfolio of test plans and defect reports"
+      ]
+    },
+    {
+      "code": "15-1255.00",
+      "title": "Web Designer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$98,090",
+      "openings": "9,100",
+      "growth": "+7%",
+      "fit": "A software developer moving to web and digital interface design is a step down in technical depth — the collaboration and frontend familiarity carry over, but the job shifts from engineering systems to shaping user-facing experiences and visual structure.",
+      "steps": [
+        "No new credential required",
+        "Build portfolio of UX/UI design work",
+        "Learn Figma or Adobe XD"
+      ]
+    },
+    {
+      "code": "15-1299.01",
+      "title": "Web Administrator",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$108,970",
+      "openings": "31,300",
+      "growth": "+7%",
+      "fit": "A software developer moving to web administration is a step down — your debugging and systems knowledge transfers well, but the role narrows to keeping existing sites running rather than building new software.",
+      "steps": [
+        "No new credential required",
+        "Learn CMS platforms: WordPress, Drupal, or similar"
+      ]
+    },
+    {
+      "code": "15-1254.00",
+      "title": "Web Developer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$90,930",
+      "openings": "5,400",
+      "growth": "+8%",
+      "fit": "A software developer moving to web development is a step down in scope — your programming skills carry over entirely, but the role is narrower, focused on building and maintaining web applications rather than designing full software systems.",
+      "steps": [
+        "No new credential required",
+        "Build 2-3 web portfolio projects",
+        "Specialize in a frontend stack: React, Vue, or similar"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Full Stack Developer",
+    "Backend Developer",
+    "Frontend Developer",
+    "Mobile Developer"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Application Developer",
+      "description": "Builds production applications powered by large language models — RAG pipelines, agentic workflows, and AI-assisted features embedded in existing products. Owns the full stack from prompt engineering and context management to evaluation, observability, and safe deployment.",
+      "core_tools": "LangChain, OpenAI API, LlamaIndex",
+      "experience_level": "2",
+      "stat": {
+        "text": "Job postings requiring generative AI skills grew over 4x between 2022 and 2024, with LLM application development roles concentrated in product-focused engineering teams across every industry.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"AI application developer\" OR \"LLM engineer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your software architecture and API integration experience transfers directly — the shift is from deterministic logic to probabilistic outputs, and from unit tests to evals-based validation.",
+      "steps": [
+        "Build a production-grade RAG app using LangChain or LlamaIndex that answers questions over a real document corpus and deploy it publicly",
+        "Complete DeepLearning.AI's 'Building Systems with the ChatGPT API' short course to understand multi-step LLM pipelines",
+        "Add an evals framework (Braintrust or LangSmith) to a personal project and document how you measured output quality"
+      ]
+    },
+    {
+      "title": "Developer Experience Engineer",
+      "description": "Builds the tools, platforms, and documentation that let other engineers ship faster — internal AI coding assistants, CI/CD integrations, developer portals, and AI-augmented onboarding systems. Focuses on reducing friction in the development lifecycle through automation and intelligent tooling.",
+      "core_tools": "GitHub Copilot, Backstage, Terraform",
+      "experience_level": "3",
+      "stat": {
+        "text": "80% of developers now use AI coding tools in their workflow, creating demand for engineers who can evaluate, configure, and integrate these tools into team-wide development platforms.",
+        "sourceName": "Stack Overflow",
+        "sourceTitle": "Stack Overflow Developer Survey 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://survey.stackoverflow.co/2024/ai"
+      },
+      "search_query": "\"developer experience engineer\" OR \"DX engineer\" AI tools jobs 2025",
+      "job_search_url": "",
+      "fit": "Your software development background gives you firsthand knowledge of the friction points DX engineers solve — you already know what makes a bad developer experience because you've lived it.",
+      "steps": [
+        "Set up an internal developer portal using Backstage for a personal or open-source project, adding one AI-powered feature (e.g. doc search)",
+        "Contribute to an open-source developer tooling project on GitHub with at least one merged PR",
+        "Write a public case study documenting how you reduced a specific development friction point using AI tooling"
+      ]
+    }
+  ]
+}

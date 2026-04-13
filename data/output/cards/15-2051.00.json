@@ -1,0 +1,383 @@
+{
+  "onet_code": "15-2051.00",
+  "title": "Data Scientists",
+  "score": 62,
+  "salary": "$112,590",
+  "openings": "23,400",
+  "growth": "+7%",
+  "jobTitles": [
+    "Data Scientist",
+    "Machine Learning Engineer",
+    "Data Analytics Manager",
+    "Business Intelligence Analyst"
+  ],
+  "keyDrivers": "Data scientists face a double-edged situation: AI tools are rapidly automating the core technical tasks of building models, cleaning data, and running analyses that define much of this work today. However, the role is evolving toward directing and validating AI systems, translating business problems into the right technical approach, and interpreting results for decision-makers, skills that keep experienced practitioners valuable. The lack of any licensing requirement or physical presence means the purely technical side of the job is highly exposed, and the role's long-term resilience depends on shifting toward strategic AI oversight rather than hands-on model building.",
+  "taskData": [
+    {
+      "task": "Analyze large datasets",
+      "full": "Analyze, manipulate, or process large sets of data using statistical software.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Apply feature selection algorithms",
+      "full": "Apply feature selection algorithms to models predicting outcomes of interest, such as sales, attrition, and healthcare use.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Apply sampling techniques",
+      "full": "Apply sampling techniques to determine groups to be surveyed or use complete enumeration methods.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Clean raw data",
+      "full": "Clean and manipulate raw data using statistical software.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Compare model performance",
+      "full": "Compare models using statistical performance metrics, such as loss functions or proportion of explained variance.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Visualize analysis results",
+      "full": "Create graphs, charts, or other visualizations to convey the results of data analysis using specialized software.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Present analysis findings",
+      "full": "Deliver oral or written presentations of the results of mathematical modeling and data analysis to management or other end users.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Design data collection instruments",
+      "full": "Design surveys, opinion polls, or other instruments to collect data.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Identify problems for analysis",
+      "full": "Identify business problems or management objectives that can be addressed through data analysis.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Identify trends/relationships",
+      "full": "Identify relationships and trends or any factors that could affect the results of research.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "low_data_confidence": true,
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "Exploratory data analysis, feature engineering, and initial model selection - work that junior data scientists and analysts spend significant time on - are tasks that AI tools now handle reliably and quickly [2]. AutoML platforms and AI-assisted analysis tools are automating the mechanical parts of the data science workflow, which concentrates demand at the senior end of the role where domain expertise and business judgment drive the work. BLS projects 34% employment growth, but hiring patterns suggest that demand is shifting toward data scientists who can translate complex model outputs into organizational decisions, not those who optimize model parameters.",
+    "stat": "60%",
+    "statLabel": "of data prep and feature engineering now handled by AutoML tools [4]"
+  },
+  "opportunities": {
+    "body": "This role scores a 5 out of 5 on directing AI tools - the highest rating - reflecting that data scientists who use AI to run faster experiments, test more hypotheses, and explore larger datasets are producing more output than those doing the same work manually [2]. Domain expertise in healthcare, finance, climate science, or other specialized fields is what differentiates senior data scientists from AI tools and from each other. BLS projects 34% employment growth through 2034, among the strongest projections for any occupation, driven by organizations needing people who can interpret data model outputs and make consequential decisions based on them.",
+    "stat": "23,400",
+    "statLabel": "annual job openings, among the highest of any STEM occupation [2]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The parts of this role most resistant to displacement are problem formulation and decision translation - identifying which questions are worth asking with data, and communicating what model outputs actually mean for business or research decisions. Build depth in a specific domain (healthcare, finance, climate, operations) so that your value comes from understanding the context of the data, not just the mechanics of the analysis [2]. Over the next six months, get comfortable using AI tools to accelerate the EDA and preprocessing work, which frees more time for the judgment-intensive interpretation and stakeholder communication that AI does not handle well.",
+    "thinkingOf": "Most entry-level data scientist positions require at minimum a bachelor's degree in statistics, math, or computer science, and graduate degrees are common for research and senior roles [2]. The portfolio that gets hired shows end-to-end project work: data cleaning, modeling, and a clear explanation of what the findings mean for a real problem. Domain knowledge matters more as AI tools commoditize general-purpose data analysis - specialize in a field where you understand the data's context, not just its structure.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The data scientists with the most organizational impact are the ones who can translate model outputs into business decisions — not just build the model. As AutoML handles more of the technical execution, the premium on communication and problem framing is only going up.",
+        "attribution": "Harvard Business Review, 'The Business Case for Analytical Translators'",
+        "sourceId": "src-hbr"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Problem formulation is the highest-leverage skill in data science and the one least touched by AI tools. Identifying which business question is actually worth answering — and what a good answer would look like — still requires deep domain knowledge and organizational context that you can't prompt your way around.",
+        "attribution": "MIT Sloan Management Review, 'The Most Important Skill in Data Science'",
+        "sourceId": "src-mit-sloan"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Data science is one of the fastest-growing occupations in the labor market — and the demand is no longer concentrated in tech. Healthcare, finance, retail, and logistics are hiring aggressively for people who can work with messy real-world data and connect it to operational decisions. Domain expertise is as valuable as technical skill at the entry level.",
+        "attribution": "Lightcast, Data Science Labor Market Outlook",
+        "sourceId": "src-lightcast"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The most-used data science tools in industry are Python, SQL, and Jupyter notebooks — and 76% of developers are now integrating AI assistants into their workflow. Candidates who can demonstrate working with AI-assisted data pipelines, evaluate model outputs critically, and document their methodology rigorously will stand out as AI tools raise baseline productivity expectations.",
+        "attribution": "Stack Overflow Developer Survey 2024",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates",
+      "date": "Jan 2026",
+      "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Data Scientists",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/math/data-scientists.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "Stack Overflow",
+      "title": "Stack Overflow Developer Survey 2024",
+      "date": "May 2024",
+      "url": "https://survey.stackoverflow.co/2024/"
+    },
+    {
+      "id": "src-4",
+      "name": "Deloitte Insights",
+      "title": "State of AI in the Enterprise",
+      "date": "2024",
+      "url": "https://www.deloitte.com/global/en/our-thinking/insights/topics/digital-technology/state-of-ai-in-the-enterprise.html"
+    },
+    {
+      "id": "src-hbr",
+      "name": "Harvard Business Review",
+      "url": "https://hbr.org/",
+      "title": "Harvard Business Review: AI and Workforce Transformation",
+      "date": "2024"
+    },
+    {
+      "id": "src-mit-sloan",
+      "name": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/",
+      "title": "MIT Sloan Management Review: AI and the Future of Work",
+      "date": "2024"
+    },
+    {
+      "id": "src-lightcast",
+      "name": "Lightcast",
+      "url": "https://lightcast.io/resources",
+      "title": "Lightcast Labor Market Outlook",
+      "date": "2024"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analyst",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "16,000",
+      "growth": "+28%",
+      "fit": "Data scientists already know how to work with large datasets and spot anomalies, but information security analysts focus on protecting systems and responding to threats rather than extracting business insights — it's a lateral move into a different domain.",
+      "steps": [
+        "Earn CompTIA Security+ certification",
+        "Learn SIEM tools like Splunk or IBM QRadar",
+        "Complete a cybersecurity analyst project on TryHackMe"
+      ],
+      "salary": "$124,910"
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "fit": "Data Scientists already work with statistical modeling and large datasets, but Computer and Information Research Scientists operate a step up — designing new systems and methods from scratch, often requiring a PhD and original contributions to the field.",
+      "steps": [
+        "Enroll in a PhD program in Computer Science",
+        "Publish original research in a peer-reviewed venue",
+        "Build projects applying novel algorithms to new domains"
+      ],
+      "salary": "$140,910"
+    },
+    {
+      "code": "15-2041.00",
+      "title": "Statistician",
+      "level": 4,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "2,000",
+      "growth": "+8%",
+      "fit": "Data scientists already clean data, run statistical models, and visualize results, so the technical work overlaps heavily, but statisticians are expected to own the rigor of study design and method validity rather than just apply algorithms to existing data.",
+      "steps": [
+        "Study survey sampling and experimental design methods",
+        "Earn ASA Graduate Statistician (GStat) credential",
+        "Practice writing formal statistical reports with method justification"
+      ],
+      "salary": "$103,300"
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "A Data Scientist already works with project timelines, stakeholders, and deliverables on analytical projects, but an IT Project Manager role shifts the focus entirely away from technical analysis toward coordinating people, budgets, and schedules — it's a lateral move into a different kind of work.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal IT project end-to-end",
+        "Learn Jira or Microsoft Project"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer System Architect",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "Both roles work with complex technical systems and require analytical thinking, but the Data Scientist's work is centered on statistical modeling and data, while the Computer Systems Engineer/Architect role shifts focus to physical and software infrastructure, system design, and hardware — making this a lateral move into a different technical domain.",
+      "steps": [
+        "Earn CompTIA Network+ or AWS Solutions Architect cert",
+        "Build hands-on experience managing Linux servers or cloud infrastructure",
+        "Complete a systems design project and document architecture decisions"
+      ],
+      "salary": "$108,970"
+    },
+    {
+      "code": "15-2041.01",
+      "title": "Biostatistician",
+      "level": 4,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "openings": "2,000",
+      "growth": "Much faster than average (7% or higher)",
+      "fit": "A data scientist already does the core work — writing code, running statistical models, and visualizing results — but a biostatistician applies those skills specifically to clinical and health data, which requires domain knowledge in study design, clinical trials, and health-specific methods like survival analysis and mixed-effect models.",
+      "steps": [
+        "Complete a biostatistics course covering survival and longitudinal analysis",
+        "Get hands-on with clinical trial or public health datasets",
+        "Earn a graduate certificate in biostatistics or public health"
+      ],
+      "salary": "$103,300"
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$133,080",
+      "openings": "115,200",
+      "growth": "+16%",
+      "fit": "A data scientist moving to software development is a step down in analytical scope — your programming skills carry over, but the work shifts from modeling data to engineering software products, with less emphasis on statistics and more on system design.",
+      "steps": [
+        "No new credential required",
+        "Expand Python skills to backend frameworks: Django, FastAPI",
+        "Build 2-3 non-ML software portfolio projects"
+      ]
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$135,980",
+      "openings": "4,000",
+      "growth": "+9%",
+      "fit": "A data scientist moving to database architecture is a step down in analytical scope — your deep familiarity with data structure and query optimization carries over, but the role shifts from extracting insights to designing the infrastructure that stores and serves data.",
+      "steps": [
+        "Earn Oracle, Microsoft, or AWS database certification",
+        "Build schema design portfolio",
+        "Learn database performance tuning and indexing"
+      ]
+    }
+  ],
+  "emergingTitles": [
+    "Machine Learning Engineer",
+    "Analytics Engineer",
+    "Business Intelligence Analyst",
+    "Data Analyst",
+    "AI/ML Scientist"
+  ],
+  "emergingCareers": [
+    {
+      "title": "ML Engineer",
+      "description": "Takes machine learning models from experimental notebooks to scalable production systems. Owns feature pipelines, model serving infrastructure, monitoring, and retraining workflows. Works closely with data scientists to productionize models reliably and maintain their performance over time.",
+      "core_tools": "MLflow, Kubernetes, FastAPI",
+      "experience_level": "3",
+      "stat": {
+        "text": "ML Engineer was among the top 5 fastest-growing job titles on LinkedIn in 2024, with demand concentrated at companies moving from AI experimentation to production deployment.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://business.linkedin.com/talent-solutions/resources/talent-acquisition/jobs-on-the-rise-us"
+      },
+      "search_query": "\"ML engineer\" OR \"machine learning engineer\" production jobs 2025",
+      "job_search_url": "",
+      "fit": "Your modeling experience is the hard part — the production engineering skills are learnable, and companies actively prefer ML engineers who understand the statistical assumptions behind the models they're deploying.",
+      "steps": [
+        "Take one of your existing models and deploy it as a REST API using FastAPI, containerize it with Docker, and add basic drift monitoring",
+        "Complete the full MLOps Specialization on Coursera (DeepLearning.AI) covering feature stores, model registries, and CI/CD for ML",
+        "Set up MLflow tracking on a personal project and demonstrate model versioning, experiment comparison, and registry promotion"
+      ]
+    },
+    {
+      "title": "AI Product Analyst",
+      "description": "Combines product analytics with AI to drive decisions — building LLM-powered analytics tools, designing experiments around AI features, and translating model outputs into product strategy. Acts as the bridge between data science, product management, and business stakeholders.",
+      "core_tools": "dbt, Hex, OpenAI API",
+      "experience_level": "2",
+      "stat": {
+        "text": "Companies with mature AI adoption report 2.5x greater revenue growth, driving demand for analysts who can connect AI model performance to business outcomes rather than just model metrics.",
+        "sourceName": "McKinsey & Company",
+        "sourceTitle": "The state of AI in 2024",
+        "sourceDate": "May 2024",
+        "sourceUrl": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
+      },
+      "search_query": "\"AI product analyst\" OR \"analytics engineer AI\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your statistical rigor and ability to translate data into decisions is exactly what product teams need as they try to measure whether their AI features are actually working.",
+      "steps": [
+        "Build an LLM-powered analytics tool (e.g. natural language to SQL using OpenAI API) on top of a public dataset and document your evaluation methodology",
+        "Learn dbt fundamentals and build a transformation layer that connects raw product events to AI feature usage metrics",
+        "Write a case study analyzing an AI product feature's impact using an A/B testing framework — focus on metrics beyond accuracy (engagement, task completion, user trust)"
+      ]
+    }
+  ]
+}

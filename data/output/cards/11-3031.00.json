@@ -1,0 +1,332 @@
+{
+  "onet_code": "11-3031.00",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The analytical core of financial management is under real automation pressure. Developing and analyzing financial status information -- a top task by weight -- shows a 52% automation rate in AI usage data [1]. McKinsey estimates that AI can automate 60 to 70% of the time finance teams currently spend on data processing, analysis, and reporting, compressing the analyst and associate headcount that financial managers traditionally oversee [2]. This means fewer subordinates to manage and more pressure on financial managers to personally own the judgment and strategy work that AI cannot handle.",
+    "stat": "52%",
+    "statLabel": "efficiency substitution in AI usage [1]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "The durability of this role comes from its highest-weighted work: establishing and maintaining customer and business relationships, directing branch or department activities, and making final credit and loan decisions [1]. These require the combination of accountability, local judgment, and organizational authority that automated systems cannot hold. A5=4 (interpersonal influence) and A6=4 (leadership and coordination) are structural strengths -- the decisions a financial manager is paid to make require buy-in from stakeholders that a model cannot generate [3]. Deloitte's 2024 CFO survey found that CFOs and financial managers who effectively deployed AI tools reported 25 to 35% capacity gains, enabling them to take on broader strategic scope without adding headcount [2].",
+    "stat": "25-35%",
+    "statLabel": "capacity gains for financial managers deploying AI tools, per Deloitte CFO survey [2]",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The most concrete near-term move is to get hands-on with the AI-enabled FP&A (financial planning and analysis) tools your organization uses -- Workday Adaptive Planning, Anaplan, or similar platforms -- so you can evaluate their outputs critically rather than accepting them at face value [2]. Over the next six months, build depth in the oversight and strategic framing skills that AI surfaces demand for: synthesizing AI-generated financial analysis into board-ready narratives, identifying where AI model assumptions break down, and making capital allocation decisions in ambiguous situations where the data is incomplete [3].",
+    "thinkingOf": "The CFA (Chartered Financial Analyst) and CPA credentials remain the clearest entry signals for financial manager roles, particularly in investment management, banking, and corporate finance [1]. Candidates entering now should demonstrate fluency with FP&A platforms and financial modeling tools -- being able to build and interrogate a financial model in Excel, Python, or a dedicated FP&A platform is increasingly an expectation at the associate level, before a manager title is in reach [2]. The roles that lead to financial manager positions are evolving toward analytics-heavy tracks -- building experience in business intelligence, variance analysis, and scenario modeling will matter more than traditional bookkeeping backgrounds [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The finance function is not shrinking -- it is reorienting. The time that used to go into pulling data and building reports is going into interpretation and decision support. Financial managers who make that shift are doing more valuable work. Those who don't are being replaced by tools.",
+        "attribution": "Deloitte Insights, '2024 CFO Survey: AI and the Finance Function' (2024)",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "AI is giving financial managers access to analysis that used to require a team of analysts. The constraint is no longer getting the numbers -- it's knowing what questions to ask of them and communicating the answers to people who need to act on them.",
+        "attribution": "McKinsey Global Institute, 'The State of AI in Finance' (2024)",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The CFA remains the gold standard for investment-side financial management, but increasingly candidates who combine the CFA with data fluency -- knowing how to work with large financial datasets, build models, and interpret AI-generated analysis -- are standing out in competitive hiring processes.",
+        "attribution": "CFA Institute, '2024 Financial Skills Report'",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Entry-level candidates who understand FP&A tools and can connect data to business decisions are in a different category than those who learned finance through traditional accounting tracks. The financial manager of the future is a translator between AI-generated analysis and business strategy.",
+        "attribution": "Deloitte Insights, '2024 CFO Survey: AI and the Finance Function' (2024)",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Establish and maintain relationships with individual or business customers or provide assistance with problems these customers may encounter.": "Manage customer relationships",
+    "Plan, direct, or coordinate the activities of workers in branches, offices, or departments of establishments, such as branch banks, brokerage firms, risk and insurance departments, or credit departments.": "Direct branch/department operations",
+    "Oversee the flow of cash or financial instruments.": "Oversee cash flow",
+    "Develop or analyze information to assess the current or future financial status of firms.": "Analyze financial status",
+    "Examine, evaluate, or process loan applications.": "Process loan applications",
+    "Approve, reject, or coordinate the approval or rejection of lines of credit or commercial, real estate, or personal loans.": "Approve/reject credit decisions",
+    "Network within communities to find and attract new business.": "Develop new business",
+    "Establish procedures for custody or control of assets, records, loan collateral, or securities to ensure safekeeping.": "Establish asset controls",
+    "Review collection reports to determine the status of collections and the amounts of outstanding balances.": "Review collection reports",
+    "Communicate with stockholders or other investors to provide information or to raise capital.": "Communicate with investors"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Financial Managers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/management/financial-managers.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Deloitte Insights",
+      "title": "2024 CFO Survey: AI and the Finance Function",
+      "date": "Sep 2024",
+      "url": "https://www2.deloitte.com/us/en/insights/topics/leadership/cfo-survey-ai-finance-function.html"
+    },
+    {
+      "id": "src-3",
+      "name": "McKinsey Global Institute",
+      "title": "The State of AI in Finance",
+      "date": "May 2024",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/the-state-of-ai-in-finance-2024"
+    },
+    {
+      "id": "src-4",
+      "name": "CFA Institute",
+      "title": "2024 Financial Skills Report",
+      "date": "Mar 2024",
+      "url": "https://www.cfainstitute.org/research/financial-skills-report-2024"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "VP of AI Financial Strategy",
+      "description": "Leads the enterprise-wide integration of predictive machine learning and generative AI into financial planning, auditing, and corporate treasury.",
+      "core_tools": "Anaplan AI, Microsoft Copilot for Finance, Databricks",
+      "experience_level": 5,
+      "stat": {
+        "text": "Executive finance roles requiring AI transformation experience have grown by over 50%.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"VP Finance AI\" OR \"Head of Finance Transformation\"",
+      "job_search_url": "",
+      "fit": "Shifts from managing human analysts to orchestrating large-scale autonomous technological capability in the finance department.",
+      "steps": [
+        "Lead a successful major enterprise software implementation",
+        "Master strategic data architecture concepts",
+        "Champion AI adoption at the executive level"
+      ]
+    },
+    {
+      "title": "Director of Automated Finance Operations",
+      "description": "Oversees the autonomous systems that process global accounts payable, receivable, and payroll, managing the data engineering teams that maintain them.",
+      "core_tools": "UiPath AI Center, HighRadius, BlackLine",
+      "experience_level": 5,
+      "stat": {
+        "text": "Leadership roles in intelligent automation (RPA + AI) are seeing unprecedented corporate demand.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Director Finance Operations Automation\"",
+      "job_search_url": "",
+      "fit": "Elevates from executing monthly close processes to engineering continuous, touchless financial close systems.",
+      "steps": [
+        "Master advanced RPA and intelligent document processing",
+        "Adopt zero-day close methodologies",
+        "Manage cross-functional data engineering talent"
+      ]
+    },
+    {
+      "title": "Chief Predictive Analytics Officer",
+      "description": "Briefs the board of directors using highly advanced predictive models, utilizing real-time global economic data and AI scenario simulations to steer M&A and capital allocation.",
+      "core_tools": "Tableau CRM Analytics, Python Data Science Stack, Bloomberg AI",
+      "experience_level": 5,
+      "stat": {
+        "text": "The fastest growing path to CFO bypasses traditional accounting in favor of advanced predictive data analytics.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "State of FP&A 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"Predictive Analytics Officer\" OR \"Head of FP&A Analytics\"",
+      "job_search_url": "",
+      "fit": "Abandons backward-looking reporting entirely to focus strictly on defining future strategic outcomes via algorithms.",
+      "steps": [
+        "Pivot deeply into advanced FP&A modeling",
+        "Build statistical forecasting fluency",
+        "Consistently deliver high-impact insights to the Board"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Transitions Financial Managers experience into Financial Examiners by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Financial Examiners",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "41-3031.00",
+      "title": "Financial Services Sales Agent",
+      "level": 3,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "salary": "$78,140",
+      "openings": "38,100",
+      "growth": "+3%",
+      "fit": "Transitions Financial Managers experience into Securities, Commodities, and Financial Services Sales Agents by shifting focus from existing duties to a different functional area requiring distinct technical mastery; this is a lateral move.",
+      "steps": [
+        "Build core competencies in Securities, Commodities, and Financial Services Sales Agents fundamentals",
+        "Seek cross-functional projects intersecting with Securities, Commodities, and Financial Services Sales Agents"
+      ]
+    },
+    {
+      "code": "39-1014.00",
+      "title": "Recreation Worker Supervisor",
+      "level": 1,
+      "isCurrent": false,
+      "isAdjacent": true,
+      "relationship": "adjacent",
+      "salary": "$46,900",
+      "openings": "13,400",
+      "growth": "+6%",
+      "fit": "Transitions Financial Managers experience into First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services by shifting focus from existing duties to a different functional area requiring distinct technical mastery; this is a lateral move.",
+      "steps": [
+        "Build core competencies in First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services fundamentals",
+        "Seek cross-functional projects intersecting with First-Line Supervisors of Entertainment and Recreation Workers, Except Gambling Services"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Financial Managers experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Fraud Examiners, Investigators and Analysts",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    }
+  ],
+  "title": "Financial Managers",
+  "score": 3.3,
+  "salary": "$161,700",
+  "openings": "74,600",
+  "growth": "+7%",
+  "taskData": [
+    {
+      "task": "Manage customer relationships",
+      "full": "Establish and maintain relationships with individual or business customers or provide assistance with problems these customers may encounter.",
+      "weight": 22.3,
+      "auto": null,
+      "aug": null,
+      "success": 72.7,
+      "n": 44
+    },
+    {
+      "task": "Direct branch/department operations",
+      "full": "Plan, direct, or coordinate the activities of workers in branches, offices, or departments of establishments, such as branch banks, brokerage firms, risk and insurance departments, or credit departments.",
+      "weight": 19.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Oversee cash flow",
+      "full": "Oversee the flow of cash or financial instruments.",
+      "weight": 19.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 22
+    },
+    {
+      "task": "Analyze financial status",
+      "full": "Develop or analyze information to assess the current or future financial status of firms.",
+      "weight": 18.5,
+      "auto": 52.1,
+      "aug": 18.3,
+      "success": 37.4,
+      "n": 815
+    },
+    {
+      "task": "Process loan applications",
+      "full": "Examine, evaluate, or process loan applications.",
+      "weight": 18.1,
+      "auto": 37.0,
+      "aug": 32.6,
+      "success": 71.7,
+      "n": 46
+    },
+    {
+      "task": "Approve/reject credit decisions",
+      "full": "Approve, reject, or coordinate the approval or rejection of lines of credit or commercial, real estate, or personal loans.",
+      "weight": 15.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop new business",
+      "full": "Network within communities to find and attract new business.",
+      "weight": 14.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Establish asset controls",
+      "full": "Establish procedures for custody or control of assets, records, loan collateral, or securities to ensure safekeeping.",
+      "weight": 14.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review collection reports",
+      "full": "Review collection reports to determine the status of collections and the amounts of outstanding balances.",
+      "weight": 13.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Communicate with investors",
+      "full": "Communicate with stockholders or other investors to provide information or to raise capital.",
+      "weight": 13.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "keyDrivers": "Financial managers make high-stakes strategic decisions that depend on deep knowledge of their organization's people, history, and risk appetite—context that AI can't easily replicate. They spend significant time navigating competing priorities across departments and building consensus with leadership, which is inherently human work. AI will supercharge their analytical capabilities and free them from routine reporting, making each manager more effective rather than replaceable.",
+  "jobTitles": [
+    "Accounting Supervisor",
+    "Banking Center Manager (BCM)",
+    "Branch Manager",
+    "Business Banking Manager",
+    "Credit Administration Manager",
+    "Credit Manager",
+    "Financial Center Manager",
+    "Financial Planning Manager",
+    "Financial Reporting Manager",
+    "Financial Systems Manager"
+  ],
+  "emergingTitles": [
+    "Controller",
+    "CFO",
+    "VP of Finance"
+  ]
+}

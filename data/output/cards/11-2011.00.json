@@ -1,0 +1,298 @@
+{
+  "onet_code": "11-2011.00",
+  "title": "Advertising Manager",
+  "score": 35,
+  "salary": "$126,960",
+  "openings": "2,100",
+  "growth": "-2%",
+  "jobTitles": [
+    "Account Executive",
+    "Advertising Manager",
+    "Advertising Sales Manager",
+    "Classified Advertising Manager",
+    "Communications Director",
+    "Communications Manager",
+    "Creative Services Director",
+    "Marketing and Promotions Manager",
+    "Promotions Director",
+    "Promotions Manager"
+  ],
+  "emergingTitles": [],
+  "keyDrivers": "This role sits at the top of a function where AI is compressing the middle. The core task — planning and preparing advertising material — shows 30.8% automation across 2,700+ observed conversations, meaning the execution work that managers oversee is being increasingly automated. The role scores low because it combines AI-exposed output work with a declining market for traditional advertising management: demand for these roles was already being squeezed by programmatic advertising before AI added a second wave of pressure.",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#ea580c",
+    "body": "The advertising material planning task — the most observed in AI usage data for this role — shows 30.8% automation across 2,771 conversations, meaning a significant portion of the content production work that these managers direct is already being handled by AI. The WEF 2025 Future of Jobs Report projects advertising and marketing managers among the roles facing net decline over the next five years, driven by AI tools that automate campaign creation and optimization tasks that previously required specialist teams [1]. The sector was already contracting before AI: programmatic advertising has reduced the need for traditional campaign oversight roles, and this trend has accelerated [2]."
+  },
+  "opportunities": {
+    "stat": null,
+    "statLabel": null,
+    "statColor": "#5a9a6e",
+    "body": "Advertising strategy and policy execution shows a 27.3% augmentation signal in a small sample — suggesting that when managers are engaged in high-level decision-making rather than production work, AI is being used as a support tool rather than a replacement. The team leadership, creative direction, and client relationship management functions of this role have low AI penetration because they depend on institutional knowledge, negotiation, and judgment under uncertainty [1]. McKinsey notes that management roles with significant cross-functional coordination responsibilities are more durable than those primarily focused on overseeing execution tasks that AI can now handle directly [2]."
+  },
+  "howToAdapt": {
+    "alreadyIn": "Build fluency in AI-assisted campaign tools now so the work you oversee is produced faster and at lower cost — this matters because budget pressure is ongoing in this sector. Over six months, shift your value proposition toward the parts of the role that AI handles worst: client strategy, cross-functional coordination, and the judgment calls about creative direction that require context no tool has [2]. Managers who can operate with leaner teams by using AI effectively are more valuable than those who manage large teams producing output that AI could generate [1].",
+    "thinkingOf": "With only 2,100 annual job openings and negative projected growth, this is a competitive field to enter. Build a portfolio that demonstrates measurable campaign outcomes — not just campaign management experience — since employers are increasingly focused on ROI rather than headcount [3]. A path through digital marketing or content strategy roles provides a stronger foundation than traditional advertising agency work, which is facing the steeper structural decline [1].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The advertising managers who are navigating this environment well are those who have redefined their value around strategy and client relationships, while using AI tools to dramatically reduce the cost and time of production work their teams previously spent most of their time on.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Marketing and advertising is one of the functions where generative AI creates the most economic value — which means the practitioners who adapt are those who shift from managing content production to managing AI-assisted systems and directing strategic decisions.",
+        "attribution": "The economic potential of generative AI, McKinsey Global Institute",
+        "sourceId": "src-2"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Employment of advertising and promotions managers is projected to decline slightly, with the strongest demand concentrated in digital marketing roles and in-house brand functions rather than traditional agency positions.",
+        "attribution": "U.S. Bureau of Labor Statistics, Occupational Outlook Handbook: Advertising, Promotions, and Marketing Managers",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The advertising managers most in demand are those who combine creative judgment with data fluency — the ability to evaluate campaign performance, make trade-offs between channels, and direct AI-generated content with a clear strategic brief.",
+        "attribution": "Future of Jobs Report 2025, World Economic Forum",
+        "sourceId": "src-1"
+      }
+    ]
+  },
+  "taskData": [
+    {
+      "task": "Plan/prepare ad materials",
+      "full": "Plan and prepare advertising and promotional material to increase sales of products or services, working with customers, company officials, sales departments, and advertising agencies.",
+      "auto": 30.8,
+      "aug": 5.2,
+      "success": 72.4,
+      "n": 2771
+    },
+    {
+      "task": "Confer on contracts/media",
+      "full": "Confer with department heads or staff to discuss topics such as contracts, selection of advertising media, or product to be advertised.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Coordinate department activities",
+      "full": "Coordinate activities of departments, such as sales, graphic arts, media, finance, and research.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Inspect layouts and copy",
+      "full": "Inspect layouts and advertising copy, and edit scripts, audio, video, and other promotional material for adherence to specifications.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Manage sales team",
+      "full": "Manage sales team, including setting goals, providing incentives, and evaluating employee performance.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Direct campaign teams",
+      "full": "Direct, motivate, and monitor the mobilization of a campaign team to advance campaign goals.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Plan advertising policies",
+      "full": "Plan and execute advertising policies and strategies for organizations.",
+      "auto": null,
+      "aug": 27.3,
+      "success": 87.3,
+      "n": 55
+    },
+    {
+      "task": "Contact organizations",
+      "full": "Contact organizations to explain services and facilities offered.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 15
+    },
+    {
+      "task": "Train advertising workers",
+      "full": "Train and direct workers engaged in developing and producing advertisements.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Extend business accounts",
+      "full": "Formulate plans to extend business with established accounts and to transact business as agent for advertising accounts.",
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "careerCluster": [
+    {
+      "level": 1,
+      "code": "13-1161.00",
+      "title": "Marketing Specialist",
+      "isCurrent": false,
+      "score": 1.8,
+      "salary": "$74,680",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Entry-level research and communications role that builds the analytical and market knowledge foundation.",
+      "steps": [
+        "Build a portfolio of research summaries and data visualizations",
+        "Learn SQL and a BI tool (Tableau or Power BI)",
+        "Develop subject matter expertise in a specific industry vertical"
+      ]
+    },
+    {
+      "level": 2,
+      "code": "13-1161.01",
+      "title": "Search Marketing Strategist",
+      "isCurrent": false,
+      "score": 2.3,
+      "salary": "$76,950",
+      "openings": "87,200",
+      "growth": "+7%",
+      "fit": "Digital marketing specialist role; search/SEO skills complement content strategy and brand management.",
+      "steps": [
+        "Earn Google Analytics and Google Ads certifications",
+        "Build a portfolio showing SEO-driven content performance",
+        "Learn paid media fundamentals via Meta Blueprint"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3031.00",
+      "title": "Public Relations Specialist",
+      "isCurrent": false,
+      "score": 2.2,
+      "relationship": "less_trained",
+      "salary": "$69,780",
+      "openings": "27,600",
+      "growth": "+5%",
+      "fit": "Moving to PR Specialist is a step down from Advertising Manager in seniority, but a lateral shift in function — the focus moves from paid and promotional media to earned media and stakeholder communication.",
+      "steps": [
+        "Build media pitching and press release experience",
+        "Develop media contact relationships in a target industry",
+        "Learn crisis communications and spokesperson coaching"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3043.00",
+      "title": "Writer",
+      "isCurrent": false,
+      "score": 2.4,
+      "relationship": "less_trained",
+      "salary": "$72,270",
+      "openings": "13,400",
+      "growth": "+4%",
+      "fit": "Ad & Promotions Managers often oversee writers and can step back into producing their own work — it is a step down in management scope but a move toward creative autonomy and individual craft.",
+      "steps": [
+        "Build an independent bylined portfolio",
+        "Develop copywriting clients or publication relationships",
+        "Write across commercial formats (ad copy, content, editorial)"
+      ]
+    },
+    {
+      "level": 3,
+      "code": "27-3041.00",
+      "title": "Editor",
+      "isCurrent": false,
+      "score": 2.5,
+      "relationship": "less_trained",
+      "salary": "$75,260",
+      "openings": "9,800",
+      "growth": "+1%",
+      "fit": "Ad Managers who specialize in the content quality side of their role can step into editing — it is a step down in management scope, shifting from campaign oversight to editorial judgment and content standards.",
+      "steps": [
+        "Build a substantive editing portfolio (3+ publications)",
+        "Study AP Style and editorial decision-making",
+        "Develop experience managing a content calendar or publication"
+      ]
+    },
+    {
+      "level": 4,
+      "code": "11-2011.00",
+      "title": "Advertising Manager",
+      "isCurrent": true,
+      "score": 2.5
+    },
+    {
+      "level": 5,
+      "code": "11-2021.00",
+      "title": "Marketing Manager",
+      "isCurrent": false,
+      "score": 2.9,
+      "relationship": "progression",
+      "salary": "$161,030",
+      "openings": "34,300",
+      "growth": "+7%",
+      "fit": "Advertising & Promotions Manager is a natural step toward Marketing Manager — it is a step up that expands scope from campaign execution to full marketing strategy, brand management, and digital channel integration.",
+      "steps": [
+        "Build experience managing digital channel budgets",
+        "Add brand and product marketing to campaign work",
+        "Manage a cross-functional marketing team"
+      ]
+    },
+    {
+      "level": 1,
+      "code": "41-3011.00",
+      "title": "Advertising Sales Agents",
+      "isCurrent": false,
+      "score": 2.0,
+      "relationship": "entry_from",
+      "salary": "$61,460",
+      "openings": "9,300",
+      "growth": "-6%",
+      "fit": "Advertising Sales Agents who develop platform expertise and campaign analytics experience can transition into the Advertising & Promotions Manager role — the sales background provides client relationship skills, while the new role adds creative direction and campaign budget ownership.",
+      "steps": [
+        "Build Google Ads and Meta Ads campaign management experience",
+        "Develop campaign analytics and reporting skills",
+        "Move from selling ad products to planning and executing campaigns"
+      ],
+      "isEntryPoint": true
+    }
+  ],
+  "emergingCareers": [],
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "World Economic Forum",
+      "title": "Future of Jobs Report 2025",
+      "date": "Jan 2025",
+      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+    },
+    {
+      "id": "src-2",
+      "name": "McKinsey Global Institute",
+      "title": "The economic potential of generative AI: The next productivity frontier",
+      "date": "Jun 2023",
+      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+    },
+    {
+      "id": "src-3",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Advertising, Promotions, and Marketing Managers: Occupational Outlook Handbook",
+      "date": "Apr 2025",
+      "url": "https://www.bls.gov/ooh/management/advertising-promotions-and-marketing-managers.htm"
+    }
+  ]
+}

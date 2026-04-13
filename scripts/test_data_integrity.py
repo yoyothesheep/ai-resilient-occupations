@@ -15,7 +15,7 @@ from pathlib import Path
 
 import pytest
 
-CARDS_JSONL   = Path("data/output/occupation_cards.jsonl")
+CARDS_DIR     = Path("data/output/cards")
 CAREERS_DIR   = Path("../ai-resilient-occupations-site/src/data/careers")
 REGISTRY_FILE = Path("../ai-resilient-occupations-site/src/data/careerPageRegistry.ts")
 
@@ -37,13 +37,12 @@ BOT_BLOCKED_DOMAINS = {
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
 def load_cards() -> list[dict]:
-    cards = []
-    with open(CARDS_JSONL, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                cards.append(json.loads(line))
-    return cards
+    if not CARDS_DIR.is_dir():
+        return []
+    return [
+        json.loads(p.read_text(encoding="utf-8"))
+        for p in sorted(CARDS_DIR.glob("*.json"))
+    ]
 
 
 def career_slug(title: str) -> str:
@@ -67,8 +66,9 @@ def url_domain(url: str) -> str:
 
 
 CARDS = load_cards()
-CARD_IDS = [c["onet_code"] for c in CARDS]
+# Full index includes stubs (for cross-family lookups); CARD_IDS only includes fully populated cards
 CARD_BY_CODE = {c["onet_code"]: c for c in CARDS}
+CARD_IDS = [c["onet_code"] for c in CARDS if c.get("title")]
 REGISTRY_SLUGS = load_registry_slugs()
 
 CLUSTER_BRANCHES_CSV = Path("data/career_clusters/cluster_branches.csv")
@@ -355,12 +355,10 @@ BLOCKED_SOURCE_DOMAINS = {"marketsandmarkets", "gartner", "forrester", "idc.com"
 
 def test_no_single_source_sections():
     """Each howToAdapt and risks/opportunities section with 2+ citations must use at least 2 distinct sources."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             adapt = d.get("howToAdapt") or {}
             sections = [
                 ("risks.body", (d.get("risks") or {}).get("body", "")),
@@ -382,12 +380,10 @@ def test_no_single_source_sections():
 
 def test_no_blocked_sources_in_jsonl():
     """occupation_cards.jsonl must not cite Gartner, IDC, Forrester, or MarketsandMarkets."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             for s in d.get("sources", []):
                 combined = (s.get("url","") + s.get("name","")).lower()
                 if any(b in combined for b in BLOCKED_SOURCE_DOMAINS):
@@ -442,12 +438,12 @@ def test_no_raw_weight_values_in_prose():
 
 def test_howToAdapt_quotes_present():
     """Every card must have howToAdapt.quotes with at least 2 entries (one per persona)."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
+            if not d.get("title"):
+                continue  # stub card — not yet generated
             quotes = (d.get("howToAdapt") or {}).get("quotes") or []
             if len(quotes) < 2:
                 bad.append(f"{d['onet_code']} {d.get('title', '')} — howToAdapt.quotes has {len(quotes)} entries (need ≥2)")
@@ -466,12 +462,10 @@ def test_tsx_howToAdapt_quotes_present():
 
 def test_howToAdapt_quotes_diverse_sources():
     """Each persona's quotes in howToAdapt must not all cite the same source."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             quotes = (d.get("howToAdapt") or {}).get("quotes", [])
             for persona in ("alreadyIn", "thinkingOf"):
                 persona_quotes = [q for q in quotes if q.get("persona") == persona]
@@ -484,12 +478,10 @@ def test_howToAdapt_quotes_diverse_sources():
 
 def test_emerging_roles_stat_has_title_and_date():
     """Every emerging role with a sourceName must also have sourceTitle and sourceDate in the JSONL."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             for e in d.get("emergingCareers", []):
                 s = e.get("stat", {})
                 if s.get("sourceName") and (not s.get("sourceTitle") or not s.get("sourceDate")):
@@ -515,12 +507,10 @@ def test_emerging_roles_stat_text_not_empty():
 
 def test_emerging_roles_stat_text_not_empty_in_jsonl():
     """Every emergingCareer in occupation_cards.jsonl must have stat.text populated."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             for e in d.get("emergingCareers", []):
                 if not (e.get("stat") or {}).get("text", "").strip():
                     bad.append(f"{d['onet_code']} {e.get('title','?')}: missing stat.text")
@@ -538,12 +528,10 @@ _REDUNDANT_STAT_PATTERNS = [
 
 def test_no_redundant_pull_stats():
     """Pull stats in risks/opportunities must not duplicate data already on the page (task table, hero grid)."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
             for section in ("risks", "opportunities"):
                 sec = d.get(section) or {}
                 label = (sec.get("statLabel") or "").lower()
@@ -561,12 +549,12 @@ def test_no_redundant_pull_stats():
 
 def test_no_empty_or_none_stats_in_narratives():
     """risks and opportunities must have actual stat and statLabel values, not 'None' or empty."""
-    if not CARDS_JSONL.exists():
-        pytest.skip("occupation_cards.jsonl not found")
+    if not CARDS_DIR.is_dir():
+        pytest.skip("data/output/cards/ not found")
     bad = []
-    with open(CARDS_JSONL) as f:
-        for line in f:
-            d = json.loads(line)
+    for d in CARDS:
+            if not d.get("title"):
+                continue  # stub card — not yet generated
             for section in ("risks", "opportunities"):
                 sec = d.get(section)
                 if not sec or not isinstance(sec, dict):
@@ -574,9 +562,17 @@ def test_no_empty_or_none_stats_in_narratives():
                     continue
                 stat = sec.get("stat")
                 label = sec.get("statLabel")
-                if str(stat) in ("None", "", "none") or str(label) in ("None", "", "none"):
-                    bad.append(f"{d['onet_code']} {section} stat/statLabel is missing/None")
-                if "..." in str(label):
+                # stat=null is intentional (no strong stat available); only flag string "None" or ""
+                if isinstance(stat, str) and stat.lower() in ("none", ""):
+                    bad.append(f"{d['onet_code']} {section} stat is empty string or 'None' (use null instead)")
+                if isinstance(label, str) and label.lower() in ("none", ""):
+                    bad.append(f"{d['onet_code']} {section} statLabel is empty string or 'None'")
+                # If stat is present, label must also be present (and vice versa)
+                if stat is not None and label is None:
+                    bad.append(f"{d['onet_code']} {section} has stat but missing statLabel")
+                if label is not None and stat is None:
+                    bad.append(f"{d['onet_code']} {section} has statLabel but missing stat")
+                if "..." in str(label or ""):
                     bad.append(f"{d['onet_code']} {section}.statLabel is truncated with '...'")
     assert not bad, (
         "Missing or 'None' stats in risks/opportunities sections:\n"
@@ -830,8 +826,8 @@ def test_outbound_cross_family_in_career_map():
         from_code = branch["from_onet_code"]
         to_code = branch["to_onet_code"]
         card = CARD_BY_CODE.get(from_code)
-        if not card:
-            continue  # card not yet generated — not a cross-cluster bug
+        if not card or not card.get("title"):
+            continue  # card not yet generated (or is a stub)
         cluster_codes = {n.get("code") for n in card.get("careerCluster", [])}
         if to_code not in cluster_codes:
             missing.append(f"{from_code} → {to_code}: target missing from careerCluster")
@@ -857,8 +853,8 @@ def test_inbound_cross_family_in_career_map():
         from_code = branch["from_onet_code"]
         to_code = branch["to_onet_code"]
         card = CARD_BY_CODE.get(to_code)
-        if not card:
-            continue  # card not yet generated
+        if not card or not card.get("title"):
+            continue  # card not yet generated (or is a stub)
         cluster_codes = {n.get("code") for n in card.get("careerCluster", [])}
         if from_code not in cluster_codes:
             missing.append(f"{to_code} ← {from_code}: entry point missing from careerCluster")

@@ -36,7 +36,6 @@ SCORES_CSV       = "data/output/ai_resilience_scores.csv"
 TASK_TABLE       = "data/intermediate/onet_economic_index_task_table.csv"
 CLUSTER_ROLES    = "data/career_clusters/cluster_roles.csv"
 CLUSTER_BRANCHES = "data/career_clusters/cluster_branches.csv"
-OUTPUT_JSONL     = "data/output/occupation_cards.jsonl"
 
 MAX_RELATED      = 6    # max related careers to show per occupation
 JACCARD_THRESHOLD = 0.15 # minimum Jaccard score to count a task pair as overlapping
@@ -98,30 +97,7 @@ def load_branch_index() -> dict:
     return index
 
 
-def load_jsonl() -> dict:
-    """Load occupation_cards.jsonl as dict keyed by onet_code."""
-    cards = {}
-    if not os.path.exists(OUTPUT_JSONL):
-        return cards
-    with open(OUTPUT_JSONL, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                try:
-                    card = json.loads(line)
-                    cards[card["onet_code"]] = card
-                except (json.JSONDecodeError, KeyError):
-                    pass
-    return cards
-
-
-
-
-def save_jsonl(cards: dict):
-    """Write all cards back to JSONL."""
-    with open(OUTPUT_JSONL, "w", encoding="utf-8") as f:
-        for card in cards.values():
-            f.write(json.dumps(card, ensure_ascii=False) + "\n")
+from cards import load_cards as load_jsonl, save_cards as save_jsonl
 
 
 # ── Method 1: Career cluster ───────────────────────────────────────────────────

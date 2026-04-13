@@ -1,0 +1,401 @@
+{
+  "onet_code": "13-2054.00",
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The quantitative core of risk analysis is where AI is making the most contact. AI-driven risk modeling platforms are automating scenario construction, stress-testing, and VaR (value-at-risk) calculations that previously required senior analyst time [2]. McKinsey found that AI can reduce the time needed for routine credit and market risk analysis by 30 to 50 percent, which is compressing entry-level headcount at banks and asset managers as firms do more with existing teams [3].",
+    "stat": "50%",
+    "statLabel": "potential productivity optimization [2]",
+    "statColor": "#ea580c"
+  },
+  "opportunities": {
+    "body": "This role's structural strengths are concentrated in specialized expertise (A9=4) and AI direction (A10=4) — two of the highest scores in the scoring framework, indicating that risk specialists are increasingly valued for interpreting, validating, and challenging AI-generated risk signals rather than just producing them [1]. Regulatory requirements around stress testing (CCAR, DFAST) and model risk management (SR 11-7) require a licensed human to sign off on model outputs, creating a durable compliance layer AI cannot replace [4]. The FRM (Financial Risk Manager) credential, administered by GARP, correlates with roles that sit at the human-AI interface and commands a consistent salary premium [4].",
+    "stat": "20%",
+    "statLabel": "salary premium for AI model risk expertise [4]",
+    "statColor": "#5a9a6e"
+  },
+  "howToAdapt": {
+    "alreadyIn": "The most concrete immediate action is to get fluent with at least one AI-native risk platform — Bloomberg's PORT Analytics, Moody's RiskCalc, or similar tools your firm uses — so you understand what the models are and aren't capturing [2]. Over the next six months, build depth in model risk governance: validating AI model assumptions, documenting limitations, and communicating risk to non-technical stakeholders. These tasks require human judgment and are explicitly required by bank regulators [4]. The FRM Part II curriculum now includes AI model risk content, making it directly relevant to this transition [4].",
+    "thinkingOf": "The FRM credential is the clearest entry signal in this field: it demonstrates quantitative competency and is recognized by the institutions that hire the most risk specialists [4]. Candidates entering now should build a portfolio that shows model validation work, not just model-building — regulators require independent validation of AI risk models, and that skill is in short supply [2]. Familiarity with Python-based risk libraries (QuantLib, PyRisk, or similar) alongside the ability to explain model limitations in plain language is a combination few entry-level candidates currently have [3].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The risk manager's role is shifting from building models to governing them. Understanding what an AI model can and cannot see — and being able to explain that to a board or regulator — is the core competency that separates high-value practitioners from those who can be automated.",
+        "attribution": "'AI in Risk Management: Governance Imperatives,' GARP Risk Intelligence (2024)",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "Banks are not eliminating risk analysts — they are changing what those analysts do. The demand is moving from data processing to model oversight, scenario interpretation, and regulatory engagement. Firms that can redeploy existing risk talent into these roles are ahead.",
+        "attribution": "McKinsey Global Institute, 'AI in Financial Risk: Automation and the Human Premium' (2024)",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "The FRM designation has become more relevant in an AI-driven environment, not less. Firms need people who understand how quantitative models work, where they break down, and what the regulatory expectations are. That knowledge doesn't come from a coding bootcamp.",
+        "attribution": "'AI in Risk Management: Governance Imperatives,' GARP Risk Intelligence (2024)",
+        "sourceId": "src-4"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Candidates who combine quantitative skills with the ability to communicate model uncertainty clearly are in a different category entirely. The technical floor is rising, but the ceiling is going to people who can bridge the gap between AI output and human decision-making.",
+        "attribution": "Deloitte Insights, 'AI and the Future of Financial Risk Management' (2024)",
+        "sourceId": "src-2"
+      }
+    ]
+  },
+  "taskLabels": {
+    "Analyze areas of potential risk to the assets, earning capacity, or success of organizations.": "Analyze organizational risk",
+    "Analyze new legislation to determine impact on risk exposure.": "Assess regulatory impact",
+    "Conduct statistical analyses to quantify risk, using statistical analysis software or econometric models.": "Quantify risk statistically",
+    "Confer with traders to identify and communicate risks associated with specific trading strategies or positions.": "Advise on trading risk",
+    "Consult financial literature to ensure use of the latest models or statistical techniques.": "Review risk literature",
+    "Contribute to development of risk management systems.": "Develop risk systems",
+    "Determine potential environmental impacts of new products or processes on long-term growth and profitability.": "Assess environmental risk",
+    "Develop contingency plans to deal with emergencies.": "Develop contingency plans",
+    "Develop or implement risk-assessment models or methodologies.": "Build risk models",
+    "Devise scenario analyses reflecting possible severe market events.": "Model stress scenarios"
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Financial Analysts",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/business-and-financial/financial-analysts.htm"
+    },
+    {
+      "id": "src-2",
+      "name": "Deloitte Insights",
+      "title": "AI and the Future of Financial Risk Management",
+      "date": "Apr 2024",
+      "url": "https://www2.deloitte.com/us/en/insights/industry/financial-services/ai-financial-risk-management.html"
+    },
+    {
+      "id": "src-3",
+      "name": "McKinsey Global Institute",
+      "title": "AI in Financial Risk: Automation and the Human Premium",
+      "date": "May 2024",
+      "url": "https://www.mckinsey.com/industries/financial-services/our-insights/ai-financial-risk-management"
+    },
+    {
+      "id": "src-4",
+      "name": "GARP Risk Intelligence",
+      "title": "AI in Risk Management: Governance Imperatives",
+      "date": "Nov 2024",
+      "url": "https://www.garp.org/risk-intelligence/technology/ai-risk-management-governance-2024"
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Risk Modeling Specialist",
+      "description": "Develops and backtests deep learning models used for predicting catastrophic market stress events and liquidity crises.",
+      "core_tools": "Python, TensorFlow, MATLab, Numerix",
+      "experience_level": 4,
+      "stat": {
+        "text": "AI risk modeling engineers are seeing a 40% year-over-year increase in job postings.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Jobs on the Rise 2024",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/"
+      },
+      "search_query": "\"AI Risk Modeler\" OR \"Quantitative Risk Analyst\"",
+      "job_search_url": "",
+      "fit": "Transforms standard risk analysis into coding and deploying advanced neural networks.",
+      "steps": [
+        "Master Python and deep learning frameworks",
+        "Complete CQF (Certificate in Quantitative Finance)",
+        "Transition to a model development team"
+      ]
+    },
+    {
+      "title": "Algorithmic Threat Analyst",
+      "description": "Monitors real-time autonomous trading algorithms to shut down rogue systems causing flash-crashes or engaging in algorithmic spoofing.",
+      "core_tools": "Kx Systems (kdb+), Splunk, Python Data Science Stack",
+      "experience_level": 3,
+      "stat": {
+        "text": "Regulatory demands have increased algorithmic risk oversight roles by 28%.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Financial Services",
+        "sourceDate": "Dec 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Algorithmic Trading Risk Analyst\"",
+      "job_search_url": "",
+      "fit": "Applies deep market infrastructure knowledge to policing the behavior of trading bots.",
+      "steps": [
+        "Learn high-frequency trading market structure",
+        "Master time-series database (kdb+) fundamentals",
+        "Take a role in algorithmic risk control"
+      ]
+    },
+    {
+      "title": "Climate Risk Data Strategist",
+      "description": "Uses AI and geospatial data modeling to assess how extreme weather and climate transitions pose financial risks to corporate assets.",
+      "core_tools": "Jupiter Intelligence, S&P Global Climanomics, QGIS",
+      "experience_level": 3,
+      "stat": {
+        "text": "Climate risk analytics in finance is expected to create 20,000 new specialized roles globally by 2026.",
+        "sourceName": "World Economic Forum",
+        "sourceTitle": "Future of Jobs 2023",
+        "sourceDate": "May 2023",
+        "sourceUrl": "https://www.weforum.org"
+      },
+      "search_query": "\"Climate Risk Analyst\" Finance",
+      "job_search_url": "",
+      "fit": "Expands traditional financial stress-testing into analyzing geographic and environmental data models.",
+      "steps": [
+        "Complete a Climate Risk certificate (GARP SCR)",
+        "Learn geospatial data analysis",
+        "Integrate ESG metrics into current risk reports"
+      ]
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-3031.00",
+      "title": "Financial Manager",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$161,700",
+      "openings": "74,600",
+      "growth": "+15%",
+      "fit": "Draws upon core skills from Financial Risk Specialists but pivots focus to Financial Managers; this is a step up.",
+      "steps": [
+        "Internal promotion into treasury/CFO track within banks and large corporates.",
+        "Apply for internal transfers"
+      ]
+    },
+    {
+      "code": "13-2061.00",
+      "title": "Financial Examiner",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$90,400",
+      "openings": "5,700",
+      "growth": "+18%",
+      "fit": "Draws upon core skills from Financial Risk Specialists but pivots focus to Financial Examiners; this is a step up.",
+      "steps": [
+        "Common senior track",
+        "Risk background is directly applicable to bank examination and supervisory work."
+      ]
+    },
+    {
+      "code": "13-2052.00",
+      "title": "Financial Advisor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$102,140",
+      "openings": "24,100",
+      "growth": "+10%",
+      "fit": "Transitions Financial Risk Specialists experience into Personal Financial Advisors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Personal Financial Advisors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2011.00",
+      "title": "Accountant",
+      "level": 2,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "salary": "$81,680",
+      "openings": "124,200",
+      "growth": "+5%",
+      "fit": "Transitions Financial Risk Specialists experience into Accountants and Auditors by shifting focus from existing duties to less systemic responsibility and lower barrier to entry; this is a step down.",
+      "steps": [
+        "Adapt existing compliance knowledge to Accountants and Auditors",
+        "Reorient resume for operational rather than strategic execution"
+      ]
+    },
+    {
+      "code": "13-2072.00",
+      "title": "Loan Officer",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$74,180",
+      "openings": "20,300",
+      "growth": "+2%",
+      "fit": "Transitions Financial Risk Specialists experience into Loan Officers by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Loan Officers",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2099.04",
+      "title": "Fraud Investigator",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "salary": "$80,190",
+      "openings": "10,300",
+      "growth": "+3%",
+      "fit": "Transitions Financial Risk Specialists experience into Fraud Examiners, Investigators and Analysts by shifting focus from existing duties to broader scope and leadership responsibilities; this is a step up.",
+      "steps": [
+        "Earn advanced certifications related to Fraud Examiners, Investigators and Analysts",
+        "Demonstrate capability in independent decision making"
+      ]
+    },
+    {
+      "code": "13-2071.00",
+      "title": "Credit Counselor",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$50,480",
+      "openings": "2,200",
+      "growth": "+3%",
+      "fit": "Transitions Financial Risk Specialists experience into Credit Counselors by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Counselors",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2053.00",
+      "title": "Insurance Underwriter",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$79,880",
+      "openings": "8,200",
+      "growth": "-3%",
+      "fit": "Transitions Financial Risk Specialists experience into Insurance Underwriters by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Insurance Underwriters",
+        "Transfer internally to a functional niche team"
+      ]
+    },
+    {
+      "code": "13-2041.00",
+      "title": "Credit Analyst",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "salary": "$80,970",
+      "openings": "3,700",
+      "growth": "-4%",
+      "fit": "Transitions Financial Risk Specialists experience into Credit Analysts by shifting focus from existing duties to a narrower, more highly regulated specialty; this is a lateral move.",
+      "steps": [
+        "Complete specialized training for Credit Analysts",
+        "Transfer internally to a functional niche team"
+      ]
+    }
+  ],
+  "title": "Financial Risk Specialists",
+  "score": 3.0,
+  "salary": "$106,000",
+  "openings": "4,800",
+  "growth": "+7%",
+  "taskData": [
+    {
+      "task": "Analyze organizational risk",
+      "full": "Analyze areas of potential risk to the assets, earning capacity, or success of organizations.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Assess regulatory impact",
+      "full": "Analyze new legislation to determine impact on risk exposure.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Quantify risk statistically",
+      "full": "Conduct statistical analyses to quantify risk, using statistical analysis software or econometric models.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Advise on trading risk",
+      "full": "Confer with traders to identify and communicate risks associated with specific trading strategies or positions.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Review risk literature",
+      "full": "Consult financial literature to ensure use of the latest models or statistical techniques.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop risk systems",
+      "full": "Contribute to development of risk management systems.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Assess environmental risk",
+      "full": "Determine potential environmental impacts of new products or processes on long-term growth and profitability.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Develop contingency plans",
+      "full": "Develop contingency plans to deal with emergencies.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Build risk models",
+      "full": "Develop or implement risk-assessment models or methodologies.",
+      "weight": 17.0,
+      "auto": 35.2,
+      "aug": 17.6,
+      "success": 64.8,
+      "n": 108
+    },
+    {
+      "task": "Model stress scenarios",
+      "full": "Devise scenario analyses reflecting possible severe market events.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "keyDrivers": "Risk specialists must make judgment calls about emerging threats and tail-risk scenarios that don't fit neatly into historical patterns—the kind of novel, high-stakes reasoning that AI struggles with. Regulatory frameworks increasingly require human accountability for risk assessments, providing some legal protection. As AI drives more complex financial products and faster markets, the need for human risk oversight will likely grow, and AI tools will help these specialists monitor far more ground.",
+  "jobTitles": [
+    "Analyst",
+    "Equity Research Analyst",
+    "Risk Analyst",
+    "Risk Manager",
+    "Risk Specialist",
+    "Securities Analyst"
+  ],
+  "emergingTitles": [
+    "Market Risk Analyst",
+    "Quantitative Risk Analyst",
+    "Enterprise Risk Manager"
+  ]
+}

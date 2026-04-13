@@ -1,0 +1,372 @@
+{
+  "onet_code": "41-2031.00",
+  "title": "Retail Salespersons",
+  "score": 39,
+  "salary": "$34,580",
+  "openings": "555,800",
+  "growth": "0%",
+  "jobTitles": [
+    "Car Salesman, Clerk",
+    "Customer Assistant",
+    "Retail Salesperson",
+    "Sales Associate",
+    "Sales Clerk",
+    "Sales Consultant",
+    "Sales Person",
+    "Sales Representative, Salesman"
+  ],
+  "keyDrivers": "Retail sales is increasingly moving online, and even in-store, self-checkout and AI-powered recommendation tools are reducing the need for human salespeople. The work involves limited judgment, no legal accountability, and customers often prefer browsing independently. Physical presence on the sales floor offers some protection, but it's not enough to offset the steady erosion from e-commerce and automation.",
+  "taskData": [
+    {
+      "task": "Greet / assess customer needs",
+      "full": "Greet customers and ascertain what each customer wants or needs.",
+      "weight": 31.4,
+      "auto": null,
+      "aug": null,
+      "success": 73.9,
+      "n": 1059
+    },
+    {
+      "task": "Recommend / locate merchandise",
+      "full": "Recommend, select, and help locate or obtain merchandise based on customer needs and desires.",
+      "weight": 28.0,
+      "auto": 42.6,
+      "aug": 7.3,
+      "success": 48.7,
+      "n": 1095
+    },
+    {
+      "task": "Process sales and payments",
+      "full": "Compute sales prices, total purchases, and receive and process cash or credit payment.",
+      "weight": 27.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Answer store / product questions",
+      "full": "Answer questions regarding the store and its merchandise.",
+      "weight": 27.8,
+      "auto": 40.2,
+      "aug": 28.7,
+      "success": 60.9,
+      "n": 174
+    },
+    {
+      "task": "Prepare merchandise for sale",
+      "full": "Prepare merchandise for purchase or rental.",
+      "weight": 26.7,
+      "auto": 45.0,
+      "aug": null,
+      "success": 80.0,
+      "n": 40
+    },
+    {
+      "task": "Operate / balance cash registers",
+      "full": "Open and close cash registers, performing tasks such as counting money, separating charge slips, coupons, and vouchers, balancing cash drawers, and making deposits.",
+      "weight": 26.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Package purchases / wrap gifts",
+      "full": "Bag or package purchases and wrap gifts.",
+      "weight": 25.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Track promotions and policies",
+      "full": "Maintain knowledge of current sales and promotions, policies regarding payment and exchanges, and security practices.",
+      "weight": 25.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Explain product use / care",
+      "full": "Describe merchandise and explain use, operation, and care of merchandise to customers.",
+      "weight": 25.2,
+      "auto": 31.2,
+      "aug": 43.1,
+      "success": 75.6,
+      "n": 369
+    },
+    {
+      "task": "Prepare sales contracts / slips",
+      "full": "Prepare sales slips or sales contracts.",
+      "weight": 24.8,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "risks": {
+    "body": "The product recommendation task, one of the heaviest in the role, already shows a 43% automation rate in AI usage data. AI-powered recommendation engines and conversational shopping assistants are handling a meaningful share of the \"help the customer find what they want\" workflow, which is the core of retail selling. Salesforce's 2024 State of Sales report found that 81% of sales teams are either using or experimenting with generative AI, with customer-facing product guidance among the top use cases [1]. Meanwhile, BLS projects retail salesperson employment to decline 2% over the next decade, a loss of roughly 86,000 positions, as self-checkout, e-commerce, and AI chat tools reduce headcount needs [2].",
+    "stat": "85%",
+    "statLabel": "of consumer product searches now start online, not in store [4]"
+  },
+  "opportunities": {
+    "body": "Describing merchandise and explaining product use, operation, and care shows a 43% augmentation rate, the highest in the role. This is the consultative, hands-on side of retail selling: demonstrating a product, troubleshooting fit, explaining compatibility. AI can surface specs and comparisons, but the in-person explanation still relies on a human. NRF's 2024 State of Retailing Online report found that retailers investing in AI-assisted clienteling tools see higher average transaction values, because reps spend less time on inventory lookups and more on consultative selling [3]. Answering store and merchandise questions also shows a 29% augmentation rate, suggesting AI is supplementing product knowledge rather than replacing the interaction.",
+    "stat": "78%",
+    "statLabel": "of salespeople say AI frees time for selling [3]"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start using AI product-lookup tools (chatbots, internal knowledge bases) to answer routine inventory and spec questions faster, so more floor time goes to hands-on demos and consultative conversations. Over the next six months, build depth in the areas AI handles worst in this role: live product demonstration, fitting and compatibility troubleshooting, and post-sale relationship building. NRF data shows retailers combining AI product-lookup tools with in-person consultative selling see stronger conversion rates than either channel alone [3].",
+    "thinkingOf": "The retail sales jobs with the longest shelf life are the ones that require real product expertise and in-person interaction: specialty retail (electronics, outdoor gear, automotive), showroom sales, and high-touch customer service roles. Generic cashier-plus-greeter positions are the most exposed to self-checkout and AI chat. Salesforce's research found that sales roles emphasizing relationship management and complex product knowledge were the least likely to see AI-driven headcount reductions [1]. If entering retail, target roles where explaining, demonstrating, or customizing the product is the main job, not just ringing it up.",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "Sellers who use AI to handle research and data entry are spending 12% more time actually selling, and reporting higher quota attainment as a result.",
+        "attribution": "HubSpot State of Sales Report",
+        "sourceId": "src-3"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "The most effective sales teams are using AI for customer intelligence and then doubling their investment in face-to-face relationship building, not choosing one over the other.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Sales roles that combine product expertise with consultative interaction are seeing the strongest demand growth, even as transactional roles flatten.",
+        "attribution": "Salesforce State of Sales Report",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Salespeople who develop skills in AI-assisted customer research alongside traditional product knowledge report faster ramp-up times and stronger early performance.",
+        "attribution": "HubSpot State of Sales Report",
+        "sourceId": "src-3"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "Salesforce",
+      "title": "State of Sales, 6th Edition",
+      "date": "Nov 2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-sales/"
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Retail Sales Workers",
+      "date": "Sep 2024",
+      "url": "https://www.bls.gov/ooh/sales/retail-sales-workers.htm"
+    },
+    {
+      "id": "src-3",
+      "name": "National Retail Federation",
+      "title": "State of Retailing Online 2024",
+      "date": "Apr 2024",
+      "url": "https://nrf.com/research-insights/state-retailing-online"
+    },
+    {
+      "id": "src-4",
+      "name": "Salesforce",
+      "title": "State of the Connected Customer 2024",
+      "date": "2024",
+      "url": "https://www.salesforce.com/resources/research-reports/state-of-the-connected-customer/"
+    }
+  ],
+  "careerCluster": [
+    {
+      "code": "11-2022.00",
+      "title": "Sales Manager",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "49,000",
+      "growth": "+5%",
+      "fit": "Retail sales gives you direct customer and product experience, but Sales Manager is a clear step up — it adds staff oversight, P&L responsibility, and strategic planning that the floor role doesn't touch.",
+      "steps": [
+        "Take on a team lead or shift supervisor role",
+        "Complete a sales management certificate (e.g., SMEI)",
+        "Track and present sales data using Excel or CRM tools"
+      ],
+      "salary": "$138,060"
+    },
+    {
+      "code": "41-9031.00",
+      "title": "Sales Engineer",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "5,000",
+      "growth": "+6%",
+      "fit": "Retail sales gives you real customer-facing experience and the habit of matching needs to products, but Sales Engineer is a step up that requires deep technical knowledge of complex systems and the ability to work through engineering-level problems with clients.",
+      "steps": [
+        "Earn a technical cert (e.g., CompTIA Tech+)",
+        "Learn one technical product domain (SaaS, industrial equipment)",
+        "Shadow or assist a Sales Engineer on real deals"
+      ],
+      "salary": "$121,520"
+    },
+    {
+      "code": "41-9021.00",
+      "title": "Real Estate Broker",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "9,700",
+      "growth": "+3%",
+      "fit": "Retail sales gives you real customer-facing experience and comfort closing transactions, but becoming a real estate broker is a clear step up — it requires a state license, managing other agents, and handling complex property negotiations instead of merchandise.",
+      "steps": [
+        "Earn state real estate salesperson license",
+        "Work 1-3 years as a licensed agent",
+        "Pass state real estate broker exam"
+      ],
+      "salary": "$72,280"
+    },
+    {
+      "code": "41-3021.00",
+      "title": "Insurance Sales Agent",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "lateral",
+      "openings": "47,000",
+      "growth": "+4%",
+      "fit": "Retail sales builds the customer-facing and needs-assessment skills that transfer directly to insurance, but the job shifts from high-volume transactions to fewer, more complex sales requiring a state license.",
+      "steps": [
+        "Complete ~40hr state pre-licensing insurance course",
+        "Pass state insurance licensing exam",
+        "Pursue entry-level role at a captive insurance agency"
+      ],
+      "salary": "$60,370"
+    },
+    {
+      "code": "41-9022.00",
+      "title": "Real Estate Sales Agent",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "36,600",
+      "growth": "+3%",
+      "fit": "Retail sales builds real customer-facing and closing skills that carry over, but real estate is a step up — it requires a state license, legal document handling, and managing complex multi-party transactions far beyond point-of-sale work.",
+      "steps": [
+        "Earn your state real estate salesperson license",
+        "Join a brokerage as a trainee agent",
+        "Close 3 supervised property transactions"
+      ],
+      "salary": "$56,320"
+    },
+    {
+      "code": "41-4012.00",
+      "title": "Manufacturing Sales Representative",
+      "level": null,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "114,800",
+      "growth": "0%",
+      "fit": "You already know how to read customers and recommend products, but this role is a step up — you'd be selling to businesses instead of individuals, managing accounts, quoting contracts, and tracking market conditions rather than running a register.",
+      "steps": [
+        "Build a documented quota attainment track record",
+        "Learn Salesforce CRM basics",
+        "Apply for inside B2B sales roles using referrals"
+      ],
+      "salary": "$66,780"
+    }
+  ],
+  "emergingTitles": [
+    "Brand Ambassador",
+    "Retail Associate",
+    "Floor Associate",
+    "Customer Service Representative"
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI-Powered Customer Service Specialist",
+      "description": "Manages and optimizes AI chatbots and virtual assistants for e-commerce and retail brands, handling customer interactions, training AI models on common queries, and escalating complex issues. Uses data from customer conversations to improve AI response accuracy and customer satisfaction scores.",
+      "core_tools": "Intercom, Zendesk AI, OpenAI API",
+      "experience_level": "1",
+      "stat": {
+        "text": "Over 70% of customer service organizations deployed or piloted AI-assisted support tools by end of 2024, with hybrid human-AI roles emerging as the dominant hiring model.",
+        "sourceName": "Salesforce",
+        "sourceTitle": "State of Service Report 2024",
+        "sourceDate": "2024",
+        "sourceUrl": "https://www.salesforce.com/resources/research-reports/state-of-service/"
+      },
+      "search_query": "\"AI Customer Service\" OR \"chatbot specialist\" retail jobs 2025",
+      "job_search_url": "",
+      "fit": "Your skill reading customers and solving problems transfers directly, but you'll shift from handling interactions yourself to training AI systems to handle them for you.",
+      "steps": [
+        "Complete Google Cloud AI Fundamentals or equivalent certification",
+        "Build a test chatbot using Intercom or Zendesk AI sandbox environment",
+        "Analyze 100+ customer service transcripts to identify common query patterns and AI training opportunities"
+      ]
+    },
+    {
+      "title": "E-Commerce Personalization Analyst",
+      "description": "Uses AI recommendation engines and customer behavior analytics to optimize product suggestions, pricing strategies, and user experience for online retail platforms. Analyzes A/B test results and customer journey data to improve conversion rates.",
+      "core_tools": "Dynamic Yield, Segment, Google Analytics 4",
+      "experience_level": "1",
+      "stat": {
+        "text": "Retailers using AI-driven personalization report an average 15% lift in conversion rates, fueling rapid hiring for analysts who can interpret model outputs and tune recommendation systems.",
+        "sourceName": "McKinsey & Company",
+        "sourceTitle": "The value of getting personalization right—or wrong—is multiplying",
+        "sourceDate": "Nov 2021",
+        "sourceUrl": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/the-value-of-getting-personalization-right-or-wrong-is-multiplying"
+      },
+      "search_query": "\"personalization analyst\" e-commerce OR retail jobs 2024 2025",
+      "job_search_url": "",
+      "fit": "Your ability to read customers and suggest products transfers directly, but you'll shift from real-time sales intuition to analyzing data patterns and testing changes at scale.",
+      "steps": [
+        "Complete Google Analytics 4 certification and set up a test e-commerce site",
+        "Build an A/B testing project using Segment to track user behavior and conversion metrics",
+        "Learn Dynamic Yield or similar platform through free trial by setting up personalized product recommendations"
+      ]
+    },
+    {
+      "title": "AI Product Data Specialist",
+      "description": "Uploads, categorizes, and enriches product catalogs for AI-driven recommendation engines and visual search tools used in e-commerce. Ensures product metadata is accurate and complete so AI systems can generate relevant personalized recommendations and descriptions.",
+      "core_tools": "Shopify AI, Amazon Product Ads with AI, Claude API for data validation",
+      "experience_level": "1",
+      "stat": {
+        "text": "Demand for data labeling and AI training data roles grew over 60% in 2024 as retailers and e-commerce platforms built proprietary AI datasets to power recommendation and pricing models.",
+        "sourceName": "LinkedIn Economic Graph",
+        "sourceTitle": "Future of Work Report: AI at Work",
+        "sourceDate": "Jan 2024",
+        "sourceUrl": "https://economicgraph.linkedin.com/research/future-of-work-report-ai"
+      },
+      "search_query": "\"Product Data Specialist\" AI retail OR \"AI product catalog\" specialist jobs",
+      "job_search_url": "",
+      "fit": "You already understand what customers want and how products sell, but now you'll focus on teaching machines to understand product data instead of selling to people directly.",
+      "steps": [
+        "Complete a Google Cloud or AWS data fundamentals certification",
+        "Build a sample product catalog project using Shopify AI or CSV data validation",
+        "Learn basic Python or SQL through a structured course for data manipulation"
+      ]
+    },
+    {
+      "title": "AI Customer Service Agent Trainer",
+      "description": "Trains and optimizes AI chatbots and virtual assistants used in retail customer support by providing feedback, refining conversational flows, and testing response accuracy. Works with platforms like Intercom or Zendesk to ensure AI agents handle customer inquiries effectively.",
+      "core_tools": "Intercom, Zendesk, OpenAI API",
+      "experience_level": "1",
+      "stat": {
+        "text": "72% of customer service organizations plan to increase AI chatbot deployment in 2025, creating demand for trainers who can bridge human expertise and AI systems.",
+        "sourceName": "Statista and Customer Service Industry Reports",
+        "sourceTitle": "AI in Customer Service Adoption Trends",
+        "sourceDate": "Jan 2025",
+        "sourceUrl": "https://www.statista.com/outlook/tmo/artificial-intelligence/customer-service"
+      },
+      "search_query": "\"AI customer service\" OR \"chatbot trainer\" OR \"conversational AI trainer\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your customer interaction skills transfer directly, but you'll shift from solving problems yourself to teaching machines how to solve them.",
+      "steps": [
+        "Complete Google's AI Essentials or similar free AI fundamentals course",
+        "Get hands-on with Zendesk or Intercom sandbox environments through their free training",
+        "Build a portfolio project: audit and document improvements to one retail chatbot's responses"
+      ]
+    }
+  ]
+}

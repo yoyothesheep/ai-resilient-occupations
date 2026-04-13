@@ -60,3 +60,18 @@ onet_code,occupation,cluster_id,level,is_canonical,typical_years_from_entry,note
 27-3041.00,Editors,marketing,3,false,4,Content/editorial branch. Manages content quality and strategy. Common at media and content-heavy firms.
 11-2011.00,Advertising and Promotions Managers,marketing,4,false,5,Campaign leadership. Broadens from digital to full media mix. Often from search marketing track.
 11-2021.00,Marketing Managers,marketing,5,true,8,Leadership destination. Full marketing strategy ownership. $161k median. CMO feeder role.
+27-1026.00,Merchandise Displayers and Window Trimmers,design,1,true,0,Entry point. No degree required. Retail/display experience is the path in. Stepping stone to graphic or interior design with formal education.
+27-1024.00,Graphic Designers,design,2,true,1,Core generalist entry. BA in graphic design standard. Adobe Creative Suite is the baseline toolkit.
+27-1014.00,Special Effects Artists and Animators,design,2,false,1,Digital/motion entry track. Portfolio-driven. BA or bootcamp + strong demo reel. Film/game/advertising paths diverge early.
+27-1021.00,Commercial and Industrial Designers,design,3,false,3,Product design specialization. BA in industrial design + 3D CAD skills (SolidWorks or Rhino). Requires materials and manufacturing knowledge.
+27-1022.00,Fashion Designers,design,3,false,3,Apparel design specialization. BA in fashion design. Textile and pattern knowledge required. Portfolio-driven. FIT or Parsons are common programs.
+27-1013.00,Fine Artists Including Painters Sculptors and Illustrators,design,3,false,3,Fine art/illustration track. BA in studio art. Bridges to commercial work via illustration, concept art, or editorial illustration.
+27-1025.00,Interior Designers,design,4,false,4,Space design specialization. 2-4yr interior design program + NCIDQ exam for licensure. Strongest demand in residential, hospitality, and commercial sectors.
+27-1027.00,Set and Exhibit Designers,design,4,false,4,Environment/experiential design specialization. Theater, film, or museum track. Spatial visualization + production design portfolio required.
+27-1011.00,Art Directors,design,5,true,5,Canonical top of design cluster. Creative leadership of visual projects and campaigns. Senior designer → AD promotion is standard in agencies and in-house teams. $111k median.
+13-1161.00,Market Research Analysts and Marketing Specialists,analysts,1,true,0,Entry point. Broad analyst track. Shared with marketing cluster. Data analysis and research foundation.
+13-2031.00,Budget Analysts,analysts,2,true,2,Government/corporate budget track. BA in finance or accounting. Audit and cost analysis focus.
+13-1111.00,Management Analysts,analysts,3,true,3,Core mid-level. Strategy consulting and process improvement. MBA or 3yr consulting track typical.
+13-2051.00,Financial and Investment Analysts,analysts,3,false,3,Financial/investment track. CFA Level 1 is the signal. Common in corporate finance and banking.
+13-1041.00,Compliance Officers,analysts,3,false,3,Regulatory/compliance track. Industry-specific certifications (CRCM, CHC). Research skills transfer.
+13-2061.00,Financial Examiners,analysts,5,true,6,Canonical top. Federal/state bank examiner (OCC, FDIC, SEC). Highest resilience in cluster.
