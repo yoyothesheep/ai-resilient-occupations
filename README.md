@@ -38,7 +38,7 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
 │   │   └── onet_economic_index_metrics.csv           # 923 occupation-level AEI rollups
 │   ├── output/
 │   │   ├── ai_resilience_scores.csv       # Scored & ranked occupations (all 1,016)
-│   │   └── occupation_cards.jsonl         # Per-occupation career page data (bridge to site)
+│   │   └── cards/                         # Per-occupation career page data (one .json per occupation)
 │   ├── career_clusters/                   # Career ladder topology
 │   │   ├── clusters.csv                   # Career cluster definitions
 │   │   ├── cluster_branches.csv           # From→to career transitions
@@ -55,10 +55,11 @@ Final output is [hosted at this site](https://ai-proof-careers.com).
     ├── enrich_onet.py                # Track A Stage 1: Enrich O*NET data
     ├── score_occupations.py          # Track A Stage 2: Score all occupations via Claude API
     ├── build_task_table.py           # Track A Stage 3: Task table + AEI metrics
+    ├── cards.py                      # Shared helpers: load_cards(), save_card(), save_cards()
     ├── generate_emerging_roles.py    # Track B Stage 5: Generate emerging AI-adjacent roles
-    ├── generate_emerging_job_titles.py  # Track B Stage 5: Merge job title aliases into scores CSV
-    ├── generate_next_steps.py        # Track B Stage 6a: Generate occupation cards
-    ├── adjacent_roles.py             # Track B Stage 6b: Add careerCluster to cards
+    ├── generate_emerging_job_titles.py  # Track B Stage 6: Merge job title aliases into scores CSV
+    ├── generate_next_steps.py        # Track B Stage 7a: Generate occupation cards
+    ├── adjacent_roles.py             # Track B Stage 7b: Add careerCluster to cards
     ├── download_onet.py              # Utility: Download & manage O*NET database versions
     ├── download_economic_index.py    # Utility: Download Anthropic Economic Index from HuggingFace
     ├── patch_task_data.py            # Utility: Patch task data in career page .tsx files
@@ -113,7 +114,7 @@ python3 scripts/generate_next_steps.py --cluster <id>
 python3 scripts/adjacent_roles.py --cluster <id>
 ```
 
-**Output:** `data/output/occupation_cards.jsonl` is the bridge to the site repo. Each `.tsx` career page embeds data from the corresponding card.
+**Output:** `data/output/cards/` is the bridge to the site repo. One JSON file per occupation (e.g. `13-2031.00.json`). Each `.tsx` career page embeds data from the corresponding card. Use `scripts/cards.py` helpers to read/write — never open these files directly in pipeline scripts.
 
 ### Input Data
 
@@ -227,9 +228,9 @@ See `docs/scoring-framework.md` for complete rubrics and calculation details.
 | `altpath simple title` | Plain-language job title |
 | `Emerging Job Titles` | Semicolon-separated real-world title aliases (e.g. "Social Media Manager; Content Strategist") |
 
-### Occupation Cards (`data/output/occupation_cards.jsonl`)
+### Occupation Cards (`data/output/cards/`)
 
-One JSON object per line, per occupation. Contains all data needed to generate a career page: score, salary, growth, task-level AI data (automation/augmentation rates from Anthropic Economic Index), adjacent roles, emerging roles, how-to-adapt guidance, and sourced quotes.
+One JSON file per occupation (e.g. `data/output/cards/13-2031.00.json`). Contains all data needed to generate a career page: score, salary, growth, task-level AI data (automation/augmentation rates from Anthropic Economic Index), adjacent roles, emerging roles, how-to-adapt guidance, and sourced quotes. Read and written via `scripts/cards.py` (`load_cards()`, `save_card()`, `save_cards()`).
 
 ### Top No-Degree Careers Subset (`data/top_no_degree_careers/`)
 
