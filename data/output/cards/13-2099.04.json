@@ -285,18 +285,18 @@
   "growth": "+3%",
   "taskData": [
     {
-      "task": "Document investigative activities",
-      "full": "Document all investigative activities.",
-      "weight": 21.9,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
       "task": "Gather financial evidence",
       "full": "Gather financial documents related to investigations.",
       "weight": 21.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 23
+    },
+    {
+      "task": "Document investigative activities",
+      "full": "Document all investigative activities.",
+      "weight": 21.9,
       "auto": null,
       "aug": null,
       "success": null,
@@ -312,6 +312,15 @@
       "n": null
     },
     {
+      "task": "Prepare investigation reports",
+      "full": "Prepare written reports of investigation findings.",
+      "weight": 16.1,
+      "auto": 51.0,
+      "aug": null,
+      "success": 72.5,
+      "n": 51
+    },
+    {
       "task": "Lead investigation teams",
       "full": "Lead, or participate in, fraud investigation teams.",
       "weight": 18.4,
@@ -319,6 +328,24 @@
       "aug": null,
       "success": null,
       "n": null
+    },
+    {
+      "task": "Triage fraud reports",
+      "full": "Review reports of suspected fraud to determine need for further investigation.",
+      "weight": 15.4,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 32
+    },
+    {
+      "task": "Fraud Trends and Techniques Monitoring",
+      "full": "Maintain knowledge of current events and trends in such areas as money laundering and criminal tools and techniques.",
+      "weight": 13.9,
+      "auto": null,
+      "aug": 52.3,
+      "success": 63.6,
+      "n": 44
     },
     {
       "task": "Coordinate with law enforcement",
@@ -330,45 +357,18 @@
       "n": null
     },
     {
-      "task": "Prepare investigation reports",
-      "full": "Prepare written reports of investigation findings.",
-      "weight": 16.1,
-      "auto": 39.0,
-      "aug": null,
-      "success": 76.6,
-      "n": 77
-    },
-    {
-      "task": "Triage fraud reports",
-      "full": "Review reports of suspected fraud to determine need for further investigation.",
-      "weight": 15.4,
+      "task": "Analyze financial irregularities",
+      "full": "Analyze financial data to detect irregularities in areas such as billing trends, financial relationships, and regulatory compliance procedures.",
+      "weight": 14.8,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": 25
+      "n": 15
     },
     {
       "task": "Recommend case actions",
       "full": "Recommend actions in fraud cases.",
       "weight": 15.1,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Interview witnesses/suspects",
-      "full": "Interview witnesses or suspects and take statements.",
-      "weight": 15.1,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Analyze financial irregularities",
-      "full": "Analyze financial data to detect irregularities in areas such as billing trends, financial relationships, and regulatory compliance procedures.",
-      "weight": 14.8,
       "auto": null,
       "aug": null,
       "success": null,

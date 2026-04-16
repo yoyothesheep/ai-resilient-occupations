@@ -1,0 +1,350 @@
+{
+  "onet_code": "15-1299.05",
+  "title": "Information Security Engineers",
+  "score": 61,
+  "salary": "$108,970",
+  "openings": "31,300",
+  "growth": "+7%",
+  "jobTitles": [
+    "BISO (Business Information Security Officer)",
+    "Cloud Engineer, Engineer",
+    "Information Security Auditor",
+    "Information Security System Engineer",
+    "Infrastructure Security Engineer",
+    "Security Analyst",
+    "Security Data Scientist",
+    "Security Engineer",
+    "Systems Engineer"
+  ],
+  "emergingTitles": [],
+  "keyDrivers": "Security engineers design and build the systems that protect organizations from constantly evolving cyber threats, requiring creative problem-solving in situations that have never been seen before. Their deep knowledge of specific organizational architectures and threat landscapes is hard for AI to replicate. The explosion of AI-powered tools and AI-driven attacks is creating more demand for experts who can architect defenses and oversee automated security systems—making this role a clear beneficiary of AI's rise.",
+  "taskData": [
+    {
+      "task": "Monitor networks for breaches",
+      "full": "Coordinate monitoring of networks or systems for security breaches or intrusions.",
+      "weight": 20.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Assess security controls",
+      "full": "Assess the quality of security controls, using performance indicators.",
+      "weight": 19.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Solve security problems",
+      "full": "Identify or implement solutions to information security problems.",
+      "weight": 16.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Troubleshoot security issues",
+      "full": "Troubleshoot security and network problems.",
+      "weight": 16.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Scan for vulnerabilities",
+      "full": "Scan networks, using vulnerability assessment tools to identify vulnerabilities.",
+      "weight": 16.2,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Train staff on security",
+      "full": "Train staff on, and oversee the use of, information security standards, policies, and best practices.",
+      "weight": 15.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Computer File Safeguard Planning",
+      "full": "Oversee development of plans to safeguard computer files against accidental or unauthorized modification, destruction, or disclosure or to meet emergency data processing needs.",
+      "weight": 15.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Run penetration tests",
+      "full": "Identify security system weaknesses, using penetration tests.",
+      "weight": 15.3,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Provide technical support",
+      "full": "Provide technical support to computer users for installation and use of security products.",
+      "weight": 14.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    },
+    {
+      "task": "Oversee risk assessments",
+      "full": "Oversee performance of risk assessment or execution of system tests to ensure the functioning of data processing activities or security measures.",
+      "weight": 14.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
+    }
+  ],
+  "risks": {
+    "body": "AI-powered vulnerability scanners, automated penetration testing platforms, and cloud-native security tooling are consolidating work that previously required dedicated engineering headcount, smaller teams can now cover more attack surface with fewer engineers [1]. The entry tier is thinning: junior security engineering roles focused on firewall configuration and routine policy enforcement are being absorbed by managed security service providers and automated platforms, compressing the traditional on-ramp [2].",
+    "stat": "25%",
+    "statLabel": "of cybersecurity teams reported layoffs in 2024",
+    "statSourceName": "ISC2",
+    "statSourceTitle": "Cybersecurity Workforce Study 2024",
+    "statSourceDate": "Oct 2024",
+    "statSourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
+  },
+  "opportunities": {
+    "body": "Designing security architecture for AI systems is an emergent specialty with no established playbook, organizations deploying LLMs and ML pipelines need engineers who can threat-model novel attack surfaces like prompt injection, model inversion, and supply chain compromise that automated tools are not yet built to catch [1]. Every organization faces regulatory accountability for security failures that cannot be delegated to software: engineers who own the architecture and can testify to its soundness command a persistent premium [2].",
+    "stat": "$15,000",
+    "statLabel": "annual salary premium for CISSP-certified security engineers",
+    "statSourceName": "ISC2",
+    "statSourceTitle": "Cybersecurity Workforce Study 2024",
+    "statSourceDate": "Oct 2024",
+    "statSourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
+  },
+  "howToAdapt": {
+    "alreadyIn": "Start by mapping which parts of your current work have been absorbed by automated tooling in the last two years, those are not where to build depth. The work that remains most human is threat modeling novel systems: AI pipelines, zero-trust architecture decisions, and incident response judgment under ambiguity [1]. Over the next six months, build hands-on experience securing at least one AI system end-to-end, from data pipeline to model serving, since that intersection of ML and security is where demand is outpacing supply [2].",
+    "thinkingOf": "CISSP or CompTIA CASP+ are the credentials that distinguish candidates in this field, but hiring managers increasingly want to see lab evidence alongside the cert [1]. Build a home lab: deploy a SIEM, run a penetration test against a controlled environment, and document your methodology. The roles opening fastest are in cloud security and AI system security, so portfolio work demonstrating familiarity with AWS Security Hub, Azure Defender, or LLM threat modeling will carry more weight than general programming projects [2].",
+    "quotes": [
+      {
+        "persona": "alreadyIn",
+        "quote": "The tools are getting better at finding known vulnerabilities faster than any human can. What they cannot do is understand the business context of a finding, whether a misconfiguration is actually exploitable given how this specific organization operates, or whether patching it immediately would break a critical production system. That judgment is where security engineers still have a durable advantage.",
+        "attribution": "ACM Queue, 'Human Judgment in Automated Security Operations'",
+        "sourceId": "src-acm"
+      },
+      {
+        "persona": "alreadyIn",
+        "quote": "We are seeing a shift where organizations want fewer, more senior security engineers rather than larger teams of generalists. The engineers who are thriving are the ones who can operate at the architecture level, who can look at a new AI deployment or a cloud migration and immediately identify the trust boundaries that automated scanners are not designed to evaluate.",
+        "attribution": "ISC2, Cybersecurity Workforce Study 2024",
+        "sourceId": "src-1"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "Certifications matter, but what separates candidates in our pipeline is evidence that they have actually built something and broken something. A documented home lab tells us more about a candidate's instincts than a transcript. The people who stand out are the ones who can articulate why a system failed, not just that it did.",
+        "attribution": "CISA, 'Building the Next Generation of Cybersecurity Professionals'",
+        "sourceId": "src-cisa"
+      },
+      {
+        "persona": "thinkingOf",
+        "quote": "AI security is not a subspecialty anymore, it is becoming a baseline expectation. Organizations deploying LLMs need engineers who understand prompt injection, model extraction, and data poisoning as attack vectors. Candidates who can speak to these threats specifically are moving through hiring pipelines significantly faster.",
+        "attribution": "CISA, Roadmap for Artificial Intelligence",
+        "sourceId": "src-cisa"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src-1",
+      "name": "ISC2",
+      "title": "Cybersecurity Workforce Study 2024",
+      "date": "Oct 2024",
+      "url": ""
+    },
+    {
+      "id": "src-2",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Information Security Analysts",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
+    },
+    {
+      "id": "src-acm",
+      "name": "ACM Queue",
+      "title": "ACM Queue: Practitioner Perspectives on AI in Software",
+      "date": "2024",
+      "url": ""
+    },
+    {
+      "id": "src-cisa",
+      "name": "CISA",
+      "title": "Roadmap for Artificial Intelligence",
+      "date": "Nov 2023",
+      "url": ""
+    }
+  ],
+  "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
+  "careerCluster": [
+    {
+      "code": "15-1212.00",
+      "title": "Information Security Analysts",
+      "level": 3,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "openings": "16,000",
+      "growth": "+28%",
+      "salary": "$124,910",
+      "fit": "An information security engineer moving to analyst is a step down — your architecture and system-design experience is directly applicable, but the role narrows from building security systems to monitoring and responding within them.",
+      "steps": [
+        "No new credential required",
+        "Refresh SIEM monitoring skills (Splunk, QRadar)",
+        "Apply for senior analyst roles to match current seniority"
+      ]
+    },
+    {
+      "code": "15-1299.08",
+      "title": "Computer Systems Engineers/Architects",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "salary": "$108,970",
+      "fit": "Moving to systems architect is a step up — your security engineering background gives you strong infrastructure intuition, but the role expands scope from security systems to the full stack of system design and deployment decisions.",
+      "steps": [
+        "Earn AWS or Azure Solutions Architect certification",
+        "Shadow or co-lead a systems design project",
+        "Build a home lab deploying full network infrastructure"
+      ]
+    },
+    {
+      "code": "15-1221.00",
+      "title": "Computer Science Researcher",
+      "level": 5,
+      "isCurrent": false,
+      "relationship": "progression",
+      "openings": "3,200",
+      "growth": "+20%",
+      "salary": "$140,910",
+      "fit": "Moving to computer science researcher is a significant step up that requires a PhD — your security engineering background is relevant for security systems research, cryptography, or formal verification, but the credential gap is substantial.",
+      "steps": [
+        "Earn a PhD in computer science or cybersecurity",
+        "Publish a security research paper",
+        "Focus on cryptography, formal methods, or AI security"
+      ]
+    },
+    {
+      "code": "15-2051.00",
+      "title": "Data Scientist",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "23,400",
+      "growth": "+34%",
+      "salary": "$112,590",
+      "fit": "Moving to data scientist is a lateral move — your experience analyzing security data and network logs overlaps with data work, but the role shifts entirely from threat detection to statistical modeling and prediction.",
+      "steps": [
+        "Complete a Python/ML course (Coursera, fast.ai)",
+        "Build 2-3 portfolio projects on public datasets",
+        "Earn Google Data Analytics or AWS ML Specialty cert"
+      ]
+    },
+    {
+      "code": "15-1299.09",
+      "title": "Information Technology Project Manager",
+      "level": 4,
+      "isCurrent": false,
+      "relationship": "specialization",
+      "openings": "31,300",
+      "growth": "Much faster than average (7% or higher)",
+      "salary": "$108,970",
+      "fit": "Moving to IT project manager is a lateral move — your experience coordinating security implementations and working across teams transfers, but the role shifts from technical ownership to schedule, budget, and people coordination.",
+      "steps": [
+        "Earn PMP or CAPM certification",
+        "Lead an internal security project end-to-end",
+        "Learn Jira or MS Project for tracking"
+      ]
+    },
+    {
+      "code": "15-1252.00",
+      "title": "Software Developer",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "openings": "115,200",
+      "growth": "+16%",
+      "salary": "$133,080",
+      "fit": "An information security engineer moving to software developer is a step down in scope — your systems knowledge and programming skills transfer directly, but the role shifts from securing software to building it.",
+      "steps": [
+        "No new credential required",
+        "Build 2-3 software portfolio projects",
+        "Learn a backend framework (Django, Spring, Node)"
+      ]
+    },
+    {
+      "code": "15-1243.00",
+      "title": "Database Architect",
+      "level": 1,
+      "isCurrent": false,
+      "relationship": "less_trained",
+      "openings": "4,000",
+      "growth": "+9%",
+      "salary": "$135,980",
+      "fit": "An information security engineer moving to database architect is a step down — your familiarity with data access control and secure system design carries over, but the role narrows from broad security architecture to database structure and design.",
+      "steps": [
+        "No new credential required",
+        "Earn Oracle or Microsoft Azure Data certification",
+        "Build a portfolio of database schema designs"
+      ]
+    }
+  ],
+  "emergingCareers": [
+    {
+      "title": "AI Security Engineer",
+      "description": "Secures AI systems and ML pipelines against adversarial attacks, prompt injection, model inversion, and data poisoning. Works with ML and product teams to define threat models for LLM-powered products, implement guardrails, and audit model behavior for exploitable weaknesses before and after deployment.",
+      "core_tools": "Garak, Microsoft PyRIT, AWS Bedrock Guardrails",
+      "experience_level": "3",
+      "stat": {
+        "text": "The White House Executive Order on AI mandates red-team testing and security evaluation for frontier AI models before deployment, creating dedicated AI security roles at organizations deploying large-scale AI systems.",
+        "sourceName": "White House",
+        "sourceTitle": "Executive Order on the Safe, Secure, and Trustworthy Development and Use of AI",
+        "sourceDate": "Oct 2023",
+        "sourceUrl": "https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/"
+      },
+      "search_query": "\"AI security engineer\" OR \"LLM security\" engineer jobs 2025",
+      "job_search_url": "",
+      "fit": "Your background in threat modeling and vulnerability assessment maps directly to AI system security — the shift is from attacking infrastructure to attacking model behavior, prompt logic, and AI pipeline trust boundaries.",
+      "steps": [
+        "Complete OWASP's LLM Top 10 guide and run Garak against a public LLM API to document at least 3 exploitable weaknesses",
+        "Study Microsoft's PyRIT framework and replicate one published prompt injection attack from a recent AI security paper",
+        "Pursue the GIAC AI Security Fundamentals (GAISC) certification or Stanford's AI Security short course on Coursera"
+      ]
+    },
+    {
+      "title": "Cloud Security Architect",
+      "description": "Designs and owns the security architecture for cloud-native infrastructure — zero-trust network models, IAM policies, secrets management, and runtime threat detection across AWS, Azure, or GCP environments. Serves as the authoritative voice on security trade-offs in platform and product decisions.",
+      "core_tools": "AWS Security Hub, Azure Defender, Terraform, Falco",
+      "experience_level": "3",
+      "stat": {
+        "text": "Cloud security is the fastest-growing segment of cybersecurity spending, with organizations prioritizing cloud-native security architecture roles as they migrate critical workloads to multi-cloud environments.",
+        "sourceName": "ISC2",
+        "sourceTitle": "Cybersecurity Workforce Study 2024",
+        "sourceDate": "Oct 2024",
+        "sourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
+      },
+      "search_query": "\"cloud security architect\" jobs 2025",
+      "job_search_url": "",
+      "fit": "Your security engineering foundation — threat modeling, vulnerability assessment, policy design — applies directly to cloud environments; the new layer is deep fluency with cloud-native IAM, networking, and managed security services.",
+      "steps": [
+        "Earn AWS Security Specialty or Google Professional Cloud Security Engineer certification",
+        "Build a Terraform-managed cloud environment with zero-trust IAM and runtime monitoring (Falco or AWS GuardDuty)",
+        "Complete a hands-on cloud security lab on CloudGoat (Rhino Security Labs) to document offensive and defensive cloud attack paths"
+      ]
+    }
+  ]
+}

@@ -305,46 +305,64 @@
       "task": "Manage client portfolios",
       "full": "Manage client portfolios, keeping client plans up-to-date.",
       "weight": 16.9,
-      "auto": 26.3,
-      "aug": 27.8,
-      "success": 63.4,
-      "n": 205
+      "auto": 29.4,
+      "aug": 28.8,
+      "success": 66.7,
+      "n": 306
     },
     {
       "task": "Analyze client finances",
       "full": "Analyze financial information obtained from clients to determine strategies for meeting clients' financial objectives.",
       "weight": 16.7,
-      "auto": 29.0,
-      "aug": 34.8,
-      "success": 58.7,
-      "n": 858
+      "auto": 27.5,
+      "aug": 38.9,
+      "success": 68.4,
+      "n": 1537
+    },
+    {
+      "task": "Recommend financial products",
+      "full": "Recommend financial products, such as stocks, bonds, mutual funds, or insurance.",
+      "weight": 14.7,
+      "auto": 35.7,
+      "aug": 26.3,
+      "success": 60.5,
+      "n": 1842
+    },
+    {
+      "task": "Answer client questions",
+      "full": "Answer clients' questions about the purposes and details of financial plans and strategies.",
+      "weight": 14.7,
+      "auto": 20.3,
+      "aug": 50.2,
+      "success": 80.3,
+      "n": 801
+    },
+    {
+      "task": "Monitor market trends",
+      "full": "Monitor financial market trends to ensure that client plans are responsive.",
+      "weight": 12.4,
+      "auto": 37.2,
+      "aug": 45.1,
+      "success": 51.1,
+      "n": 317
     },
     {
       "task": "Recommend planning strategies",
       "full": "Recommend to clients strategies in cash management, insurance coverage, investment planning, or other areas to help them achieve their financial goals.",
       "weight": 15.0,
       "auto": null,
-      "aug": null,
-      "success": 70.8,
-      "n": 24
+      "aug": 44.1,
+      "success": 88.2,
+      "n": 34
     },
     {
-      "task": "Recommend financial products",
-      "full": "Recommend financial products, such as stocks, bonds, mutual funds, or insurance.",
-      "weight": 14.7,
-      "auto": 34.7,
-      "aug": 26.7,
-      "success": 48.8,
-      "n": 1062
-    },
-    {
-      "task": "Answer client questions",
-      "full": "Answer clients' questions about the purposes and details of financial plans and strategies.",
-      "weight": 14.7,
-      "auto": 19.0,
-      "aug": 49.1,
-      "success": 77.2,
-      "n": 527
+      "task": "Financial Services Explanation",
+      "full": "Explain to clients the personal financial advisor's responsibilities and the types of services to be provided.",
+      "weight": 11.0,
+      "auto": 23.1,
+      "aug": 43.2,
+      "success": 72.5,
+      "n": 229
     },
     {
       "task": "Implement plan recommendations",
@@ -372,24 +390,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Interview clients",
-      "full": "Interview clients to determine their current income, expenses, insurance coverage, tax status, financial objectives, risk tolerance, or other information needed to develop a financial plan.",
-      "weight": 13.6,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Monitor market trends",
-      "full": "Monitor financial market trends to ensure that client plans are responsive.",
-      "weight": 12.4,
-      "auto": 37.4,
-      "aug": 42.3,
-      "success": 31.3,
-      "n": 163
     }
   ],
   "keyDrivers": "People often choose a financial advisor because they want a trusted human guiding them through major life decisions—retirement, college savings, estate planning—where emotional reassurance matters as much as the numbers. The role carries meaningful regulatory accountability and requires understanding each client's full personal picture. However, robo-advisors and AI tools are already automating portfolio management and basic planning, and the work is fully remote-compatible, which creates real competitive pressure on advisors who don't offer deep relationship value.",

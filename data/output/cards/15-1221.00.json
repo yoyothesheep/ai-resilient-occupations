@@ -18,10 +18,28 @@
       "task": "Analyze hardware/software problems",
       "full": "Analyze problems to develop solutions involving computer hardware and software.",
       "weight": 20.7,
+      "auto": 46.6,
+      "aug": 32.9,
+      "success": 67.1,
+      "n": 73
+    },
+    {
+      "task": "Model technical problems mathematically",
+      "full": "Conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",
+      "weight": 14.0,
+      "auto": 29.9,
+      "aug": 40.9,
+      "success": 71.7,
+      "n": 5036
+    },
+    {
+      "task": "Schedule/prioritize tasks",
+      "full": "Assign or schedule tasks to meet work priorities and goals.",
+      "weight": 15.8,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 71.4,
+      "n": 28
     },
     {
       "task": "Apply theory to new technology",
@@ -33,13 +51,13 @@
       "n": null
     },
     {
-      "task": "Schedule/prioritize tasks",
-      "full": "Assign or schedule tasks to meet work priorities and goals.",
-      "weight": 15.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "task": "Computing Needs Consultation",
+      "full": "Consult with users, management, vendors, and technicians to determine computing needs and system requirements.",
+      "weight": 10.1,
+      "auto": 26.9,
+      "aug": 47.1,
+      "success": 70.8,
+      "n": 733
     },
     {
       "task": "Design computers/software",
@@ -51,13 +69,13 @@
       "n": null
     },
     {
-      "task": "Model technical problems mathematically",
-      "full": "Conduct logical analyses of business, scientific, engineering, and other technical problems, formulating mathematical models of problems for solution by computers.",
-      "weight": 14.0,
-      "auto": 24.0,
-      "aug": 38.6,
-      "success": 62.7,
-      "n": 3806
+      "task": "Organizational Goals Interpretation",
+      "full": "Develop and interpret organizational goals, policies, and procedures.",
+      "weight": 9.9,
+      "auto": 35.0,
+      "aug": 17.5,
+      "success": 65.0,
+      "n": 137
     },
     {
       "task": "Meet to resolve problems",
@@ -85,40 +103,22 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Evaluate project feasibility",
-      "full": "Evaluate project plans and proposals to assess feasibility issues.",
-      "weight": 10.9,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Direct departmental operations",
-      "full": "Direct daily operations of departments, coordinating project activities with other departments.",
-      "weight": 10.1,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {
-    "body": "Weighted automation across observed tasks runs at 38.9% - meaningful signal that AI is handling portions of the code writing, data analysis, and model evaluation work that researchers do alongside their primary investigations [1]. The risk is concentrated at the entry level: research assistants and junior scientists who spend the majority of their time on data processing and literature review face the most direct competition from AI tools that can handle those tasks. BLS projects 20% employment growth but notes that most opportunities will favor those with doctoral degrees and demonstrated research output [2].",
-    "stat": "1 in 4",
-    "statLabel": "AI research papers now list an LLM as co-author or contributor",
-    "statSourceName": "Stanford HAI",
-    "statSourceTitle": "AI Index Report 2024",
-    "statSourceDate": "Apr 2024",
-    "statSourceUrl": "https://aiindex.stanford.edu/report/"
+    "body": "AI coding assistants and automated data pipelines are absorbing the literature review, data processing, and boilerplate model evaluation work that junior researchers spend most of their time on — compressing the entry-level pipeline into the field [1]. Tech industry research lab headcount has contracted sharply since 2022, with major AI labs consolidating teams and shifting from basic research toward applied product work, narrowing the number of academic-style research positions available in industry [2].",
+    "stat": "7,000+",
+    "statLabel": "tech research and engineering roles cut at major AI labs in 2023–2024",
+    "statSourceName": "Layoffs.fyi",
+    "statSourceTitle": "Tech Layoffs Tracker",
+    "statSourceDate": "Jan 2025",
+    "statSourceUrl": "https://layoffs.fyi"
   },
   "opportunities": {
-    "body": "This role scores a 5 out of 5 on novel judgment - the highest possible rating - reflecting that original scientific contribution, hypothesis generation, and working at knowledge frontiers are structurally resistant to automation [2]. Mathematical modeling and analysis shows 38.6% augmentation even as automation rises, indicating AI works as a research accelerator in the core work rather than displacing it entirely [1]. A10 scores a 5, meaning this role is well-positioned to direct and benefit from AI tools as they improve - researchers who use AI to run more experiments and test more hypotheses faster are producing more output with the same effort.",
-    "stat": "5x",
-    "statLabel": "more AI research papers published in 2024 vs. 2020, expanding demand for original researchers",
+    "body": "Original hypothesis generation, experimental design, and peer-reviewed publication require scientific judgment that remains structurally resistant to automation — AI accelerates the execution layer but cannot replace the researcher directing it [1]. The volume of AI research published has grown dramatically, creating sustained demand for scientists who can evaluate, critique, and extend the frontier: reviewers, collaborators, and principal investigators who can direct AI-assisted research programs at scale [2].",
+    "stat": "4x",
+    "statLabel": "increase in AI-related research papers published since 2020",
     "statSourceName": "Stanford HAI",
     "statSourceTitle": "AI Index Report 2024",
     "statSourceDate": "Apr 2024",
@@ -126,7 +126,7 @@
   },
   "howToAdapt": {
     "alreadyIn": "The research work most protected from displacement is the part that requires genuine originality - identifying novel problems, designing experiments that test real unknowns, and interpreting ambiguous results in context of the field. Start using AI tools to accelerate the literature review and initial modeling phases, which frees more time for the creative and judgment-intensive work at the frontier [1]. Over the next year, build depth in AI research itself or in domain-specific applications of machine learning, since those intersections carry both higher demand and stronger protections than generalist computer science research.",
-    "thinkingOf": "Doctoral degrees are the standard credential for this field, and most positions are in universities, government labs, and the research divisions of large technology companies [2]. The path is long but the role's structural protections are strong - original research output is among the hardest things for AI to generate reliably, and the judgment required to identify what is worth investigating is a persistent human advantage. Build a research portfolio that shows systems-level thinking and the ability to publish findings, not just implement existing methods.",
+    "thinkingOf": "Doctoral degrees are the standard credential for this field, and most positions are in universities, government labs, and the research divisions of large technology companies [4]. The path is long but the role's structural protections are strong - original research output is among the hardest things for AI to generate reliably, and the judgment required to identify what is worth investigating is a persistent human advantage. Build a research portfolio that shows systems-level thinking and the ability to publish findings, not just implement existing methods.",
     "quotes": [
       {
         "persona": "alreadyIn",
@@ -164,10 +164,10 @@
     },
     {
       "id": "src-2",
-      "name": "U.S. Bureau of Labor Statistics",
-      "title": "Occupational Outlook Handbook: Computer and Information Research Scientists",
-      "date": "Sep 2025",
-      "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
+      "name": "Layoffs.fyi",
+      "title": "Tech Layoffs Tracker",
+      "date": "Jan 2025",
+      "url": "https://layoffs.fyi"
     },
     {
       "id": "src-3",
@@ -175,6 +175,13 @@
       "title": "AI Index Report 2024",
       "date": "Apr 2024",
       "url": "https://aiindex.stanford.edu/report/"
+    },
+    {
+      "id": "src-4",
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Computer and Information Research Scientists",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/computer-and-information-research-scientists.htm"
     },
     {
       "id": "src-acm",

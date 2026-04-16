@@ -29,82 +29,82 @@
       "task": "Analyze customer demographics/demand",
       "full": "Collect and analyze data on customer demographics, preferences, needs, and buying habits to identify potential markets and factors affecting product demand.",
       "weight": 16.8,
-      "auto": 45.3,
-      "aug": 15.2,
-      "success": 44.7,
-      "n": 702
+      "auto": 47.3,
+      "aug": 13.4,
+      "success": 53.5,
+      "n": 949
     },
     {
       "task": "Research consumer opinions/strategies",
       "full": "Conduct research on consumer opinions and marketing strategies, collaborating with marketing professionals, statisticians, pollsters, and other professionals.",
       "weight": 16.6,
-      "auto": 56.1,
-      "aug": null,
-      "success": 37.4,
-      "n": 107
+      "auto": 57.6,
+      "aug": 15.2,
+      "success": 44.4,
+      "n": 99
     },
     {
       "task": "Write/visualize research reports",
       "full": "Prepare reports of findings, illustrating data graphically and translating complex findings into written text.",
       "weight": 16.5,
-      "auto": 36.8,
-      "aug": 14.8,
-      "success": 63.6,
-      "n": 209
+      "auto": 26.7,
+      "aug": 22.3,
+      "success": 76.2,
+      "n": 202
     },
     {
       "task": "Design surveys/data collection",
       "full": "Devise and evaluate methods and procedures for collecting data, such as surveys, opinion polls, or questionnaires, or arrange to obtain existing data.",
       "weight": 16.1,
-      "auto": 36.6,
+      "auto": 56.4,
       "aug": null,
-      "success": 63.4,
-      "n": 41
+      "success": 56.4,
+      "n": 39
     },
     {
       "task": "Evaluate marketing effectiveness",
       "full": "Measure the effectiveness of marketing, advertising, and communications programs and strategies.",
       "weight": 12.5,
-      "auto": 32.3,
-      "aug": 25.2,
-      "success": 59.9,
-      "n": 337
-    },
-    {
-      "task": "Analyze competitor data",
-      "full": "Gather data on competitors and analyze their prices, sales, and method of marketing and distribution.",
-      "weight": 11.3,
-      "auto": 50.9,
-      "aug": 10.7,
-      "success": 25.8,
-      "n": 383
-    },
-    {
-      "task": "Assess market positioning",
-      "full": "Seek and provide information to help companies determine their position in the marketplace.",
-      "weight": 11.0,
-      "auto": 47.4,
-      "aug": 27.2,
-      "success": 32.4,
-      "n": 312
+      "auto": 39.7,
+      "aug": 24.0,
+      "success": 66.9,
+      "n": 499
     },
     {
       "task": "Forecast marketing/sales trends",
       "full": "Forecast and track marketing and sales trends, analyzing collected data.",
       "weight": 11.7,
-      "auto": 49.4,
-      "aug": null,
-      "success": 40.7,
-      "n": 81
+      "auto": 48.4,
+      "aug": 16.3,
+      "success": 58.8,
+      "n": 153
+    },
+    {
+      "task": "Analyze competitor data",
+      "full": "Gather data on competitors and analyze their prices, sales, and method of marketing and distribution.",
+      "weight": 11.3,
+      "auto": 54.1,
+      "aug": 15.9,
+      "success": 39.1,
+      "n": 711
+    },
+    {
+      "task": "Assess market positioning",
+      "full": "Seek and provide information to help companies determine their position in the marketplace.",
+      "weight": 11.0,
+      "auto": 52.8,
+      "aug": 28.9,
+      "success": 50.4,
+      "n": 506
     },
     {
       "task": "Track industry trends",
       "full": "Monitor industry statistics and follow trends in trade literature.",
       "weight": 13.3,
       "auto": null,
-      "aug": null,
-      "success": null,
-      "n": 23
+      "aug": 51.4,
+      "success": 54.1,
+      "n": 37
     },
     {
       "task": "Measure satisfaction levels",

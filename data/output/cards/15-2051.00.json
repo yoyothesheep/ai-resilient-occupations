@@ -41,7 +41,7 @@
       "n": null
     },
     {
-      "task": "Clean raw data",
+      "task": "Raw Data Cleaning and Manipulation",
       "full": "Clean and manipulate raw data using statistical software.",
       "weight": 17.0,
       "auto": null,

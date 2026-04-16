@@ -18,91 +18,91 @@
       "task": "Develop e-commerce strategies",
       "full": "Collaborate with management or users to develop e-commerce strategies and to integrate these strategies with Web sites.",
       "weight": 17.0,
-      "auto": 31.6,
-      "aug": 36.8,
-      "success": 61.7,
-      "n": 329
-    },
-    {
-      "task": "Collaborate with developers",
-      "full": "Collaborate with web development professionals, such as front-end or back-end developers, to complete the full scope of Web development projects.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Resolve hosting/network issues",
-      "full": "Communicate with network personnel or Web site hosting agencies to address hardware or software issues affecting Web sites.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Conduct user research",
-      "full": "Conduct user research to determine design requirements and analyze user feedback to improve design quality.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Confer on priorities/solutions",
-      "full": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Create content indices",
-      "full": "Create searchable indices for Web page content.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Create web prototypes/models",
-      "full": "Create Web models or prototypes that include physical, interface, logical, or data models.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "auto": 27.6,
+      "aug": 35.9,
+      "success": 70.5,
+      "n": 474
     },
     {
       "task": "Design/build/maintain websites",
       "full": "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",
       "weight": 17.0,
-      "auto": 45.1,
-      "aug": 4.4,
-      "success": 66.4,
-      "n": 19243
+      "auto": 42.4,
+      "aug": 5.0,
+      "success": 66.5,
+      "n": 15900
     },
     {
       "task": "Develop style guidelines",
       "full": "Develop and document style guidelines for Web site content.",
       "weight": 17.0,
-      "auto": 41.5,
-      "aug": 5.6,
-      "success": 64.1,
-      "n": 357
+      "auto": 46.5,
+      "aug": 6.5,
+      "success": 62.6,
+      "n": 430
     },
     {
-      "task": "Develop/iterate visual designs",
-      "full": "Develop new visual design concepts and modify concepts based on stakeholder feedback.",
+      "task": "Site Revision Procedures",
+      "full": "Develop or implement procedures for ongoing Web site revision.",
       "weight": 17.0,
-      "auto": null,
+      "auto": 30.2,
+      "aug": 27.7,
+      "success": 67.6,
+      "n": 1219
+    },
+    {
+      "task": "Interaction Sequence Diagrams",
+      "full": "Develop system interaction or sequence diagrams.",
+      "weight": 17.0,
+      "auto": 34.3,
+      "aug": 8.3,
+      "success": 68.1,
+      "n": 216
+    },
+    {
+      "task": "Site Maps and Page Templates",
+      "full": "Develop Web site maps, application models, image templates, or page templates that meet project goals, user needs, or industry standards.",
+      "weight": 17.0,
+      "auto": 44.3,
+      "aug": 7.3,
+      "success": 62.1,
+      "n": 549
+    },
+    {
+      "task": "Web Technology Continuing Education",
+      "full": "Maintain understanding of current Web technologies or programming practices through continuing education, reading, or participation in professional conferences, workshops, or groups.",
+      "weight": 17.0,
+      "auto": 8.5,
+      "aug": 84.6,
+      "success": 82.3,
+      "n": 915
+    },
+    {
+      "task": "Web Site Specification Documentation",
+      "full": "Provide clear, detailed descriptions of Web site specifications, such as product features, activities, software, communication protocols, programming languages, and operating systems software and hardware.",
+      "weight": 17.0,
+      "auto": 33.2,
+      "aug": 29.8,
+      "success": 72.5,
+      "n": 265
+    },
+    {
+      "task": "User Email Response Setup",
+      "full": "Respond to user email inquiries, or set up automated systems to send responses.",
+      "weight": 17.0,
+      "auto": 48.3,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 44.1,
+      "n": 118
+    },
+    {
+      "task": "Web Application Code Writing",
+      "full": "Write supporting code for Web applications or Web sites.",
+      "weight": 17.0,
+      "auto": 36.4,
+      "aug": 9.9,
+      "success": 76.0,
+      "n": 4734
     }
   ],
   "risks": {

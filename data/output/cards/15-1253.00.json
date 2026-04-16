@@ -20,6 +20,24 @@
   "keyDrivers": "QA testing is heavily pattern-based work, writing test cases, running regression suites, and identifying bugs, that AI tools are already automating at increasing speed and accuracy. The role has no physical presence requirements, no licensing protections, and limited need for novel judgment, leaving few hard barriers against displacement. While some QA professionals will shift toward managing automated testing pipelines and evaluating AI-generated code, the overall number of positions is likely to shrink significantly as AI handles the bulk of testing work.",
   "taskData": [
     {
+      "task": "Track/report software defects",
+      "full": "Document software defects, using a bug tracking system, and report defects to software developers.",
+      "weight": 27.1,
+      "auto": 26.7,
+      "aug": 28.9,
+      "success": 65.3,
+      "n": 1440
+    },
+    {
+      "task": "Recommend usability improvements",
+      "full": "Provide feedback and recommendations to developers on software usability and functionality.",
+      "weight": 19.8,
+      "auto": 11.8,
+      "aug": 67.4,
+      "success": 73.1,
+      "n": 4912
+    },
+    {
       "task": "Identify/document program problems",
       "full": "Identify, analyze, and document problems with program function, output, online screen, or content.",
       "weight": 27.8,
@@ -29,13 +47,49 @@
       "n": null
     },
     {
-      "task": "Track/report software defects",
-      "full": "Document software defects, using a bug tracking system, and report defects to software developers.",
-      "weight": 27.1,
-      "auto": 21.8,
-      "aug": 29.4,
-      "success": 58.9,
-      "n": 1332
+      "task": "Track bug resolution",
+      "full": "Monitor bug resolution efforts and track successes.",
+      "weight": 19.0,
+      "auto": 25.3,
+      "aug": null,
+      "success": 46.8,
+      "n": 79
+    },
+    {
+      "task": "System Modification Testing",
+      "full": "Test system modifications to prepare for implementation.",
+      "weight": 17.1,
+      "auto": 22.8,
+      "aug": 18.4,
+      "success": 62.3,
+      "n": 114
+    },
+    {
+      "task": "Software Error Correction",
+      "full": "Modify existing software to correct errors, allow it to adapt to new hardware, or to improve its performance.",
+      "weight": 15.5,
+      "auto": 23.0,
+      "aug": 7.6,
+      "success": 59.5,
+      "n": 41586
+    },
+    {
+      "task": "Data Storage and Retrieval",
+      "full": "Store, retrieve, and manipulate data for analysis of system capabilities and requirements.",
+      "weight": 15.5,
+      "auto": 43.1,
+      "aug": 15.7,
+      "success": 65.3,
+      "n": 1901
+    },
+    {
+      "task": "Initial Debugging Review",
+      "full": "Perform initial debugging procedures by reviewing configuration files, logs, or code pieces to determine breakdown source.",
+      "weight": 14.0,
+      "auto": 23.0,
+      "aug": 28.1,
+      "success": 48.6,
+      "n": 1571
     },
     {
       "task": "Maintain testing tools",
@@ -47,67 +101,13 @@
       "n": null
     },
     {
-      "task": "Document test procedures",
-      "full": "Document test procedures to ensure replicability and compliance with standards.",
-      "weight": 20.2,
-      "auto": null,
+      "task": "Automated Test Script Updates",
+      "full": "Update automated test scripts to ensure currency.",
+      "weight": 16.4,
+      "auto": 42.9,
       "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Develop test programs",
-      "full": "Develop testing programs that address areas such as database impacts, software scenarios, regression testing, negative testing, error or bug retests, or usability.",
-      "weight": 20.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Recommend usability improvements",
-      "full": "Provide feedback and recommendations to developers on software usability and functionality.",
-      "weight": 19.8,
-      "auto": 12.6,
-      "aug": 66.6,
-      "success": 72.4,
-      "n": 4148
-    },
-    {
-      "task": "Maintain defect databases",
-      "full": "Create or maintain databases of known test defects.",
-      "weight": 19.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Monitor program performance",
-      "full": "Monitor program performance to ensure efficient and problem-free operations.",
-      "weight": 19.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Track bug resolution",
-      "full": "Monitor bug resolution efforts and track successes.",
-      "weight": 19.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Design test plans/scripts",
-      "full": "Design test plans, scenarios, scripts, or procedures.",
-      "weight": 18.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "success": 75.5,
+      "n": 49
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

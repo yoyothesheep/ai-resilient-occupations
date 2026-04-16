@@ -24,6 +24,33 @@
   "keyDrivers": "Most tax preparation work follows well-defined rules that AI can already handle faster and more accurately than humans. While some clients value a personal relationship with their preparer, the core task, applying tax code to financial data, is highly automatable. This role faces significant displacement as AI-powered tax software continues to improve.",
   "taskData": [
     {
+      "task": "Advise on form completion",
+      "full": "Furnish taxpayers with sufficient information and advice to ensure correct tax form completion.",
+      "weight": 23.9,
+      "auto": 17.1,
+      "aug": 58.5,
+      "success": 76.4,
+      "n": 123
+    },
+    {
+      "task": "Explain tax laws",
+      "full": "Explain federal and state tax laws to individuals and companies.",
+      "weight": 20.6,
+      "auto": 15.1,
+      "aug": 73.1,
+      "success": 86.4,
+      "n": 1309
+    },
+    {
+      "task": "Verify data/totals",
+      "full": "Check data input or verify totals on forms prepared by others to detect errors in arithmetic, data entry, or procedures.",
+      "weight": 21.2,
+      "auto": null,
+      "aug": 62.7,
+      "success": 60.2,
+      "n": 83
+    },
+    {
       "task": "Compute taxes owed",
       "full": "Compute taxes owed or overpaid, using adding machines or personal computers, and complete entries on forms, following tax form instructions and tax tables.",
       "weight": 27.1,
@@ -51,13 +78,13 @@
       "n": null
     },
     {
-      "task": "Advise on form completion",
-      "full": "Furnish taxpayers with sufficient information and advice to ensure correct tax form completion.",
-      "weight": 23.9,
-      "auto": 21.6,
-      "aug": 65.8,
-      "success": 62.2,
-      "n": 111
+      "task": "Answer/plan client taxes",
+      "full": "Answer questions and provide future tax planning to clients.",
+      "weight": 19.7,
+      "auto": null,
+      "aug": 69.7,
+      "success": 75.8,
+      "n": 33
     },
     {
       "task": "Interview clients",
@@ -76,33 +103,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Verify data/totals",
-      "full": "Check data input or verify totals on forms prepared by others to detect errors in arithmetic, data entry, or procedures.",
-      "weight": 21.2,
-      "auto": 21.4,
-      "aug": 61.4,
-      "success": 64.3,
-      "n": 70
-    },
-    {
-      "task": "Explain tax laws",
-      "full": "Explain federal and state tax laws to individuals and companies.",
-      "weight": 20.6,
-      "auto": 15.1,
-      "aug": 72.8,
-      "success": 78.6,
-      "n": 747
-    },
-    {
-      "task": "Answer/plan client taxes",
-      "full": "Answer questions and provide future tax planning to clients.",
-      "weight": 19.7,
-      "auto": null,
-      "aug": 64.7,
-      "success": 67.6,
-      "n": 34
     },
     {
       "task": "Calculate prep fees",

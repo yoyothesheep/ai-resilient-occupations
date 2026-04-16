@@ -19,13 +19,13 @@
   "keyDrivers": "Real estate brokers are licensed professionals who bear legal responsibility for transactions, disclosures, and fiduciary duties to their clients, requirements that won't go away regardless of AI capabilities. The role is fundamentally built on trust, as people making the biggest financial decision of their lives want a human advocate who understands their needs and can negotiate on their behalf. While AI will streamline market analysis and paperwork, the broker's value in navigating complex deals and managing relationships between buyers, sellers, and other agents remains strong.",
   "taskData": [
     {
-      "task": "Supervise transaction agents",
-      "full": "Supervise agents who handle real estate transactions.",
-      "weight": 21.7,
-      "auto": null,
+      "task": "Run market comparisons",
+      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
+      "weight": 17.2,
+      "auto": 48.3,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 54.0,
+      "n": 87
     },
     {
       "task": "Manage brokerage operations",
@@ -33,49 +33,40 @@
       "weight": 21.3,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": 16
-    },
-    {
-      "task": "Sell properties for owners",
-      "full": "Sell, for a fee, real estate owned by others.",
-      "weight": 19.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "success": 76.0,
+      "n": 25
     },
     {
       "task": "Generate property listings",
       "full": "Generate lists of properties for sale, their locations, descriptions, and available financing options, using computers.",
       "weight": 18.0,
-      "auto": 51.0,
+      "auto": 54.5,
       "aug": null,
-      "success": 51.0,
-      "n": 51
+      "success": 66.7,
+      "n": 66
+    },
+    {
+      "task": "Manage rental properties",
+      "full": "Rent properties or manage rental properties.",
+      "weight": 15.4,
+      "auto": 29.0,
+      "aug": 18.0,
+      "success": 77.0,
+      "n": 100
     },
     {
       "task": "Negotiate sales/closings",
       "full": "Act as an intermediary in negotiations between buyers and sellers over property prices and settlement details and during the closing of sales.",
       "weight": 17.2,
-      "auto": 23.6,
+      "auto": 32.4,
       "aug": null,
-      "success": 88.9,
-      "n": 72
+      "success": 88.2,
+      "n": 68
     },
     {
-      "task": "Run market comparisons",
-      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
-      "weight": 17.2,
-      "auto": 35.6,
-      "aug": null,
-      "success": 55.6,
-      "n": 45
-    },
-    {
-      "task": "Monitor contract fulfillment",
-      "full": "Monitor fulfillment of purchase contract terms to ensure that they are handled in a timely manner.",
-      "weight": 17.1,
+      "task": "Supervise transaction agents",
+      "full": "Supervise agents who handle real estate transactions.",
+      "weight": 21.7,
       "auto": null,
       "aug": null,
       "success": null,
@@ -87,26 +78,35 @@
       "weight": 17.1,
       "auto": null,
       "aug": null,
-      "success": 83.3,
-      "n": 18
+      "success": 80.0,
+      "n": 35
     },
     {
-      "task": "Manage rental properties",
-      "full": "Rent properties or manage rental properties.",
-      "weight": 15.4,
-      "auto": 34.9,
+      "task": "Sell properties for owners",
+      "full": "Sell, for a fee, real estate owned by others.",
+      "weight": 19.3,
+      "auto": null,
       "aug": null,
-      "success": 85.7,
-      "n": 63
+      "success": null,
+      "n": null
     },
     {
       "task": "Track laws/market knowledge",
       "full": "Maintain knowledge of real estate law, local economies, fair housing laws, types of available mortgages, financing options, and government programs.",
       "weight": 15.3,
       "auto": null,
+      "aug": 37.5,
+      "success": 62.5,
+      "n": 40
+    },
+    {
+      "task": "Monitor contract fulfillment",
+      "full": "Monitor fulfillment of purchase contract terms to ensure that they are handled in a timely manner.",
+      "weight": 17.1,
+      "auto": null,
       "aug": null,
-      "success": 66.7,
-      "n": 24
+      "success": null,
+      "n": null
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

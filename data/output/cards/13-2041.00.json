@@ -25,10 +25,10 @@
       "task": "Analyze credit risk",
       "full": "Analyze credit data and financial statements to determine the degree of risk involved in extending credit or lending money.",
       "weight": 29.2,
-      "auto": 35.4,
-      "aug": null,
-      "success": 60.4,
-      "n": 48
+      "auto": 34.2,
+      "aug": 27.4,
+      "success": 75.3,
+      "n": 73
     },
     {
       "task": "Prepare credit submissions",

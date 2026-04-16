@@ -22,52 +22,61 @@
     "Digital Advertising Sales Executive",
     "Ad Revenue Manager"
   ],
-  "keyDrivers": "Advertising sales increasingly moves to automated programmatic platforms that match buyers and sellers without a human middleman. While relationship-building with clients offers some protection, the core transaction\u2014matching ad inventory to buyers\u2014is highly automatable. The role lacks legal accountability requirements and doesn't demand the kind of novel judgment that would keep AI at bay.",
+  "keyDrivers": "Advertising sales increasingly moves to automated programmatic platforms that match buyers and sellers without a human middleman. While relationship-building with clients offers some protection, the core transaction—matching ad inventory to buyers—is highly automatable. The role lacks legal accountability requirements and doesn't demand the kind of novel judgment that would keep AI at bay.",
   "taskData": [
     {
       "task": "Explain ad options to clients",
       "full": "Explain to customers how specific types of advertising will help promote their products or services in the most effective way possible.",
       "weight": 23.1,
       "auto": null,
-      "aug": 73.1,
-      "success": 75.0,
-      "n": 52
+      "aug": 70.1,
+      "success": 88.5,
+      "n": 87
     },
     {
       "task": "Research client needs",
       "full": "Obtain and study information about clients' products, needs, problems, advertising history, and business practices to offer effective sales presentations and appropriate product assistance.",
       "weight": 21.8,
-      "auto": 53.3,
-      "aug": null,
-      "success": 36.7,
-      "n": 60
-    },
-    {
-      "task": "Deliver sales presentations",
-      "full": "Prepare and deliver sales presentations to new and existing customers to sell new advertising programs and to protect and increase existing advertising.",
-      "weight": 22.4,
-      "auto": 42.9,
-      "aug": null,
-      "success": 82.9,
-      "n": 35
+      "auto": 62.4,
+      "aug": 13.8,
+      "success": 55.0,
+      "n": 109
     },
     {
       "task": "Provide cost estimates",
       "full": "Provide clients with estimates of the costs of advertising products or services.",
       "weight": 24.1,
-      "auto": null,
+      "auto": 42.9,
+      "aug": 32.7,
+      "success": 67.3,
+      "n": 49
+    },
+    {
+      "task": "Deliver sales presentations",
+      "full": "Prepare and deliver sales presentations to new and existing customers to sell new advertising programs and to protect and increase existing advertising.",
+      "weight": 22.4,
+      "auto": 36.8,
       "aug": null,
-      "success": null,
-      "n": 18
+      "success": 78.9,
+      "n": 57
     },
     {
       "task": "Prepare sales materials",
       "full": "Prepare promotional plans, sales literature, media kits, and sales contracts, using computer.",
       "weight": 21.7,
-      "auto": 39.0,
+      "auto": 41.2,
       "aug": null,
-      "success": 78.0,
-      "n": 41
+      "success": 62.7,
+      "n": 51
+    },
+    {
+      "task": "Handle account admin",
+      "full": "Process all correspondence and paperwork related to accounts.",
+      "weight": 23.5,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 18
     },
     {
       "task": "Manage and grow accounts",
@@ -82,15 +91,6 @@
       "task": "Prospect new clients",
       "full": "Locate and contact potential clients to offer advertising services.",
       "weight": 23.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Handle account admin",
-      "full": "Process all correspondence and paperwork related to accounts.",
-      "weight": 23.5,
       "auto": null,
       "aug": null,
       "success": null,

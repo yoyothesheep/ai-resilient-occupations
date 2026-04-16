@@ -43,8 +43,12 @@ SCORE_COLUMNS = [
     "Education", "Top Education Level", "Top Education Rate",
     "Sample Job Titles", "Job Description",
     "role_resilience_score", "final_ranking", "key_drivers",
-    "altpath url", "altpath simple title"
+    "altpath url", "altpath simple title",
+    "Emerging Job Titles",
 ]
+
+# Columns preserved from existing scores during --rerank (not re-derived from enrichment)
+PRESERVE_FROM_SCORES = {"role_resilience_score", "key_drivers", "final_ranking", "Emerging Job Titles"}
 
 # ── Ranking configuration ────────────────────────────────────────────────────
 W_RESILIENCE = 0.50
@@ -67,12 +71,17 @@ def load_skill(path: str) -> str:
     with open(path, "r") as f:
         return f.read()
 
+SKIP_CODES = {
+    "11-1011.00",  # Chief Executives — too broad/generic for meaningful AI-resilience scoring
+}
+
 def load_occupations(path: str) -> list[dict]:
     with open(path, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     scoreable = [
         r for r in rows
         if r["Job Zone"] not in ("n/a", "") and r["Data-level"] == "Y"
+        and r["Code"] not in SKIP_CODES
     ]
     return scoreable
 
@@ -411,7 +420,7 @@ def rerank():
             continue
         row = {col: "" for col in SCORE_COLUMNS}
         for col in SCORE_COLUMNS:
-            if col in ("role_resilience_score", "key_drivers", "final_ranking"):
+            if col in PRESERVE_FROM_SCORES:
                 row[col] = scored.get(col, "")
             else:
                 row[col] = occ.get(col, "")

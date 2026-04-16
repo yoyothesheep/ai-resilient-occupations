@@ -18,22 +18,67 @@
   "keyDrivers": "Security analysts face an ever-evolving landscape of threats where attackers constantly find novel ways to breach systems, making genuine human judgment in ambiguous, high-stakes situations essential. They spend enormous amounts of time on alert triage and log review that AI will compress, letting them focus on the harder investigative and strategic work. As AI expands the digital attack surface and creates new threat vectors, demand for skilled humans who can direct and validate AI-powered security tools will grow substantially.",
   "taskData": [
     {
+      "task": "Encrypt data/configure firewalls",
+      "full": "Encrypt data transmissions and erect firewalls to conceal confidential information as it is being transmitted and to keep out tainted digital transfers.",
+      "weight": 16.0,
+      "auto": 15.3,
+      "aug": 59.5,
+      "success": 86.5,
+      "n": 111
+    },
+    {
+      "task": "Develop data safeguard plans",
+      "full": "Develop plans to safeguard computer files against accidental or unauthorized modification, destruction, or disclosure and to meet emergency data processing needs.",
+      "weight": 16.8,
+      "auto": 30.2,
+      "aug": 38.1,
+      "success": 77.8,
+      "n": 63
+    },
+    {
+      "task": "Perform risk assessments/tests",
+      "full": "Perform risk assessments and execute tests of data processing system to ensure functioning of data processing activities and security measures.",
+      "weight": 13.5,
+      "auto": 18.2,
+      "aug": 48.2,
+      "success": 73.9,
+      "n": 280
+    },
+    {
       "task": "Monitor virus/threat reports",
       "full": "Monitor current reports of computer viruses to determine when to update virus protection systems.",
       "weight": 18.0,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
+      "n": 20
     },
     {
-      "task": "Develop data safeguard plans",
-      "full": "Develop plans to safeguard computer files against accidental or unauthorized modification, destruction, or disclosure and to meet emergency data processing needs.",
-      "weight": 16.8,
+      "task": "Document security policies",
+      "full": "Document computer security and emergency measures policies, procedures, and tests.",
+      "weight": 13.0,
+      "auto": 35.5,
+      "aug": 24.6,
+      "success": 67.4,
+      "n": 561
+    },
+    {
+      "task": "Regulate data file access",
+      "full": "Monitor use of data files and regulate access to safeguard information in computer files.",
+      "weight": 16.0,
       "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "aug": 50.0,
+      "success": 78.6,
+      "n": 42
+    },
+    {
+      "task": "Coordinate system implementation",
+      "full": "Coordinate implementation of computer system plan with establishment personnel and outside vendors.",
+      "weight": 12.4,
+      "auto": 30.8,
+      "aug": 24.6,
+      "success": 73.5,
+      "n": 650
     },
     {
       "task": "Modify security files/access",
@@ -41,26 +86,8 @@
       "weight": 16.1,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Encrypt data/configure firewalls",
-      "full": "Encrypt data transmissions and erect firewalls to conceal confidential information as it is being transmitted and to keep out tainted digital transfers.",
-      "weight": 16.0,
-      "auto": null,
-      "aug": 58.7,
-      "success": 89.4,
-      "n": 104
-    },
-    {
-      "task": "Regulate data file access",
-      "full": "Monitor use of data files and regulate access to safeguard information in computer files.",
-      "weight": 16.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "success": 70.4,
+      "n": 27
     },
     {
       "task": "Confer on security issues",
@@ -72,15 +99,6 @@
       "n": null
     },
     {
-      "task": "Perform risk assessments/tests",
-      "full": "Perform risk assessments and execute tests of data processing system to ensure functioning of data processing activities and security measures.",
-      "weight": 13.5,
-      "auto": 16.2,
-      "aug": 47.9,
-      "success": 70.6,
-      "n": 303
-    },
-    {
       "task": "Review/address security violations",
       "full": "Review violations of computer security procedures and discuss procedures with violators to ensure violations are not repeated.",
       "weight": 13.5,
@@ -88,44 +106,26 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Document security policies",
-      "full": "Document computer security and emergency measures policies, procedures, and tests.",
-      "weight": 13.0,
-      "auto": 41.2,
-      "aug": 19.8,
-      "success": 64.6,
-      "n": 646
-    },
-    {
-      "task": "Coordinate system implementation",
-      "full": "Coordinate implementation of computer system plan with establishment personnel and outside vendors.",
-      "weight": 12.4,
-      "auto": 30.7,
-      "aug": 25.4,
-      "success": 65.9,
-      "n": 566
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {
-    "body": "Security policy documentation shows 41.2% automation in observed AI usage - the most direct signal that AI is handling a real slice of the written output work in this role [1]. The bigger structural risk is at the entry level: AI-assisted SIEM platforms and automated triage tools are absorbing tier-1 alert monitoring, which has historically been the on-ramp into the field [2].",
+    "body": "AI-assisted SIEM platforms and automated triage tools are absorbing tier-1 alert monitoring — the traditional on-ramp into the field — compressing entry-level hiring pipelines [1]. Security policy documentation shows 41.2% automation in observed AI usage, a sign that AI is handling a real slice of the written output work in this role [2].",
+    "stat": "25%",
+    "statLabel": "of cybersecurity teams reported layoffs in 2024",
+    "statSourceName": "ISC2",
+    "statSourceTitle": "Cybersecurity Workforce Study 2024",
+    "statSourceDate": "Oct 2024",
+    "statSourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
+  },
+  "opportunities": {
+    "body": "Every security breach carries regulatory and legal consequences that organizations cannot delegate to automated systems — a structural floor under human accountability that AI amplifies rather than replaces [1]. The global cybersecurity workforce gap remains at 3.5 million unfilled roles, meaning practitioners who can direct AI-flagged threats and lead incident response are in sustained structural demand [2].",
     "stat": "3.5M",
     "statLabel": "unfilled cybersecurity jobs globally in 2024",
     "statSourceName": "ISC2",
     "statSourceTitle": "Cybersecurity Workforce Study 2024",
     "statSourceDate": "Oct 2024",
-    "statSourceUrl": "https://www.isc2.org/Research/Workforce-Study"
-  },
-  "opportunities": {
-    "body": "Risk assessment and encryption work shows strong augmentation patterns - 47.9% and 58.7% respectively - with thousands of observed conversations where analysts stay firmly in the loop [1]. The role scores a 5 out of 5 on directing AI tools, and every security breach carries regulatory and legal consequences that organizations cannot delegate to automated systems [2]. BLS projects 28% employment growth through 2034, driven by demand for analysts who can interpret AI-flagged threats and respond to novel attack patterns.",
-    "stat": "16,800",
-    "statLabel": "annual job openings, driven by expanding attack surfaces and regulatory requirements",
-    "statSourceName": "U.S. Bureau of Labor Statistics",
-    "statSourceTitle": "Occupational Outlook Handbook: Information Security Analysts",
-    "statSourceDate": "Sep 2025",
-    "statSourceUrl": "https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm"
+    "statSourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
   },
   "howToAdapt": {
     "alreadyIn": "Start logging time against AI-assisted detection tools - specifically learning to configure and tune SIEM alert thresholds rather than just monitoring outputs. Over the next six months, build depth in incident response and threat hunting, the work that sits above automated triage and requires judgment under real operational pressure [2]. Analysts who can direct AI tools and own the investigation layer are pulling ahead of those whose value was in manual alert review [1].",
@@ -184,7 +184,7 @@
       "name": "ISC2",
       "title": "Cybersecurity Workforce Study 2024",
       "date": "Oct 2024",
-      "url": "https://www.isc2.org/Research/Workforce-Study"
+      "url": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
     },
     {
       "id": "src-acm",
@@ -230,12 +230,11 @@
     {
       "code": "15-1299.05",
       "title": "Information Security Engineer",
-      "level": 3,
+      "level": 4,
       "isCurrent": false,
-      "isAdjacent": true,
-      "relationship": "adjacent",
+      "relationship": "progression",
       "openings": "31,300",
-      "growth": "Much faster than average (7% or higher)",
+      "growth": "+7%",
       "fit": "You already do the defensive groundwork — monitoring, access control, encryption — and this role is a step up into owning the engineering and architecture of those same systems at a deeper technical level.",
       "steps": [
         "Earn CompTIA Security+ or CASP+ certification",
@@ -409,9 +408,9 @@
       "stat": {
         "text": "The cybersecurity workforce gap reached 4 million unfilled positions globally in 2024, with AI and automation skills listed as the fastest-growing requirement in security job postings.",
         "sourceName": "ISC2",
-        "sourceTitle": "ISC2 Cybersecurity Workforce Study 2024",
+        "sourceTitle": "Cybersecurity Workforce Study 2024",
         "sourceDate": "Oct 2024",
-        "sourceUrl": "https://www.isc2.org/Research/Workforce-Study"
+        "sourceUrl": "https://edu.arrow.com/media/wtjfmszx/2024-isc2-wfs.pdf"
       },
       "search_query": "\"security AI engineer\" OR \"AI-powered security\" engineer jobs 2025",
       "job_search_url": "",

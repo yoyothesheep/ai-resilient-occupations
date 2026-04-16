@@ -260,6 +260,6 @@ Current: 2024–2034 cycle. Next: 2025–2035 (expected late 2026).
 Replace `data/input/Employment Projections.csv` — keep column names identical. Rerun Track A.
 
 ### Anthropic Economic Index
-Current: 2025-11-13 to 2025-11-20 (release 2026-01-15).  
+Current: 2026-02-05 to 2026-02-12 (release 2026-03-24).  
 Source: [Hugging Face — Anthropic/EconomicIndex](https://huggingface.co/datasets/Anthropic/EconomicIndex)  
 On new release: download CSV → update `AEI_FILE` in `scripts/build_task_table.py` → rerun Stage 3 → rerun Stage 6.

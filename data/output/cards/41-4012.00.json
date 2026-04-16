@@ -21,19 +21,73 @@
       "task": "Answer product/pricing questions",
       "full": "Answer customers' questions about products, prices, availability, product uses, and credit terms.",
       "weight": 23.9,
-      "auto": 36.9,
-      "aug": 41.6,
-      "success": 51.4,
-      "n": 1258
+      "auto": 40.0,
+      "aug": 42.3,
+      "success": 59.5,
+      "n": 1780
     },
     {
       "task": "Recommend products to customers",
       "full": "Recommend products to customers, based on customers' needs and interests.",
       "weight": 23.7,
-      "auto": 33.0,
-      "aug": 16.5,
-      "success": 56.9,
-      "n": 109
+      "auto": 38.9,
+      "aug": null,
+      "success": 77.8,
+      "n": 108
+    },
+    {
+      "task": "Monitor market / competitors",
+      "full": "Monitor market conditions, product innovations, and competitors' products, prices, and sales.",
+      "weight": 20.6,
+      "auto": 50.7,
+      "aug": 22.7,
+      "success": 40.0,
+      "n": 75
+    },
+    {
+      "task": "Prepare contracts / order forms",
+      "full": "Prepare sales contracts and order forms.",
+      "weight": 20.4,
+      "auto": 30.0,
+      "aug": null,
+      "success": 80.0,
+      "n": 60
+    },
+    {
+      "task": "Sales Administration and Reporting",
+      "full": "Perform administrative duties, such as preparing sales budgets and reports, keeping sales records, and filing expense account reports.",
+      "weight": 17.2,
+      "auto": 45.7,
+      "aug": null,
+      "success": 73.2,
+      "n": 127
+    },
+    {
+      "task": "Quote prices / contract terms",
+      "full": "Estimate or quote prices, credit or contract terms, warranties, and delivery dates.",
+      "weight": 22.5,
+      "auto": null,
+      "aug": null,
+      "success": 80.8,
+      "n": 26
+    },
+    {
+      "task": "Plan retail displays / promotions",
+      "full": "Plan, assemble, and stock product displays in retail stores, or make recommendations to retailers regarding product displays, promotional programs, and advertising.",
+      "weight": 22.1,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 17
+    },
+    {
+      "task": "Prospecting New Customers",
+      "full": "Identify prospective customers by using business directories, following leads from existing clients, participating in organizations and clubs, and attending trade shows and conferences.",
+      "weight": 16.0,
+      "auto": 57.8,
+      "aug": null,
+      "success": 57.8,
+      "n": 102
     },
     {
       "task": "Check stock / reorder inventory",
@@ -45,67 +99,13 @@
       "n": null
     },
     {
-      "task": "Quote prices / contract terms",
-      "full": "Estimate or quote prices, credit or contract terms, warranties, and delivery dates.",
-      "weight": 22.5,
+      "task": "Product Demonstration and Solicitation",
+      "full": "Contact regular and prospective customers to demonstrate products, explain product features, and solicit orders.",
+      "weight": 18.4,
       "auto": null,
       "aug": null,
-      "success": 85.7,
-      "n": 21
-    },
-    {
-      "task": "Plan retail displays / promotions",
-      "full": "Plan, assemble, and stock product displays in retail stores, or make recommendations to retailers regarding product displays, promotional programs, and advertising.",
-      "weight": 22.1,
-      "auto": null,
-      "aug": null,
-      "success": 72.7,
-      "n": 22
-    },
-    {
-      "task": "Monitor market / competitors",
-      "full": "Monitor market conditions, product innovations, and competitors' products, prices, and sales.",
-      "weight": 20.6,
-      "auto": 55.3,
-      "aug": null,
-      "success": null,
-      "n": 38
-    },
-    {
-      "task": "Negotiate retail product placement",
-      "full": "Negotiate with retail merchants to improve product exposure, such as shelf positioning and advertising.",
-      "weight": 20.6,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Prepare contracts / order forms",
-      "full": "Prepare sales contracts and order forms.",
-      "weight": 20.4,
-      "auto": null,
-      "aug": null,
-      "success": 70.3,
-      "n": 37
-    },
-    {
-      "task": "Provide samples / catalogs",
-      "full": "Provide customers with product samples and catalogs.",
-      "weight": 20.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Negotiate contract details",
-      "full": "Negotiate details of contracts and payments.",
-      "weight": 19.6,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "success": 83.3,
+      "n": 36
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

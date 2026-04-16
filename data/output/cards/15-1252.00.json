@@ -19,6 +19,42 @@
   "keyDrivers": "Software developers are in a paradoxical position: AI code generation tools are already transforming the work, compressing routine coding tasks dramatically, yet developers who can architect systems, understand business needs, and manage AI-generated code will be more productive than ever. The role lacks physical presence or legal accountability protections, making pure coding work highly vulnerable. The strongest protection is that demand for software keeps growing, and experienced developers are well-positioned to direct and validate AI coding tools, but fewer developers may be needed to produce the same output.",
   "taskData": [
     {
+      "task": "Analyze requirements/feasibility",
+      "full": "Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.",
+      "weight": 16.8,
+      "auto": 27.0,
+      "aug": 40.3,
+      "success": 63.1,
+      "n": 5671
+    },
+    {
+      "task": "Manipulate data for analysis",
+      "full": "Store, retrieve, and manipulate data for analysis of system capabilities and requirements.",
+      "weight": 15.4,
+      "auto": 43.1,
+      "aug": 15.7,
+      "success": 65.3,
+      "n": 1901
+    },
+    {
+      "task": "Prepare project reports",
+      "full": "Prepare reports or correspondence concerning project specifications, activities, or status.",
+      "weight": 13.7,
+      "auto": 33.5,
+      "aug": 6.7,
+      "success": 72.2,
+      "n": 579
+    },
+    {
+      "task": "System Installation Planning",
+      "full": "Analyze information to determine, recommend, and plan installation of a new system or modification of an existing system.",
+      "weight": 12.8,
+      "auto": 38.3,
+      "aug": 27.7,
+      "success": 58.9,
+      "n": 141
+    },
+    {
       "task": "Monitor system conformance",
       "full": "Monitor functioning of equipment to ensure system operates in conformance with specifications.",
       "weight": 18.6,
@@ -28,6 +64,15 @@
       "n": null
     },
     {
+      "task": "Customer Project Status Consultation",
+      "full": "Consult with customers or other departments on project status, proposals, or technical issues, such as software system design or maintenance.",
+      "weight": 12.3,
+      "auto": 18.5,
+      "aug": 58.4,
+      "success": 78.6,
+      "n": 281
+    },
+    {
       "task": "Modify/upgrade existing software",
       "full": "Modify existing software to correct errors, adapt it to new hardware, or upgrade interfaces and improve performance.",
       "weight": 16.9,
@@ -35,15 +80,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Analyze requirements/feasibility",
-      "full": "Analyze user needs and software requirements to determine feasibility of design within time and cost constraints.",
-      "weight": 16.8,
-      "auto": 22.5,
-      "aug": 44.0,
-      "success": 62.5,
-      "n": 4643
     },
     {
       "task": "Develop/direct testing procedures",
@@ -64,45 +100,9 @@
       "n": null
     },
     {
-      "task": "Manipulate data for analysis",
-      "full": "Store, retrieve, and manipulate data for analysis of system capabilities and requirements.",
-      "weight": 15.4,
-      "auto": 42.6,
-      "aug": 15.2,
-      "success": 61.3,
-      "n": 2151
-    },
-    {
       "task": "Supervise technical staff",
       "full": "Supervise the work of programmers, technologists and technicians and other engineering and scientific personnel.",
       "weight": 14.5,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Design/develop software systems",
-      "full": "Design, develop and modify software systems, using scientific analysis and mathematical models to predict and measure outcomes and consequences of design.",
-      "weight": 14.2,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Prepare project reports",
-      "full": "Prepare reports or correspondence concerning project specifications, activities, or status.",
-      "weight": 13.7,
-      "auto": 33.5,
-      "aug": 3.6,
-      "success": 66.7,
-      "n": 475
-    },
-    {
-      "task": "Determine system performance standards",
-      "full": "Determine system performance standards.",
-      "weight": 13.5,
       "auto": null,
       "aug": null,
       "success": null,

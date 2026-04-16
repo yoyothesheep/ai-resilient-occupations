@@ -110,3 +110,6 @@ from_onet_code,to_onet_code,transition_type,is_primary_path,is_cross_family,min_
 13-2011.00,11-3031.00,progression,true,false,7,5000,2,true,Accountant → Financial Manager. Leadership destination. MBA optional but common; many advance via internal promotion (Controller → CFO track). CPA strongly preferred.
 13-2061.00,11-3031.00,progression,false,false,5,2000,0.5,true,Financial Examiner → Financial Manager. Less common but valid — regulatory experience is valued in compliance-heavy industries (banking, insurance).
 13-2054.00,11-3031.00,progression,false,false,7,2000,0.5,true,Financial Risk Specialist → Financial Manager. Internal promotion into treasury/CFO track within banks and large corporates.
+15-1212.00,15-1299.05,progression,true,false,3,500,0.5,true,Security Analyst → Security Engineer. CompTIA CASP+ or CISSP is the typical signal. Deepens from monitoring/analysis into system design and architecture ownership.
+15-1299.05,15-1221.00,progression,false,false,7,50000,4,true,Security Engineer → Computer Science Researcher. Uncommon; requires PhD. Research focus on security systems, cryptography, or formal verification.
+15-1299.05,15-1299.08,progression,false,false,6,3000,1,true,Security Engineer → Systems Architect. Lateral step-up into broader infrastructure design. AWS/Azure Solutions Architect cert is the typical credential.

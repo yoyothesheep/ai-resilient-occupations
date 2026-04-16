@@ -22,6 +22,60 @@
   "keyDrivers": "Sales engineers combine deep technical expertise with the ability to build trust and navigate complex client relationships, which makes them hard to replace with AI. They must understand nuanced customer problems and craft custom solutions, often serving as the bridge between a company's engineering team and its clients. AI tools will actually make them more productive by handling research and proposals, while demand for their consultative expertise grows as products become more technically complex.",
   "taskData": [
     {
+      "task": "Develop/present proposals",
+      "full": "Develop, present, or respond to proposals for specific customer requirements, including request for proposal responses and industry-specific solutions.",
+      "weight": 20.3,
+      "auto": 43.1,
+      "aug": null,
+      "success": 70.7,
+      "n": 174
+    },
+    {
+      "task": "Assess customer/system needs",
+      "full": "Confer with customers and engineers to assess equipment needs and to determine system requirements.",
+      "weight": 16.8,
+      "auto": 30.3,
+      "aug": 37.0,
+      "success": 63.3,
+      "n": 433
+    },
+    {
+      "task": "Collaborate with sales teams",
+      "full": "Collaborate with sales teams to understand customer requirements, to promote the sale of company products, and to provide sales support.",
+      "weight": 18.9,
+      "auto": 42.1,
+      "aug": null,
+      "success": 80.7,
+      "n": 57
+    },
+    {
+      "task": "Track industry/competitor trends",
+      "full": "Keep informed on industry news and trends, products, services, competitors, relevant information about legacy, existing, and emerging technologies, and the latest product-line developments.",
+      "weight": 18.1,
+      "auto": 35.4,
+      "aug": 46.2,
+      "success": 50.8,
+      "n": 65
+    },
+    {
+      "task": "Client Technical Support",
+      "full": "Provide technical and non-technical support and services to clients or other staff members regarding the use, operation, and maintenance of equipment.",
+      "weight": 14.5,
+      "auto": 25.2,
+      "aug": 39.8,
+      "success": 65.0,
+      "n": 274
+    },
+    {
+      "task": "Customer Prospecting and Research",
+      "full": "Research and identify potential customers for products or services.",
+      "weight": 14.3,
+      "auto": 50.4,
+      "aug": 10.5,
+      "success": 52.9,
+      "n": 601
+    },
+    {
       "task": "Sell complex technical products",
       "full": "Sell products requiring extensive technical expertise and support for installation and use, such as material handling equipment, numerical-control machinery, or computer systems.",
       "weight": 21.0,
@@ -31,49 +85,13 @@
       "n": null
     },
     {
-      "task": "Develop/present proposals",
-      "full": "Develop, present, or respond to proposals for specific customer requirements, including request for proposal responses and industry-specific solutions.",
-      "weight": 20.3,
-      "auto": 29.3,
-      "aug": null,
-      "success": 71.7,
-      "n": 99
-    },
-    {
-      "task": "Collaborate with sales teams",
-      "full": "Collaborate with sales teams to understand customer requirements, to promote the sale of company products, and to provide sales support.",
-      "weight": 18.9,
-      "auto": 44.4,
-      "aug": null,
-      "success": 57.8,
-      "n": 45
-    },
-    {
-      "task": "Track industry/competitor trends",
-      "full": "Keep informed on industry news and trends, products, services, competitors, relevant information about legacy, existing, and emerging technologies, and the latest product-line developments.",
-      "weight": 18.1,
-      "auto": null,
-      "aug": 55.0,
-      "success": 47.5,
-      "n": 40
-    },
-    {
       "task": "Document accounts/transactions",
       "full": "Document account activities, generate reports, and keep records of business transactions with customers and suppliers.",
       "weight": 17.1,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": 16
-    },
-    {
-      "task": "Assess customer/system needs",
-      "full": "Confer with customers and engineers to assess equipment needs and to determine system requirements.",
-      "weight": 16.8,
-      "auto": 15.9,
-      "aug": 41.7,
-      "success": 65.2,
-      "n": 333
+      "success": 71.4,
+      "n": 21
     },
     {
       "task": "Identify resale opportunities",
@@ -88,24 +106,6 @@
       "task": "Create sales/service contracts",
       "full": "Create sales or service contracts for products or services.",
       "weight": 15.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Recommend product improvements",
-      "full": "Recommend improved materials or machinery to customers, documenting how such changes will lower costs or increase production.",
-      "weight": 15.1,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Configure products for customers",
-      "full": "Plan and modify product configurations to meet customer needs.",
-      "weight": 14.7,
       "auto": null,
       "aug": null,
       "success": null,

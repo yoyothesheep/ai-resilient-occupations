@@ -23,10 +23,37 @@
       "task": "Gather system requirements",
       "full": "Communicate with staff or clients to understand specific system requirements.",
       "weight": 20.4,
-      "auto": null,
+      "auto": 54.9,
       "aug": null,
       "success": null,
-      "n": 20
+      "n": 71
+    },
+    {
+      "task": "Maintain/upgrade hardware and software",
+      "full": "Perform ongoing hardware and software maintenance operations, including installing or upgrading hardware or software.",
+      "weight": 14.9,
+      "auto": 31.2,
+      "aug": 26.9,
+      "success": 71.0,
+      "n": 186
+    },
+    {
+      "task": "Guide/troubleshoot systems",
+      "full": "Provide technical guidance or support for the development or troubleshooting of systems.",
+      "weight": 14.2,
+      "auto": 11.7,
+      "aug": 69.2,
+      "success": 82.5,
+      "n": 1838
+    },
+    {
+      "task": "Identify system components",
+      "full": "Identify system data, hardware, or software components required to meet user needs.",
+      "weight": 14.0,
+      "auto": 43.7,
+      "aug": 25.4,
+      "success": 64.8,
+      "n": 142
     },
     {
       "task": "Monitor system operations",
@@ -47,6 +74,24 @@
       "n": null
     },
     {
+      "task": "Verify system architecture",
+      "full": "Verify stability, interoperability, portability, security, or scalability of system architecture.",
+      "weight": 12.9,
+      "auto": 45.8,
+      "aug": 24.1,
+      "success": 55.4,
+      "n": 83
+    },
+    {
+      "task": "Server Functional Configuration",
+      "full": "Configure servers to meet functional specifications.",
+      "weight": 12.1,
+      "auto": 19.5,
+      "aug": 31.6,
+      "success": 76.6,
+      "n": 1597
+    },
+    {
       "task": "Evaluate component suitability",
       "full": "Investigate system component suitability for specified purposes, and make recommendations regarding component use.",
       "weight": 17.2,
@@ -63,51 +108,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Maintain/upgrade hardware and software",
-      "full": "Perform ongoing hardware and software maintenance operations, including installing or upgrading hardware or software.",
-      "weight": 14.9,
-      "auto": 44.4,
-      "aug": 22.2,
-      "success": 71.9,
-      "n": 171
-    },
-    {
-      "task": "Guide secure implementation",
-      "full": "Provide customers or installation teams guidelines for implementing secure systems.",
-      "weight": 14.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Guide/troubleshoot systems",
-      "full": "Provide technical guidance or support for the development or troubleshooting of systems.",
-      "weight": 14.2,
-      "auto": 12.6,
-      "aug": 62.5,
-      "success": 77.9,
-      "n": 1532
-    },
-    {
-      "task": "Identify system components",
-      "full": "Identify system data, hardware, or software components required to meet user needs.",
-      "weight": 14.0,
-      "auto": 30.6,
-      "aug": 26.9,
-      "success": 66.7,
-      "n": 108
-    },
-    {
-      "task": "Verify system architecture",
-      "full": "Verify stability, interoperability, portability, security, or scalability of system architecture.",
-      "weight": 12.9,
-      "auto": 32.7,
-      "aug": null,
-      "success": 65.4,
-      "n": 52
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

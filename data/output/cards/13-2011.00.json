@@ -24,6 +24,42 @@
   "keyDrivers": "Much of traditional accounting work, bookkeeping, reconciliation, and routine audits, is highly automatable, which puts downward pressure on this role. However, licensed accountants carry real legal liability for the accuracy of financial statements and tax filings, which keeps a human in the loop. AI will likely handle the grunt work, freeing accountants to focus more on advisory and complex judgment calls, but the profession will need far fewer people for the same volume of work.",
   "taskData": [
     {
+      "task": "Analyze business operations",
+      "full": "Analyze business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses or to provide advice.",
+      "weight": 14.3,
+      "auto": 43.5,
+      "aug": 15.3,
+      "success": 53.6,
+      "n": 457
+    },
+    {
+      "task": "Examine financial reports",
+      "full": "Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.",
+      "weight": 13.6,
+      "auto": 35.7,
+      "aug": 23.8,
+      "success": 67.1,
+      "n": 143
+    },
+    {
+      "task": "Develop recordkeeping systems",
+      "full": "Develop, implement, modify, and document recordkeeping and accounting systems, making use of current computer technology.",
+      "weight": 12.0,
+      "auto": 37.9,
+      "aug": 13.8,
+      "success": 68.3,
+      "n": 457
+    },
+    {
+      "task": "Audit Findings Report",
+      "full": "Prepare detailed reports on audit findings.",
+      "weight": 11.1,
+      "auto": 51.1,
+      "aug": null,
+      "success": 74.4,
+      "n": 90
+    },
+    {
       "task": "Supervise/scope audits",
       "full": "Supervise auditing of establishments, and determine scope of investigation required.",
       "weight": 15.3,
@@ -31,6 +67,24 @@
       "aug": null,
       "success": null,
       "n": null
+    },
+    {
+      "task": "Set up chart of accounts",
+      "full": "Establish tables of accounts and assign entries to proper accounts.",
+      "weight": 12.0,
+      "auto": null,
+      "aug": 40.4,
+      "success": 78.8,
+      "n": 52
+    },
+    {
+      "task": "Detect fraud/non-compliance",
+      "full": "Collect and analyze data to detect deficient controls, duplicated effort, extravagance, fraud, or non-compliance with laws, regulations, and management policies.",
+      "weight": 12.8,
+      "auto": null,
+      "aug": null,
+      "success": 71.9,
+      "n": 32
     },
     {
       "task": "Reconcile accounts",
@@ -42,15 +96,6 @@
       "n": null
     },
     {
-      "task": "Analyze business operations",
-      "full": "Analyze business operations, trends, costs, revenues, financial commitments, and obligations to project future revenues and expenses or to provide advice.",
-      "weight": 14.3,
-      "auto": 39.7,
-      "aug": 8.5,
-      "success": 60.6,
-      "n": 398
-    },
-    {
       "task": "Prepare journal entries",
       "full": "Prepare adjusting journal entries.",
       "weight": 14.1,
@@ -60,58 +105,13 @@
       "n": null
     },
     {
-      "task": "Examine financial reports",
-      "full": "Prepare, examine, or analyze accounting records, financial statements, or other financial reports to assess accuracy, completeness, and conformance to reporting and procedural standards.",
-      "weight": 13.6,
-      "auto": 45.0,
-      "aug": null,
-      "success": 56.2,
-      "n": 80
-    },
-    {
-      "task": "Inspect accounting systems",
-      "full": "Inspect account books and accounting systems for efficiency, effectiveness, and use of accepted accounting procedures to record transactions.",
-      "weight": 13.0,
+      "task": "Transaction and Compliance Review",
+      "full": "Examine records and interview workers to ensure recording of transactions and compliance with laws and regulations.",
+      "weight": 11.7,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
-    },
-    {
-      "task": "Report finances to management",
-      "full": "Report to management regarding the finances of establishment.",
-      "weight": 13.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Detect fraud/non-compliance",
-      "full": "Collect and analyze data to detect deficient controls, duplicated effort, extravagance, fraud, or non-compliance with laws, regulations, and management policies.",
-      "weight": 12.8,
-      "auto": 44.7,
-      "aug": null,
-      "success": 44.7,
-      "n": 47
-    },
-    {
-      "task": "Develop recordkeeping systems",
-      "full": "Develop, implement, modify, and document recordkeeping and accounting systems, making use of current computer technology.",
-      "weight": 12.0,
-      "auto": 42.2,
-      "aug": 16.3,
-      "success": 67.8,
-      "n": 332
-    },
-    {
-      "task": "Set up chart of accounts",
-      "full": "Establish tables of accounts and assign entries to proper accounts.",
-      "weight": 12.0,
-      "auto": null,
-      "aug": 41.0,
-      "success": 76.9,
-      "n": 39
+      "n": 26
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

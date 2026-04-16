@@ -27,6 +27,8 @@ CLUSTERS_CSV      = "data/career_clusters/clusters.csv"
 SITE_DIR          = "../ai-resilient-occupations-site"
 CAREERS_DATA_DIR  = os.path.join(SITE_DIR, "src/data/careers")
 CAREERS_ROUTE_DIR = os.path.join(SITE_DIR, "app/career")
+FAQ_MODEL         = "claude-haiku-4-5-20251001"
+FAQ_MAX_TOKENS    = 1024
 
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
@@ -333,7 +335,7 @@ def build_source(s: dict) -> str:
     )
 
 
-def generate_data_file(card: dict, cluster_roles: dict, scores: dict, var_name: str, title: str = "") -> str:
+def generate_data_file(card: dict, cluster_roles: dict, scores: dict, var_name: str, title: str = "", faq_pairs: list = None) -> str:
     """Generate the full src/data/careers/<slug>.tsx content."""
     onet_code = card.get("onet_code", "")
     if not title:
@@ -486,9 +488,20 @@ def generate_data_file(card: dict, cluster_roles: dict, scores: dict, var_name: 
         f"  sources: [",
         sources_str,
         f"  ],",
-        f"}};",
-        "",
     ]
+
+    if faq_pairs:
+        faq_lines = ",\n".join(
+            f'    {{\n      question: {str_to_tsx_string(p["question"])},\n      answer: {str_to_tsx_string(p["answer"])},\n    }}'
+            for p in faq_pairs
+        )
+        lines += [
+            f"  faqPairs: [",
+            faq_lines,
+            f"  ],",
+        ]
+
+    lines += [f"}};", ""]
 
     return "\n".join(lines)
 
@@ -512,8 +525,92 @@ def generate_route_file(slug: str, var_name: str, component_name: str,
     )
 
 
+def _faq_prompt(card: dict, scores: dict) -> str:
+    onet_code = card.get("onet_code", "")
+    title = card.get("title", "")
+    score_row = scores.get(onet_code, {})
+    score = card.get("score", "")
+    salary = card.get("salary", "")
+    openings = card.get("openings", "")
+    growth = card.get("growth", "")
+    key_drivers = score_row.get("key_drivers", "") or card.get("keyDrivers", "")
+    risks_body = card.get("risks", {}).get("body", "")
+    opps_body = card.get("opportunities", {}).get("body", "")
+
+    return f"""You are writing 3-4 FAQ pairs for the "{title}" career page on ai-proof-careers.com.
+
+Occupation: {title} (O*NET {onet_code})
+AI Resilience Score: {score}/100
+Median Salary: {salary}
+Annual Openings: {openings}
+Projected Growth: {growth}
+Key Drivers: {key_drivers}
+Risks summary: {risks_body}
+Opportunities summary: {opps_body}
+
+Write 3-4 FAQ pairs. Each question should be something a real job-seeker would search for. Focus on:
+- Is this a strong career given AI? (lead with concrete data: score, salary, openings, growth)
+- What tasks does AI handle vs. what stays human?
+- Salary / compensation specifics (go beyond the median — mention senior/specialist ranges if known)
+- What skills or credentials make someone more resilient in this role?
+
+Rules:
+- Questions must be specific to this occupation, not generic
+- Answers are 2-5 sentences, plain language, data-grounded
+- No em dashes. Use commas or short sentences.
+- No jargon: no "future-proof", "upskill", "leverage", "resilience"
+- Cite the score, salary, growth, and openings naturally — they are useful to readers
+- Each answer stands alone — don't reference "the section above" or other FAQ items
+
+Respond ONLY with a JSON array, no preamble:
+[
+  {{"question": "...", "answer": "..."}},
+  ...
+]"""
+
+
+def generate_faqs(card: dict, scores: dict, is_inline: bool = False, client=None) -> list[dict]:
+    """Generate 3-4 FAQ pairs for a career page. API mode or inline (stdin) mode."""
+    prompt = _faq_prompt(card, scores)
+
+    if is_inline:
+        title = card.get("title", card.get("onet_code", ""))
+        print("\n" + "=" * 80)
+        print(f"FAQ PROMPT — {title}")
+        print("=" * 80)
+        print(prompt)
+        print("=" * 80)
+        print("\nPaste JSON array below, then press Enter + Ctrl-D:")
+        try:
+            raw = sys.stdin.read().strip()
+        except KeyboardInterrupt:
+            print("\nAborted.")
+            sys.exit(130)
+    else:
+        import anthropic
+        response = client.messages.create(
+            model=FAQ_MODEL,
+            max_tokens=FAQ_MAX_TOKENS,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        raw = response.content[0].text.strip()
+
+    # Strip markdown code fences if present
+    if raw.startswith("```"):
+        raw = re.sub(r"^```[a-z]*\n?", "", raw).rstrip("`").strip()
+
+    try:
+        pairs = json.loads(raw)
+        if isinstance(pairs, list):
+            return [{"question": p["question"], "answer": p["answer"]} for p in pairs if "question" in p and "answer" in p]
+    except (json.JSONDecodeError, KeyError):
+        print(f"  ✗ FAQ parse error. Raw: {raw[:200]}")
+    return []
+
+
 def process_occupation(onet_code: str, cards: dict, cluster_roles: dict,
-                       scores: dict, clusters: dict, force: bool = False) -> bool:
+                       scores: dict, clusters: dict, force: bool = False,
+                       faq_mode: str = "skip") -> bool:
     card = cards.get(onet_code)
     if not card:
         print(f"  ✗ {onet_code} not found in data/output/cards/")
@@ -546,7 +643,13 @@ def process_occupation(onet_code: str, cards: dict, cluster_roles: dict,
     print(f"\n── {title} ({onet_code})")
     print(f"   slug: {slug}")
 
-    data_content = generate_data_file(card, cluster_roles, scores, var_name, title=title)
+    faq_pairs = []
+    if faq_mode in ("api", "inline"):
+        faq_pairs = generate_faqs(card, scores, is_inline=(faq_mode == "inline"),
+                                  client=_api_client if faq_mode == "api" else None)
+        print(f"   faqs: {len(faq_pairs)} pairs")
+
+    data_content = generate_data_file(card, cluster_roles, scores, var_name, title=title, faq_pairs=faq_pairs)
     route_content = generate_route_file(slug, var_name, component_name, industry_slug, industry_display_name)
 
     if not os.path.exists(CAREERS_DATA_DIR):
@@ -580,7 +683,24 @@ def main():
     group.add_argument("--cluster", help="All occupations in a cluster")
     group.add_argument("--all", action="store_true", help="All occupations in cards JSONL")
     parser.add_argument("--force", action="store_true", help="Overwrite existing files")
+    faq_group = parser.add_mutually_exclusive_group()
+    faq_group.add_argument("--api", action="store_true", help="Generate FAQs via Claude API (haiku)")
+    faq_group.add_argument("--inline", action="store_true", help="Generate FAQs interactively via stdin")
     args = parser.parse_args()
+
+    faq_mode = "api" if args.api else "inline" if args.inline else "skip"
+
+    # Initialize API client once if needed
+    global _api_client
+    _api_client = None
+    if faq_mode == "api":
+        import anthropic
+        try:
+            _api_client = anthropic.Anthropic()
+        except Exception as e:
+            print(f"✗ Could not initialize Anthropic client: {e}")
+            print("  Use --inline instead, or set ANTHROPIC_API_KEY.")
+            sys.exit(1)
 
     print("Loading data...")
     cards = load_cards()
@@ -589,7 +709,7 @@ def main():
     clusters = load_clusters()
 
     if args.code:
-        process_occupation(args.code, cards, cluster_roles, scores, clusters, force=args.force)
+        process_occupation(args.code, cards, cluster_roles, scores, clusters, force=args.force, faq_mode=faq_mode)
 
     elif args.cluster:
         members = [r for r in cluster_roles.values() if r["cluster_id"] == args.cluster]
@@ -599,11 +719,11 @@ def main():
             sys.exit(1)
         print(f"\n══ Cluster: {args.cluster} ({len(members)} roles) ══")
         for m in members:
-            process_occupation(m["onet_code"], cards, cluster_roles, scores, clusters, force=args.force)
+            process_occupation(m["onet_code"], cards, cluster_roles, scores, clusters, force=args.force, faq_mode=faq_mode)
 
     elif args.all:
         for code in cards:
-            process_occupation(code, cards, cluster_roles, scores, clusters, force=args.force)
+            process_occupation(code, cards, cluster_roles, scores, clusters, force=args.force, faq_mode=faq_mode)
 
     _regenerate_registry()
     print("\n✓ Done")

@@ -99,6 +99,16 @@ Career pages live in `../ai-resilient-occupations-site`. Use the `aeo-content-wr
 
 `generate_next_steps.py` is interactive: it prints a prompt and reads JSON from stdin. When running it, **paste the prompt output directly into this Claude Code conversation and respond with JSON here**. Do not launch a separate Claude.ai tab or spawn an API agent. Claude Code IS Claude — respond to the prompt inline, write the JSON to `data/output/occupation_cards.jsonl` directly.
 
+**Section mode (`--section risks,opportunities` etc.)** works the same way — the script still prints a prompt and waits for stdin. Do NOT try to pipe JSON via heredoc: the script prints the prompt before reading stdin, so heredoc input gets consumed during prompt display, not as the JSON response. Correct workflow:
+1. Run `--print-prompt` to see the prompt
+2. Respond with JSON inline in this conversation
+3. Write the JSON directly to `data/output/cards/<CODE>.json` (patch only the relevant keys)
+4. Run `generate_career_pages.py --code <CODE> --force`
+
+**When JSON is already known** (e.g. re-applying a prior response or fixing a specific field): skip `generate_next_steps.py` entirely. Write directly to the card JSON file, then run `generate_career_pages.py --force`.
+
+**Never write card JSON manually to bypass `build_passthrough`** — fields like `growth`, `score`, `salary`, `openings` must come from `build_passthrough` (which reads the enriched CSV) or be explicitly patched after the fact using the values `build_passthrough` would have produced. The `_GROWTH_LABEL_MAP` in `build_passthrough` is the canonical converter for BLS prose growth strings.
+
 ## Top No-Degree Careers Sub-Dataset
 
 Subset filtered to `role_resilience_score ≥ 5.5` and `Top Education Level ≤ associate's`.

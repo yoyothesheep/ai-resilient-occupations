@@ -75,10 +75,10 @@
       "task": "Develop ad campaigns",
       "full": "Develop advertising campaigns for a wide range of clients, working with an advertising agency's creative director and art director to determine the best way to present advertising information.",
       "weight": 20.5,
-      "auto": null,
+      "auto": 35.6,
       "aug": null,
-      "success": 77.8,
-      "n": 27
+      "success": 82.2,
+      "n": 45
     },
     {
       "task": "Vary language/tone by medium",
@@ -87,25 +87,16 @@
       "auto": null,
       "aug": null,
       "success": null,
-      "n": 18
+      "n": 19
     },
     {
       "task": "Write Marketing Copy",
       "full": "Write articles, bulletins, sales letters, speeches, and other related informative, marketing and promotional material.",
       "weight": 15.4,
-      "auto": 32.8,
-      "aug": 2.5,
-      "success": 79.4,
-      "n": 592
-    },
-    {
-      "task": "Plan project outlines",
-      "full": "Plan project arrangements or outlines, and organize material accordingly.",
-      "weight": 16.0,
-      "auto": 47.7,
-      "aug": null,
-      "success": 61.5,
-      "n": 65
+      "auto": 41.9,
+      "aug": 2.7,
+      "success": 83.5,
+      "n": 786
     },
     {
       "task": "Discuss copy with clients",
@@ -113,17 +104,26 @@
       "weight": 19.0,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": 17
+      "success": 87.2,
+      "n": 39
+    },
+    {
+      "task": "Plan project outlines",
+      "full": "Plan project arrangements or outlines, and organize material accordingly.",
+      "weight": 16.0,
+      "auto": 63.3,
+      "aug": null,
+      "success": 54.4,
+      "n": 79
     },
     {
       "task": "Revise written material",
       "full": "Revise written material to meet personal standards and to satisfy needs of clients, publishers, directors, or producers.",
       "weight": 16.0,
-      "auto": 32.1,
+      "auto": 28.2,
       "aug": null,
-      "success": 76.8,
-      "n": 56
+      "success": 70.5,
+      "n": 78
     },
     {
       "task": "Present drafts to clients",
@@ -135,17 +135,17 @@
       "n": null
     },
     {
-      "task": "Collaborate with writers",
-      "full": "Collaborate with other writers on specific projects.",
+      "task": "Research source material",
+      "full": "Conduct research to obtain factual information and authentic detail, using sources such as newspaper accounts, diaries, and interviews.",
       "weight": 16.0,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
+      "n": 18
     },
     {
-      "task": "Research source material",
-      "full": "Conduct research to obtain factual information and authentic detail, using sources such as newspaper accounts, diaries, and interviews.",
+      "task": "Collaborate with writers",
+      "full": "Collaborate with other writers on specific projects.",
       "weight": 16.0,
       "auto": null,
       "aug": null,

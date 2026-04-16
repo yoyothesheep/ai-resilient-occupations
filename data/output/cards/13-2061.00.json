@@ -407,6 +407,15 @@
       "n": null
     },
     {
+      "task": "Recommend compliance actions",
+      "full": "Recommend actions to ensure compliance with laws and regulations, or to protect solvency of institutions.",
+      "weight": 14.4,
+      "auto": null,
+      "aug": null,
+      "success": 75.0,
+      "n": 20
+    },
+    {
       "task": "Review financial statements",
       "full": "Review balance sheets, operating income and expense accounts, and loan documentation to confirm institution assets and liabilities.",
       "weight": 15.1,
@@ -425,15 +434,6 @@
       "n": null
     },
     {
-      "task": "Recommend compliance actions",
-      "full": "Recommend actions to ensure compliance with laws and regulations, or to protect solvency of institutions.",
-      "weight": 14.4,
-      "auto": null,
-      "aug": null,
-      "success": 83.3,
-      "n": 18
-    },
-    {
       "task": "Prepare examination reports",
       "full": "Prepare reports, exhibits, and other supporting schedules that detail an institution's safety and soundness, compliance with laws and regulations, and recommended solutions to questionable financial conditions.",
       "weight": 13.6,
@@ -441,6 +441,15 @@
       "aug": null,
       "success": null,
       "n": null
+    },
+    {
+      "task": "Law and Regulation Impact Analysis",
+      "full": "Review and analyze new, proposed, or revised laws, regulations, policies, and procedures to interpret their meaning and determine their impact.",
+      "weight": 8.9,
+      "auto": 27.2,
+      "aug": 49.9,
+      "success": 67.4,
+      "n": 559
     },
     {
       "task": "Investigate institution activities",
@@ -473,15 +482,6 @@
       "task": "Resolve integrity problems",
       "full": "Resolve problems concerning the overall financial integrity of banking institutions including loan investment portfolios, capital, earnings, and specific or large troubled accounts.",
       "weight": 11.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Train other examiners",
-      "full": "Train other examiners in the financial examination process.",
-      "weight": 11.0,
       "auto": null,
       "aug": null,
       "success": null,

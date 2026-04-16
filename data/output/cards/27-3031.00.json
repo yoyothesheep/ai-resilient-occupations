@@ -74,40 +74,40 @@
   },
   "taskData": [
     {
-      "task": "Write press releases",
-      "full": "Write press releases or other media communications to promote clients.",
-      "weight": 18.8,
-      "auto": 26.3,
-      "aug": null,
-      "success": 85.2,
-      "n": 668
-    },
-    {
       "task": "Handle media inquiries",
       "full": "Respond to requests for information from the media or designate an appropriate spokesperson or information source.",
       "weight": 20.5,
-      "auto": 50.0,
-      "aug": null,
-      "success": 75.0,
-      "n": 72
+      "auto": 36.4,
+      "aug": 19.2,
+      "success": 72.7,
+      "n": 99
+    },
+    {
+      "task": "Write press releases",
+      "full": "Write press releases or other media communications to promote clients.",
+      "weight": 18.8,
+      "auto": 27.6,
+      "aug": 1.6,
+      "success": 90.1,
+      "n": 912
     },
     {
       "task": "Plan public programs",
       "full": "Plan or direct development or communication of programs to maintain favorable public or stockholder perceptions of an organization's accomplishments, agenda, or environmental responsibility.",
       "weight": 18.0,
-      "auto": null,
+      "auto": 35.7,
       "aug": null,
-      "success": 57.9,
-      "n": 38
+      "success": 81.0,
+      "n": 42
     },
     {
       "task": "Develop PR strategies",
       "full": "Study the objectives, promotional policies, or needs of organizations to develop public relations strategies that will influence public opinion or promote ideas, products, or services.",
       "weight": 14.1,
-      "auto": 34.4,
+      "auto": 32.5,
       "aug": 18.8,
-      "success": 69.6,
-      "n": 276
+      "success": 68.3,
+      "n": 388
     },
     {
       "task": "Post social/web content",
@@ -122,28 +122,28 @@
       "task": "Edit organizational publications",
       "full": "Prepare or edit organizational publications, such as employee newsletters or stockholders' reports, for internal or external audiences.",
       "weight": 13.3,
-      "auto": 29.1,
-      "aug": 3.3,
-      "success": 84.7,
-      "n": 2147
+      "auto": 27.0,
+      "aug": 3.4,
+      "success": 85.0,
+      "n": 2191
     },
     {
       "task": "Coach client communicators",
       "full": "Coach client representatives in effective communication with the public or with employees.",
       "weight": 13.2,
       "auto": 21.6,
-      "aug": 10.2,
-      "success": 93.8,
-      "n": 176
+      "aug": 17.8,
+      "success": 89.2,
+      "n": 185
     },
     {
       "task": "Advise on communications",
       "full": "Confer with other managers to identify trends or key group interests or concerns or to provide advice on business decisions.",
       "weight": 14.1,
       "auto": null,
-      "aug": null,
-      "success": 77.8,
-      "n": 27
+      "aug": 38.0,
+      "success": 72.0,
+      "n": 50
     },
     {
       "task": "Maintain stakeholder relationships",

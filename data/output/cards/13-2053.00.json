@@ -313,10 +313,10 @@
       "task": "Decline excessive risks",
       "full": "Decline excessive risks.",
       "weight": 20.5,
-      "auto": 44.7,
+      "auto": null,
       "aug": null,
       "success": null,
-      "n": 123
+      "n": 35
     },
     {
       "task": "Evaluate catastrophe risk",

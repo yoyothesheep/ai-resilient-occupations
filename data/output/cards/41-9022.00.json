@@ -21,19 +21,73 @@
       "task": "Match properties to buyers",
       "full": "Generate lists of properties that are compatible with buyers' needs and financial resources.",
       "weight": 25.2,
-      "auto": 49.4,
+      "auto": 47.1,
       "aug": null,
-      "success": null,
-      "n": 77
+      "success": 30.6,
+      "n": 121
     },
     {
       "task": "Market/promote listings",
       "full": "Promote sales of properties through advertisements, open houses, and participation in multiple listing services.",
       "weight": 23.0,
-      "auto": 40.9,
+      "auto": 35.9,
       "aug": null,
-      "success": 75.3,
-      "n": 381
+      "success": 76.7,
+      "n": 412
+    },
+    {
+      "task": "Answer client questions",
+      "full": "Answer clients' questions regarding construction work, financing, maintenance, repairs, and appraisals.",
+      "weight": 21.5,
+      "auto": 30.6,
+      "aug": 28.5,
+      "success": 86.1,
+      "n": 144
+    },
+    {
+      "task": "Run comp analysis",
+      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
+      "weight": 21.3,
+      "auto": 48.3,
+      "aug": null,
+      "success": 54.0,
+      "n": 87
+    },
+    {
+      "task": "Negotiate between parties",
+      "full": "Act as an intermediary in negotiations between buyers and sellers, generally representing one or the other.",
+      "weight": 21.8,
+      "auto": 33.8,
+      "aug": null,
+      "success": 75.7,
+      "n": 74
+    },
+    {
+      "task": "Property Display and Explanation",
+      "full": "Display commercial, industrial, agricultural, and residential properties to clients and explain their features.",
+      "weight": 19.6,
+      "auto": 50.0,
+      "aug": null,
+      "success": 67.9,
+      "n": 78
+    },
+    {
+      "task": "Interview buyer clients",
+      "full": "Interview clients to determine what kinds of properties they are seeking.",
+      "weight": 20.2,
+      "auto": 35.0,
+      "aug": null,
+      "success": 66.7,
+      "n": 60
+    },
+    {
+      "task": "Coordinate closing parties",
+      "full": "Confer with escrow companies, lenders, home inspectors, and pest control operators to ensure that terms and conditions of purchase agreements are met before closing dates.",
+      "weight": 21.4,
+      "auto": null,
+      "aug": null,
+      "success": 100.0,
+      "n": 19
     },
     {
       "task": "Prepare transaction documents",
@@ -45,67 +99,13 @@
       "n": null
     },
     {
-      "task": "Negotiate between parties",
-      "full": "Act as an intermediary in negotiations between buyers and sellers, generally representing one or the other.",
-      "weight": 21.8,
-      "auto": 28.8,
-      "aug": null,
-      "success": 67.3,
-      "n": 52
-    },
-    {
-      "task": "Answer client questions",
-      "full": "Answer clients' questions regarding construction work, financing, maintenance, repairs, and appraisals.",
-      "weight": 21.5,
-      "auto": 42.4,
-      "aug": 22.4,
-      "success": 63.5,
-      "n": 85
-    },
-    {
-      "task": "Coordinate closing parties",
-      "full": "Confer with escrow companies, lenders, home inspectors, and pest control operators to ensure that terms and conditions of purchase agreements are met before closing dates.",
-      "weight": 21.4,
+      "task": "Closing Coordination",
+      "full": "Coordinate property closings, overseeing signing of documents and disbursement of funds.",
+      "weight": 19.4,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Run comp analysis",
-      "full": "Compare a property with similar properties that have recently sold to determine its competitive market price.",
-      "weight": 21.3,
-      "auto": 35.6,
-      "aug": null,
-      "success": 55.6,
-      "n": 45
-    },
-    {
-      "task": "Present purchase offers",
-      "full": "Present purchase offers to sellers for consideration.",
-      "weight": 20.7,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Schedule home showings",
-      "full": "Coordinate appointments to show homes to prospective buyers.",
-      "weight": 20.4,
-      "auto": null,
-      "aug": null,
-      "success": 88.2,
-      "n": 17
-    },
-    {
-      "task": "Interview buyer clients",
-      "full": "Interview clients to determine what kinds of properties they are seeking.",
-      "weight": 20.2,
-      "auto": 39.3,
-      "aug": null,
-      "success": 51.8,
-      "n": 56
+      "success": 60.7,
+      "n": 28
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-Download Anthropic Economic Index 2026-01-15 release data.
+Download Anthropic Economic Index 2026-03-24 release data.
 
 Source: https://huggingface.co/datasets/Anthropic/EconomicIndex
-Release: 2026-01-15
+Release: 2026-03-24
 """
 
 import os
@@ -13,12 +13,12 @@ import urllib.request
 
 # Configuration
 REPO_ID = "Anthropic/EconomicIndex"
-RELEASE = "release_2026_01_15"
+RELEASE = "release_2026_03_24"
 DATA_DIR = Path(__file__).parent.parent / "data" / "input" / "anthropic"
 
 # Files to download
 FILES_TO_DOWNLOAD = [
-    "aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv",
+    "aei_raw_claude_ai_2026-02-05_to_2026-02-12.csv",
 ]
 
 def download_file(repo_id, filename, local_path):

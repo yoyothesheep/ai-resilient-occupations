@@ -302,31 +302,85 @@
   "growth": "+6%",
   "taskData": [
     {
-      "task": "Analyze organizational risk",
-      "full": "Analyze areas of potential risk to the assets, earning capacity, or success of organizations.",
+      "task": "Build risk models",
+      "full": "Develop or implement risk-assessment models or methodologies.",
       "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "auto": 50.9,
+      "aug": 16.6,
+      "success": 49.1,
+      "n": 163
     },
     {
-      "task": "Assess regulatory impact",
-      "full": "Analyze new legislation to determine impact on risk exposure.",
+      "task": "Technical Data Charting",
+      "full": "Draw charts and graphs, using computer spreadsheets, to illustrate technical reports.",
       "weight": 17.0,
-      "auto": null,
+      "auto": 43.2,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 62.8,
+      "n": 148
     },
     {
-      "task": "Quantify risk statistically",
-      "full": "Conduct statistical analyses to quantify risk, using statistical analysis software or econometric models.",
+      "task": "Investment Trend Interpretation",
+      "full": "Interpret data on price, yield, stability, future investment-risk trends, economic influences, and other factors affecting investment programs.",
+      "weight": 17.0,
+      "auto": 27.7,
+      "aug": 55.6,
+      "success": 78.0,
+      "n": 354
+    },
+    {
+      "task": "Risk Position Reporting",
+      "full": "Produce reports or presentations that outline findings, explain risk positions, or recommend changes.",
+      "weight": 17.0,
+      "auto": 30.4,
+      "aug": null,
+      "success": 66.1,
+      "n": 115
+    },
+    {
+      "task": "Investment Timing Recommendations",
+      "full": "Recommend investments and investment timing to companies, investment firm staff, or the public.",
+      "weight": 17.0,
+      "auto": 48.5,
+      "aug": 21.1,
+      "success": 58.1,
+      "n": 270
+    },
+    {
+      "task": "Securities Quality Comparison",
+      "full": "Evaluate and compare the relative quality of various securities in a given industry.",
+      "weight": 17.0,
+      "auto": 32.9,
+      "aug": null,
+      "success": 47.9,
+      "n": 73
+    },
+    {
+      "task": "Investment Risk Identification",
+      "full": "Identify key risks and mitigating factors of potential investments, such as asset types and values, legal and ownership structures, professional reputations, customer bases, or industry segments.",
       "weight": 17.0,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 73.3,
+      "n": 30
+    },
+    {
+      "task": "Investment Action Planning",
+      "full": "Prepare plans of action for investment, using financial analyses.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": 64.3,
+      "n": 28
+    },
+    {
+      "task": "Statistical Modeling Consultation",
+      "full": "Provide statistical modeling advice to other departments.",
+      "weight": 17.0,
+      "auto": null,
+      "aug": null,
+      "success": 87.0,
+      "n": 23
     },
     {
       "task": "Advise on trading risk",
@@ -335,61 +389,7 @@
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
-    },
-    {
-      "task": "Review risk literature",
-      "full": "Consult financial literature to ensure use of the latest models or statistical techniques.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Develop risk systems",
-      "full": "Contribute to development of risk management systems.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Assess environmental risk",
-      "full": "Determine potential environmental impacts of new products or processes on long-term growth and profitability.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Develop contingency plans",
-      "full": "Develop contingency plans to deal with emergencies.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Build risk models",
-      "full": "Develop or implement risk-assessment models or methodologies.",
-      "weight": 17.0,
-      "auto": 35.2,
-      "aug": 17.6,
-      "success": 64.8,
-      "n": 108
-    },
-    {
-      "task": "Model stress scenarios",
-      "full": "Devise scenario analyses reflecting possible severe market events.",
-      "weight": 17.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "n": 15
     }
   ],
   "keyDrivers": "Risk specialists must make judgment calls about emerging threats and tail-risk scenarios that don't fit neatly into historical patterns—the kind of novel, high-stakes reasoning that AI struggles with. Regulatory frameworks increasingly require human accountability for risk assessments, providing some legal protection. As AI drives more complex financial products and faster markets, the need for human risk oversight will likely grow, and AI tools will help these specialists monitor far more ground.",

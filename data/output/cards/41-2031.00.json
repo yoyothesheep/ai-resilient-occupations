@@ -23,17 +23,44 @@
       "weight": 31.4,
       "auto": null,
       "aug": null,
-      "success": 73.9,
-      "n": 1059
+      "success": 69.8,
+      "n": 1276
     },
     {
       "task": "Recommend / locate merchandise",
       "full": "Recommend, select, and help locate or obtain merchandise based on customer needs and desires.",
       "weight": 28.0,
-      "auto": 42.6,
-      "aug": 7.3,
-      "success": 48.7,
-      "n": 1095
+      "auto": 39.5,
+      "aug": 8.3,
+      "success": 64.5,
+      "n": 1157
+    },
+    {
+      "task": "Answer store / product questions",
+      "full": "Answer questions regarding the store and its merchandise.",
+      "weight": 27.8,
+      "auto": 67.2,
+      "aug": 19.9,
+      "success": 51.8,
+      "n": 467
+    },
+    {
+      "task": "Explain product use / care",
+      "full": "Describe merchandise and explain use, operation, and care of merchandise to customers.",
+      "weight": 25.2,
+      "auto": 24.8,
+      "aug": 47.0,
+      "success": 81.7,
+      "n": 432
+    },
+    {
+      "task": "Prepare merchandise for sale",
+      "full": "Prepare merchandise for purchase or rental.",
+      "weight": 26.7,
+      "auto": 50.0,
+      "aug": null,
+      "success": 87.5,
+      "n": 48
     },
     {
       "task": "Process sales and payments",
@@ -43,24 +70,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Answer store / product questions",
-      "full": "Answer questions regarding the store and its merchandise.",
-      "weight": 27.8,
-      "auto": 40.2,
-      "aug": 28.7,
-      "success": 60.9,
-      "n": 174
-    },
-    {
-      "task": "Prepare merchandise for sale",
-      "full": "Prepare merchandise for purchase or rental.",
-      "weight": 26.7,
-      "auto": 45.0,
-      "aug": null,
-      "success": 80.0,
-      "n": 40
     },
     {
       "task": "Operate / balance cash registers",
@@ -88,15 +97,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Explain product use / care",
-      "full": "Describe merchandise and explain use, operation, and care of merchandise to customers.",
-      "weight": 25.2,
-      "auto": 31.2,
-      "aug": 43.1,
-      "success": 75.6,
-      "n": 369
     },
     {
       "task": "Prepare sales contracts / slips",

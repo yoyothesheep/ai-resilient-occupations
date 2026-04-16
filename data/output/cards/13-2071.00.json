@@ -302,6 +302,42 @@
   "growth": "+3%",
   "taskData": [
     {
+      "task": "Create debt/budget plans",
+      "full": "Create debt management plans, spending plans, or budgets to assist clients to meet financial goals.",
+      "weight": 26.1,
+      "auto": 28.8,
+      "aug": 17.9,
+      "success": 76.2,
+      "n": 643
+    },
+    {
+      "task": "Recommend financial strategies",
+      "full": "Recommend strategies for clients to meet their financial goals, such as borrowing money through loans or loan programs, declaring bankruptcy, making budget adjustments, or enrolling in debt management plans.",
+      "weight": 25.7,
+      "auto": 15.4,
+      "aug": 40.6,
+      "success": 81.2,
+      "n": 1103
+    },
+    {
+      "task": "Explain financial concepts",
+      "full": "Explain general financial topics to clients, such as credit report ratings, bankruptcy laws, consumer protection laws, wage attachments, or collection actions.",
+      "weight": 24.8,
+      "auto": 21.3,
+      "aug": 71.6,
+      "success": 80.8,
+      "n": 1097
+    },
+    {
+      "task": "Prepare client documents",
+      "full": "Prepare written documents to establish contracts with or communicate financial recommendations to clients.",
+      "weight": 24.7,
+      "auto": 31.3,
+      "aug": null,
+      "success": 71.6,
+      "n": 67
+    },
+    {
       "task": "Assess client finances",
       "full": "Assess clients' overall financial situations by reviewing income, assets, debts, expenses, credit reports, or other financial information.",
       "weight": 27.3,
@@ -338,54 +374,18 @@
       "n": null
     },
     {
-      "task": "Create debt/budget plans",
-      "full": "Create debt management plans, spending plans, or budgets to assist clients to meet financial goals.",
-      "weight": 26.1,
-      "auto": 24.1,
-      "aug": 14.6,
-      "success": 71.0,
-      "n": 535
-    },
-    {
-      "task": "Recommend financial strategies",
-      "full": "Recommend strategies for clients to meet their financial goals, such as borrowing money through loans or loan programs, declaring bankruptcy, making budget adjustments, or enrolling in debt management plans.",
-      "weight": 25.7,
-      "auto": 17.5,
-      "aug": 40.5,
-      "success": 81.7,
-      "n": 765
+      "task": "Client Financial Inquiry Response",
+      "full": "Advise clients or respond to inquiries about financial matters in person or via phone, email, Web site, or Internet chat.",
+      "weight": 22.9,
+      "auto": null,
+      "aug": null,
+      "success": 87.0,
+      "n": 23
     },
     {
       "task": "Prioritize debt repayment",
       "full": "Prioritize client debt repayment to avoid dire consequences, such as bankruptcy or foreclosure or to reduce overall costs, such as by paying high-interest or short-term loans first.",
       "weight": 25.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Explain financial concepts",
-      "full": "Explain general financial topics to clients, such as credit report ratings, bankruptcy laws, consumer protection laws, wage attachments, or collection actions.",
-      "weight": 24.8,
-      "auto": 12.6,
-      "aug": 79.2,
-      "success": 82.2,
-      "n": 746
-    },
-    {
-      "task": "Prepare client documents",
-      "full": "Prepare written documents to establish contracts with or communicate financial recommendations to clients.",
-      "weight": 24.7,
-      "auto": 39.4,
-      "aug": null,
-      "success": 67.6,
-      "n": 71
-    },
-    {
-      "task": "Maintain client records",
-      "full": "Maintain or update records of client account activity, including financial transactions, counseling session notes, correspondence, document images, or client inquiries.",
-      "weight": 24.2,
       "auto": null,
       "aug": null,
       "success": null,

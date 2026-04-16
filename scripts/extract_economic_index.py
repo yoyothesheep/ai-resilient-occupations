@@ -17,7 +17,7 @@ import pandas as pd
 from pathlib import Path
 import sys
 
-INPUT_FILE = Path("data/input/anthropic/aei_raw_claude_ai_2025-11-13_to_2025-11-20.csv")
+INPUT_FILE = Path("data/input/anthropic/aei_raw_claude_ai_2026-02-05_to_2026-02-12.csv")
 OUTPUT_DIR = Path("data/intermediate")
 
 # Collaboration pattern categories
@@ -86,6 +86,8 @@ def extract_ai_autonomy(df):
         (df['variable'] == 'onet_task_ai_autonomy_mean')
     ].copy()
     autonomy = autonomy.rename(columns={'cluster_name': 'task_text', 'value': 'ai_autonomy_mean'})
+    # Strip ::value suffix added to numeric facet cluster_names in newer AEI releases
+    autonomy['task_text'] = autonomy['task_text'].str.removesuffix('::value')
     result = autonomy[['task_text', 'ai_autonomy_mean']]
     print(f"  AI autonomy: {len(result):,} tasks with data")
     return result
@@ -98,17 +100,21 @@ def extract_speedup(df):
     Formula: speedup_factor = (human_only_time_hours * 60) / human_with_ai_time_minutes
     Global check: (3.09h * 60) / 15.35min = 12.1x, matching Anthropic's stated 9-12x range.
     """
-    human = df[
+    human_raw = df[
         (df['geography'] == 'global') &
         (df['facet'] == 'onet_task::human_only_time') &
         (df['variable'] == 'onet_task_human_only_time_mean')
-    ].rename(columns={'cluster_name': 'task_text', 'value': 'human_only_time'})[['task_text', 'human_only_time']]
+    ].copy()
+    human_raw['task_text'] = human_raw['cluster_name'].str.removesuffix('::value')
+    human = human_raw.rename(columns={'value': 'human_only_time'})[['task_text', 'human_only_time']]
 
-    ai = df[
+    ai_raw = df[
         (df['geography'] == 'global') &
         (df['facet'] == 'onet_task::human_with_ai_time') &
         (df['variable'] == 'onet_task_human_with_ai_time_mean')
-    ].rename(columns={'cluster_name': 'task_text', 'value': 'human_with_ai_time'})[['task_text', 'human_with_ai_time']]
+    ].copy()
+    ai_raw['task_text'] = ai_raw['cluster_name'].str.removesuffix('::value')
+    ai = ai_raw.rename(columns={'value': 'human_with_ai_time'})[['task_text', 'human_with_ai_time']]
 
     merged = human.merge(ai, on='task_text', how='inner')
     # Unit correction: human_only_time in hours → convert to minutes before dividing

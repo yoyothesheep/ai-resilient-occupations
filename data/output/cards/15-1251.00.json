@@ -28,37 +28,64 @@
       "task": "Write/analyze programs",
       "full": "Write, analyze, review, and rewrite programs, using workflow chart and diagram, and applying knowledge of computer capabilities, subject matter, and symbolic logic.",
       "weight": 22.8,
-      "auto": 23.0,
-      "aug": 35.8,
-      "success": 73.5,
-      "n": 3648
+      "auto": 27.0,
+      "aug": 33.2,
+      "success": 79.8,
+      "n": 2612
     },
     {
       "task": "Debug/correct errors",
       "full": "Correct errors by making appropriate changes and rechecking the program to ensure that the desired results are produced.",
       "weight": 22.5,
-      "auto": 18.2,
-      "aug": 12.7,
-      "success": 56.5,
-      "n": 13570
+      "auto": 20.1,
+      "aug": 14.6,
+      "success": 63.3,
+      "n": 8870
     },
     {
       "task": "Revise/expand programs",
       "full": "Perform or direct revision, repair, or expansion of existing programs to increase operating efficiency or adapt to new requirements.",
       "weight": 20.6,
-      "auto": 35.5,
-      "aug": 12.9,
-      "success": 53.4,
-      "n": 874
+      "auto": 44.2,
+      "aug": 11.1,
+      "success": 58.4,
+      "n": 729
     },
     {
       "task": "Maintain software packages",
       "full": "Write, update, and maintain computer programs or software packages to handle specific jobs such as tracking inventory, storing or retrieving data, or controlling other equipment.",
       "weight": 20.3,
-      "auto": 32.7,
-      "aug": 13.0,
-      "success": 65.1,
-      "n": 14117
+      "auto": 37.9,
+      "aug": 11.5,
+      "success": 66.8,
+      "n": 11705
+    },
+    {
+      "task": "Write documentation",
+      "full": "Compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",
+      "weight": 15.0,
+      "auto": 41.5,
+      "aug": 14.0,
+      "success": 73.1,
+      "n": 7597
+    },
+    {
+      "task": "Troubleshoot with teams",
+      "full": "Consult with and assist computer operators or system analysts to define and resolve problems in running computer programs.",
+      "weight": 13.7,
+      "auto": 10.9,
+      "aug": 73.7,
+      "success": 66.8,
+      "n": 788
+    },
+    {
+      "task": "Create workflow diagrams",
+      "full": "Prepare detailed workflow charts and diagrams that describe input, output, and logical operation, and convert them into a series of instructions coded in a computer language.",
+      "weight": 13.3,
+      "auto": 41.6,
+      "aug": 9.1,
+      "success": 70.8,
+      "n": 815
     },
     {
       "task": "Consult with stakeholders",
@@ -79,40 +106,13 @@
       "n": null
     },
     {
-      "task": "Write documentation",
-      "full": "Compile and write documentation of program development and subsequent revisions, inserting comments in the coded instructions so others can understand the program.",
-      "weight": 15.0,
-      "auto": 35.0,
-      "aug": 17.5,
-      "success": 70.3,
-      "n": 7387
-    },
-    {
-      "task": "Troubleshoot with teams",
-      "full": "Consult with and assist computer operators or system analysts to define and resolve problems in running computer programs.",
-      "weight": 13.7,
-      "auto": 8.6,
-      "aug": 77.4,
-      "success": 77.4,
-      "n": 747
-    },
-    {
-      "task": "Systems analysis/programming",
-      "full": "Perform systems analysis and programming tasks to maintain and control the use of computer systems software as a systems programmer.",
-      "weight": 13.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Create workflow diagrams",
-      "full": "Prepare detailed workflow charts and diagrams that describe input, output, and logical operation, and convert them into a series of instructions coded in a computer language.",
-      "weight": 13.3,
-      "auto": 35.2,
-      "aug": 6.9,
-      "success": 70.5,
-      "n": 923
+      "task": "System Response Investigation",
+      "full": "Investigate whether networks, workstations, the central processing unit of the system, or peripheral equipment are responding to a program's instructions.",
+      "weight": 11.6,
+      "auto": 30.0,
+      "aug": 24.3,
+      "success": 31.4,
+      "n": 70
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

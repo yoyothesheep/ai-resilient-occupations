@@ -78,46 +78,19 @@
       "task": "Rewrite/edit copy",
       "full": "Prepare, rewrite and edit copy to improve readability, or supervise others who do this work.",
       "weight": 21.8,
-      "auto": 30.9,
-      "aug": 3.3,
-      "success": 81.0,
-      "n": 13512
-    },
-    {
-      "task": "Proofread and Correct Copy",
-      "full": "Read copy or proof to detect and correct errors in spelling, punctuation, and syntax.",
-      "weight": 25.6,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": 16
+      "auto": 30.5,
+      "aug": 3.8,
+      "success": 83.8,
+      "n": 14107
     },
     {
       "task": "Develop story ideas",
       "full": "Develop story or content ideas, considering reader or audience appeal.",
       "weight": 21.6,
-      "auto": 34.5,
+      "auto": 42.9,
       "aug": null,
-      "success": 72.7,
-      "n": 55
-    },
-    {
-      "task": "Review and Approve Proofs",
-      "full": "Review and approve proofs submitted by composing room prior to publication production.",
-      "weight": 15.6,
-      "auto": 23.4,
-      "aug": 37.2,
-      "success": 62.3,
-      "n": 478
-    },
-    {
-      "task": "Edit and confer with authors",
-      "full": "Read, evaluate and edit manuscripts or other materials submitted for publication, and confer with authors regarding changes in content, style or organization, or publication.",
-      "weight": 23.2,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "success": 77.3,
+      "n": 119
     },
     {
       "task": "Verify facts/statistics",
@@ -126,12 +99,30 @@
       "auto": null,
       "aug": null,
       "success": null,
+      "n": 26
+    },
+    {
+      "task": "Proofread and Correct Copy",
+      "full": "Read copy or proof to detect and correct errors in spelling, punctuation, and syntax.",
+      "weight": 25.6,
+      "auto": null,
+      "aug": null,
+      "success": null,
       "n": null
     },
     {
-      "task": "Monitor news gathering",
-      "full": "Monitor news-gathering operations to ensure utilization of all news sources, such as press releases, telephone contacts, radio, television, wire services, and other reporters.",
-      "weight": 21.9,
+      "task": "Review and Approve Proofs",
+      "full": "Review and approve proofs submitted by composing room prior to publication production.",
+      "weight": 15.6,
+      "auto": 21.8,
+      "aug": 39.6,
+      "success": 69.0,
+      "n": 500
+    },
+    {
+      "task": "Edit and confer with authors",
+      "full": "Read, evaluate and edit manuscripts or other materials submitted for publication, and confer with authors regarding changes in content, style or organization, or publication.",
+      "weight": 23.2,
       "auto": null,
       "aug": null,
       "success": null,
@@ -144,7 +135,16 @@
       "auto": null,
       "aug": null,
       "success": null,
-      "n": 15
+      "n": 22
+    },
+    {
+      "task": "Monitor news gathering",
+      "full": "Monitor news-gathering operations to ensure utilization of all news sources, such as press releases, telephone contacts, radio, television, wire services, and other reporters.",
+      "weight": 21.9,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
     },
     {
       "task": "Supervise reporters/editors",
@@ -156,13 +156,13 @@
       "n": null
     },
     {
-      "task": "Recommend Manuscript Decisions",
-      "full": "Make manuscript acceptance or revision recommendations to the publisher.",
-      "weight": 13.8,
-      "auto": 31.2,
-      "aug": 19.8,
-      "success": 65.6,
-      "n": 96
+      "task": "Wire Service News Selection",
+      "full": "Select local, state, national, and international news items received from wire services, based on assessment of items' significance and interest value.",
+      "weight": 19.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": null
     }
   ],
   "careerCluster": [

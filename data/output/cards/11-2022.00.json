@@ -20,6 +20,15 @@
   "keyDrivers": "Sales managers lead teams, set strategy, and navigate complex organizational politics, work that depends heavily on reading people, building coalitions, and making high-stakes judgment calls about markets and talent. Their deep knowledge of their company's culture, clients, and competitive landscape is hard for AI to replicate. AI will enhance their effectiveness by automating forecasting and reporting, letting them focus more on coaching and strategic decisions.",
   "taskData": [
     {
+      "task": "Resolve customer complaints",
+      "full": "Resolve customer complaints regarding sales and service.",
+      "weight": 18.3,
+      "auto": 21.4,
+      "aug": null,
+      "success": 61.4,
+      "n": 145
+    },
+    {
       "task": "Oversee sales managers/staff",
       "full": "Oversee regional and local sales managers and their staffs.",
       "weight": 21.2,
@@ -27,15 +36,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Resolve customer complaints",
-      "full": "Resolve customer complaints regarding sales and service.",
-      "weight": 18.3,
-      "auto": 27.8,
-      "aug": null,
-      "success": 66.9,
-      "n": 133
     },
     {
       "task": "Advise customers on equipment",
@@ -62,7 +62,7 @@
       "auto": null,
       "aug": null,
       "success": null,
-      "n": 16
+      "n": 18
     },
     {
       "task": "Monitor customer preferences",
@@ -83,6 +83,15 @@
       "n": null
     },
     {
+      "task": "Trade Association Representation",
+      "full": "Represent company at trade association meetings to promote products.",
+      "weight": 6.8,
+      "auto": 33.3,
+      "aug": 25.2,
+      "success": 66.7,
+      "n": 111
+    },
+    {
       "task": "Coordinate with department heads",
       "full": "Confer or consult with department heads to plan advertising services and to secure information on equipment and customer specifications.",
       "weight": 9.8,
@@ -92,22 +101,13 @@
       "n": null
     },
     {
-      "task": "Visit dealers/expand programs",
-      "full": "Visit franchised dealers to stimulate interest in establishment or expansion of leasing programs.",
-      "weight": 9.1,
+      "task": "Pricing and Discount Determination",
+      "full": "Determine price schedules and discount rates.",
+      "weight": 8.5,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
-    },
-    {
-      "task": "Direct records/compliance staff",
-      "full": "Direct clerical staff to keep records of export correspondence, bid requests, and credit collections, and to maintain current information on tariffs, licenses, and restrictions.",
-      "weight": 9.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "n": 16
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

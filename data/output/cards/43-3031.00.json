@@ -28,10 +28,37 @@
       "task": "Operate accounting software",
       "full": "Operate computers programmed with accounting software to record, store, and analyze information.",
       "weight": 29.1,
-      "auto": 35.4,
+      "auto": 38.9,
       "aug": null,
-      "success": 41.7,
-      "n": 48
+      "success": 52.6,
+      "n": 95
+    },
+    {
+      "task": "Calculate financial amounts",
+      "full": "Perform financial calculations, such as amounts due, interest charges, balances, discounts, equity, and principal.",
+      "weight": 21.1,
+      "auto": 51.1,
+      "aug": 23.2,
+      "success": 88.4,
+      "n": 354
+    },
+    {
+      "task": "Financial Records Classification",
+      "full": "Classify, record, and summarize numerical and financial data to compile and keep financial records, using journals and ledgers or computers.",
+      "weight": 18.9,
+      "auto": 40.7,
+      "aug": 15.0,
+      "success": 65.1,
+      "n": 501
+    },
+    {
+      "task": "Handle office duties",
+      "full": "Perform general office duties, such as filing, answering telephones, and handling routine correspondence.",
+      "weight": 24.9,
+      "auto": null,
+      "aug": null,
+      "success": 81.0,
+      "n": 21
     },
     {
       "task": "Use office equipment",
@@ -52,15 +79,6 @@
       "n": null
     },
     {
-      "task": "Handle office duties",
-      "full": "Perform general office duties, such as filing, answering telephones, and handling routine correspondence.",
-      "weight": 24.9,
-      "auto": null,
-      "aug": null,
-      "success": 85.0,
-      "n": 20
-    },
-    {
       "task": "Ensure regulatory compliance",
       "full": "Comply with federal, state, and company policies, procedures, and regulations.",
       "weight": 23.6,
@@ -68,6 +86,15 @@
       "aug": null,
       "success": null,
       "n": null
+    },
+    {
+      "task": "Bills and Invoices Preparation",
+      "full": "Calculate, prepare, and issue bills, invoices, account statements, and other financial statements according to established procedures.",
+      "weight": 16.9,
+      "auto": 36.8,
+      "aug": null,
+      "success": 72.1,
+      "n": 68
     },
     {
       "task": "Code/classify documents",
@@ -86,33 +113,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Prepare bank deposits",
-      "full": "Prepare bank deposits by compiling data from cashiers, verifying and balancing receipts, and sending cash, checks, or other forms of payment to banks.",
-      "weight": 21.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Prepare payment checks",
-      "full": "Calculate and prepare checks for utilities, taxes, and other payments.",
-      "weight": 21.2,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": 16
-    },
-    {
-      "task": "Calculate financial amounts",
-      "full": "Perform financial calculations, such as amounts due, interest charges, balances, discounts, equity, and principal.",
-      "weight": 21.1,
-      "auto": 57.7,
-      "aug": 22.2,
-      "success": 81.9,
-      "n": 343
     }
   ],
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",

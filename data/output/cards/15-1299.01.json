@@ -21,19 +21,37 @@
       "task": "Monitor for security intrusions",
       "full": "Monitor systems for intrusions or denial of service attacks, and report security breaches to appropriate personnel.",
       "weight": 24.0,
-      "auto": 29.2,
-      "aug": 27.1,
-      "success": 61.8,
-      "n": 144
+      "auto": 19.7,
+      "aug": 30.3,
+      "success": 66.9,
+      "n": 142
     },
     {
       "task": "Diagnose/fix server problems",
       "full": "Determine sources of Web page or server problems, and take action to correct such problems.",
       "weight": 20.9,
-      "auto": 13.2,
-      "aug": 24.5,
-      "success": 61.2,
-      "n": 3996
+      "auto": 13.5,
+      "aug": 27.2,
+      "success": 66.1,
+      "n": 4404
+    },
+    {
+      "task": "Update web content/links",
+      "full": "Review or update Web page content or links in a timely manner, using appropriate tools.",
+      "weight": 18.4,
+      "auto": 42.1,
+      "aug": 22.8,
+      "success": 57.9,
+      "n": 228
+    },
+    {
+      "task": "Gather/analyze user feedback",
+      "full": "Gather, analyze, or document user feedback to locate or resolve sources of problems.",
+      "weight": 15.2,
+      "auto": 39.3,
+      "aug": 29.2,
+      "success": 68.5,
+      "n": 89
     },
     {
       "task": "Resolve test-identified issues",
@@ -45,27 +63,36 @@
       "n": null
     },
     {
-      "task": "Update web content/links",
-      "full": "Review or update Web page content or links in a timely manner, using appropriate tools.",
-      "weight": 18.4,
-      "auto": 46.2,
-      "aug": 31.8,
-      "success": 46.7,
-      "n": 195
+      "task": "Analyze website usage data",
+      "full": "Track, compile, and analyze Web site usage data.",
+      "weight": 15.6,
+      "auto": 44.3,
+      "aug": 29.5,
+      "success": 50.8,
+      "n": 61
+    },
+    {
+      "task": "Access and Security Standardization",
+      "full": "Identify, standardize, and communicate levels of access and security.",
+      "weight": 12.2,
+      "auto": 12.5,
+      "aug": 69.0,
+      "success": 80.4,
+      "n": 377
+    },
+    {
+      "task": "Web Site Training and Support",
+      "full": "Provide training or technical assistance in Web site implementation or use.",
+      "weight": 11.1,
+      "auto": 14.3,
+      "aug": 75.0,
+      "success": 74.1,
+      "n": 112
     },
     {
       "task": "Back up apps/data",
       "full": "Back up or modify applications and related data to provide for disaster recovery.",
       "weight": 16.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Analyze website usage data",
-      "full": "Track, compile, and analyze Web site usage data.",
-      "weight": 15.6,
       "auto": null,
       "aug": null,
       "success": null,
@@ -79,52 +106,25 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Collaborate on web projects",
-      "full": "Collaborate with Web developers to create and operate internal and external Web sites, or to manage projects, such as e-marketing campaigns.",
-      "weight": 15.5,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Resolve usability issues",
-      "full": "Collaborate with development teams to discuss, analyze, or resolve usability issues.",
-      "weight": 15.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Gather/analyze user feedback",
-      "full": "Gather, analyze, or document user feedback to locate or resolve sources of problems.",
-      "weight": 15.2,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
     }
   ],
   "risks": {
     "body": "The most important tasks in web administration are already showing significant AI involvement. Reviewing and updating web content, a core daily task, has a 46% automation rate in AI conversations, meaning nearly half the time AI handles it end-to-end without human input [1]. Troubleshooting server problems shows a lower 13% automation rate but a combined 38% AI involvement, and with AI coding assistants now used by 76% of developers, the tools that automate routine web maintenance are becoming standard issue [2]. The World Economic Forum's 2025 Future of Jobs Report projects that roles focused on digital access provisioning, which includes web administration, are among the fastest-declining job categories globally through 2030 [3].",
-    "stat": "30%",
-    "statLabel": "of web admin tasks now handled by cloud platform automation",
-    "statSourceName": "Amazon Web Services",
-    "statSourceTitle": "Cloud Adoption and Migration Trends",
-    "statSourceDate": "2024",
-    "statSourceUrl": "https://aws.amazon.com/blogs/enterprise-strategy/cloud-adoption/"
+    "stat": null,
+    "statLabel": null,
+    "statSourceName": null,
+    "statSourceTitle": null,
+    "statSourceDate": null,
+    "statSourceUrl": null
   },
   "opportunities": {
-    "body": "Security monitoring, the single most important task in this role by importance, shows a 27% augmentation rate alongside its 29% automation rate, meaning AI assists more often than it replaces the human on threat detection [1]. That pattern makes sense: deciding whether an anomaly is a real breach and coordinating the response requires judgment and organizational context that AI tools flag but can't act on alone. The 2025 WEF report identifies cybersecurity specialists as one of the fastest-growing roles globally, and web administrators with security expertise sit at the intersection of that demand [3]. Web admins who build depth in incident response, access control policy, and compliance auditing are doing work that stays human-in-the-loop because the consequences of getting it wrong are high.",
-    "stat": "120 days",
-    "statLabel": "average time to fill a cybersecurity role, signaling persistent demand for security-adjacent skills",
-    "statSourceName": "ISC2",
-    "statSourceTitle": "Cybersecurity Workforce Study 2024",
-    "statSourceDate": "Oct 2024",
-    "statSourceUrl": "https://www.isc2.org/Research/Workforce-Study"
+    "body": "Security monitoring — the most important task in this role by weight — shows meaningful AI augmentation but not replacement: AI flags anomalies, but deciding whether an alert is a real breach and coordinating the response requires organizational context that automated tools cannot supply [1]. Web administrators who own uptime accountability for business-critical systems hold responsibility that cannot be delegated — when a site goes down, the rollback and escalation decisions stay human [2].",
+    "stat": "27%",
+    "statLabel": "of security monitoring work shows AI augmentation, not full automation",
+    "statSourceName": "Anthropic / O*NET",
+    "statSourceTitle": "Anthropic Economic Index - Task-level automation and augmentation estimates for Web Administrators",
+    "statSourceDate": "Jan 2026",
+    "statSourceUrl": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
   },
   "howToAdapt": {
     "alreadyIn": "Start using AI-assisted monitoring and content management tools now, not to replace what you do, but to learn where they fail. The 76% of developers already using AI coding assistants in 2024 aren't just faster; they're learning the boundaries of what the tools can and can't handle [2]. Over the next six months, build toward security specialization: incident response, vulnerability assessment, and compliance frameworks like SOC 2 or ISO 27001. These are the areas where the data shows AI augments rather than automates, and where organizational accountability keeps a human in the decision seat [3].",
@@ -159,9 +159,9 @@
   "sources": [
     {
       "id": "src-1",
-      "name": "Anthropic",
-      "title": "Anthropic Economic Index",
-      "date": "Jan 2025",
+      "name": "Anthropic / O*NET",
+      "title": "Anthropic Economic Index - Task-level automation and augmentation estimates for Web Administrators",
+      "date": "Jan 2026",
       "url": "https://huggingface.co/datasets/Anthropic/EconomicIndex"
     },
     {
@@ -176,21 +176,14 @@
       "name": "World Economic Forum",
       "title": "Future of Jobs Report 2025",
       "date": "Jan 2025",
-      "url": "https://www.weforum.org/reports/the-future-of-jobs-report-2025/"
+      "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/"
     },
     {
       "id": "src-4",
-      "name": "Amazon Web Services",
-      "title": "Cloud Adoption and Migration Trends",
-      "date": "2024",
-      "url": "https://aws.amazon.com/blogs/enterprise-strategy/cloud-adoption/"
-    },
-    {
-      "id": "src-5",
-      "name": "ISC2",
-      "title": "Cybersecurity Workforce Study 2024",
-      "date": "Oct 2024",
-      "url": "https://www.isc2.org/Research/Workforce-Study"
+      "name": "U.S. Bureau of Labor Statistics",
+      "title": "Occupational Outlook Handbook: Web Developers and Digital Designers",
+      "date": "Sep 2025",
+      "url": "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm"
     }
   ],
   "careerCluster": [

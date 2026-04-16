@@ -19,13 +19,49 @@
   "keyDrivers": "IT project managers succeed primarily through navigating complex stakeholder relationships, managing competing priorities, and keeping diverse teams aligned, skills that are deeply human and context-dependent. Their value comes from understanding specific organizational dynamics, politics, and histories that AI cannot observe. While AI will automate much of their scheduling, reporting, and status tracking, the lack of physical presence requirements and legal accountability means the role has some vulnerability as AI project management tools grow more capable.",
   "taskData": [
     {
+      "task": "Develop/update project plans",
+      "full": "Develop or update project plans for information technology projects including information such as project objectives, technologies, systems, information specifications, schedules, funding, and staffing.",
+      "weight": 15.8,
+      "auto": 43.8,
+      "aug": null,
+      "success": 66.2,
+      "n": 130
+    },
+    {
+      "task": "Prepare status reports",
+      "full": "Prepare project status reports by collecting, analyzing, and summarizing information and trends.",
+      "weight": 15.6,
+      "auto": 37.5,
+      "aug": null,
+      "success": 67.5,
+      "n": 323
+    },
+    {
       "task": "Resolve project problems",
       "full": "Confer with project personnel to identify and resolve problems.",
       "weight": 21.3,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
+      "n": 17
+    },
+    {
+      "task": "Coordinate project personnel",
+      "full": "Direct or coordinate activities of project personnel.",
+      "weight": 19.7,
+      "auto": null,
+      "aug": null,
+      "success": 74.1,
+      "n": 27
+    },
+    {
+      "task": "Track milestones/deliverables",
+      "full": "Monitor or track project milestones and deliverables.",
+      "weight": 18.8,
+      "auto": 42.9,
+      "aug": null,
+      "success": null,
+      "n": 35
     },
     {
       "task": "Facilitate project meetings",
@@ -46,63 +82,27 @@
       "n": null
     },
     {
-      "task": "Coordinate project personnel",
-      "full": "Direct or coordinate activities of project personnel.",
-      "weight": 19.7,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Track milestones/deliverables",
-      "full": "Monitor or track project milestones and deliverables.",
-      "weight": 18.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
       "task": "Review/approve plan changes",
       "full": "Initiate, review, or approve modifications to project plans.",
       "weight": 16.6,
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
+      "n": 15
     },
     {
-      "task": "Develop/update project plans",
-      "full": "Develop or update project plans for information technology projects including information such as project objectives, technologies, systems, information specifications, schedules, funding, and staffing.",
-      "weight": 15.8,
-      "auto": null,
+      "task": "Cost-Benefit Implementation Planning",
+      "full": "Develop implementation plans that include analyses such as cost-benefit or return on investment (ROI).",
+      "weight": 11.9,
+      "auto": 39.2,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 56.8,
+      "n": 74
     },
     {
       "task": "Assess customer needs",
       "full": "Assess current or future customer needs and priorities by communicating directly with customers, conducting surveys, or other methods.",
       "weight": 15.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Prepare status reports",
-      "full": "Prepare project status reports by collecting, analyzing, and summarizing information and trends.",
-      "weight": 15.6,
-      "auto": 41.2,
-      "aug": null,
-      "success": 56.4,
-      "n": 243
-    },
-    {
-      "task": "Monitor/document team performance",
-      "full": "Monitor the performance of project team members, providing and documenting performance feedback.",
-      "weight": 15.6,
       "auto": null,
       "aug": null,
       "success": null,

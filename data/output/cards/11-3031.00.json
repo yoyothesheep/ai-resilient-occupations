@@ -234,8 +234,35 @@
       "weight": 22.3,
       "auto": null,
       "aug": null,
-      "success": 72.7,
-      "n": 44
+      "success": 84.6,
+      "n": 52
+    },
+    {
+      "task": "Analyze financial status",
+      "full": "Develop or analyze information to assess the current or future financial status of firms.",
+      "weight": 18.5,
+      "auto": 41.7,
+      "aug": 28.6,
+      "success": 54.8,
+      "n": 683
+    },
+    {
+      "task": "Process loan applications",
+      "full": "Examine, evaluate, or process loan applications.",
+      "weight": 18.1,
+      "auto": 44.7,
+      "aug": null,
+      "success": 66.0,
+      "n": 47
+    },
+    {
+      "task": "Oversee cash flow",
+      "full": "Oversee the flow of cash or financial instruments.",
+      "weight": 19.2,
+      "auto": null,
+      "aug": null,
+      "success": 72.4,
+      "n": 29
     },
     {
       "task": "Direct branch/department operations",
@@ -245,33 +272,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Oversee cash flow",
-      "full": "Oversee the flow of cash or financial instruments.",
-      "weight": 19.2,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": 22
-    },
-    {
-      "task": "Analyze financial status",
-      "full": "Develop or analyze information to assess the current or future financial status of firms.",
-      "weight": 18.5,
-      "auto": 52.1,
-      "aug": 18.3,
-      "success": 37.4,
-      "n": 815
-    },
-    {
-      "task": "Process loan applications",
-      "full": "Examine, evaluate, or process loan applications.",
-      "weight": 18.1,
-      "auto": 37.0,
-      "aug": 32.6,
-      "success": 71.7,
-      "n": 46
     },
     {
       "task": "Approve/reject credit decisions",
@@ -292,27 +292,27 @@
       "n": null
     },
     {
+      "task": "Regulatory Financial Report Preparation",
+      "full": "Prepare financial or regulatory reports required by laws, regulations, or boards of directors.",
+      "weight": 12.7,
+      "auto": null,
+      "aug": null,
+      "success": null,
+      "n": 25
+    },
+    {
+      "task": "Financial Systems Evaluation and Recommendations",
+      "full": "Evaluate financial reporting systems, accounting or collection procedures, or investment activities and make recommendations for changes to procedures, operating systems, budgets, or other financial control functions.",
+      "weight": 12.3,
+      "auto": null,
+      "aug": null,
+      "success": 50.0,
+      "n": 32
+    },
+    {
       "task": "Establish asset controls",
       "full": "Establish procedures for custody or control of assets, records, loan collateral, or securities to ensure safekeeping.",
       "weight": 14.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Review collection reports",
-      "full": "Review collection reports to determine the status of collections and the amounts of outstanding balances.",
-      "weight": 13.8,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Communicate with investors",
-      "full": "Communicate with stockholders or other investors to provide information or to raise capital.",
-      "weight": 13.1,
       "auto": null,
       "aug": null,
       "success": null,

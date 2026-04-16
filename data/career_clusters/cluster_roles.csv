@@ -74,3 +74,4 @@ onet_code,occupation,cluster_id,level,is_canonical,typical_years_from_entry,note
 13-2051.00,Financial and Investment Analysts,analysts,3,false,3,Financial/investment track. CFA Level 1 is the signal. Common in corporate finance and banking.
 13-1041.00,Compliance Officers,analysts,3,false,3,Regulatory/compliance track. Industry-specific certifications (CRCM, CHC). Research skills transfer.
 13-2061.00,Financial Examiners,analysts,5,true,6,Canonical top. Federal/state bank examiner (OCC, FDIC, SEC). Highest resilience in cluster.
+15-1299.05,Information Security Engineers,software-technology,4,true,5,Security specialization. Architects and builds security systems. Natural progression from L3 analyst into engineering/architecture ownership.

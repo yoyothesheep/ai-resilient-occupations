@@ -24,13 +24,40 @@
   "keyDrivers": "Loan officers build trusted relationships with borrowers, guiding them through complex financial decisions where human reassurance and accountability genuinely matter, especially for large purchases like homes. They carry regulatory responsibilities and must exercise judgment on borderline cases that automated systems flag but can't resolve. AI will likely handle much of the routine underwriting and paperwork, freeing loan officers to focus on client advising and complex deal structuring, though simpler loan products may increasingly bypass them entirely.",
   "taskData": [
     {
+      "task": "Explain loan options",
+      "full": "Explain to customers the different types of loans and credit options that are available, as well as the terms of those services.",
+      "weight": 20.7,
+      "auto": 24.0,
+      "aug": 58.5,
+      "success": 79.3,
+      "n": 881
+    },
+    {
       "task": "Analyze loan applications",
       "full": "Analyze applicants' financial status, credit, and property evaluations to determine feasibility of granting loans.",
       "weight": 22.6,
       "auto": null,
       "aug": null,
-      "success": 69.0,
+      "success": 89.7,
       "n": 29
+    },
+    {
+      "task": "Debt and Payoff Calculation",
+      "full": "Calculate amount of debt and funds available to plan methods of payoff and to estimate time for debt liquidation.",
+      "weight": 16.3,
+      "auto": 37.1,
+      "aug": 13.3,
+      "success": 81.1,
+      "n": 264
+    },
+    {
+      "task": "Personal Finance Counseling",
+      "full": "Counsel clients on personal and family financial problems, such as excessive spending or borrowing of funds.",
+      "weight": 16.3,
+      "auto": 17.5,
+      "aug": 49.4,
+      "success": 80.4,
+      "n": 664
     },
     {
       "task": "Meet with applicants",
@@ -42,72 +69,45 @@
       "n": null
     },
     {
-      "task": "Explain loan options",
-      "full": "Explain to customers the different types of loans and credit options that are available, as well as the terms of those services.",
-      "weight": 20.7,
-      "auto": 22.9,
-      "aug": 58.0,
-      "success": 65.9,
-      "n": 595
-    },
-    {
-      "task": "Approve/refer loans",
-      "full": "Approve loans within specified limits, and refer loan applications outside those limits to management for approval.",
-      "weight": 19.3,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Maintain loan files",
-      "full": "Review and update credit and loan files.",
-      "weight": 18.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "task": "Billing Accuracy Review",
+      "full": "Review billing for accuracy.",
+      "weight": 16.3,
+      "auto": 26.6,
+      "aug": 35.9,
+      "success": 73.4,
+      "n": 64
     },
     {
       "task": "Gather applicant documents",
       "full": "Obtain and compile copies of loan applicants' credit histories, corporate financial statements, and other financial information.",
       "weight": 18.3,
-      "auto": null,
+      "auto": 66.7,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 62.5,
+      "n": 24
     },
     {
-      "task": "Supervise loan staff",
-      "full": "Supervise loan personnel.",
-      "weight": 18.0,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "task": "Bank Product Marketing",
+      "full": "Market bank products to individuals and firms, promoting bank services that may meet customers' needs.",
+      "weight": 15.8,
+      "auto": 39.3,
+      "aug": 39.3,
+      "success": 82.1,
+      "n": 56
     },
     {
-      "task": "Identify client goals",
-      "full": "Work with clients to identify their financial goals and to find ways of reaching those goals.",
-      "weight": 17.7,
+      "task": "Student Financial Aid Outreach",
+      "full": "Inform individuals and groups about the financial assistance available to college or university students.",
+      "weight": 16.3,
       "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
+      "aug": 55.6,
+      "success": 75.6,
+      "n": 45
     },
     {
-      "task": "Submit applications to credit analysts…",
-      "full": "Submit applications to credit analysts for verification and recommendation.",
-      "weight": 17.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Review loan agreements to ensure…",
-      "full": "Review loan agreements to ensure that they are complete and accurate according to policy.",
-      "weight": 16.7,
+      "task": "Approve/refer loans",
+      "full": "Approve loans within specified limits, and refer loan applications outside those limits to management for approval.",
+      "weight": 19.3,
       "auto": null,
       "aug": null,
       "success": null,

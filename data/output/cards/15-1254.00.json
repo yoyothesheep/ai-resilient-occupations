@@ -17,19 +17,37 @@
       "task": "Write web application code",
       "full": "Write supporting code for Web applications or Web sites.",
       "weight": 23.9,
-      "auto": 39.5,
-      "aug": 9.7,
-      "success": 71.5,
-      "n": 6655
+      "auto": 36.4,
+      "aug": 9.9,
+      "success": 76.0,
+      "n": 4734
     },
     {
       "task": "Design/build/maintain websites",
       "full": "Design, build, or maintain Web sites, using authoring or scripting languages, content creation tools, management tools, and digital media.",
       "weight": 22.7,
-      "auto": 45.1,
-      "aug": 4.4,
-      "success": 66.4,
-      "n": 19243
+      "auto": 42.4,
+      "aug": 5.0,
+      "success": 66.5,
+      "n": 15900
+    },
+    {
+      "task": "Evaluate/validate code quality",
+      "full": "Evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",
+      "weight": 16.0,
+      "auto": 29.0,
+      "aug": 54.2,
+      "success": 58.9,
+      "n": 421
+    },
+    {
+      "task": "Handle user inquiries",
+      "full": "Respond to user email inquiries, or set up automated systems to send responses.",
+      "weight": 15.1,
+      "auto": 48.3,
+      "aug": null,
+      "success": 44.1,
+      "n": 118
     },
     {
       "task": "Back up website files",
@@ -38,25 +56,43 @@
       "auto": null,
       "aug": null,
       "success": null,
-      "n": null
+      "n": 18
     },
     {
-      "task": "Evaluate/validate code quality",
-      "full": "Evaluate code to ensure that it is valid, is properly structured, meets industry standards, and is compatible with browsers, devices, or operating systems.",
-      "weight": 16.0,
-      "auto": 25.3,
-      "aug": 58.9,
-      "success": 58.1,
-      "n": 399
+      "task": "Stay current on web tech",
+      "full": "Maintain understanding of current Web technologies or programming practices through continuing education, reading, or participation in professional conferences, workshops, or groups.",
+      "weight": 12.3,
+      "auto": 8.5,
+      "aug": 84.6,
+      "success": 82.3,
+      "n": 915
     },
     {
-      "task": "Handle user inquiries",
-      "full": "Respond to user email inquiries, or set up automated systems to send responses.",
-      "weight": 15.1,
+      "task": "Confer on priorities/solutions",
+      "full": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
+      "weight": 13.4,
       "auto": null,
       "aug": null,
-      "success": null,
-      "n": null
+      "success": 63.4,
+      "n": 41
+    },
+    {
+      "task": "Web Application Database Development",
+      "full": "Develop databases that support Web applications and Web sites.",
+      "weight": 12.1,
+      "auto": 27.7,
+      "aug": null,
+      "success": 69.2,
+      "n": 65
+    },
+    {
+      "task": "Select tools/languages",
+      "full": "Select programming languages, design tools, or applications.",
+      "weight": 13.4,
+      "auto": null,
+      "aug": null,
+      "success": 72.7,
+      "n": 22
     },
     {
       "task": "Perform website updates",
@@ -66,42 +102,6 @@
       "aug": null,
       "success": null,
       "n": null
-    },
-    {
-      "task": "Test website functionality",
-      "full": "Perform Web site tests according to planned schedules, or after any Web site or product revision.",
-      "weight": 13.9,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Confer on priorities/solutions",
-      "full": "Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or choose solutions.",
-      "weight": 13.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Select tools/languages",
-      "full": "Select programming languages, design tools, or applications.",
-      "weight": 13.4,
-      "auto": null,
-      "aug": null,
-      "success": null,
-      "n": null
-    },
-    {
-      "task": "Stay current on web tech",
-      "full": "Maintain understanding of current Web technologies or programming practices through continuing education, reading, or participation in professional conferences, workshops, or groups.",
-      "weight": 12.3,
-      "auto": 11.3,
-      "aug": 83.7,
-      "success": 75.9,
-      "n": 875
     }
   ],
   "risks": {
