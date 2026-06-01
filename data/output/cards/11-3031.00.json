@@ -223,7 +223,7 @@
     }
   ],
   "title": "Financial Managers",
-  "score": 54,
+  "score": 51,
   "salary": "$161,700",
   "openings": "74,600",
   "growth": "+15%",
@@ -319,7 +319,7 @@
       "n": null
     }
   ],
-  "keyDrivers": "Financial managers make high-stakes strategic decisions that depend on deep knowledge of their organization's people, history, and risk appetite—context that AI can't easily replicate. They spend significant time navigating competing priorities across departments and building consensus with leadership, which is inherently human work. AI will supercharge their analytical capabilities and free them from routine reporting, making each manager more effective rather than replaceable.",
+  "keyDrivers": "Financial managers will continue to be essential because their work requires strategic judgment, leadership, and the ability to navigate complex regulations and business relationships that AI cannot handle on its own. However, AI will significantly reshape daily tasks, automating routine data analysis, forecasting, and reporting, allowing these managers to focus more on high-level decision-making and advising. Strong market demand for financial expertise is driving much-faster-than-average job growth, so while the role will look different over time, it remains a promising and secure career path.",
   "jobTitles": [
     "Accounting Supervisor",
     "Banking Center Manager (BCM)",
@@ -355,8 +355,8 @@
       "answer": "CPA is the most common credential among CFOs at public companies; CFA is common among those with an investment or treasury background. Financial managers who develop operational finance experience, specifically owning a P&L and working directly with business unit leaders, advance faster than those who stay in corporate reporting functions. FP&A experience with modern planning tools like Anaplan or Workday Adaptive is increasingly required for VP Finance and CFO roles at growth-stage companies."
     }
   ],
-  "ai_category": "Grow with AI",
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.4",
   "necessity_filter": "2.6",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "3"
 }

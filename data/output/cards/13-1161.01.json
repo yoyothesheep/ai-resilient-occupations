@@ -1,7 +1,7 @@
 {
   "onet_code": "13-1161.01",
   "title": "Search Marketing Strategist",
-  "score": 43,
+  "score": 49,
   "salary": "$76,950",
   "openings": "87,200",
   "growth": "+7%",
@@ -21,7 +21,7 @@
     "SEO Specialist",
     "Paid Media Specialist"
   ],
-  "keyDrivers": "Search marketing sits at the intersection of content, data, and technology — areas where AI tools are advancing fastest. The role scores at mid-range because strategic judgment, cross-team coordination, and interpreting ambiguous test results still require a human. But much of the execution layer — drafting copy, running keyword audits, generating reports — is already being handled by AI tools with minimal specialist input.",
+  "keyDrivers": "When AI makes search marketing faster and cheaper, businesses don't cut budgets, they invest in more campaigns, more platforms, and more granular audience targeting, driving strong demand for strategists. AI handles much of the heavy lifting in data analysis, keyword research, and performance reporting, freeing professionals to focus on interpreting user intent, crafting creative campaign strategies, and managing increasingly complex AI-driven advertising systems. With digital advertising expanding rapidly, the field is projected to grow much faster than average, creating more roles even as individual tasks become automated.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {
     "body": "Keyword research, content strategy creation, and market research analysis, the core execution tasks in this role, all show AI automation rates above 40%, with market research hitting 62.9%. The more structural threat is Google AI Overviews, which eMarketer reports reduced organic click-through rates by 34.5% when they appear, directly compressing the traffic metrics that justify dedicated SEO headcount at mid-sized organizations [eMarketer, Apr 2025]. The WEF Future of Jobs 2025 report projects net displacement of data-heavy marketing analyst roles through 2030 as AI handles the routine search-to-insight pipeline [World Economic Forum, Jan 2025].",
@@ -419,5 +419,5 @@
   "ai_category": "Grow with AI",
   "exposure_filter": "3.6",
   "necessity_filter": "1.47",
-  "elasticity_filter": "4.0"
+  "elasticity_filter": "5"
 }

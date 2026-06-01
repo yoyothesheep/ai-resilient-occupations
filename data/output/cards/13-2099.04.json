@@ -267,7 +267,7 @@
     }
   ],
   "title": "Fraud Examiners, Investigators and Analysts",
-  "score": 46,
+  "score": 43,
   "salary": "$80,190",
   "openings": "10,300",
   "growth": "+3%",
@@ -363,7 +363,7 @@
       "n": null
     }
   ],
-  "keyDrivers": "Fraud examiners deal with criminals who constantly invent new schemes, so the work demands genuine novel judgment in high-stakes situations where pattern-matching alone falls short. AI will actually supercharge this role by handling massive data analysis and flagging anomalies, freeing investigators to focus on the complex, ambiguous cases that require human reasoning. The main vulnerability is that routine fraud detection tasks will be increasingly automated, potentially reducing headcount even as top investigators become more productive.",
+  "keyDrivers": "Fraud examiners will still be essential because their work demands novel judgment in ambiguous, high-stakes situations, piecing together conflicting evidence, assessing witness credibility, and deciding how to pursue complex allegations where no two cases look alike. AI will reshape daily tasks by rapidly scanning transactions, flagging anomalies, and drafting preliminary reports, freeing examiners to focus on deeper investigative analysis and courtroom testimony. With steady job growth expected, the role won't disappear but will shift toward more strategic, judgment-intensive work alongside AI-powered tools.",
   "jobTitles": [
     "Certified Fraud Examiner",
     "Confidential Investigator",
@@ -399,8 +399,8 @@
       "answer": "The Certified Fraud Examiner designation from the ACFE is the primary credential in the field and is increasingly required rather than preferred for senior roles at financial institutions and consulting firms. Investigators who combine CFE with forensic accounting knowledge, either through CPA with forensic experience or the ACFE forensic accounting specialization, are competitive for the highest-paying roles. Technology skills, including data analytics in SQL or Python and familiarity with link analysis tools like Palantir or Maltego, are increasingly listed in senior job postings."
     }
   ],
-  "ai_category": "Grow with AI",
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.4",
   "necessity_filter": "2.3",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "3"
 }

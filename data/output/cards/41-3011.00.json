@@ -1,7 +1,7 @@
 {
   "onet_code": "41-3011.00",
   "title": "Advertising Sales Agents",
-  "score": 32,
+  "score": 20,
   "salary": "$61,460",
   "openings": "9,300",
   "growth": "-6%",
@@ -22,7 +22,7 @@
     "Digital Advertising Sales Executive",
     "Ad Revenue Manager"
   ],
-  "keyDrivers": "Advertising sales increasingly moves to automated programmatic platforms that match buyers and sellers without a human middleman. While relationship-building with clients offers some protection, the core transaction—matching ad inventory to buyers—is highly automatable. The role lacks legal accountability requirements and doesn't demand the kind of novel judgment that would keep AI at bay.",
+  "keyDrivers": "Advertising sales is restructuring rather than disappearing because the role still depends on building trusted relationships with clients, understanding their unique business goals and persuading them to commit ad spend. AI is already reshaping daily work by automating tasks like prospecting, audience targeting, and generating performance reports, which means routine selling is increasingly handled digitally. However, agents who can navigate complex client relationships and negotiate customized deals will remain necessary, even as the overall headcount shrinks and the job shifts toward higher-value consultative selling.",
   "taskData": [
     {
       "task": "Explain ad options to clients",
@@ -436,8 +436,8 @@
       "answer": "Agents who develop expertise in high-growth media categories, connected TV, podcast advertising, and branded content, are selling into segments where demand is growing and automation has not commoditized pricing. Digital advertising fluency, including understanding attribution modeling, first-party data strategy, and programmatic buying mechanics, makes agents more credible advisors to marketers who manage complex multi-channel campaigns. Building a reputation as a strategic partner, not a rate card vendor, is what sustains a client book as automated options handle the transactional volume."
     }
   ],
-  "ai_category": "Will Reorganize",
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.8",
   "necessity_filter": "1.91",
-  "elasticity_filter": "3.0"
+  "elasticity_filter": "1"
 }

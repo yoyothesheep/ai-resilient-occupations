@@ -17,7 +17,7 @@
     "Enterprise Architect",
     "Information Architect"
   ],
-  "keyDrivers": "Database architects do more strategic, cross-functional design work than administrators, which requires understanding business needs and making judgment calls about system trade-offs. However, the work is still fully digital with no licensure, and AI tools are getting better at suggesting optimal architectures. The growing explosion of data and AI systems does create more demand for people who can design the underlying infrastructure, which provides a meaningful upside.",
+  "keyDrivers": "As organizations generate ever more data, AI tools that speed up database modeling and optimization actually drive companies to launch more data projects, boosting demand for architects who can oversee these growing systems. With AI handling routine query tuning and schema generation, database architects shift their focus to integrating new platforms with existing infrastructure, managing complex data pipelines, and making judgment calls about performance and security trade-offs. Strong projected job growth reflects this expanding need, as cheaper, faster database work simply creates appetite for more of it.",
   "taskData": [
     {
       "task": "Gather business requirements",
@@ -487,5 +487,5 @@
   "ai_category": "Grow with AI",
   "exposure_filter": "3.4",
   "necessity_filter": "1.6",
-  "elasticity_filter": "4.0"
+  "elasticity_filter": "4"
 }

@@ -1,7 +1,7 @@
 {
   "onet_code": "11-2011.00",
   "title": "Advertising Manager",
-  "score": 38,
+  "score": 42,
   "salary": "$126,960",
   "openings": "2,100",
   "growth": "-2%",
@@ -22,7 +22,7 @@
     "Growth Marketing Manager",
     "Demand Generation Manager"
   ],
-  "keyDrivers": "This role sits at the top of a function where AI is compressing the middle. The core task — planning and preparing advertising material — shows 30.8% automation across 2,700+ observed conversations, meaning the execution work that managers oversee is being increasingly automated. The role scores low because it combines AI-exposed output work with a declining market for traditional advertising management: demand for these roles was already being squeezed by programmatic advertising before AI added a second wave of pressure.",
+  "keyDrivers": "Much of this role involves navigating office politics, managing relationships with clients and creative teams, and coordinating across departments, skills that are hard for AI to replicate. Managers also need to exercise judgment when shaping campaigns for ambiguous markets and drawing on deep knowledge of a brand's history and audience. While AI tools can handle routine tasks like generating ad copy or analyzing campaign data, the overall demand for these managers is slowly shrinking as companies consolidate marketing functions, keeping the pace of AI-driven change relatively gradual for now.",
   "taskIntro": "Not all tasks are affected equally. Knowing which ones AI handles well, and which still need a human, is how to focus skill-building.",
   "risks": {
     "body": "Campaign trafficking, media buying coordination, and performance monitoring — the execution layer of advertising management — are being absorbed by AI-powered programmatic platforms, eliminating the manual coordination that justified mid-level manager roles. eMarketer reports that AI is actively reshaping how programmatic ad platforms operate, automating the optimization and trafficking work that traditionally required dedicated advertising managers [eMarketer, 2025]. BLS projects a -2% decline in advertising and promotions manager employment through 2033 — one of the few white-collar management occupations with a net projected loss — driven by platform consolidation and AI absorbing the media-buying workflow [U.S. Bureau of Labor Statistics, Sep 2024].",
@@ -416,5 +416,5 @@
   "ai_category": "Less Immediate Change",
   "exposure_filter": "3.0",
   "necessity_filter": "1.72",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "4"
 }

@@ -304,7 +304,7 @@ def compute_rankings(csv_path: str):
         
         # Elasticity Filter: High value = High Elasticity (Job Growth)
         # A12 (Demand Elasticity), A10 (Downstream/AI Mgmt)
-        elasticity_val = (attrs["a12"] + attrs["a10"]) / 2.0
+        elasticity_val = attrs["a12"]
         
         # Format filters for output
         row["exposure_filter"] = round(exposure_val, 2)
@@ -321,7 +321,7 @@ def compute_rankings(csv_path: str):
         if is_exposed and is_elastic:
             category = "Grow with AI"
         elif is_exposed and is_necessary and not is_elastic:
-            category = "Will Reorganize"
+            category = "Will Evolve"
         elif is_exposed and not is_necessary and not is_elastic:
             category = "High Automation Risk"
         else:
@@ -532,10 +532,192 @@ def rerank():
     return True
 
 
+A_LABELS = {
+    "a1":  "Physical presence & dexterity required",
+    "a2":  "Trust is the core product",
+    "a3":  "Novel judgment in high-stakes/ambiguous situations",
+    "a4":  "Legal or ethical accountability",
+    "a5":  "Deep context built over time",
+    "a6":  "Political & interpersonal navigation",
+    "a7":  "Creative work with a point of view",
+    "a8":  "Being changed by the experience",
+    "a9":  "Expertise trapped behind admin/volume work AI can free",
+    "a10": "Sits downstream of bottlenecks / manages AI systems",
+    "a11": "Observed technical exposure of core tasks",
+    "a12": "Demand elasticity (cheaper output -> more demand)",
+}
+
+
+def load_all_attributes() -> dict:
+    """Return {onet_code: {a1..a12: int}} merging A1-A10 (log), A11, A12 (csv)."""
+    a_scores = load_a_scores()
+    a11, a12 = {}, {}
+    if os.path.exists(A11_CSV):
+        with open(A11_CSV, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                a11[r["onet_code"]] = int(r["a11_score"])
+    if os.path.exists(A12_CSV):
+        with open(A12_CSV, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f):
+                a12[r["onet_code"]] = int(r["a12_score"])
+    merged = {}
+    codes = set(a_scores) | set(a11) | set(a12)
+    for code in codes:
+        attrs = dict(a_scores.get(code, {}))
+        if code in a11:
+            attrs["a11"] = a11[code]
+        if code in a12:
+            attrs["a12"] = a12[code]
+        merged[code] = attrs
+    return merged
+
+
+def build_key_drivers_prompt(row: dict, attrs: dict | None = None) -> str:
+    attrs = attrs or {}
+    def fmt(group):
+        return "\n".join(f"    {k.upper()} {A_LABELS[k]}: {attrs.get(k, '?')}" for k in group)
+    defensive = fmt(["a1", "a2", "a3", "a4", "a5", "a6", "a7", "a8"])
+    offensive = fmt(["a9", "a10"])
+    market    = fmt(["a11", "a12"])
+
+    return f"""You are writing a 2–3 sentence plain-English explanation for a career guidance site.
+Explain why this job is resilient (or not) to AI automation.
+
+Job: {row['Occupation']}
+AI Category: {row['ai_category']}
+BLS Projected Growth: {row['Projected Growth']}
+Job Description: {row['Job Description']}
+
+This job's resilience profile (1=weak/low, 5=strong/high):
+  DEFENSIVE — why a human is still needed:
+{defensive}
+  OFFENSIVE — how AI amplifies the role:
+{offensive}
+  MARKET:
+{market}
+
+Why this category was assigned:
+  exposure={row.get('exposure_filter', '?')}, necessity={row.get('necessity_filter', '?')}, elasticity={row.get('elasticity_filter', '?')}
+  (Grow with AI = high exposure + high elasticity; Will Evolve = high exposure + strong
+   necessity; Less Immediate Change = low exposure; High Automation Risk = high exposure,
+   weak necessity, low elasticity)
+
+Rules:
+- No attribute names (A1–A12), no numbers, no framework jargon in your output
+- High school reading level, 2–3 sentences, 60–90 words
+- GROUND your explanation in this job's actual highest-scoring attributes above.
+  Do NOT invent a generic hedge and do NOT contradict the category.
+- "Grow with AI": the category was driven by demand elasticity. Lead with WHY cheaper or
+  faster output unlocks more demand and more workers — even if individual tasks look
+  automatable. Use the offensive factors to explain what humans do with the freed capacity.
+- "Will Evolve": name the SPECIFIC human necessity that scored highest (e.g. legal
+  accountability, hands-on care, trust) AND explain how AI reshapes daily tasks. Never say
+  the job disappears. If BLS growth is negative, frame as steady-but-restructuring, not dying.
+- "Less Immediate Change": explain the protection using whichever scored highest —
+  physical/dexterity, relational/trust, environmental unpredictability, OR cognitive
+  (novel judgment, creative point of view, deep context). Do not default to "hands-on".
+- "High Automation Risk": be honest about exposure, but you MUST name the specific judgment,
+  supervisory, contextual, or relational tasks (from the description and the highest
+  defensive attributes above) that resist automation. Never reduce real skilled judgment to
+  "automatable". No invented niches.
+- If BLS growth is positive, acknowledge the demographic/market tailwind alongside AI pressure.
+
+Respond with only the key_drivers text. No JSON, no labels, no preamble."""
+
+
+PATCHED_LOG = "data/intermediate/key_drivers_patched.txt"
+
+
+def patch_key_drivers(codes_filter: set | None = None, skip_existing: bool = False, dry_run: bool = False):
+    """
+    Regenerate key_drivers for all (or specified) occupations in the output CSV.
+    Preserves all other columns. Prints each result before writing.
+    --skip-existing: skip codes already recorded in PATCHED_LOG.
+    --dry-run: print OLD vs NEW only; do NOT write the CSV or PATCHED_LOG (audit mode).
+    """
+    import anthropic as _anthropic
+
+    if not os.path.exists(OUTPUT_CSV):
+        print(f"✗ {OUTPUT_CSV} not found")
+        return False
+
+    all_attrs = load_all_attributes()
+
+    patched_codes = set()
+    if skip_existing and os.path.exists(PATCHED_LOG):
+        with open(PATCHED_LOG) as f:
+            patched_codes = {line.strip() for line in f if line.strip()}
+        print(f"Skipping {len(patched_codes)} already-patched codes.")
+
+    with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
+        rows = list(csv.DictReader(f))
+        fieldnames = list(rows[0].keys()) if rows else SCORE_COLUMNS
+
+    client = _anthropic.Anthropic()
+    updated = 0
+
+    for row in rows:
+        code = row.get("Code", "")
+        if codes_filter and code not in codes_filter:
+            continue
+        if skip_existing and code in patched_codes:
+            continue
+        if not row.get("ai_category") or not row.get("Job Description"):
+            print(f"  ⚠ Skipping {code} — missing ai_category or Job Description")
+            continue
+
+        prompt = build_key_drivers_prompt(row, all_attrs.get(code))
+        print(f"\n{'─'*60}")
+        print(f"  {row['Occupation']} ({code}) — {row['ai_category']}")
+        print(f"  BLS: {row['Projected Growth']}")
+
+        try:
+            response = client.messages.create(
+                model=MODEL,
+                max_tokens=300,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            new_kd = response.content[0].text.strip()
+            word_count = len(new_kd.split())
+            print(f"\n  OLD: {row.get('key_drivers', '')[:100]}...")
+            print(f"  NEW: {new_kd}")
+            print(f"  ({word_count} words)")
+            row["key_drivers"] = new_kd
+            updated += 1
+            if not dry_run:
+                with open(PATCHED_LOG, "a") as pf:
+                    pf.write(code + "\n")
+            time.sleep(0.5)
+        except Exception as e:
+            print(f"  ✗ Error: {e}")
+            continue
+
+    if dry_run:
+        print(f"\n✓ DRY RUN — previewed {updated} key_drivers. CSV and {PATCHED_LOG} NOT modified.")
+        return True
+
+    # Write back
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(rows)
+
+    print(f"\n✓ Updated {updated} key_drivers in {OUTPUT_CSV}")
+    return True
+
+
 if __name__ == "__main__":
     import sys
     if "--rerank" in sys.argv:
         success = rerank()
+    elif "--patch-key-drivers" in sys.argv:
+        codes_filter = None
+        skip_existing = "--skip-existing" in sys.argv
+        dry_run = "--dry-run" in sys.argv
+        for arg in sys.argv:
+            if arg.startswith("--codes="):
+                codes_filter = set(arg.split("=", 1)[1].split(","))
+        success = patch_key_drivers(codes_filter, skip_existing=skip_existing, dry_run=dry_run)
     else:
         success = main()
     exit(0 if success else 1)

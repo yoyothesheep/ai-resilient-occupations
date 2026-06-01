@@ -1,7 +1,7 @@
 {
   "onet_code": "11-3021.00",
   "title": "Computer and Information Systems Managers",
-  "score": 58,
+  "score": 51,
   "salary": "$171,200",
   "openings": "55,600",
   "growth": "+15%",
@@ -17,7 +17,7 @@
     "MIS Director (Management Information Systems Director)",
     "Technical Services Manager"
   ],
-  "keyDrivers": "IT managers succeed because they deeply understand their organization's people, systems, and strategic priorities, context that can't be scraped from a database. Much of their value comes from navigating competing priorities across departments, managing vendor relationships, and making high-stakes technology decisions under uncertainty. As AI transforms every part of business, these managers become the key decision-makers directing how AI systems are adopted, integrated, and governed within their organizations.",
+  "keyDrivers": "This role centers on leading teams, making strategic decisions, and coordinating complex technology projects across an organization, responsibilities that require strong interpersonal skills, judgment, and the ability to navigate shifting business priorities. Because so much of the job involves managing people, communicating with executives, and handling unpredictable organizational challenges, it's difficult for AI to step in. With technology becoming more central to every industry, demand for these managers is growing much faster than average, further strengthening the role's outlook.",
   "taskData": [
     {
       "task": "Manage backup/security systems",
@@ -246,5 +246,5 @@
   "ai_category": "Less Immediate Change",
   "exposure_filter": "3.0",
   "necessity_filter": "2.46",
-  "elasticity_filter": "4.0"
+  "elasticity_filter": "3"
 }

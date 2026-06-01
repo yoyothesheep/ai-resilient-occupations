@@ -9,7 +9,6 @@ venv/
 # Intermediate and verification data
 data/intermediate/
 data/verify/
-data/docs/
 data/temp/
 temp/
 
@@ -25,7 +24,14 @@ data/output/test_scores.csv
 data/output/test_enrichment.csv
 .agent_prompt.txt
 script_test_gemini.py
+scratch/
+
+# Backups (never tracked)
 backup/
+*_backup/
+data/input/onet_db_backup/
+*.bak
+*.bak.*
 
 # Analysis articles
 blog/

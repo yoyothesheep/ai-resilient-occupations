@@ -1,7 +1,7 @@
 {
   "onet_code": "15-2051.00",
   "title": "Data Scientists",
-  "score": 52,
+  "score": 58,
   "salary": "$112,590",
   "openings": "23,400",
   "growth": "+34%",
@@ -11,7 +11,7 @@
     "Data Analytics Manager",
     "Business Intelligence Analyst"
   ],
-  "keyDrivers": "Data scientists face a double-edged situation: AI tools are rapidly automating the core technical tasks of building models, cleaning data, and running analyses that define much of this work today. However, the role is evolving toward directing and validating AI systems, translating business problems into the right technical approach, and interpreting results for decision-makers, skills that keep experienced practitioners valuable. The lack of any licensing requirement or physical presence means the purely technical side of the job is highly exposed, and the role's long-term resilience depends on shifting toward strategic AI oversight rather than hands-on model building.",
+  "keyDrivers": "Data scientists work with complex, messy real-world problems that require deep critical thinking, creative problem-solving, and the ability to communicate findings to decision-makers in ways that drive action. While AI tools can automate parts of data cleaning and model building, understanding which questions to ask, choosing the right approach for unique business situations, and translating results into strategy still depend heavily on human judgment. With demand growing much faster than average, this field remains strong because organizations increasingly need skilled people who can make sense of ever-growing amounts of data.",
   "taskData": [
     {
       "task": "Analyze large datasets",
@@ -411,5 +411,5 @@
   "ai_category": "Less Immediate Change",
   "exposure_filter": "2.8",
   "necessity_filter": "1.6",
-  "elasticity_filter": "4.0"
+  "elasticity_filter": "5"
 }

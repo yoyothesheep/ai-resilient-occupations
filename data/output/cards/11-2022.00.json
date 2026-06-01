@@ -1,7 +1,7 @@
 {
   "onet_code": "11-2022.00",
   "title": "Sales Managers",
-  "score": 56,
+  "score": 53,
   "salary": "$138,060",
   "openings": "49,000",
   "growth": "+5%",
@@ -17,7 +17,7 @@
     "Sales Vice President",
     "Store Manager"
   ],
-  "keyDrivers": "Sales managers lead teams, set strategy, and navigate complex organizational politics, work that depends heavily on reading people, building coalitions, and making high-stakes judgment calls about markets and talent. Their deep knowledge of their company's culture, clients, and competitive landscape is hard for AI to replicate. AI will enhance their effectiveness by automating forecasting and reporting, letting them focus more on coaching and strategic decisions.",
+  "keyDrivers": "Sales managers spend much of their time building relationships with clients, motivating and coaching their sales teams, and making judgment calls about strategy, tasks that depend heavily on interpersonal skills, trust, and leadership. While AI can help analyze sales data and forecast trends, the core work of setting goals, negotiating deals, and inspiring people is difficult to automate. The job market reflects this, with faster-than-average growth expected as companies continue to need skilled leaders who can adapt strategies to shifting customer needs.",
   "taskData": [
     {
       "task": "Resolve customer complaints",
@@ -339,5 +339,5 @@
   "ai_category": "Less Immediate Change",
   "exposure_filter": "2.8",
   "necessity_filter": "2.72",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "3"
 }

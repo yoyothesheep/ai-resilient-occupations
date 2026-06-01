@@ -17,7 +17,7 @@
     "Sales Representative",
     "Underwriting Sales Representative"
   ],
-  "keyDrivers": "People buy insurance from someone they trust, especially for complex policies involving life, business, or major assets. The human relationship and ability to understand a client's unique situation provide real protection against automation. However, simpler insurance products are increasingly sold online without agents, and AI tools can now handle routine quoting and policy comparisons, which puts pressure on the lower end of this profession.",
+  "keyDrivers": "Insurance sales agents will continue to be needed because people value personal trust and guidance when making important financial decisions about protecting their families, health, and property. However, AI is already reshaping daily tasks, automating quote comparisons, streamlining paperwork, and using data to identify potential customers, which means agents will spend less time on routine work and more time building relationships and explaining complex policies. Steady demand from population growth and evolving insurance needs should keep job growth on track even as the role shifts.",
   "taskData": [
     {
       "task": "Customize coverage programs",
@@ -362,8 +362,8 @@
       "answer": "State insurance licensure is required for all agents; adding lines beyond property-casualty, specifically life and health, expands the products an agent can sell and the revenue per client. CLU designation is the primary credential for life insurance specialists; CPCU is the most recognized in property-casualty. Agents who develop a niche, such as contractors, physicians, or high-net-worth families, generate referrals within tight professional communities and build books of business that are highly defensible against direct-to-consumer competition."
     }
   ],
-  "ai_category": "Will Reorganize",
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.8",
   "necessity_filter": "2.79",
-  "elasticity_filter": "3.0"
+  "elasticity_filter": "3"
 }

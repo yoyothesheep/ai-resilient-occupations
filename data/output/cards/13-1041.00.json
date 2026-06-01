@@ -256,9 +256,10 @@
     }
   ],
   "growth": "+3%",
-  "score": 53,
-  "ai_category": "Grow with AI",
+  "score": 44,
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.4",
   "necessity_filter": "2.86",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "2",
+  "keyDrivers": "Compliance officers will still be needed because they carry legal and ethical accountability for enforcement decisions, organizations and regulators require a responsible human behind findings that can lead to fines, license revocations, or legal action. Their work also demands deep institutional context and skill in navigating politically sensitive relationships with regulators, licensees, and internal stakeholders. AI will reshape daily tasks by automating routine document review, flagging anomalies, and scanning regulatory changes, freeing officers to focus on complex investigations and judgment calls. Job growth is expected to remain steady."
 }

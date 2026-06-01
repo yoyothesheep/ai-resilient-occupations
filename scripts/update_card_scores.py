@@ -7,6 +7,7 @@ This ensures we can regenerate TSX pages without re-running the expensive LLM pr
 import json
 from pathlib import Path
 from loaders import load_scores, to_score
+from generate_next_steps import sanitize
 
 CARDS_DIR = Path("data/output/cards")
 
@@ -42,6 +43,10 @@ def main():
         card_data["exposure_filter"] = occ.get("exposure_filter", "")
         card_data["necessity_filter"] = occ.get("necessity_filter", "")
         card_data["elasticity_filter"] = occ.get("elasticity_filter", "")
+        # Sync regenerated key drivers (sanitized to match generation-time style)
+        kd = occ.get("key_drivers", "")
+        if kd:
+            card_data["keyDrivers"] = sanitize(kd)
         
         # Write back to JSON
         with open(card_file, "w", newline="", encoding="utf-8") as f:

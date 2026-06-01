@@ -1,11 +1,11 @@
 # AI-Resilience Job Scoring Framework (V2)
 
 ## Purpose
-Score any occupation on its resilience to AI displacement and categorize it into one of four OpenAI-defined transition archetypes.
+Score any occupation on its resilience to AI displacement and categorize it into one of four transition archetypes defined in OpenAI's [*AI Jobs Transition Framework*](https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf).
 
 **The Four Categories:**
 - **Grow with AI**: High Exposure, High Demand Elasticity. (AI drives productivity and market expansion).
-- **Will Reorganize**: High Exposure, Strong Human Necessity. (AI automates tasks, but human presence/trust remains strictly necessary).
+- **Will Evolve**: High Exposure, Strong Human Necessity. (AI automates tasks, but human presence/trust remains strictly necessary).
 - **Less Immediate Change**: Low Exposure. (AI cannot automate the core physical or relationship tasks).
 - **High Automation Risk**: High Exposure, Weak Human Necessity, Low Demand Elasticity. (AI automates the core output, and making it cheaper does not unlock massive new demand).
 
@@ -29,7 +29,7 @@ Occupations are assigned to a category using the following thresholds:
 | Exposed | Elastic | Necessary | Category |
 |---------|---------|-----------|----------|
 | Yes | Yes | — | Grow with AI |
-| Yes | No | Yes | Will Reorganize |
+| Yes | No | Yes | Will Evolve |
 | Yes | No | No | High Automation Risk |
 | No | — | — | Less Immediate Change |
 
@@ -227,3 +227,9 @@ For each occupation, respond ONLY with this JSON structure:
 **See `docs/tone-guide.md`** for examples of clear, human-readable key_drivers and detailed guidance on avoiding technical notation.
 
 **Golden rule:** Key drivers should make sense to anyone reading the results, not just the scoring team. Treat them as public-facing explanations.
+
+---
+
+## Sources
+
+The V2 archetype model — the four transition categories (Grow with AI / Will Evolve / Less Immediate Change / High Automation Risk) and the exposure × necessity × demand-elasticity framing — is adapted from OpenAI, *The AI Jobs Transition Framework* (2025): https://cdn.openai.com/pdf/the-ai-jobs-transition-framework_report.pdf. The attribute scoring (A1–A12), filter formulas, threshold tuning, and final rankings are this project's own work.

@@ -279,9 +279,10 @@
     }
   ],
   "growth": "+1%",
-  "score": 36,
-  "ai_category": "Will Reorganize",
+  "score": 33,
+  "ai_category": "Will Evolve",
   "exposure_filter": "3.2",
   "necessity_filter": "1.86",
-  "elasticity_filter": "2.5"
+  "elasticity_filter": "2",
+  "keyDrivers": "Budget analysts will see their daily work reshaped by AI, which can quickly check figures for accuracy and flag discrepancies in accounting reports. However, the role endures because experienced analysts build deep institutional knowledge over time, understanding an organization's priorities, past budget cycles, and unwritten rules, that AI cannot replicate. While growth is slower than average, the job will evolve so that analysts spend less time on routine number-checking and more time interpreting results and advising decision-makers on complex budget trade-offs."
 }

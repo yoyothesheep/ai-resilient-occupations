@@ -120,6 +120,7 @@ python3 scripts/adjacent_roles.py --cluster <id>
 
 - **`data/input/All_Occupations_ONET.csv`** — downloaded from [O*NET Online — All Occupations](https://www.onetonline.org/find/all)
 - **`data/input/Employment Projections.csv`** — BLS 2024-2034 employment projections from [data.bls.gov](https://data.bls.gov/projections/occupationProj)
+- **`data/input/all_data_M_2024.xlsx`** — BLS OES Wages data (2024) from [bls.gov](https://www.bls.gov/oes/special.requests/)
 - **`data/input/SimpleJobTitles_altPathurl_*.csv`** — maps SOC codes to AltPath URLs and simplified job titles
 - **`data/input/onet_db/`** — O*NET 30.2 Database files (Excel), from [onetcenter.org](https://www.onetcenter.org/database.html). Licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   - `Occupation Data.xlsx` — occupation codes, titles, and descriptions
@@ -128,7 +129,7 @@ python3 scripts/adjacent_roles.py --cluster <id>
   - `ETE Categories.xlsx` — category-to-label mapping for education levels
   - `Task Statements.xlsx` — task statements with O*NET-SOC codes; used to map AEI tasks to occupations
   - `Task Ratings.xlsx` — task importance and frequency ratings
-- **`data/input/anthropic/`** — Anthropic Economic Index data (auto-downloaded from [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex), release 2026-01-15). **Not committed to git.** To download:
+- **`data/input/anthropic/`** — Anthropic Economic Index data (auto-downloaded from [HuggingFace](https://huggingface.co/datasets/Anthropic/EconomicIndex), release_2026_03_24). **Not committed to git.** To download:
   ```bash
   python3 scripts/download_economic_index.py
   ```
@@ -193,7 +194,7 @@ The 12 attributes are mathematically blended into 3 core filters:
 
 Jobs are then sorted into 4 transition archetypes based on these filters:
 - **Grow with AI**: High Exposure, High Demand Elasticity.
-- **Will Reorganize**: High Exposure, Strong Human Necessity.
+- **Will Evolve**: High Exposure, Strong Human Necessity.
 - **Less Immediate Change**: Low Exposure.
 - **High Automation Risk**: High Exposure, Weak Human Necessity, Low Demand Elasticity.
 

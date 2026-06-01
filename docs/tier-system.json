@@ -19,8 +19,8 @@
       "for_career_explorers": "Good choice for long-term stability, though wage ceilings may exist."
     },
     {
-      "id": "will-reorganize",
-      "label": "Will Reorganize",
+      "id": "will-evolve",
+      "label": "Will Evolve",
       "range_min": 25,
       "range_max": 49,
       "description": "High exposure but strong human necessity. Parts of this job will be automated, but the human-in-the-loop (for trust, regulation, or physical action) remains necessary. The job will shift, not disappear.",

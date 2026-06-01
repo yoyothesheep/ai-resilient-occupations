@@ -1,7 +1,7 @@
 {
   "onet_code": "27-1024.00",
   "title": "Graphic Designers",
-  "score": 40,
+  "score": 50,
   "salary": "$61,300",
   "openings": "20,000",
   "growth": "+2%",
@@ -19,7 +19,7 @@
   "emergingTitles": [
     "Motion Designer"
   ],
-  "keyDrivers": "Graphic design is heavily exposed because generative AI can already produce layouts, logos, and visual content at a level that satisfies many clients—and the tools are improving fast. The work is fully digital with no physical presence requirement and no legal licensing barrier. While top designers with a strong personal style will retain value, the typical graphic designer faces significant pressure as AI-generated design becomes widely accepted and dramatically cheaper.",
+  "keyDrivers": "AI tools like image generators and design software are already helping graphic designers work faster, experiment with more ideas, and handle routine tasks like resizing or creating variations. This means designers who learn to use AI can take on more projects and produce higher-quality work in less time, boosting their productivity. However, the slow projected job growth reflects a competitive field where AI efficiency may reduce the total number of positions needed, making it important for designers to develop strong creative vision, client communication skills, and expertise in guiding AI tools to stand out.",
   "taskData": [
     {
       "task": "Art direct layouts and typography",
@@ -463,5 +463,5 @@
   "ai_category": "Grow with AI",
   "exposure_filter": "3.4",
   "necessity_filter": "1.47",
-  "elasticity_filter": "3.5"
+  "elasticity_filter": "5"
 }
